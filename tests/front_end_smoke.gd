@@ -21,6 +21,7 @@ func settle() -> void:
 
 func run() -> void:
 	app = load("res://scenes/front_end.tscn").instantiate()
+	app.persistent_city_progress = false
 	root.add_child(app)
 	await settle()
 	app.motion_enabled = false

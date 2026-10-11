@@ -2,9 +2,9 @@
 
 ## Scope
 
-Title → Start Campaign → World Atlas → Ravenwood → Blackthorn arrival preview.
+Title → Start Campaign → World Atlas → Ravenwood → Blackthorn courtyard and connected rooms.
 
-The city preview is intentional. There is no invisible walking, simulated gameplay, dead joystick, or placeholder block character. The next city slice will add the matched fixed camera, actual 3D walkmesh, avatar, and separate foreground masks. The opening cinematic and avatar selection are not implemented yet.
+Blackthorn now supports point-and-click exploration and portrait dialogue. There is no invisible walking, dead joystick, or placeholder block character. A later movement slice will add the matched fixed camera, actual 3D walkmesh, avatar, and separate foreground masks. The opening cinematic and avatar selection are not implemented yet. See `blackthorn.md` for the room and interaction implementation.
 
 ## Board handoff
 
