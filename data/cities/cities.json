@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "cities": [
+    {
+      "id": "ravenford",
+      "name": "Ravenford",
+      "role": "home_city",
+      "territory_id": null
+    },
+    {
+      "id": "blackthorn",
+      "name": "Blackthorn",
+      "role": "stronghold",
+      "territory_id": "ravenwood"
+    },
+    {
+      "id": "ashenreach",
+      "name": "Ashenreach",
+      "role": "stronghold",
+      "territory_id": "ashen_wastes"
+    },
+    {
+      "id": "icehelm",
+      "name": "Icehelm",
+      "role": "stronghold",
+      "territory_id": "frostpeaks"
+    },
+    {
+      "id": "ironhold",
+      "name": "Ironhold",
+      "role": "stronghold",
+      "territory_id": "drakeshard_range"
+    },
+    {
+      "id": "harrowstead",
+      "name": "Harrowstead",
+      "role": "stronghold",
+      "territory_id": "iron_plains"
+    },
+    {
+      "id": "silverkeep",
+      "name": "Silverkeep",
+      "role": "stronghold",
+      "territory_id": "veiled_sea"
+    },
+    {
+      "id": "dragons_rest",
+      "name": "Dragon's Rest",
+      "role": "stronghold",
+      "territory_id": "ember_coast"
+    }
+  ]
+}
