@@ -58,6 +58,19 @@ jobs:
           mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
           unzip -q templates.tpz 'templates/*' -d template_extract
           mv template_extract/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+      - name: Reassemble uploaded forge artwork
+        shell: bash
+        run: |
+          if [ -f assets/forge_art.part01 ] && [ -f assets/forge_art.part02 ]; then
+            cat assets/forge_art.part01 assets/forge_art.part02 > "$RUNNER_TEMP/forge_art.zip"
+            echo "a5e3090446ca55626e01a1a6697c0d2e2208e68d04cd8aef69d6bf347484504f  $RUNNER_TEMP/forge_art.zip" | sha256sum -c -
+            unzip -q -o "$RUNNER_TEMP/forge_art.zip" -d .
+          elif [ -f assets/forge_art.part01 ] || [ -f assets/forge_art.part02 ]; then
+            echo "::error::Both forge artwork parts must be uploaded to assets/."
+            exit 1
+          else
+            echo "Artwork parts not yet uploaded; building existing fallback room."
+          fi
       - name: Validate forge catalog and artwork integrity
         run: python3 tools/verify_forge_art.py
       - name: Validate Godot import
