@@ -1,0 +1,84 @@
+name: Build Shattered Realms Next APK
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feature/android-forge-build
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'scenes/**'
+      - 'project.godot'
+      - 'export_presets.cfg'
+      - '.github/workflows/android-apk.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'scenes/**'
+      - 'project.godot'
+      - 'export_presets.cfg'
+      - '.github/workflows/android-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+      ANDROID_HOME: /usr/local/lib/android/sdk
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Configure SDK
+        shell: bash
+        run: |
+          echo "$ANDROID_SDK_ROOT/platform-tools" >> "$GITHUB_PATH"
+          echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
+          yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "build-tools;36.0.0" "platforms;android-36"
+      - name: Install Godot
+        shell: bash
+        run: |
+          curl -L --fail --retry 3 -o godot.zip "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip"
+          unzip -q godot.zip
+          chmod +x Godot_v4.7.2-stable_linux.x86_64
+          echo "$GITHUB_WORKSPACE" >> "$GITHUB_PATH"
+          curl -L --fail --retry 3 -o templates.tpz "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz"
+          mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          unzip -q templates.tpz 'templates/*' -d template_extract
+          mv template_extract/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+      - name: Validate Godot import
+        shell: bash
+        run: |
+          set -o pipefail
+          Godot_v4.7.2-stable_linux.x86_64 --headless --editor --path . --quit 2>&1 | tee validation.log
+          if grep -E "SCRIPT ERROR:|Parse Error:|Failed to load script" validation.log; then exit 1; fi
+      - name: Android version
+        shell: bash
+        run: |
+          sed -i "s@version/code=.*@version/code=${GITHUB_RUN_NUMBER}@" export_presets.cfg
+          sed -i "s@version/name=.*@version/name=\"0.1.${GITHUB_RUN_NUMBER}\"@" export_presets.cfg
+      - name: Export debug APK
+        shell: bash
+        run: |
+          mkdir -p build
+          Godot_v4.7.2-stable_linux.x86_64 --headless --path . --export-debug 'Android APK' build/ShatteredRealmsNext.apk
+          test -s build/ShatteredRealmsNext.apk
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShatteredRealmsNext-Android
+          path: build/ShatteredRealmsNext.apk
+          if-no-files-found: error
+          retention-days: 7
