@@ -1,99 +1,2070 @@
 {
-  "version": 1,
-  "scope": "CI demo subset of CATALOG.md; complete pack not yet committed",
+  "version": 2,
+  "source": "CATALOG.md balance draft 0.1.0; unplaytested",
   "frameworks": [
     {
       "name": "Watchman’s Leather Grip",
       "family": "Sword",
       "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
       "durability": 55,
+      "interval": "1.8 s",
       "handling": "+5 accuracy points."
     },
     {
       "name": "Duelist’s Tideguard",
       "family": "Sword",
       "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
       "durability": 70,
+      "interval": "1.636 s",
       "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Sentinel’s Ironbark Hilt",
+      "family": "Sword",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "1.895 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Sunbound Filigree Hilt",
+      "family": "Sword",
+      "tier": 5,
+      "value": "660 / — / 165",
+      "hidden_strikes": 3,
+      "durability": 100,
+      "interval": "1.8 s",
+      "handling": "+15% elemental attack; -15% durability."
     },
     {
       "name": "Militia Longgrip",
       "family": "Greatsword",
       "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
       "durability": 55,
+      "interval": "3.333 s",
       "handling": "+8 accuracy; +10% durability; -10% action speed."
     },
     {
       "name": "Drakespine Wargrip",
       "family": "Greatsword",
       "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
       "durability": 70,
+      "interval": "3.158 s",
       "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Black Anvil Twohander",
+      "family": "Greatsword",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "3.0 s",
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
     },
     {
       "name": "Poacher’s Thumbgrip",
       "family": "Dagger",
       "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
       "durability": 55,
+      "interval": "1.05 s",
       "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Websilk Loop Grip",
+      "family": "Dagger",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "0.955 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Mirage Balanced Tang",
+      "family": "Dagger",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "1.05 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Ranger’s Ash Haft",
+      "family": "Spear",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.316 s",
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Rimepine Lance Shaft",
+      "family": "Spear",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.316 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Stormkeeper Spear Haft",
+      "family": "Spear",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.2 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Oathroot Longshaft",
+      "family": "Spear",
+      "tier": 5,
+      "value": "660 / — / 165",
+      "hidden_strikes": 3,
+      "durability": 100,
+      "interval": "2.444 s",
+      "handling": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    {
+      "name": "Woodcutter’s Haft",
+      "family": "Axe",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.211 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Corsair’s Hook Haft",
+      "family": "Axe",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "1.909 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Cinderbrace Split Haft",
+      "family": "Axe",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.1 s",
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+    },
+    {
+      "name": "Quarryman’s Haft",
+      "family": "Hammer",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "3.556 s",
+      "handling": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    {
+      "name": "Siegebreaker Shock Haft",
+      "family": "Hammer",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "3.368 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Thunderbrow Pattern Haft",
+      "family": "Hammer",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "3.2 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Gateward Handle",
+      "family": "Mace",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.05 s",
+      "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Reedbound Cudgel Haft",
+      "family": "Mace",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.158 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Lanternkeeper Flanged Grip",
+      "family": "Mace",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.05 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Herbalist’s Bogroot Staff",
+      "family": "Staff",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.632 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Gloamwood Channel Staff",
+      "family": "Staff",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.5 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Veil-Silver Casting Shaft",
+      "family": "Staff",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.273 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Astral Spiral Staff",
+      "family": "Staff",
+      "tier": 5,
+      "value": "660 / — / 165",
+      "hidden_strikes": 3,
+      "durability": 100,
+      "interval": "2.5 s",
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+    },
+    {
+      "name": "Apprentice’s Yew Handle",
+      "family": "Wand",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "1.5 s",
+      "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Crystal-Focus Wand Grip",
+      "family": "Wand",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "1.5 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Dawnweaver Conductor",
+      "family": "Wand",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "1.364 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Scout’s Ironbark Riser",
+      "family": "Bow",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.2 s",
+      "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Recurve Sinew Riser",
+      "family": "Bow",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.316 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Moon-Yew Longbow Riser",
+      "family": "Bow",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.316 s",
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Glasswind Split Riser",
+      "family": "Bow",
+      "tier": 5,
+      "value": "660 / — / 165",
+      "hidden_strikes": 3,
+      "durability": 100,
+      "interval": "2.0 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Militia Oak Stock",
+      "family": "Crossbow",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "3.222 s",
+      "handling": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    {
+      "name": "Marine Ratchet Stock",
+      "family": "Crossbow",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "3.053 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Cogspire Repeating Stock",
+      "family": "Crossbow",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.636 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Drover’s Wrapped Handle",
+      "family": "Whip",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "1.95 s",
+      "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Stormtide Swivel Handle",
+      "family": "Whip",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.053 s",
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Veilweave Lash Grip",
+      "family": "Whip",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "1.95 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Reaper’s Farm Shaft",
+      "family": "Scythe",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "2.947 s",
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Gravewillow Crescent Haft",
+      "family": "Scythe",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "2.8 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Last-Lantern Balance Shaft",
+      "family": "Scythe",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "2.947 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Scrapper’s Shoulder Frame",
+      "family": "Cannon",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "4.0 s",
+      "handling": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    {
+      "name": "Rivetlock Recoil Cradle",
+      "family": "Cannon",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "3.789 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Brasswick Vented Cannon Frame",
+      "family": "Cannon",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "3.6 s",
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+    },
+    {
+      "name": "Sundial Artillery Frame",
+      "family": "Cannon",
+      "tier": 5,
+      "value": "660 / — / 165",
+      "hidden_strikes": 3,
+      "durability": 100,
+      "interval": "3.6 s",
+      "handling": "+15% elemental attack; -15% durability."
+    },
+    {
+      "name": "Pitfighter’s Wrist Brace",
+      "family": "Gauntlet",
+      "tier": 1,
+      "value": "45 / 45 / 11",
+      "hidden_strikes": 1,
+      "durability": 55,
+      "interval": "1.091 s",
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Scale-Laced Knuckle Frame",
+      "family": "Gauntlet",
+      "tier": 3,
+      "value": "180 / 180 / 45",
+      "hidden_strikes": 2,
+      "durability": 70,
+      "interval": "1.263 s",
+      "handling": "+25% durability; -5% action speed."
+    },
+    {
+      "name": "Springbrass Piston Brace",
+      "family": "Gauntlet",
+      "tier": 4,
+      "value": "360 / — / 90",
+      "hidden_strikes": 3,
+      "durability": 85,
+      "interval": "1.2 s",
+      "handling": "+15% elemental attack; -15% durability."
     }
   ],
   "strikers": [
     {
       "name": "Plainsteel Straight Blade",
       "family": "Sword",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
       "physical": "20 slash",
+      "durability": 20,
       "trait": "+3 accuracy points."
     },
     {
       "name": "Serrated Fang Blade",
       "family": "Sword",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
       "physical": "27 slash",
+      "durability": 24,
       "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Tidebronze Saber Blade",
+      "family": "Sword",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "35 slash",
+      "durability": 30,
+      "trait": "+8% physical attack; -0.2 m reach."
+    },
+    {
+      "name": "Webglass Needle Blade",
+      "family": "Sword",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "33 slash",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Scaleiron Falchion Blade",
+      "family": "Sword",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "46 slash",
+      "durability": 38,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Veil-Silver Channel Blade",
+      "family": "Sword",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "58 slash",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
     },
     {
       "name": "Broad Militia Blade",
       "family": "Greatsword",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
       "physical": "34 slash",
+      "durability": 20,
       "trait": "+3 accuracy points."
     },
     {
       "name": "Notched Siege Blade",
       "family": "Greatsword",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
       "physical": "46 slash",
+      "durability": 24,
       "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Drakebone Cleaver",
+      "family": "Greatsword",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "60 slash",
+      "durability": 30,
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+    },
+    {
+      "name": "Basalt Execution Blade",
+      "family": "Greatsword",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "56 slash",
+      "durability": 18,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Froststeel Flamberge",
+      "family": "Greatsword",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "78 slash",
+      "durability": 38,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Null-Edge Colossus Blade",
+      "family": "Greatsword",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "99 slash",
+      "durability": 28,
+      "trait": "Physical attack -12%; elemental attack +20%."
     },
     {
       "name": "Watchman’s Point",
       "family": "Dagger",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
       "physical": "12 pierce",
+      "durability": 20,
       "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Hollow Adder Fang",
+      "family": "Dagger",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "17 pierce",
+      "durability": 24,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Glasswind Stiletto",
+      "family": "Dagger",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "22 pierce",
+      "durability": 30,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Barbed Webglass Point",
+      "family": "Dagger",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "20 pierce",
+      "durability": 18,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Belliron Ritual Blade",
+      "family": "Dagger",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "29 pierce",
+      "durability": 38,
+      "trait": "+20% physical damage against undead; no effect on other targets."
+    },
+    {
+      "name": "Star-Slate Crescent",
+      "family": "Dagger",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "36 pierce",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Iron Leaf Spearhead",
+      "family": "Spear",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "24 pierce",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Wyrmtooth Pikehead",
+      "family": "Spear",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "32 pierce",
+      "durability": 24,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Sunbronze Winged Head",
+      "family": "Spear",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "42 pierce",
+      "durability": 30,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Stormsteel Fork",
+      "family": "Spear",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "40 pierce",
+      "durability": 18,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Froststeel Lance Tip",
+      "family": "Spear",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "55 pierce",
+      "durability": 38,
+      "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Hollow Veil-Silver Point",
+      "family": "Spear",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "70 pierce",
+      "durability": 28,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Forester’s Axe Bit",
+      "family": "Axe",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "24 slash",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Raider’s Hook Bit",
+      "family": "Axe",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "32 slash",
+      "durability": 24,
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+    },
+    {
+      "name": "Drakeglass Bearded Edge",
+      "family": "Axe",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "41 slash",
+      "durability": 30,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Bog-Iron Hewing Head",
+      "family": "Axe",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "39 slash",
+      "durability": 18,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Basalt Double Bit",
+      "family": "Axe",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "54 slash",
+      "durability": 38,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Star-Slate Crescent Bit",
+      "family": "Axe",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "68 slash",
+      "durability": 28,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Quarry Iron Block",
+      "family": "Hammer",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "37 blunt",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Siege Ram Head",
+      "family": "Hammer",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "50 blunt",
+      "durability": 24,
+      "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Resonant Belliron Head",
+      "family": "Hammer",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "65 blunt",
+      "durability": 30,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Basalt Furnace Head",
+      "family": "Hammer",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "61 blunt",
+      "durability": 18,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Scaleiron Shatter Head",
+      "family": "Hammer",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "85 blunt",
+      "durability": 38,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Singing-Quartz Impact Head",
+      "family": "Hammer",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "107 blunt",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Gatewatch Iron Ball",
+      "family": "Mace",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "22 blunt",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Thorn-Cage Head",
+      "family": "Mace",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "30 blunt",
+      "durability": 24,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Sunbronze Flanged Head",
+      "family": "Mace",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "39 blunt",
+      "durability": 30,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Hexstone Knob",
+      "family": "Mace",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "37 blunt",
+      "durability": 18,
+      "trait": "+20% physical damage against undead; no effect on other targets."
+    },
+    {
+      "name": "Froststeel Crown",
+      "family": "Mace",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "52 blunt",
+      "durability": 38,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Veil-Silver Lantern Cage",
+      "family": "Mace",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "65 blunt",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Carved Root Crown",
+      "family": "Staff",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "12 blunt",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Marsh-Bone Focus",
+      "family": "Staff",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "17 blunt",
+      "durability": 24,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Storm Fork Crown",
+      "family": "Staff",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "22 blunt",
+      "durability": 30,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Moon Lens Cradle",
+      "family": "Staff",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "20 blunt",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Hexstone Ritual Cage",
+      "family": "Staff",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "29 blunt",
+      "durability": 38,
+      "trait": "+20% physical damage against undead; no effect on other targets."
+    },
+    {
+      "name": "Prismatic Silver Crown",
+      "family": "Staff",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "36 blunt",
+      "durability": 28,
+      "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Copper Casting Tip",
+      "family": "Wand",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "6 blunt",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Adder-Fang Focus",
+      "family": "Wand",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "9 blunt",
+      "durability": 24,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Frostglass Prism",
+      "family": "Wand",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "11 blunt",
+      "durability": 30,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Sunbronze Aperture",
+      "family": "Wand",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "11 blunt",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Webglass Needle Focus",
+      "family": "Wand",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "15 blunt",
+      "durability": 38,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Star-Slate Lens",
+      "family": "Wand",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "19 blunt",
+      "durability": 28,
+      "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Plain Yew Limbs",
+      "family": "Bow",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "22 pierce",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Recurved Drakebone Limbs",
+      "family": "Bow",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "30 pierce",
+      "durability": 24,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Moon-Yew Long Limbs",
+      "family": "Bow",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "39 pierce",
+      "durability": 30,
+      "trait": "+2 m range; -5 accuracy points."
+    },
+    {
+      "name": "Websilk Composite Limbs",
+      "family": "Bow",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "36 pierce",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Froststeel Spring Limbs",
+      "family": "Bow",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "51 pierce",
+      "durability": 38,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Singing-Quartz Split Limbs",
+      "family": "Bow",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "64 pierce",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Plainsteel Prod",
+      "family": "Crossbow",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "31 pierce",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Drake-Sinew Compound Prod",
+      "family": "Crossbow",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "42 pierce",
+      "durability": 24,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Marine Heavy Prod",
+      "family": "Crossbow",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "54 pierce",
+      "durability": 30,
+      "trait": "+2 m range; -5 accuracy points."
+    },
+    {
+      "name": "Springbrass Repeater Prod",
+      "family": "Crossbow",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "51 pierce",
+      "durability": 18,
+      "trait": "+8% physical attack; -0.2 m reach."
+    },
+    {
+      "name": "Froststeel Arbalest Prod",
+      "family": "Crossbow",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "71 pierce",
+      "durability": 38,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Star-Slate Resonance Prod",
+      "family": "Crossbow",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "90 pierce",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Braided Oak Lash",
+      "family": "Whip",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "17 slash",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Barbed Drake-Sinew Lash",
+      "family": "Whip",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "22 slash",
+      "durability": 24,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Belliron Chain Lash",
+      "family": "Whip",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "29 slash",
+      "durability": 30,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Websilk Razor Lash",
+      "family": "Whip",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "27 slash",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Drakeglass Segmented Lash",
+      "family": "Whip",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "38 slash",
+      "durability": 38,
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+    },
+    {
+      "name": "Veil-Silver Ribbon Lash",
+      "family": "Whip",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "48 slash",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
+    },
+    {
+      "name": "Harvest Iron Crescent",
+      "family": "Scythe",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "28 slash",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Gravehook Crescent",
+      "family": "Scythe",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "38 slash",
+      "durability": 24,
+      "trait": "Ignore 10% of physical armor for this hit."
+    },
+    {
+      "name": "Webglass Reaping Edge",
+      "family": "Scythe",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "49 slash",
+      "durability": 30,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Belliron Soul Crescent",
+      "family": "Scythe",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "46 slash",
+      "durability": 18,
+      "trait": "+20% physical damage against undead; no effect on other targets."
+    },
+    {
+      "name": "Froststeel Sickle Arc",
+      "family": "Scythe",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "64 slash",
+      "durability": 38,
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+    },
+    {
+      "name": "Null Obsidian Reaping Arc",
+      "family": "Scythe",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "81 slash",
+      "durability": 28,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Riveted Iron Barrel",
+      "family": "Cannon",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "38 pierce",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Scatterbore Barrel",
+      "family": "Cannon",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "51 pierce",
+      "durability": 24,
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+    },
+    {
+      "name": "Tidebronze Longbore",
+      "family": "Cannon",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "67 pierce",
+      "durability": 30,
+      "trait": "+2 m range; -5 accuracy points."
+    },
+    {
+      "name": "Springbrass Spiral Barrel",
+      "family": "Cannon",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "63 pierce",
+      "durability": 18,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Basalt Siege Barrel",
+      "family": "Cannon",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "87 pierce",
+      "durability": 38,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Prismatic Breach Barrel",
+      "family": "Cannon",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "110 pierce",
+      "durability": 28,
+      "trait": "Physical attack -12%; elemental attack +20%."
+    },
+    {
+      "name": "Plainsteel Knuckle Plate",
+      "family": "Gauntlet",
+      "tier": 1,
+      "value": "55 / 55 / 14",
+      "hidden_strikes": 1,
+      "physical": "14 blunt",
+      "durability": 20,
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Wyrmfang Knuckle Row",
+      "family": "Gauntlet",
+      "tier": 2,
+      "value": "100 / 100 / 25",
+      "hidden_strikes": 2,
+      "physical": "18 blunt",
+      "durability": 24,
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Belliron Palm Plate",
+      "family": "Gauntlet",
+      "tier": 3,
+      "value": "190 / 190 / 48",
+      "hidden_strikes": 2,
+      "physical": "24 blunt",
+      "durability": 30,
+      "trait": "15% chance to remove 6 ATB points; once per target action."
+    },
+    {
+      "name": "Springbrass Ram Knuckle",
+      "family": "Gauntlet",
+      "tier": 3,
+      "value": "220 / 220 / 55",
+      "hidden_strikes": 3,
+      "physical": "22 blunt",
+      "durability": 18,
+      "trait": "+8% physical attack; -0.2 m reach."
+    },
+    {
+      "name": "Froststeel Talon Plate",
+      "family": "Gauntlet",
+      "tier": 4,
+      "value": "390 / — / 98",
+      "hidden_strikes": 3,
+      "physical": "31 blunt",
+      "durability": 38,
+      "trait": "+6 critical chance points; -8% physical attack."
+    },
+    {
+      "name": "Veil-Silver Channel Knuckle",
+      "family": "Gauntlet",
+      "tier": 5,
+      "value": "700 / — / 175",
+      "hidden_strikes": 4,
+      "physical": "39 blunt",
+      "durability": 28,
+      "trait": "+12% elemental attack; -6% physical attack."
     }
   ],
   "cores": [
     {
       "name": "Thornseed Core",
+      "territory": "Ravenwood",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
       "elemental": "12 verdant",
+      "volatility": 1,
       "chance": "18%",
       "effect": "Root for 1 action; boss substitute: -8% action speed."
     },
     {
+      "name": "Huntsman’s Echo Core",
+      "territory": "Ravenwood",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 spirit",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Next allied hit gains +12% accuracy for 2 actions; mark consumed on hit."
+    },
+    {
+      "name": "Heart of the Old Grove Core",
+      "territory": "Ravenwood",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 verdant",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Wielder gains a barrier equal to 12% of base physical + elemental attack for 2 actions."
+    },
+    {
+      "name": "Worldroot Seed Core",
+      "territory": "Ravenwood",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 verdant",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Root for 2 actions; boss substitute: -12% action speed for 2 actions."
+    },
+    {
       "name": "Cinder Pearl Core",
+      "territory": "Ashen Wastes",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
       "elemental": "12 fire",
+      "volatility": 1,
       "chance": "18%",
       "effect": "Burn deals 18% of base elemental attack per action for 2 actions."
     },
     {
+      "name": "Magma Heart Core",
+      "territory": "Ashen Wastes",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 magma",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Leaves a 1.2 m pool for 2 actions, dealing 20% base elemental attack to all occupants each action."
+    },
+    {
+      "name": "Ashen Crown Core",
+      "territory": "Ashen Wastes",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 ash",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Target loses 10 accuracy points for 2 actions."
+    },
+    {
+      "name": "First Furnace Ember Core",
+      "territory": "Ashen Wastes",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 magma",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Burn deals 22% base elemental magma damage per action for 3 actions."
+    },
+    {
       "name": "Rime Shard Core",
+      "territory": "Frostpeaks",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
       "elemental": "12 frost",
+      "volatility": 1,
       "chance": "18%",
       "effect": "Target action speed -12% for 2 actions."
     },
     {
+      "name": "Whiteout Eye Core",
+      "territory": "Frostpeaks",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 frost",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Target loses 15 accuracy points for 2 actions."
+    },
+    {
+      "name": "Glacial Heart Core",
+      "territory": "Frostpeaks",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 frost",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Wielder barrier = 15% base physical + elemental attack, lasting 2 actions."
+    },
+    {
+      "name": "Stillwinter Heart Core",
+      "territory": "Frostpeaks",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 frost",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Target action speed -18% for 3 actions."
+    },
+    {
       "name": "Drake Ember Core",
+      "territory": "Drakeshard Range",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
       "elemental": "12 fire",
+      "volatility": 1,
       "chance": "18%",
       "effect": "Physical armor -8% for 2 actions."
+    },
+    {
+      "name": "Scale Resonance Core",
+      "territory": "Drakeshard Range",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 earth",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Physical armor -12% for 2 actions."
+    },
+    {
+      "name": "Brood Oath Core",
+      "territory": "Drakeshard Range",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 spirit",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Wielder takes 10% less physical damage until its next action."
+    },
+    {
+      "name": "Sunwell Spark Core",
+      "territory": "Golden Expanse",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 solar",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Next allied hit adds 10% base elemental solar damage; mark consumed."
+    },
+    {
+      "name": "Mirage Eye Core",
+      "territory": "Golden Expanse",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 mirage",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Wielder gains 8 evasion points until its next action."
+    },
+    {
+      "name": "Buried Dawn Core",
+      "territory": "Golden Expanse",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 solar",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Remove 1 removable positive effect from the struck enemy."
+    },
+    {
+      "name": "Dawn Before Kings Core",
+      "territory": "Golden Expanse",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 solar",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Remove up to 2 removable enemy positive effects."
+    },
+    {
+      "name": "Adder Bile Core",
+      "territory": "Blighted Marsh",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 venom",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Poison deals 12% base elemental attack per action for 3 actions."
+    },
+    {
+      "name": "Mire Lantern Core",
+      "territory": "Blighted Marsh",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 verdant",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Remove 1 poison stack from the wielder."
+    },
+    {
+      "name": "Rotmother Spore Core",
+      "territory": "Blighted Marsh",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 rot",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Rot deals 18% base elemental per action for 2 actions; on death transfers remaining duration to 1 enemy within 2 m."
+    },
+    {
+      "name": "Grave Ember Core",
+      "territory": "Cursed Mire",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 spirit",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Target receives 20% less healing for 2 actions."
+    },
+    {
+      "name": "Hexbound Tear Core",
+      "territory": "Cursed Mire",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 curse",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Target physical attack -10% for 2 actions."
+    },
+    {
+      "name": "Anchorless Soul Core",
+      "territory": "Cursed Mire",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 spirit",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Add spirit damage = 25% base elemental attack against undead only."
+    },
+    {
+      "name": "Gloam Mote Core",
+      "territory": "Shadowfen Forest",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 shadow",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Target loses 10 evasion points for 2 actions."
+    },
+    {
+      "name": "Widow’s Knot Core",
+      "territory": "Shadowfen Forest",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 shadow",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Root for 1 action; boss substitute: -8% action speed."
+    },
+    {
+      "name": "Hollow Canopy Core",
+      "territory": "Shadowfen Forest",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 rot",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Target rot resistance -10 percentage points for 2 actions."
+    },
+    {
+      "name": "Marching Spark Core",
+      "territory": "Iron Plains",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 earth",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Wielder gains 50% displacement resistance until its next action."
+    },
+    {
+      "name": "Warhorn Echo Core",
+      "territory": "Iron Plains",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 spirit",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Wielder’s next direct hit gains 10% base physical damage; cannot stack."
+    },
+    {
+      "name": "Siegeheart Core",
+      "territory": "Iron Plains",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 earth",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Deal an additional 30% base physical + elemental attack to barriers only."
+    },
+    {
+      "name": "Salt Pearl Core",
+      "territory": "Veiled Sea",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 tide",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Physical armor -8% for 2 actions."
+    },
+    {
+      "name": "Undertow Knot Core",
+      "territory": "Veiled Sea",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 tide",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Pull target 1 m toward the wielder; immune targets take 10% base elemental tide damage instead."
+    },
+    {
+      "name": "Tempest Bottle Core",
+      "territory": "Veiled Sea",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 storm",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Deal 15% base elemental storm damage to 1 extra enemy within 2 m."
+    },
+    {
+      "name": "Coalglass Ember Core",
+      "territory": "Ember Coast",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 fire",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Leave a 1 m trail at target for 2 actions, dealing 15% base elemental to all occupants each action."
+    },
+    {
+      "name": "Cinderwake Pearl Core",
+      "territory": "Ember Coast",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 magma",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Leave a 1.5 m patch for 2 actions, dealing 25% base elemental to all occupants each action."
+    },
+    {
+      "name": "Dragon Pact Ember Core",
+      "territory": "Ember Coast",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 fire",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Deal 25% base elemental fire damage to at most 2 extra enemies within 2 m."
+    },
+    {
+      "name": "Stormglass Spark Core",
+      "territory": "Stormcrown Mountains",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 storm",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Remove 8 percentage points from target ATB; once per target action."
+    },
+    {
+      "name": "Thundercoil Core",
+      "territory": "Stormcrown Mountains",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 storm",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Jump to at most 2 different enemies within 2 m for 20% base elemental storm damage each."
+    },
+    {
+      "name": "Skyward Seal Core",
+      "territory": "Stormcrown Mountains",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 storm",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Wielder takes 12% less elemental damage until its next action."
+    },
+    {
+      "name": "Moonlit Flake Core",
+      "territory": "Moonfall Highlands",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 lunar",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Target critical resistance -6 points for 2 actions."
+    },
+    {
+      "name": "Fallen Star Core",
+      "territory": "Moonfall Highlands",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 astral",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Add one astral pulse of 20% base elemental attack; pulse cannot trigger procs."
+    },
+    {
+      "name": "Observatory Heart Core",
+      "territory": "Moonfall Highlands",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 astral",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Pull struck target up to 1.5 m toward its nearest enemy ally; immune targets take 15% base elemental astral damage instead."
+    },
+    {
+      "name": "Clockwork Spark Core",
+      "territory": "Copperfen Basin",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 kinetic",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Next direct physical hit gains 12% base physical damage; cannot stack."
+    },
+    {
+      "name": "Pressure Pearl Core",
+      "territory": "Copperfen Basin",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 kinetic",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Push target 1 m away; immune targets take 10% base elemental kinetic damage instead."
+    },
+    {
+      "name": "Overload Governor Core",
+      "territory": "Copperfen Basin",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 storm",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Deal 25% base elemental storm damage to 1 extra enemy within 2 m. Does not reveal cracked durability."
+    },
+    {
+      "name": "Prime Kettari Governor Core",
+      "territory": "Copperfen Basin",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 kinetic",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Push target 2 m; immune targets take 20% base elemental kinetic damage instead. No durability stabilization."
+    },
+    {
+      "name": "Whisperglass Core",
+      "territory": "Glasswind Steppe",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 wind",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Add 15% base elemental wind damage ignoring 20% resistance for this pulse."
+    },
+    {
+      "name": "Sand-Singer Core",
+      "territory": "Glasswind Steppe",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 wind",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Target loses 12 accuracy points for 2 actions."
+    },
+    {
+      "name": "Horizon Prism Core",
+      "territory": "Glasswind Steppe",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 mirage",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Add 25% base elemental mirage damage to the first enemy behind the target, within 3 m."
+    },
+    {
+      "name": "Bell-Wraith Ember Core",
+      "territory": "Deadwind Hollow",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 spirit",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Silence for 1 action; boss substitute: magic attack -8% for 1 action."
+    },
+    {
+      "name": "Lantern Soul Core",
+      "territory": "Deadwind Hollow",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 spirit",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Wielder gains 25 curse-resistance points until its next action."
+    },
+    {
+      "name": "Pale Procession Core",
+      "territory": "Deadwind Hollow",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 curse",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Target receives 25% less healing for 3 actions."
+    },
+    {
+      "name": "Unbound Funeral Star Core",
+      "territory": "Deadwind Hollow",
+      "tier": 5,
+      "value": "1050 / — / 263",
+      "hidden_strikes": 3,
+      "elemental": "45 spirit",
+      "volatility": 4,
+      "chance": "30%",
+      "effect": "Add 45% base elemental spirit damage against undead only."
+    },
+    {
+      "name": "Mist Dew Core",
+      "territory": "Mistvale",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 mist",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Wielder gains 6 evasion points until its next action."
+    },
+    {
+      "name": "Veilbound Star Core",
+      "territory": "Mistvale",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 astral",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Add one astral pulse of 25% base elemental attack; pulse cannot trigger procs."
+    },
+    {
+      "name": "Relic Memory Core",
+      "territory": "Mistvale",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 astral",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Target astral resistance -12 percentage points for 2 actions."
+    },
+    {
+      "name": "Rift Cinder Core",
+      "territory": "Devouring Deep",
+      "tier": 2,
+      "value": "110 / 110 / 28",
+      "hidden_strikes": 0,
+      "elemental": "12 void",
+      "volatility": 1,
+      "chance": "18%",
+      "effect": "Add 35% base elemental void damage to barriers only."
+    },
+    {
+      "name": "Hunger Fragment Core",
+      "territory": "Devouring Deep",
+      "tier": 3,
+      "value": "260 / — / 65",
+      "hidden_strikes": 1,
+      "elemental": "21 void",
+      "volatility": 2,
+      "chance": "22%",
+      "effect": "Heal wielder for 8% of the direct elemental damage actually dealt; excludes bursts and shields."
+    },
+    {
+      "name": "Quiet Singularity Core",
+      "territory": "Devouring Deep",
+      "tier": 4,
+      "value": "510 / — / 128",
+      "hidden_strikes": 2,
+      "elemental": "32 void",
+      "volatility": 3,
+      "chance": "26%",
+      "effect": "Deal 30% base elemental void damage to at most 2 extra enemies within 2 m."
     }
   ],
   "recipes": [
@@ -102,27 +2073,2680 @@
       "framework": "Watchman’s Leather Grip",
       "striker": "Plainsteel Straight Blade",
       "core": "Thornseed Core",
+      "limit": 5,
       "attack": "26/16 → 28/17 → 29/18",
       "durability": 75,
-      "interval": "1.8"
+      "interval": "1.8",
+      "sands_fee_resale": "63 / 74 g"
     },
     {
       "name": "Cinder Vow",
       "framework": "Duelist’s Tideguard",
       "striker": "Serrated Fang Blade",
       "core": "Cinder Pearl Core",
+      "limit": 7,
       "attack": "39/17 → 43/19 → 45/20",
       "durability": 85,
-      "interval": "1.718"
+      "interval": "1.718",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "White Mercy",
+      "framework": "Sentinel’s Ironbark Hilt",
+      "striker": "Tidebronze Saber Blade",
+      "core": "Rime Shard Core",
+      "limit": 8,
+      "attack": "58/19 → 64/20 → 67/21",
+      "durability": 144,
+      "interval": "2.047",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Scale Promise",
+      "framework": "Sunbound Filigree Hilt",
+      "striker": "Webglass Needle Blade",
+      "core": "Drake Ember Core",
+      "limit": 9,
+      "attack": "50/23 → 55/25 → 57/26",
+      "durability": 100,
+      "interval": "1.692",
+      "sands_fee_resale": "258 / 347 g"
+    },
+    {
+      "name": "Sunlit Verdict",
+      "framework": "Watchman’s Leather Grip",
+      "striker": "Scaleiron Falchion Blade",
+      "core": "Sunwell Spark Core",
+      "limit": 7,
+      "attack": "67/17 → 73/19 → 76/20",
+      "durability": 93,
+      "interval": "2.052",
+      "sands_fee_resale": "146 / 191 g"
+    },
+    {
+      "name": "Adder’s Courtesy",
+      "framework": "Duelist’s Tideguard",
+      "striker": "Veil-Silver Channel Blade",
+      "core": "Adder Bile Core",
+      "limit": 9,
+      "attack": "90/22 → 98/24 → 102/25",
+      "durability": 88,
+      "interval": "1.8",
+      "sands_fee_resale": "258 / 347 g"
+    },
+    {
+      "name": "Gravewarden",
+      "framework": "Sentinel’s Ironbark Hilt",
+      "striker": "Plainsteel Straight Blade",
+      "core": "Grave Ember Core",
+      "limit": 7,
+      "attack": "29/17 → 32/19 → 33/20",
+      "durability": 131,
+      "interval": "1.895",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Widow’s Answer",
+      "framework": "Sunbound Filigree Hilt",
+      "striker": "Serrated Fang Blade",
+      "core": "Gloam Mote Core",
+      "limit": 8,
+      "attack": "42/21 → 46/23 → 48/24",
+      "durability": 105,
+      "interval": "1.89",
+      "sands_fee_resale": "228 / 305 g"
+    },
+    {
+      "name": "Marchkeeper",
+      "framework": "Watchman’s Leather Grip",
+      "striker": "Tidebronze Saber Blade",
+      "core": "Marching Spark Core",
+      "limit": 6,
+      "attack": "52/16 → 57/18 → 59/19",
+      "durability": 85,
+      "interval": "1.944",
+      "sands_fee_resale": "96 / 121 g"
+    },
+    {
+      "name": "Salt Testament",
+      "framework": "Duelist’s Tideguard",
+      "striker": "Webglass Needle Blade",
+      "core": "Salt Pearl Core",
+      "limit": 8,
+      "attack": "47/19 → 52/20 → 53/21",
+      "durability": 79,
+      "interval": "1.538",
+      "sands_fee_resale": "138 / 179 g"
+    },
+    {
+      "name": "Ashwake Saber",
+      "framework": "Sentinel’s Ironbark Hilt",
+      "striker": "Scaleiron Falchion Blade",
+      "core": "Coalglass Ember Core",
+      "limit": 9,
+      "attack": "76/20 → 83/22 → 86/23",
+      "durability": 154,
+      "interval": "2.16",
+      "sands_fee_resale": "225 / 301 g"
+    },
+    {
+      "name": "Stormlit Promise",
+      "framework": "Sunbound Filigree Hilt",
+      "striker": "Veil-Silver Channel Blade",
+      "core": "Stormglass Spark Core",
+      "limit": 10,
+      "attack": "95/27 → 105/30 → 109/31",
+      "durability": 109,
+      "interval": "1.98",
+      "sands_fee_resale": "378 / 515 g"
     },
     {
       "name": "Winter’s Debt",
       "framework": "Militia Longgrip",
       "striker": "Broad Militia Blade",
       "core": "Rime Shard Core",
+      "limit": 5,
       "attack": "44/23 → 48/26 → 50/27",
       "durability": 83,
-      "interval": "3.333"
+      "interval": "3.333",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Wyrm’s Reproach",
+      "framework": "Drakespine Wargrip",
+      "striker": "Notched Siege Blade",
+      "core": "Drake Ember Core",
+      "limit": 7,
+      "attack": "67/26 → 73/29 → 76/30",
+      "durability": 94,
+      "interval": "3.316",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Dawn Divider",
+      "framework": "Black Anvil Twohander",
+      "striker": "Drakebone Cleaver",
+      "core": "Sunwell Spark Core",
+      "limit": 8,
+      "attack": "93/34 → 102/37 → 106/39",
+      "durability": 92,
+      "interval": "3.24",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Bog King’s Fall",
+      "framework": "Militia Longgrip",
+      "striker": "Basalt Execution Blade",
+      "core": "Adder Bile Core",
+      "limit": 7,
+      "attack": "81/26 → 89/29 → 93/30",
+      "durability": 80,
+      "interval": "3.133",
+      "sands_fee_resale": "104 / 131 g"
+    },
+    {
+      "name": "Cursebreaker’s Burden",
+      "framework": "Drakespine Wargrip",
+      "striker": "Froststeel Flamberge",
+      "core": "Grave Ember Core",
+      "limit": 8,
+      "attack": "120/28 → 132/31 → 137/32",
+      "durability": 108,
+      "interval": "3.6",
+      "sands_fee_resale": "180 / 238 g"
+    },
+    {
+      "name": "Canopy Reaver",
+      "framework": "Black Anvil Twohander",
+      "striker": "Null-Edge Colossus Blade",
+      "core": "Gloam Mote Core",
+      "limit": 10,
+      "attack": "152/46 → 168/51 → 174/53",
+      "durability": 90,
+      "interval": "3.3",
+      "sands_fee_resale": "303 / 410 g"
+    },
+    {
+      "name": "Last Battle Line",
+      "framework": "Militia Longgrip",
+      "striker": "Broad Militia Blade",
+      "core": "Marching Spark Core",
+      "limit": 5,
+      "attack": "44/23 → 48/26 → 50/27",
+      "durability": 83,
+      "interval": "3.333",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Breakwater Blade",
+      "framework": "Drakespine Wargrip",
+      "striker": "Notched Siege Blade",
+      "core": "Salt Pearl Core",
+      "limit": 7,
+      "attack": "67/26 → 73/29 → 76/30",
+      "durability": 94,
+      "interval": "3.316",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Nestkeeper’s Fury",
+      "framework": "Black Anvil Twohander",
+      "striker": "Drakebone Cleaver",
+      "core": "Coalglass Ember Core",
+      "limit": 8,
+      "attack": "93/34 → 102/37 → 106/39",
+      "durability": 92,
+      "interval": "3.24",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Summit Judgment",
+      "framework": "Militia Longgrip",
+      "striker": "Basalt Execution Blade",
+      "core": "Stormglass Spark Core",
+      "limit": 7,
+      "attack": "81/26 → 89/29 → 93/30",
+      "durability": 80,
+      "interval": "3.133",
+      "sands_fee_resale": "104 / 131 g"
+    },
+    {
+      "name": "Moonfall Monument",
+      "framework": "Drakespine Wargrip",
+      "striker": "Froststeel Flamberge",
+      "core": "Moonlit Flake Core",
+      "limit": 8,
+      "attack": "120/28 → 132/31 → 137/32",
+      "durability": 108,
+      "interval": "3.6",
+      "sands_fee_resale": "180 / 238 g"
+    },
+    {
+      "name": "Foundry Requiem",
+      "framework": "Black Anvil Twohander",
+      "striker": "Null-Edge Colossus Blade",
+      "core": "Clockwork Spark Core",
+      "limit": 10,
+      "attack": "152/46 → 168/51 → 174/53",
+      "durability": 90,
+      "interval": "3.3",
+      "sands_fee_resale": "303 / 410 g"
+    },
+    {
+      "name": "Salt Whisper",
+      "framework": "Poacher’s Thumbgrip",
+      "striker": "Watchman’s Point",
+      "core": "Salt Pearl Core",
+      "limit": 5,
+      "attack": "16/9 → 17/10 → 18/11",
+      "durability": 75,
+      "interval": "1.05",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Ember Needle",
+      "framework": "Websilk Loop Grip",
+      "striker": "Hollow Adder Fang",
+      "core": "Coalglass Ember Core",
+      "limit": 7,
+      "attack": "22/13 → 24/14 → 25/14",
+      "durability": 85,
+      "interval": "1.003",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Thunder’s Wink",
+      "framework": "Mirage Balanced Tang",
+      "striker": "Glasswind Stiletto",
+      "core": "Stormglass Spark Core",
+      "limit": 8,
+      "attack": "31/13 → 34/14 → 36/15",
+      "durability": 98,
+      "interval": "1.134",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Moonless Kiss",
+      "framework": "Poacher’s Thumbgrip",
+      "striker": "Barbed Webglass Point",
+      "core": "Moonlit Flake Core",
+      "limit": 7,
+      "attack": "29/10 → 32/12 → 33/12",
+      "durability": 73,
+      "interval": "0.987",
+      "sands_fee_resale": "104 / 131 g"
+    },
+    {
+      "name": "Clockwork Stiletto",
+      "framework": "Websilk Loop Grip",
+      "striker": "Belliron Ritual Blade",
+      "core": "Clockwork Spark Core",
+      "limit": 8,
+      "attack": "45/11 → 49/12 → 51/13",
+      "durability": 97,
+      "interval": "1.089",
+      "sands_fee_resale": "180 / 238 g"
+    },
+    {
+      "name": "Glasswind Secret",
+      "framework": "Mirage Balanced Tang",
+      "striker": "Star-Slate Crescent",
+      "core": "Whisperglass Core",
+      "limit": 10,
+      "attack": "59/16 → 65/18 → 68/19",
+      "durability": 96,
+      "interval": "1.155",
+      "sands_fee_resale": "303 / 410 g"
+    },
+    {
+      "name": "Bellringer’s Debt",
+      "framework": "Poacher’s Thumbgrip",
+      "striker": "Watchman’s Point",
+      "core": "Bell-Wraith Ember Core",
+      "limit": 5,
+      "attack": "16/9 → 17/10 → 18/11",
+      "durability": 75,
+      "interval": "1.05",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Mist Thief",
+      "framework": "Websilk Loop Grip",
+      "striker": "Hollow Adder Fang",
+      "core": "Mist Dew Core",
+      "limit": 7,
+      "attack": "22/13 → 24/14 → 25/14",
+      "durability": 85,
+      "interval": "1.003",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Hunger’s Point",
+      "framework": "Mirage Balanced Tang",
+      "striker": "Glasswind Stiletto",
+      "core": "Rift Cinder Core",
+      "limit": 8,
+      "attack": "31/13 → 34/14 → 36/15",
+      "durability": 98,
+      "interval": "1.134",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Root Assassin",
+      "framework": "Poacher’s Thumbgrip",
+      "striker": "Barbed Webglass Point",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "35/47 → 39/52 → 40/54",
+      "durability": 73,
+      "interval": "0.987",
+      "sands_fee_resale": "339 / 460 g"
+    },
+    {
+      "name": "Furnace Splinter",
+      "framework": "Websilk Loop Grip",
+      "striker": "Belliron Ritual Blade",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "51/47 → 56/52 → 58/54",
+      "durability": 97,
+      "interval": "1.089",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "Winter Widow",
+      "framework": "Mirage Balanced Tang",
+      "striker": "Star-Slate Crescent",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "59/61 → 65/67 → 68/70",
+      "durability": 96,
+      "interval": "1.155",
+      "sands_fee_resale": "538 / 739 g"
+    },
+    {
+      "name": "Moonwarden’s Reach",
+      "framework": "Ranger’s Ash Haft",
+      "striker": "Iron Leaf Spearhead",
+      "core": "Moonlit Flake Core",
+      "limit": 5,
+      "attack": "31/16 → 34/18 → 35/19",
+      "durability": 75,
+      "interval": "2.316",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Pressure Lance",
+      "framework": "Rimepine Lance Shaft",
+      "striker": "Wyrmtooth Pikehead",
+      "core": "Clockwork Spark Core",
+      "limit": 7,
+      "attack": "46/18 → 51/20 → 53/21",
+      "durability": 118,
+      "interval": "2.432",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Horizon Harpoon",
+      "framework": "Stormkeeper Spear Haft",
+      "striker": "Sunbronze Winged Head",
+      "core": "Whisperglass Core",
+      "limit": 8,
+      "attack": "60/22 → 66/25 → 68/26",
+      "durability": 98,
+      "interval": "2.376",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Funeral Standard",
+      "framework": "Oathroot Longshaft",
+      "striker": "Stormsteel Fork",
+      "core": "Bell-Wraith Ember Core",
+      "limit": 9,
+      "attack": "62/23 → 68/25 → 71/26",
+      "durability": 130,
+      "interval": "2.297",
+      "sands_fee_resale": "258 / 347 g"
+    },
+    {
+      "name": "Veilpiercer",
+      "framework": "Ranger’s Ash Haft",
+      "striker": "Froststeel Lance Tip",
+      "core": "Mist Dew Core",
+      "limit": 7,
+      "attack": "80/18 → 88/20 → 91/21",
+      "durability": 93,
+      "interval": "2.64",
+      "sands_fee_resale": "146 / 191 g"
+    },
+    {
+      "name": "Rift Skewer",
+      "framework": "Rimepine Lance Shaft",
+      "striker": "Hollow Veil-Silver Point",
+      "core": "Rift Cinder Core",
+      "limit": 9,
+      "attack": "101/25 → 111/27 → 116/28",
+      "durability": 123,
+      "interval": "2.548",
+      "sands_fee_resale": "258 / 347 g"
+    },
+    {
+      "name": "Rootbound Watch",
+      "framework": "Stormkeeper Spear Haft",
+      "striker": "Iron Leaf Spearhead",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "42/95 → 46/105 → 48/109",
+      "durability": 89,
+      "interval": "2.2",
+      "sands_fee_resale": "376 / 513 g"
+    },
+    {
+      "name": "First Flame Pike",
+      "framework": "Oathroot Longshaft",
+      "striker": "Wyrmtooth Pikehead",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "56/83 → 62/91 → 64/95",
+      "durability": 136,
+      "interval": "2.566",
+      "sands_fee_resale": "463 / 634 g"
+    },
+    {
+      "name": "Stillwinter Thorn",
+      "framework": "Ranger’s Ash Haft",
+      "striker": "Sunbronze Winged Head",
+      "core": "Stillwinter Heart Core",
+      "limit": 9,
+      "attack": "63/78 → 70/85 → 72/89",
+      "durability": 85,
+      "interval": "2.501",
+      "sands_fee_resale": "331 / 450 g"
+    },
+    {
+      "name": "Pale Sentinel",
+      "framework": "Rimepine Lance Shaft",
+      "striker": "Stormsteel Fork",
+      "core": "Unbound Funeral Star Core",
+      "limit": 10,
+      "attack": "66/93 → 72/102 → 75/106",
+      "durability": 110,
+      "interval": "2.177",
+      "sands_fee_resale": "373 / 507 g"
+    },
+    {
+      "name": "Governor’s Reach",
+      "framework": "Stormkeeper Spear Haft",
+      "striker": "Froststeel Lance Tip",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "96/95 → 106/105 → 110/109",
+      "durability": 105,
+      "interval": "2.508",
+      "sands_fee_resale": "460 / 630 g"
+    },
+    {
+      "name": "Dawnwatch Lance",
+      "framework": "Oathroot Longshaft",
+      "striker": "Hollow Veil-Silver Point",
+      "core": "Dawn Before Kings Core",
+      "limit": 10,
+      "attack": "108/99 → 119/109 → 123/113",
+      "durability": 141,
+      "interval": "2.688",
+      "sands_fee_resale": "613 / 844 g"
+    },
+    {
+      "name": "Lantern Hew",
+      "framework": "Woodcutter’s Haft",
+      "striker": "Forester’s Axe Bit",
+      "core": "Bell-Wraith Ember Core",
+      "limit": 5,
+      "attack": "31/16 → 34/17 → 35/18",
+      "durability": 94,
+      "interval": "2.211",
+      "sands_fee_resale": "63 / 74 g"
+    },
+    {
+      "name": "Mistfall Hatchet",
+      "framework": "Corsair’s Hook Haft",
+      "striker": "Raider’s Hook Bit",
+      "core": "Mist Dew Core",
+      "limit": 7,
+      "attack": "46/17 → 51/19 → 53/20",
+      "durability": 85,
+      "interval": "2.004",
+      "sands_fee_resale": "108 / 137 g"
+    },
+    {
+      "name": "Hunger Hewn",
+      "framework": "Cinderbrace Split Haft",
+      "striker": "Drakeglass Bearded Edge",
+      "core": "Rift Cinder Core",
+      "limit": 8,
+      "attack": "63/23 → 70/25 → 72/26",
+      "durability": 92,
+      "interval": "2.268",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Worldroot Splitter",
+      "framework": "Woodcutter’s Haft",
+      "striker": "Bog-Iron Hewing Head",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "68/79 → 75/87 → 78/90",
+      "durability": 91,
+      "interval": "2.078",
+      "sands_fee_resale": "339 / 460 g"
+    },
+    {
+      "name": "First Furnace Bite",
+      "framework": "Corsair’s Hook Haft",
+      "striker": "Basalt Double Bit",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "95/79 → 104/87 → 108/90",
+      "durability": 97,
+      "interval": "2.176",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "Stillwinter Hook",
+      "framework": "Cinderbrace Split Haft",
+      "striker": "Star-Slate Crescent Bit",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "109/96 → 120/106 → 125/110",
+      "durability": 90,
+      "interval": "2.31",
+      "sands_fee_resale": "538 / 739 g"
+    },
+    {
+      "name": "Funeral Crescent",
+      "framework": "Woodcutter’s Haft",
+      "striker": "Forester’s Axe Bit",
+      "core": "Unbound Funeral Star Core",
+      "limit": 8,
+      "attack": "37/69 → 41/76 → 42/79",
+      "durability": 94,
+      "interval": "2.211",
+      "sands_fee_resale": "298 / 403 g"
+    },
+    {
+      "name": "Clockwork Woodsman",
+      "framework": "Corsair’s Hook Haft",
+      "striker": "Raider’s Hook Bit",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "56/79 → 62/87 → 64/90",
+      "durability": 85,
+      "interval": "2.004",
+      "sands_fee_resale": "343 / 465 g"
+    },
+    {
+      "name": "Dawncleaver",
+      "framework": "Cinderbrace Split Haft",
+      "striker": "Drakeglass Bearded Edge",
+      "core": "Dawn Before Kings Core",
+      "limit": 10,
+      "attack": "72/96 → 79/106 → 82/110",
+      "durability": 92,
+      "interval": "2.268",
+      "sands_fee_resale": "410 / 560 g"
+    },
+    {
+      "name": "Briar Butcher",
+      "framework": "Woodcutter’s Haft",
+      "striker": "Bog-Iron Hewing Head",
+      "core": "Thornseed Core",
+      "limit": 7,
+      "attack": "57/17 → 62/19 → 65/20",
+      "durability": 91,
+      "interval": "2.078",
+      "sands_fee_resale": "104 / 131 g"
+    },
+    {
+      "name": "Ashkeeper’s Hook",
+      "framework": "Corsair’s Hook Haft",
+      "striker": "Basalt Double Bit",
+      "core": "Cinder Pearl Core",
+      "limit": 8,
+      "attack": "83/19 → 92/20 → 95/21",
+      "durability": 97,
+      "interval": "2.176",
+      "sands_fee_resale": "180 / 238 g"
+    },
+    {
+      "name": "White Pass Reaver",
+      "framework": "Cinderbrace Split Haft",
+      "striker": "Star-Slate Crescent Bit",
+      "core": "Rime Shard Core",
+      "limit": 10,
+      "attack": "109/26 → 120/28 → 125/29",
+      "durability": 90,
+      "interval": "2.31",
+      "sands_fee_resale": "303 / 410 g"
+    },
+    {
+      "name": "Gatebreaker",
+      "framework": "Quarryman’s Haft",
+      "striker": "Quarry Iron Block",
+      "core": "Huntsman’s Echo Core",
+      "limit": 6,
+      "attack": "51/43 → 56/47 → 58/49",
+      "durability": 83,
+      "interval": "3.556",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Ember Bell",
+      "framework": "Siegebreaker Shock Haft",
+      "striker": "Siege Ram Head",
+      "core": "Magma Heart Core",
+      "limit": 8,
+      "attack": "77/49 → 85/53 → 88/55",
+      "durability": 118,
+      "interval": "3.536",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Rime Knell",
+      "framework": "Thunderbrow Pattern Haft",
+      "striker": "Resonant Belliron Head",
+      "core": "Whiteout Eye Core",
+      "limit": 9,
+      "attack": "107/59 → 117/65 → 122/68",
+      "durability": 98,
+      "interval": "3.456",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Drakefall",
+      "framework": "Quarryman’s Haft",
+      "striker": "Basalt Furnace Head",
+      "core": "Scale Resonance Core",
+      "limit": 8,
+      "attack": "83/58 → 91/64 → 95/67",
+      "durability": 80,
+      "interval": "3.343",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Dawn Ram",
+      "framework": "Siegebreaker Shock Haft",
+      "striker": "Scaleiron Shatter Head",
+      "core": "Mirage Eye Core",
+      "limit": 9,
+      "attack": "140/52 → 154/57 → 159/59",
+      "durability": 135,
+      "interval": "3.84",
+      "sands_fee_resale": "218 / 291 g"
+    },
+    {
+      "name": "Mirebound Mallet",
+      "framework": "Thunderbrow Pattern Haft",
+      "striker": "Singing-Quartz Impact Head",
+      "core": "Mire Lantern Core",
+      "limit": 10,
+      "attack": "176/71 → 194/78 → 201/81",
+      "durability": 96,
+      "interval": "3.52",
+      "sands_fee_resale": "340 / 462 g"
+    },
+    {
+      "name": "Curse Anchor",
+      "framework": "Quarryman’s Haft",
+      "striker": "Quarry Iron Block",
+      "core": "Hexbound Tear Core",
+      "limit": 6,
+      "attack": "51/43 → 56/47 → 58/49",
+      "durability": 83,
+      "interval": "3.556",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Webbreaker",
+      "framework": "Siegebreaker Shock Haft",
+      "striker": "Siege Ram Head",
+      "core": "Widow’s Knot Core",
+      "limit": 8,
+      "attack": "77/49 → 85/53 → 88/55",
+      "durability": 118,
+      "interval": "3.536",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Siege Psalm",
+      "framework": "Thunderbrow Pattern Haft",
+      "striker": "Resonant Belliron Head",
+      "core": "Warhorn Echo Core",
+      "limit": 9,
+      "attack": "107/59 → 117/65 → 122/68",
+      "durability": 98,
+      "interval": "3.456",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Tidehammer",
+      "framework": "Quarryman’s Haft",
+      "striker": "Basalt Furnace Head",
+      "core": "Undertow Knot Core",
+      "limit": 8,
+      "attack": "83/58 → 91/64 → 95/67",
+      "durability": 80,
+      "interval": "3.343",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Cinderquake",
+      "framework": "Siegebreaker Shock Haft",
+      "striker": "Scaleiron Shatter Head",
+      "core": "Cinderwake Pearl Core",
+      "limit": 9,
+      "attack": "140/52 → 154/57 → 159/59",
+      "durability": 135,
+      "interval": "3.84",
+      "sands_fee_resale": "218 / 291 g"
+    },
+    {
+      "name": "Storm Anvil",
+      "framework": "Thunderbrow Pattern Haft",
+      "striker": "Singing-Quartz Impact Head",
+      "core": "Thundercoil Core",
+      "limit": 10,
+      "attack": "176/71 → 194/78 → 201/81",
+      "durability": 96,
+      "interval": "3.52",
+      "sands_fee_resale": "340 / 462 g"
+    },
+    {
+      "name": "Winter Crown",
+      "framework": "Gateward Handle",
+      "striker": "Gatewatch Iron Ball",
+      "core": "Whiteout Eye Core",
+      "limit": 6,
+      "attack": "30/29 → 33/32 → 34/33",
+      "durability": 75,
+      "interval": "2.05",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Broodkeeper",
+      "framework": "Reedbound Cudgel Haft",
+      "striker": "Thorn-Cage Head",
+      "core": "Scale Resonance Core",
+      "limit": 8,
+      "attack": "46/32 → 51/36 → 53/37",
+      "durability": 118,
+      "interval": "2.266",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Sunlit Rebuke",
+      "framework": "Lanternkeeper Flanged Grip",
+      "striker": "Sunbronze Flanged Head",
+      "core": "Mirage Eye Core",
+      "limit": 9,
+      "attack": "64/40 → 70/44 → 73/45",
+      "durability": 98,
+      "interval": "2.214",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Reedwarden",
+      "framework": "Gateward Handle",
+      "striker": "Hexstone Knob",
+      "core": "Mire Lantern Core",
+      "limit": 8,
+      "attack": "57/32 → 63/36 → 65/37",
+      "durability": 73,
+      "interval": "1.927",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Grave Lantern",
+      "framework": "Reedbound Cudgel Haft",
+      "striker": "Froststeel Crown",
+      "core": "Hexbound Tear Core",
+      "limit": 9,
+      "attack": "85/34 → 94/38 → 98/39",
+      "durability": 135,
+      "interval": "2.46",
+      "sands_fee_resale": "218 / 291 g"
+    },
+    {
+      "name": "Gloam Cudgel",
+      "framework": "Lanternkeeper Flanged Grip",
+      "striker": "Veil-Silver Lantern Cage",
+      "core": "Widow’s Knot Core",
+      "limit": 10,
+      "attack": "107/47 → 118/52 → 122/54",
+      "durability": 96,
+      "interval": "2.255",
+      "sands_fee_resale": "340 / 462 g"
+    },
+    {
+      "name": "Marching Bell",
+      "framework": "Gateward Handle",
+      "striker": "Gatewatch Iron Ball",
+      "core": "Warhorn Echo Core",
+      "limit": 6,
+      "attack": "30/29 → 33/32 → 34/33",
+      "durability": 75,
+      "interval": "2.05",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Saltwarden",
+      "framework": "Reedbound Cudgel Haft",
+      "striker": "Thorn-Cage Head",
+      "core": "Undertow Knot Core",
+      "limit": 8,
+      "attack": "46/32 → 51/36 → 53/37",
+      "durability": 118,
+      "interval": "2.266",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Hearthguard",
+      "framework": "Lanternkeeper Flanged Grip",
+      "striker": "Sunbronze Flanged Head",
+      "core": "Cinderwake Pearl Core",
+      "limit": 9,
+      "attack": "64/40 → 70/44 → 73/45",
+      "durability": 98,
+      "interval": "2.214",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Thunder Chapel",
+      "framework": "Gateward Handle",
+      "striker": "Hexstone Knob",
+      "core": "Thundercoil Core",
+      "limit": 8,
+      "attack": "57/32 → 63/36 → 65/37",
+      "durability": 73,
+      "interval": "1.927",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Moonward",
+      "framework": "Reedbound Cudgel Haft",
+      "striker": "Froststeel Crown",
+      "core": "Fallen Star Core",
+      "limit": 9,
+      "attack": "85/34 → 94/38 → 98/39",
+      "durability": 135,
+      "interval": "2.46",
+      "sands_fee_resale": "218 / 291 g"
+    },
+    {
+      "name": "Pressure Saint",
+      "framework": "Lanternkeeper Flanged Grip",
+      "striker": "Veil-Silver Lantern Cage",
+      "core": "Pressure Pearl Core",
+      "limit": 10,
+      "attack": "107/47 → 118/52 → 122/54",
+      "durability": 96,
+      "interval": "2.255",
+      "sands_fee_resale": "340 / 462 g"
+    },
+    {
+      "name": "Tidal Testament",
+      "framework": "Herbalist’s Bogroot Staff",
+      "striker": "Carved Root Crown",
+      "core": "Undertow Knot Core",
+      "limit": 6,
+      "attack": "16/49 → 18/54 → 19/56",
+      "durability": 94,
+      "interval": "2.632",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Cinder Shepherd",
+      "framework": "Gloamwood Channel Staff",
+      "striker": "Marsh-Bone Focus",
+      "core": "Cinderwake Pearl Core",
+      "limit": 8,
+      "attack": "23/76 → 25/84 → 26/87",
+      "durability": 80,
+      "interval": "2.625",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Stormbranch",
+      "framework": "Veil-Silver Casting Shaft",
+      "striker": "Storm Fork Crown",
+      "core": "Thundercoil Core",
+      "limit": 9,
+      "attack": "34/66 → 37/72 → 39/75",
+      "durability": 104,
+      "interval": "2.455",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Moon Observatory",
+      "framework": "Astral Spiral Staff",
+      "striker": "Moon Lens Cradle",
+      "core": "Fallen Star Core",
+      "limit": 10,
+      "attack": "32/76 → 35/84 → 37/87",
+      "durability": 94,
+      "interval": "2.35",
+      "sands_fee_resale": "295 / 399 g"
+    },
+    {
+      "name": "Clockmaker’s Crook",
+      "framework": "Herbalist’s Bogroot Staff",
+      "striker": "Hexstone Ritual Cage",
+      "core": "Pressure Pearl Core",
+      "limit": 8,
+      "attack": "45/55 → 49/61 → 51/63",
+      "durability": 116,
+      "interval": "3.0",
+      "sands_fee_resale": "184 / 243 g"
+    },
+    {
+      "name": "Windglass Pilgrim",
+      "framework": "Gloamwood Channel Staff",
+      "striker": "Prismatic Silver Crown",
+      "core": "Sand-Singer Core",
+      "limit": 10,
+      "attack": "63/72 → 69/79 → 72/82",
+      "durability": 83,
+      "interval": "2.75",
+      "sands_fee_resale": "295 / 399 g"
+    },
+    {
+      "name": "Last Procession",
+      "framework": "Veil-Silver Casting Shaft",
+      "striker": "Carved Root Crown",
+      "core": "Lantern Soul Core",
+      "limit": 8,
+      "attack": "19/55 → 20/61 → 21/63",
+      "durability": 95,
+      "interval": "2.273",
+      "sands_fee_resale": "179 / 236 g"
+    },
+    {
+      "name": "Mistvale Memory",
+      "framework": "Astral Spiral Staff",
+      "striker": "Marsh-Bone Focus",
+      "core": "Veilbound Star Core",
+      "limit": 9,
+      "attack": "25/86 → 27/94 → 28/98",
+      "durability": 99,
+      "interval": "2.625",
+      "sands_fee_resale": "265 / 357 g"
+    },
+    {
+      "name": "Rift Interpreter",
+      "framework": "Herbalist’s Bogroot Staff",
+      "striker": "Storm Fork Crown",
+      "core": "Hunger Fragment Core",
+      "limit": 7,
+      "attack": "30/58 → 33/64 → 34/66",
+      "durability": 106,
+      "interval": "2.843",
+      "sands_fee_resale": "134 / 173 g"
+    },
+    {
+      "name": "Worldroot Cantor",
+      "framework": "Gloamwood Channel Staff",
+      "striker": "Moon Lens Cradle",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "32/154 → 35/169 → 37/176",
+      "durability": 75,
+      "interval": "2.35",
+      "sands_fee_resale": "373 / 507 g"
+    },
+    {
+      "name": "First Furnace Oracle",
+      "framework": "Veil-Silver Casting Shaft",
+      "striker": "Hexstone Ritual Cage",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "51/134 → 56/147 → 58/153",
+      "durability": 111,
+      "interval": "2.591",
+      "sands_fee_resale": "460 / 630 g"
+    },
+    {
+      "name": "Stillwinter Scribe",
+      "framework": "Astral Spiral Staff",
+      "striker": "Prismatic Silver Crown",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "63/163 → 69/180 → 72/187",
+      "durability": 102,
+      "interval": "2.75",
+      "sands_fee_resale": "613 / 844 g"
+    },
+    {
+      "name": "Moon Needle",
+      "framework": "Apprentice’s Yew Handle",
+      "striker": "Copper Casting Tip",
+      "core": "Fallen Star Core",
+      "limit": 6,
+      "attack": "8/33 → 9/36 → 9/38",
+      "durability": 75,
+      "interval": "1.5",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Pressure Pointer",
+      "framework": "Crystal-Focus Wand Grip",
+      "striker": "Adder-Fang Focus",
+      "core": "Pressure Pearl Core",
+      "limit": 8,
+      "attack": "12/51 → 13/57 → 14/59",
+      "durability": 80,
+      "interval": "1.575",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Horizon Quill",
+      "framework": "Dawnweaver Conductor",
+      "striker": "Frostglass Prism",
+      "core": "Sand-Singer Core",
+      "limit": 9,
+      "attack": "17/44 → 19/49 → 19/51",
+      "durability": 104,
+      "interval": "1.473",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Pale Bell",
+      "framework": "Apprentice’s Yew Handle",
+      "striker": "Sunbronze Aperture",
+      "core": "Lantern Soul Core",
+      "limit": 8,
+      "attack": "16/37 → 17/41 → 18/43",
+      "durability": 73,
+      "interval": "1.41",
+      "sands_fee_resale": "141 / 184 g"
+    },
+    {
+      "name": "Veil Signature",
+      "framework": "Crystal-Focus Wand Grip",
+      "striker": "Webglass Needle Focus",
+      "core": "Veilbound Star Core",
+      "limit": 9,
+      "attack": "25/46 → 27/50 → 28/52",
+      "durability": 92,
+      "interval": "1.71",
+      "sands_fee_resale": "218 / 291 g"
+    },
+    {
+      "name": "Null Stylus",
+      "framework": "Dawnweaver Conductor",
+      "striker": "Star-Slate Lens",
+      "core": "Hunger Fragment Core",
+      "limit": 10,
+      "attack": "33/42 → 37/46 → 38/48",
+      "durability": 102,
+      "interval": "1.5",
+      "sands_fee_resale": "340 / 462 g"
+    },
+    {
+      "name": "Grove Script",
+      "framework": "Apprentice’s Yew Handle",
+      "striker": "Copper Casting Tip",
+      "core": "Worldroot Seed Core",
+      "limit": 8,
+      "attack": "9/80 → 10/88 → 11/91",
+      "durability": 75,
+      "interval": "1.5",
+      "sands_fee_resale": "298 / 403 g"
+    },
+    {
+      "name": "Furnace Whisper",
+      "framework": "Crystal-Focus Wand Grip",
+      "striker": "Adder-Fang Focus",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "14/125 → 15/137 → 16/143",
+      "durability": 80,
+      "interval": "1.575",
+      "sands_fee_resale": "343 / 465 g"
+    },
+    {
+      "name": "Winter Cipher",
+      "framework": "Dawnweaver Conductor",
+      "striker": "Frostglass Prism",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "18/101 → 20/112 → 21/116",
+      "durability": 104,
+      "interval": "1.473",
+      "sands_fee_resale": "410 / 560 g"
+    },
+    {
+      "name": "Funeral Reed",
+      "framework": "Apprentice’s Yew Handle",
+      "striker": "Sunbronze Aperture",
+      "core": "Unbound Funeral Star Core",
+      "limit": 10,
+      "attack": "18/91 → 19/100 → 20/103",
+      "durability": 73,
+      "interval": "1.41",
+      "sands_fee_resale": "339 / 460 g"
+    },
+    {
+      "name": "Prime Conductor",
+      "framework": "Crystal-Focus Wand Grip",
+      "striker": "Webglass Needle Focus",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "26/104 → 29/115 → 30/119",
+      "durability": 92,
+      "interval": "1.71",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "First Dawn Quill",
+      "framework": "Dawnweaver Conductor",
+      "striker": "Star-Slate Lens",
+      "core": "Dawn Before Kings Core",
+      "limit": 10,
+      "attack": "33/91 → 37/100 → 38/103",
+      "durability": 102,
+      "interval": "1.5",
+      "sands_fee_resale": "538 / 739 g"
+    },
+    {
+      "name": "Last Lantern Bow",
+      "framework": "Scout’s Ironbark Riser",
+      "striker": "Plain Yew Limbs",
+      "core": "Lantern Soul Core",
+      "limit": 6,
+      "attack": "30/32 → 33/35 → 34/36",
+      "durability": 75,
+      "interval": "2.2",
+      "sands_fee_resale": "100 / 126 g"
+    },
+    {
+      "name": "Veilstrung",
+      "framework": "Recurve Sinew Riser",
+      "striker": "Recurved Drakebone Limbs",
+      "core": "Veilbound Star Core",
+      "limit": 8,
+      "attack": "46/36 → 51/39 → 53/41",
+      "durability": 118,
+      "interval": "2.432",
+      "sands_fee_resale": "145 / 189 g"
+    },
+    {
+      "name": "Hunger at Distance",
+      "framework": "Moon-Yew Longbow Riser",
+      "striker": "Moon-Yew Long Limbs",
+      "core": "Hunger Fragment Core",
+      "limit": 9,
+      "attack": "64/38 → 70/42 → 73/43",
+      "durability": 115,
+      "interval": "2.501",
+      "sands_fee_resale": "213 / 284 g"
+    },
+    {
+      "name": "Worldroot Vigil",
+      "framework": "Glasswind Split Riser",
+      "striker": "Websilk Composite Limbs",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "58/87 → 64/95 → 66/99",
+      "durability": 106,
+      "interval": "1.88",
+      "sands_fee_resale": "493 / 676 g"
+    },
+    {
+      "name": "Furnace Recurve",
+      "framework": "Scout’s Ironbark Riser",
+      "striker": "Froststeel Spring Limbs",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "89/87 → 98/95 → 102/99",
+      "durability": 93,
+      "interval": "2.508",
+      "sands_fee_resale": "381 / 520 g"
+    },
+    {
+      "name": "Stillwinter Longbow",
+      "framework": "Recurve Sinew Riser",
+      "striker": "Singing-Quartz Split Limbs",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "105/97 → 116/107 → 120/111",
+      "durability": 123,
+      "interval": "2.548",
+      "sands_fee_resale": "493 / 676 g"
+    },
+    {
+      "name": "Funeral Archer",
+      "framework": "Moon-Yew Longbow Riser",
+      "striker": "Plain Yew Limbs",
+      "core": "Unbound Funeral Star Core",
+      "limit": 10,
+      "attack": "39/87 → 42/95 → 44/99",
+      "durability": 105,
+      "interval": "2.316",
+      "sands_fee_resale": "376 / 513 g"
+    },
+    {
+      "name": "Clockwork Canopy",
+      "framework": "Glasswind Split Riser",
+      "striker": "Recurved Drakebone Limbs",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "53/87 → 58/95 → 60/99",
+      "durability": 112,
+      "interval": "2.1",
+      "sands_fee_resale": "463 / 634 g"
+    },
+    {
+      "name": "Dawn Horizon",
+      "framework": "Scout’s Ironbark Riser",
+      "striker": "Moon-Yew Long Limbs",
+      "core": "Dawn Before Kings Core",
+      "limit": 9,
+      "attack": "64/81 → 70/89 → 73/93",
+      "durability": 85,
+      "interval": "2.376",
+      "sands_fee_resale": "331 / 450 g"
+    },
+    {
+      "name": "Briar Whisper",
+      "framework": "Recurve Sinew Riser",
+      "striker": "Websilk Composite Limbs",
+      "core": "Huntsman’s Echo Core",
+      "limit": 9,
+      "attack": "54/38 → 60/42 → 62/43",
+      "durability": 110,
+      "interval": "2.177",
+      "sands_fee_resale": "175 / 231 g"
+    },
+    {
+      "name": "Ashwind",
+      "framework": "Moon-Yew Longbow Riser",
+      "striker": "Froststeel Spring Limbs",
+      "core": "Magma Heart Core",
+      "limit": 10,
+      "attack": "89/40 → 98/44 → 102/46",
+      "durability": 123,
+      "interval": "2.64",
+      "sands_fee_resale": "263 / 354 g"
+    },
+    {
+      "name": "White Hunter",
+      "framework": "Glasswind Split Riser",
+      "striker": "Singing-Quartz Split Limbs",
+      "core": "Whiteout Eye Core",
+      "limit": 10,
+      "attack": "105/45 → 116/50 → 120/52",
+      "durability": 115,
+      "interval": "2.2",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "Watchman’s Promise",
+      "framework": "Militia Oak Stock",
+      "striker": "Plainsteel Prod",
+      "core": "Heart of the Old Grove Core",
+      "limit": 7,
+      "attack": "45/63 → 50/69 → 51/72",
+      "durability": 83,
+      "interval": "3.222",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Cinder Bolt",
+      "framework": "Marine Ratchet Stock",
+      "striker": "Drake-Sinew Compound Prod",
+      "core": "Ashen Crown Core",
+      "limit": 9,
+      "attack": "63/71 → 70/78 → 72/81",
+      "durability": 118,
+      "interval": "3.206",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Icebound Warrant",
+      "framework": "Cogspire Repeating Stock",
+      "striker": "Marine Heavy Prod",
+      "core": "Glacial Heart Core",
+      "limit": 10,
+      "attack": "95/76 → 104/83 → 108/86",
+      "durability": 104,
+      "interval": "2.847",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Wyrm Marshal",
+      "framework": "Militia Oak Stock",
+      "striker": "Springbrass Repeater Prod",
+      "core": "Brood Oath Core",
+      "limit": 9,
+      "attack": "90/71 → 99/78 → 103/81",
+      "durability": 80,
+      "interval": "3.029",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Dawn Mechanism",
+      "framework": "Marine Ratchet Stock",
+      "striker": "Froststeel Arbalest Prod",
+      "core": "Buried Dawn Core",
+      "limit": 10,
+      "attack": "124/76 → 137/83 → 142/86",
+      "durability": 135,
+      "interval": "3.48",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Adder’s Writ",
+      "framework": "Cogspire Repeating Stock",
+      "striker": "Star-Slate Resonance Prod",
+      "core": "Rotmother Spore Core",
+      "limit": 10,
+      "attack": "148/85 → 163/93 → 169/97",
+      "durability": 102,
+      "interval": "2.9",
+      "sands_fee_resale": "403 / 550 g"
+    },
+    {
+      "name": "Grave Arbiter",
+      "framework": "Militia Oak Stock",
+      "striker": "Plainsteel Prod",
+      "core": "Anchorless Soul Core",
+      "limit": 7,
+      "attack": "45/63 → 50/69 → 51/72",
+      "durability": 83,
+      "interval": "3.222",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Webline",
+      "framework": "Marine Ratchet Stock",
+      "striker": "Drake-Sinew Compound Prod",
+      "core": "Hollow Canopy Core",
+      "limit": 9,
+      "attack": "63/71 → 70/78 → 72/81",
+      "durability": 118,
+      "interval": "3.206",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Siege Witness",
+      "framework": "Cogspire Repeating Stock",
+      "striker": "Marine Heavy Prod",
+      "core": "Siegeheart Core",
+      "limit": 10,
+      "attack": "95/76 → 104/83 → 108/86",
+      "durability": 104,
+      "interval": "2.847",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Marine’s Return",
+      "framework": "Militia Oak Stock",
+      "striker": "Springbrass Repeater Prod",
+      "core": "Tempest Bottle Core",
+      "limit": 9,
+      "attack": "90/71 → 99/78 → 103/81",
+      "durability": 80,
+      "interval": "3.029",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Rookery Guard",
+      "framework": "Marine Ratchet Stock",
+      "striker": "Froststeel Arbalest Prod",
+      "core": "Dragon Pact Ember Core",
+      "limit": 10,
+      "attack": "124/76 → 137/83 → 142/86",
+      "durability": 135,
+      "interval": "3.48",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Storm Ratchet",
+      "framework": "Cogspire Repeating Stock",
+      "striker": "Star-Slate Resonance Prod",
+      "core": "Skyward Seal Core",
+      "limit": 10,
+      "attack": "148/85 → 163/93 → 169/97",
+      "durability": 102,
+      "interval": "2.9",
+      "sands_fee_resale": "403 / 550 g"
+    },
+    {
+      "name": "Winter Lash",
+      "framework": "Drover’s Wrapped Handle",
+      "striker": "Braided Oak Lash",
+      "core": "Glacial Heart Core",
+      "limit": 7,
+      "attack": "25/49 → 27/54 → 28/56",
+      "durability": 75,
+      "interval": "1.95",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Broodbinder",
+      "framework": "Stormtide Swivel Handle",
+      "striker": "Barbed Drake-Sinew Lash",
+      "core": "Brood Oath Core",
+      "limit": 9,
+      "attack": "36/55 → 40/61 → 41/63",
+      "durability": 94,
+      "interval": "2.156",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Suncoil",
+      "framework": "Veilweave Lash Grip",
+      "striker": "Belliron Chain Lash",
+      "core": "Buried Dawn Core",
+      "limit": 10,
+      "attack": "51/68 → 56/74 → 58/77",
+      "durability": 98,
+      "interval": "2.106",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Fen Shepherd",
+      "framework": "Drover’s Wrapped Handle",
+      "striker": "Websilk Razor Lash",
+      "core": "Rotmother Spore Core",
+      "limit": 9,
+      "attack": "41/55 → 45/61 → 47/63",
+      "durability": 73,
+      "interval": "1.833",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Gravechain",
+      "framework": "Stormtide Swivel Handle",
+      "striker": "Drakeglass Segmented Lash",
+      "core": "Anchorless Soul Core",
+      "limit": 10,
+      "attack": "67/59 → 73/65 → 76/67",
+      "durability": 108,
+      "interval": "2.34",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Widow’s Thread",
+      "framework": "Veilweave Lash Grip",
+      "striker": "Veil-Silver Ribbon Lash",
+      "core": "Hollow Canopy Core",
+      "limit": 10,
+      "attack": "79/76 → 87/83 → 90/87",
+      "durability": 96,
+      "interval": "2.145",
+      "sands_fee_resale": "403 / 550 g"
+    },
+    {
+      "name": "Iron Reins",
+      "framework": "Drover’s Wrapped Handle",
+      "striker": "Braided Oak Lash",
+      "core": "Siegeheart Core",
+      "limit": 7,
+      "attack": "25/49 → 27/54 → 28/56",
+      "durability": 75,
+      "interval": "1.95",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Undertow Lash",
+      "framework": "Stormtide Swivel Handle",
+      "striker": "Barbed Drake-Sinew Lash",
+      "core": "Tempest Bottle Core",
+      "limit": 9,
+      "attack": "36/55 → 40/61 → 41/63",
+      "durability": 94,
+      "interval": "2.156",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Cinder Ribbon",
+      "framework": "Veilweave Lash Grip",
+      "striker": "Belliron Chain Lash",
+      "core": "Dragon Pact Ember Core",
+      "limit": 10,
+      "attack": "51/68 → 56/74 → 58/77",
+      "durability": 98,
+      "interval": "2.106",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Skyline Lash",
+      "framework": "Drover’s Wrapped Handle",
+      "striker": "Websilk Razor Lash",
+      "core": "Skyward Seal Core",
+      "limit": 9,
+      "attack": "41/55 → 45/61 → 47/63",
+      "durability": 73,
+      "interval": "1.833",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Mooncord",
+      "framework": "Stormtide Swivel Handle",
+      "striker": "Drakeglass Segmented Lash",
+      "core": "Observatory Heart Core",
+      "limit": 10,
+      "attack": "67/59 → 73/65 → 76/67",
+      "durability": 108,
+      "interval": "2.34",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Pressure Serpent",
+      "framework": "Veilweave Lash Grip",
+      "striker": "Veil-Silver Ribbon Lash",
+      "core": "Overload Governor Core",
+      "limit": 10,
+      "attack": "79/76 → 87/83 → 90/87",
+      "durability": 96,
+      "interval": "2.145",
+      "sands_fee_resale": "403 / 550 g"
+    },
+    {
+      "name": "Tide Reaper",
+      "framework": "Reaper’s Farm Shaft",
+      "striker": "Harvest Iron Crescent",
+      "core": "Tempest Bottle Core",
+      "limit": 7,
+      "attack": "41/65 → 45/72 → 46/74",
+      "durability": 75,
+      "interval": "2.947",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Ash Harvest",
+      "framework": "Gravewillow Crescent Haft",
+      "striker": "Gravehook Crescent",
+      "core": "Dragon Pact Ember Core",
+      "limit": 9,
+      "attack": "62/85 → 69/93 → 71/97",
+      "durability": 80,
+      "interval": "2.94",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Storm Crescent",
+      "framework": "Last-Lantern Balance Shaft",
+      "striker": "Webglass Reaping Edge",
+      "core": "Skyward Seal Core",
+      "limit": 10,
+      "attack": "86/78 → 94/86 → 98/90",
+      "durability": 144,
+      "interval": "3.183",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Moon’s Toll",
+      "framework": "Reaper’s Farm Shaft",
+      "striker": "Belliron Soul Crescent",
+      "core": "Observatory Heart Core",
+      "limit": 9,
+      "attack": "76/74 → 83/81 → 86/84",
+      "durability": 73,
+      "interval": "2.77",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Clockwork Harvest",
+      "framework": "Gravewillow Crescent Haft",
+      "striker": "Froststeel Sickle Arc",
+      "core": "Overload Governor Core",
+      "limit": 10,
+      "attack": "112/90 → 123/99 → 128/103",
+      "durability": 92,
+      "interval": "3.192",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Glasswind Requiem",
+      "framework": "Last-Lantern Balance Shaft",
+      "striker": "Null Obsidian Reaping Arc",
+      "core": "Horizon Prism Core",
+      "limit": 10,
+      "attack": "125/94 → 137/103 → 143/108",
+      "durability": 141,
+      "interval": "3.242",
+      "sands_fee_resale": "403 / 550 g"
+    },
+    {
+      "name": "Pale Procession Scythe",
+      "framework": "Reaper’s Farm Shaft",
+      "striker": "Harvest Iron Crescent",
+      "core": "Pale Procession Core",
+      "limit": 7,
+      "attack": "41/65 → 45/72 → 46/74",
+      "durability": 75,
+      "interval": "2.947",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Mist Mourner",
+      "framework": "Gravewillow Crescent Haft",
+      "striker": "Gravehook Crescent",
+      "core": "Relic Memory Core",
+      "limit": 9,
+      "attack": "62/85 → 69/93 → 71/97",
+      "durability": 80,
+      "interval": "2.94",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Hunger’s Harvest",
+      "framework": "Last-Lantern Balance Shaft",
+      "striker": "Webglass Reaping Edge",
+      "core": "Quiet Singularity Core",
+      "limit": 10,
+      "attack": "86/78 → 94/86 → 98/90",
+      "durability": 144,
+      "interval": "3.183",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Worldroot Reclaimer",
+      "framework": "Reaper’s Farm Shaft",
+      "striker": "Belliron Soul Crescent",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "81/110 → 89/121 → 92/126",
+      "durability": 73,
+      "interval": "2.77",
+      "sands_fee_resale": "339 / 460 g"
+    },
+    {
+      "name": "First Furnace Reaper",
+      "framework": "Gravewillow Crescent Haft",
+      "striker": "Froststeel Sickle Arc",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "112/127 → 123/139 → 128/145",
+      "durability": 92,
+      "interval": "3.192",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "Stillwinter Requiem",
+      "framework": "Last-Lantern Balance Shaft",
+      "striker": "Null Obsidian Reaping Arc",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "125/132 → 137/146 → 143/151",
+      "durability": 141,
+      "interval": "3.242",
+      "sands_fee_resale": "538 / 739 g"
+    },
+    {
+      "name": "Moonshot",
+      "framework": "Scrapper’s Shoulder Frame",
+      "striker": "Riveted Iron Barrel",
+      "core": "Observatory Heart Core",
+      "limit": 7,
+      "attack": "55/74 → 61/82 → 63/85",
+      "durability": 83,
+      "interval": "4.0",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Pressure Sermon",
+      "framework": "Rivetlock Recoil Cradle",
+      "striker": "Scatterbore Barrel",
+      "core": "Overload Governor Core",
+      "limit": 9,
+      "attack": "84/84 → 92/92 → 96/96",
+      "durability": 118,
+      "interval": "3.978",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Horizon Breaker",
+      "framework": "Brasswick Vented Cannon Frame",
+      "striker": "Tidebronze Longbore",
+      "core": "Horizon Prism Core",
+      "limit": 10,
+      "attack": "117/109 → 129/120 → 134/125",
+      "durability": 92,
+      "interval": "3.888",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Funeral Broadside",
+      "framework": "Sundial Artillery Frame",
+      "striker": "Springbrass Spiral Barrel",
+      "core": "Pale Procession Core",
+      "limit": 10,
+      "attack": "101/103 → 112/113 → 116/118",
+      "durability": 100,
+      "interval": "3.384",
+      "sands_fee_resale": "358 / 486 g"
+    },
+    {
+      "name": "Veil Breach",
+      "framework": "Scrapper’s Shoulder Frame",
+      "striker": "Basalt Siege Barrel",
+      "core": "Relic Memory Core",
+      "limit": 9,
+      "attack": "143/84 → 157/92 → 163/96",
+      "durability": 102,
+      "interval": "4.56",
+      "sands_fee_resale": "246 / 331 g"
+    },
+    {
+      "name": "Null Battery",
+      "framework": "Rivetlock Recoil Cradle",
+      "striker": "Prismatic Breach Barrel",
+      "core": "Quiet Singularity Core",
+      "limit": 10,
+      "attack": "169/108 → 186/118 → 194/123",
+      "durability": 123,
+      "interval": "4.168",
+      "sands_fee_resale": "358 / 486 g"
+    },
+    {
+      "name": "Worldroot Salvo",
+      "framework": "Brasswick Vented Cannon Frame",
+      "striker": "Riveted Iron Barrel",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "67/154 → 73/169 → 76/176",
+      "durability": 84,
+      "interval": "3.6",
+      "sands_fee_resale": "376 / 513 g"
+    },
+    {
+      "name": "First Furnace Mortar",
+      "framework": "Sundial Artillery Frame",
+      "striker": "Scatterbore Barrel",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "89/145 → 98/159 → 102/166",
+      "durability": 105,
+      "interval": "3.78",
+      "sands_fee_resale": "463 / 634 g"
+    },
+    {
+      "name": "Stillwinter Battery",
+      "framework": "Scrapper’s Shoulder Frame",
+      "striker": "Tidebronze Longbore",
+      "core": "Stillwinter Heart Core",
+      "limit": 9,
+      "attack": "110/118 → 121/130 → 126/135",
+      "durability": 94,
+      "interval": "4.32",
+      "sands_fee_resale": "331 / 450 g"
+    },
+    {
+      "name": "Lantern Thunder",
+      "framework": "Rivetlock Recoil Cradle",
+      "striker": "Springbrass Spiral Barrel",
+      "core": "Unbound Funeral Star Core",
+      "limit": 10,
+      "attack": "101/126 → 112/139 → 116/144",
+      "durability": 110,
+      "interval": "3.562",
+      "sands_fee_resale": "373 / 507 g"
+    },
+    {
+      "name": "Prime Shardcaster",
+      "framework": "Brasswick Vented Cannon Frame",
+      "striker": "Basalt Siege Barrel",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "152/154 → 167/169 → 174/176",
+      "durability": 98,
+      "interval": "4.104",
+      "sands_fee_resale": "460 / 630 g"
+    },
+    {
+      "name": "First Dawn Artillery",
+      "framework": "Sundial Artillery Frame",
+      "striker": "Prismatic Breach Barrel",
+      "core": "Dawn Before Kings Core",
+      "limit": 10,
+      "attack": "169/174 → 186/191 → 194/199",
+      "durability": 109,
+      "interval": "3.96",
+      "sands_fee_resale": "613 / 844 g"
+    },
+    {
+      "name": "Lantern Fist",
+      "framework": "Pitfighter’s Wrist Brace",
+      "striker": "Plainsteel Knuckle Plate",
+      "core": "Pale Procession Core",
+      "limit": 7,
+      "attack": "20/30 → 22/33 → 23/34",
+      "durability": 68,
+      "interval": "1.091",
+      "sands_fee_resale": "163 / 214 g"
+    },
+    {
+      "name": "Mist Palm",
+      "framework": "Scale-Laced Knuckle Frame",
+      "striker": "Wyrmfang Knuckle Row",
+      "core": "Relic Memory Core",
+      "limit": 9,
+      "attack": "30/34 → 33/38 → 34/39",
+      "durability": 118,
+      "interval": "1.326",
+      "sands_fee_resale": "208 / 277 g"
+    },
+    {
+      "name": "Hunger Knuckle",
+      "framework": "Springbrass Piston Brace",
+      "striker": "Belliron Palm Plate",
+      "core": "Quiet Singularity Core",
+      "limit": 10,
+      "attack": "42/42 → 46/46 → 48/48",
+      "durability": 98,
+      "interval": "1.296",
+      "sands_fee_resale": "275 / 371 g"
+    },
+    {
+      "name": "Worldroot Grasp",
+      "framework": "Pitfighter’s Wrist Brace",
+      "striker": "Springbrass Ram Knuckle",
+      "core": "Worldroot Seed Core",
+      "limit": 10,
+      "attack": "42/51 → 46/56 → 48/59",
+      "durability": 66,
+      "interval": "1.026",
+      "sands_fee_resale": "339 / 460 g"
+    },
+    {
+      "name": "Furnace Piston",
+      "framework": "Scale-Laced Knuckle Frame",
+      "striker": "Froststeel Talon Plate",
+      "core": "First Furnace Ember Core",
+      "limit": 10,
+      "attack": "50/51 → 55/56 → 57/59",
+      "durability": 135,
+      "interval": "1.44",
+      "sands_fee_resale": "415 / 567 g"
+    },
+    {
+      "name": "Winter Claw",
+      "framework": "Springbrass Piston Brace",
+      "striker": "Veil-Silver Channel Knuckle",
+      "core": "Stillwinter Heart Core",
+      "limit": 10,
+      "attack": "64/66 → 71/73 → 73/75",
+      "durability": 96,
+      "interval": "1.32",
+      "sands_fee_resale": "538 / 739 g"
+    },
+    {
+      "name": "Funeral Hand",
+      "framework": "Pitfighter’s Wrist Brace",
+      "striker": "Plainsteel Knuckle Plate",
+      "core": "Unbound Funeral Star Core",
+      "limit": 8,
+      "attack": "22/45 → 24/50 → 25/52",
+      "durability": 68,
+      "interval": "1.091",
+      "sands_fee_resale": "298 / 403 g"
+    },
+    {
+      "name": "Prime Impact",
+      "framework": "Scale-Laced Knuckle Frame",
+      "striker": "Wyrmfang Knuckle Row",
+      "core": "Prime Kettari Governor Core",
+      "limit": 10,
+      "attack": "32/51 → 35/56 → 36/59",
+      "durability": 118,
+      "interval": "1.326",
+      "sands_fee_resale": "343 / 465 g"
+    },
+    {
+      "name": "Dawnbringer’s Grip",
+      "framework": "Springbrass Piston Brace",
+      "striker": "Belliron Palm Plate",
+      "core": "Dawn Before Kings Core",
+      "limit": 10,
+      "attack": "42/59 → 46/65 → 48/67",
+      "durability": 98,
+      "interval": "1.296",
+      "sands_fee_resale": "410 / 560 g"
+    },
+    {
+      "name": "Briar Knuckle",
+      "framework": "Pitfighter’s Wrist Brace",
+      "striker": "Springbrass Ram Knuckle",
+      "core": "Heart of the Old Grove Core",
+      "limit": 9,
+      "attack": "39/34 → 43/38 → 45/39",
+      "durability": 66,
+      "interval": "1.026",
+      "sands_fee_resale": "204 / 271 g"
+    },
+    {
+      "name": "Ashboxer",
+      "framework": "Scale-Laced Knuckle Frame",
+      "striker": "Froststeel Talon Plate",
+      "core": "Ashen Crown Core",
+      "limit": 10,
+      "attack": "50/36 → 55/40 → 57/42",
+      "durability": 135,
+      "interval": "1.44",
+      "sands_fee_resale": "280 / 378 g"
+    },
+    {
+      "name": "Whiteclaw",
+      "framework": "Springbrass Piston Brace",
+      "striker": "Veil-Silver Channel Knuckle",
+      "core": "Glacial Heart Core",
+      "limit": 10,
+      "attack": "64/47 → 71/52 → 73/54",
+      "durability": 96,
+      "interval": "1.32",
+      "sands_fee_resale": "403 / 550 g"
+    }
+  ],
+  "stocks": [
+    {
+      "name": "Ironbark Heartwood",
+      "territory": "ravenwood",
+      "harvest_site": "Old Watch Trail",
+      "buy_sell": "8 / 2"
+    },
+    {
+      "name": "Blackthorn Iron",
+      "territory": "ravenwood",
+      "harvest_site": "Rootbound Quarry",
+      "buy_sell": "14 / 4"
+    },
+    {
+      "name": "Cinderwood",
+      "territory": "ashen_wastes",
+      "harvest_site": "Cinder Terraces",
+      "buy_sell": "10 / 3"
+    },
+    {
+      "name": "Basalt Iron",
+      "territory": "ashen_wastes",
+      "harvest_site": "Cooling Galleries",
+      "buy_sell": "16 / 4"
+    },
+    {
+      "name": "Rimepine",
+      "territory": "frostpeaks",
+      "harvest_site": "White Pass",
+      "buy_sell": "12 / 3"
+    },
+    {
+      "name": "Froststeel Ore",
+      "territory": "frostpeaks",
+      "harvest_site": "Blue Ice Galleries",
+      "buy_sell": "18 / 5"
+    },
+    {
+      "name": "Drake Sinew",
+      "territory": "drakeshard_range",
+      "harvest_site": "Broodfall Ledges",
+      "buy_sell": "14 / 4"
+    },
+    {
+      "name": "Scaleiron",
+      "territory": "drakeshard_range",
+      "harvest_site": "Highland Scree",
+      "buy_sell": "20 / 5"
+    },
+    {
+      "name": "Dunepalm Heartwood",
+      "territory": "golden_expanse",
+      "harvest_site": "Buried Caravan Wells",
+      "buy_sell": "16 / 4"
+    },
+    {
+      "name": "Sunbronze",
+      "territory": "golden_expanse",
+      "harvest_site": "Sunken Foundry",
+      "buy_sell": "22 / 6"
+    },
+    {
+      "name": "Bogroot Fiber",
+      "territory": "blighted_marsh",
+      "harvest_site": "Reedkeeper Pools",
+      "buy_sell": "18 / 5"
+    },
+    {
+      "name": "Mire Iron",
+      "territory": "blighted_marsh",
+      "harvest_site": "Drowned Kilns",
+      "buy_sell": "24 / 6"
+    },
+    {
+      "name": "Gravewillow",
+      "territory": "cursed_mire",
+      "harvest_site": "Bound Marsh",
+      "buy_sell": "20 / 5"
+    },
+    {
+      "name": "Hexstone",
+      "territory": "cursed_mire",
+      "harvest_site": "Curse Anchor Ruins",
+      "buy_sell": "26 / 7"
+    },
+    {
+      "name": "Gloamwood",
+      "territory": "shadowfen_forest",
+      "harvest_site": "Silent Canopy",
+      "buy_sell": "22 / 6"
+    },
+    {
+      "name": "Webglass",
+      "territory": "shadowfen_forest",
+      "harvest_site": "Spider Reliquary",
+      "buy_sell": "28 / 7"
+    },
+    {
+      "name": "Warhorse Sinew",
+      "territory": "iron_plains",
+      "harvest_site": "Remount Fields",
+      "buy_sell": "24 / 6"
+    },
+    {
+      "name": "Tempered Plainsteel",
+      "territory": "iron_plains",
+      "harvest_site": "Abandoned Siegeworks",
+      "buy_sell": "30 / 8"
+    },
+    {
+      "name": "Saltbound Oak",
+      "territory": "veiled_sea",
+      "harvest_site": "Shipwright Strand",
+      "buy_sell": "26 / 7"
+    },
+    {
+      "name": "Tidebronze",
+      "territory": "veiled_sea",
+      "harvest_site": "Wreck Shoals",
+      "buy_sell": "32 / 8"
+    },
+    {
+      "name": "Ashsail Cord",
+      "territory": "ember_coast",
+      "harvest_site": "Scorched Rookery",
+      "buy_sell": "28 / 7"
+    },
+    {
+      "name": "Drakeglass",
+      "territory": "ember_coast",
+      "harvest_site": "Obsidian Tidepools",
+      "buy_sell": "34 / 9"
+    },
+    {
+      "name": "Storm Cedar",
+      "territory": "stormcrown_keep",
+      "harvest_site": "Split Summit",
+      "buy_sell": "30 / 8"
+    },
+    {
+      "name": "Thundersteel",
+      "territory": "stormcrown_keep",
+      "harvest_site": "Wardkeeper Mines",
+      "buy_sell": "36 / 9"
+    },
+    {
+      "name": "Moon Yew",
+      "territory": "moonfall_highlands",
+      "harvest_site": "Observatory Orchard",
+      "buy_sell": "32 / 8"
+    },
+    {
+      "name": "Star Slate",
+      "territory": "moonfall_highlands",
+      "harvest_site": "Fallen Lens Crater",
+      "buy_sell": "38 / 10"
+    },
+    {
+      "name": "Oiled Reed Cord",
+      "territory": "copperfen_basin",
+      "harvest_site": "Canal Reeds",
+      "buy_sell": "34 / 9"
+    },
+    {
+      "name": "Springbrass",
+      "territory": "copperfen_basin",
+      "harvest_site": "Collapsed Pumpworks",
+      "buy_sell": "40 / 10"
+    },
+    {
+      "name": "Windreed",
+      "territory": "glasswind_steppe",
+      "harvest_site": "Whistling Flats",
+      "buy_sell": "36 / 9"
+    },
+    {
+      "name": "Singing Quartz",
+      "territory": "glasswind_steppe",
+      "harvest_site": "Glass Ridge",
+      "buy_sell": "42 / 11"
+    },
+    {
+      "name": "Shroud Thread",
+      "territory": "deadwind_hollow",
+      "harvest_site": "Silent Cloister",
+      "buy_sell": "38 / 10"
+    },
+    {
+      "name": "Belliron",
+      "territory": "deadwind_hollow",
+      "harvest_site": "Broken Belfry",
+      "buy_sell": "44 / 11"
+    },
+    {
+      "name": "Mist Silk",
+      "territory": "mistvale",
+      "harvest_site": "Cloud Orchard",
+      "buy_sell": "40 / 10"
+    },
+    {
+      "name": "Veil Silver",
+      "territory": "mistvale",
+      "harvest_site": "Forgotten Aqueduct",
+      "buy_sell": "46 / 12"
+    },
+    {
+      "name": "Rift Tendon",
+      "territory": "devouring_deep",
+      "harvest_site": "Outer Fracture",
+      "buy_sell": "42 / 11"
+    },
+    {
+      "name": "Null Obsidian",
+      "territory": "devouring_deep",
+      "harvest_site": "Drowned Watch Ruins",
+      "buy_sell": "48 / 12"
+    }
+  ],
+  "salvage": [
+    {
+      "name": "Thornseed Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Thornseed Core"
+    },
+    {
+      "name": "Huntsman’s Echo Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Huntsman’s Echo Core"
+    },
+    {
+      "name": "Heart of the Old Grove Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Heart of the Old Grove Core"
+    },
+    {
+      "name": "Cinder Pearl Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Cinder Pearl Core"
+    },
+    {
+      "name": "Magma Heart Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Magma Heart Core"
+    },
+    {
+      "name": "Ashen Crown Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Ashen Crown Core"
+    },
+    {
+      "name": "Rime Shard Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Rime Shard Core"
+    },
+    {
+      "name": "Whiteout Eye Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Whiteout Eye Core"
+    },
+    {
+      "name": "Glacial Heart Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Glacial Heart Core"
+    },
+    {
+      "name": "Drake Ember Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Drake Ember Core"
+    },
+    {
+      "name": "Scale Resonance Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Scale Resonance Core"
+    },
+    {
+      "name": "Brood Oath Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Brood Oath Core"
+    },
+    {
+      "name": "Sunwell Spark Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Sunwell Spark Core"
+    },
+    {
+      "name": "Mirage Eye Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Mirage Eye Core"
+    },
+    {
+      "name": "Buried Dawn Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Buried Dawn Core"
+    },
+    {
+      "name": "Adder Bile Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Adder Bile Core"
+    },
+    {
+      "name": "Mire Lantern Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Mire Lantern Core"
+    },
+    {
+      "name": "Rotmother Spore Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Rotmother Spore Core"
+    },
+    {
+      "name": "Grave Ember Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Grave Ember Core"
+    },
+    {
+      "name": "Hexbound Tear Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Hexbound Tear Core"
+    },
+    {
+      "name": "Anchorless Soul Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Anchorless Soul Core"
+    },
+    {
+      "name": "Gloam Mote Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Gloam Mote Core"
+    },
+    {
+      "name": "Widow’s Knot Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Widow’s Knot Core"
+    },
+    {
+      "name": "Hollow Canopy Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Hollow Canopy Core"
+    },
+    {
+      "name": "Marching Spark Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Marching Spark Core"
+    },
+    {
+      "name": "Warhorn Echo Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Warhorn Echo Core"
+    },
+    {
+      "name": "Siegeheart Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Siegeheart Core"
+    },
+    {
+      "name": "Salt Pearl Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Salt Pearl Core"
+    },
+    {
+      "name": "Undertow Knot Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Undertow Knot Core"
+    },
+    {
+      "name": "Tempest Bottle Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Tempest Bottle Core"
+    },
+    {
+      "name": "Coalglass Ember Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Coalglass Ember Core"
+    },
+    {
+      "name": "Cinderwake Pearl Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Cinderwake Pearl Core"
+    },
+    {
+      "name": "Dragon Pact Ember Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Dragon Pact Ember Core"
+    },
+    {
+      "name": "Stormglass Spark Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Stormglass Spark Core"
+    },
+    {
+      "name": "Thundercoil Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Thundercoil Core"
+    },
+    {
+      "name": "Skyward Seal Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Skyward Seal Core"
+    },
+    {
+      "name": "Moonlit Flake Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Moonlit Flake Core"
+    },
+    {
+      "name": "Fallen Star Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Fallen Star Core"
+    },
+    {
+      "name": "Observatory Heart Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Observatory Heart Core"
+    },
+    {
+      "name": "Clockwork Spark Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Clockwork Spark Core"
+    },
+    {
+      "name": "Pressure Pearl Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Pressure Pearl Core"
+    },
+    {
+      "name": "Overload Governor Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Overload Governor Core"
+    },
+    {
+      "name": "Whisperglass Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Whisperglass Core"
+    },
+    {
+      "name": "Sand-Singer Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Sand-Singer Core"
+    },
+    {
+      "name": "Horizon Prism Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Horizon Prism Core"
+    },
+    {
+      "name": "Bell-Wraith Ember Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Bell-Wraith Ember Core"
+    },
+    {
+      "name": "Lantern Soul Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Lantern Soul Core"
+    },
+    {
+      "name": "Pale Procession Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Pale Procession Core"
+    },
+    {
+      "name": "Mist Dew Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Mist Dew Core"
+    },
+    {
+      "name": "Veilbound Star Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Veilbound Star Core"
+    },
+    {
+      "name": "Relic Memory Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Relic Memory Core"
+    },
+    {
+      "name": "Rift Cinder Core Shard",
+      "value_sell": "22 / 2",
+      "combine": "5 pieces + 28 gold → Rift Cinder Core"
+    },
+    {
+      "name": "Hunger Fragment Core Shard",
+      "value_sell": "52 / 5",
+      "combine": "5 pieces + 65 gold → Hunger Fragment Core"
+    },
+    {
+      "name": "Quiet Singularity Core Shard",
+      "value_sell": "102 / 10",
+      "combine": "5 pieces + 128 gold → Quiet Singularity Core"
+    },
+    {
+      "name": "Worldroot Seed Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → Worldroot Seed Core"
+    },
+    {
+      "name": "First Furnace Ember Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → First Furnace Ember Core"
+    },
+    {
+      "name": "Stillwinter Heart Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → Stillwinter Heart Core"
+    },
+    {
+      "name": "Unbound Funeral Star Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → Unbound Funeral Star Core"
+    },
+    {
+      "name": "Prime Kettari Governor Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → Prime Kettari Governor Core"
+    },
+    {
+      "name": "Dawn Before Kings Core Shard",
+      "value_sell": "210 / 21",
+      "combine": "5 pieces + 263 gold → Dawn Before Kings Core"
+    },
+    {
+      "name": "Degraded Ironbark Heartwood",
+      "value_sell": "2 / 0",
+      "combine": "4 pieces + 5 gold → Ironbark Heartwood"
+    },
+    {
+      "name": "Degraded Blackthorn Iron",
+      "value_sell": "4 / 0",
+      "combine": "4 pieces + 5 gold → Blackthorn Iron"
+    },
+    {
+      "name": "Degraded Cinderwood",
+      "value_sell": "3 / 0",
+      "combine": "4 pieces + 5 gold → Cinderwood"
+    },
+    {
+      "name": "Degraded Basalt Iron",
+      "value_sell": "4 / 0",
+      "combine": "4 pieces + 5 gold → Basalt Iron"
+    },
+    {
+      "name": "Degraded Rimepine",
+      "value_sell": "3 / 0",
+      "combine": "4 pieces + 5 gold → Rimepine"
+    },
+    {
+      "name": "Degraded Froststeel Ore",
+      "value_sell": "5 / 0",
+      "combine": "4 pieces + 5 gold → Froststeel Ore"
+    },
+    {
+      "name": "Degraded Drake Sinew",
+      "value_sell": "4 / 0",
+      "combine": "4 pieces + 5 gold → Drake Sinew"
+    },
+    {
+      "name": "Degraded Scaleiron",
+      "value_sell": "5 / 0",
+      "combine": "4 pieces + 5 gold → Scaleiron"
+    },
+    {
+      "name": "Degraded Dunepalm Heartwood",
+      "value_sell": "4 / 0",
+      "combine": "4 pieces + 5 gold → Dunepalm Heartwood"
+    },
+    {
+      "name": "Degraded Sunbronze",
+      "value_sell": "6 / 0",
+      "combine": "4 pieces + 5 gold → Sunbronze"
+    },
+    {
+      "name": "Degraded Bogroot Fiber",
+      "value_sell": "5 / 0",
+      "combine": "4 pieces + 5 gold → Bogroot Fiber"
+    },
+    {
+      "name": "Degraded Mire Iron",
+      "value_sell": "6 / 0",
+      "combine": "4 pieces + 5 gold → Mire Iron"
+    },
+    {
+      "name": "Degraded Gravewillow",
+      "value_sell": "5 / 0",
+      "combine": "4 pieces + 5 gold → Gravewillow"
+    },
+    {
+      "name": "Degraded Hexstone",
+      "value_sell": "7 / 0",
+      "combine": "4 pieces + 5 gold → Hexstone"
+    },
+    {
+      "name": "Degraded Gloamwood",
+      "value_sell": "6 / 0",
+      "combine": "4 pieces + 5 gold → Gloamwood"
+    },
+    {
+      "name": "Degraded Webglass",
+      "value_sell": "7 / 0",
+      "combine": "4 pieces + 5 gold → Webglass"
+    },
+    {
+      "name": "Degraded Warhorse Sinew",
+      "value_sell": "6 / 0",
+      "combine": "4 pieces + 5 gold → Warhorse Sinew"
+    },
+    {
+      "name": "Degraded Tempered Plainsteel",
+      "value_sell": "8 / 0",
+      "combine": "4 pieces + 5 gold → Tempered Plainsteel"
+    },
+    {
+      "name": "Degraded Saltbound Oak",
+      "value_sell": "7 / 0",
+      "combine": "4 pieces + 5 gold → Saltbound Oak"
+    },
+    {
+      "name": "Degraded Tidebronze",
+      "value_sell": "8 / 0",
+      "combine": "4 pieces + 5 gold → Tidebronze"
+    },
+    {
+      "name": "Degraded Ashsail Cord",
+      "value_sell": "7 / 0",
+      "combine": "4 pieces + 5 gold → Ashsail Cord"
+    },
+    {
+      "name": "Degraded Drakeglass",
+      "value_sell": "9 / 1",
+      "combine": "4 pieces + 5 gold → Drakeglass"
+    },
+    {
+      "name": "Degraded Storm Cedar",
+      "value_sell": "8 / 0",
+      "combine": "4 pieces + 5 gold → Storm Cedar"
+    },
+    {
+      "name": "Degraded Thundersteel",
+      "value_sell": "9 / 1",
+      "combine": "4 pieces + 5 gold → Thundersteel"
+    },
+    {
+      "name": "Degraded Moon Yew",
+      "value_sell": "8 / 0",
+      "combine": "4 pieces + 5 gold → Moon Yew"
+    },
+    {
+      "name": "Degraded Star Slate",
+      "value_sell": "10 / 1",
+      "combine": "4 pieces + 5 gold → Star Slate"
+    },
+    {
+      "name": "Degraded Oiled Reed Cord",
+      "value_sell": "9 / 1",
+      "combine": "4 pieces + 5 gold → Oiled Reed Cord"
+    },
+    {
+      "name": "Degraded Springbrass",
+      "value_sell": "10 / 1",
+      "combine": "4 pieces + 5 gold → Springbrass"
+    },
+    {
+      "name": "Degraded Windreed",
+      "value_sell": "9 / 1",
+      "combine": "4 pieces + 5 gold → Windreed"
+    },
+    {
+      "name": "Degraded Singing Quartz",
+      "value_sell": "11 / 1",
+      "combine": "4 pieces + 5 gold → Singing Quartz"
+    },
+    {
+      "name": "Degraded Shroud Thread",
+      "value_sell": "10 / 1",
+      "combine": "4 pieces + 5 gold → Shroud Thread"
+    },
+    {
+      "name": "Degraded Belliron",
+      "value_sell": "11 / 1",
+      "combine": "4 pieces + 5 gold → Belliron"
+    },
+    {
+      "name": "Degraded Mist Silk",
+      "value_sell": "10 / 1",
+      "combine": "4 pieces + 5 gold → Mist Silk"
+    },
+    {
+      "name": "Degraded Veil Silver",
+      "value_sell": "12 / 1",
+      "combine": "4 pieces + 5 gold → Veil Silver"
+    },
+    {
+      "name": "Degraded Rift Tendon",
+      "value_sell": "11 / 1",
+      "combine": "4 pieces + 5 gold → Rift Tendon"
+    },
+    {
+      "name": "Degraded Null Obsidian",
+      "value_sell": "12 / 1",
+      "combine": "4 pieces + 5 gold → Null Obsidian"
     }
   ]
 }
