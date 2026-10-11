@@ -19,6 +19,7 @@ var last_zoom := 1.0
 var last_pan := Vector2.ZERO
 var settings_dialog: AcceptDialog
 var motion_enabled := true
+var persistent_city_progress := true
 
 
 func _ready() -> void:
@@ -266,32 +267,12 @@ func open_location(id: String) -> void:
 
 func show_blackthorn() -> void:
 	_new_page("blackthorn")
-	_art(page)
-	var layout := VBoxContainer.new()
-	_margin(page).add_child(layout)
-	var header := PanelContainer.new()
-	layout.add_child(header)
-	var row := HBoxContainer.new()
-	header.add_child(row)
-	row.add_child(_button("‹  RAVENWOOD", show_atlas, 220))
-	var names := VBoxContainer.new()
-	names.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	names.add_theme_constant_override("separation", 3)
-	row.add_child(names)
-	names.add_child(_label("BLACKTHORN", 31, GOLD, true))
-	names.add_child(_label("RAVENWOOD  /  INSIDE THE GATES", 16, MUTED))
-	row.add_child(_button("WORLD ATLAS", show_atlas, 195))
-	var spacer := Control.new()
-	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	layout.add_child(spacer)
-	var footer := PanelContainer.new()
-	layout.add_child(footer)
-	var story := VBoxContainer.new()
-	story.add_theme_constant_override("separation", 8)
-	footer.add_child(story)
-	story.add_child(_label("A LIGHT IN THE WOODS", 25, GOLD, true))
-	story.add_child(_paragraph("Beyond the palisade, Ravenwood stirs in the dark. Here, hearths still burn. Somewhere behind these walls, a warm bed waits.", 23))
-	story.add_child(_label("ARRIVAL PREVIEW", 15, MUTED))
+	var city := preload("res://scripts/blackthorn.gd").new()
+	city.state.persistent = persistent_city_progress
+	city.name = "Blackthorn"
+	page.add_child(city)
+	city.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	city.exited.connect(show_atlas)
 
 
 func show_settings() -> void:
@@ -325,6 +306,9 @@ func go_back() -> void:
 		settings_dialog.queue_free()
 		return
 	if screen == "blackthorn":
+		var city := page.get_node_or_null("Blackthorn")
+		if city != null and city.handle_back():
+			return
 		show_atlas()
 	elif screen == "atlas":
 		show_title()

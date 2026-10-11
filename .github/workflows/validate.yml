@@ -19,3 +19,5 @@ jobs:
         run: timeout 20s godot --headless --path . --quit-after 3
       - name: Front-end navigation and touch checks
         run: timeout 30s godot --headless --path . --script res://tests/front_end_smoke.gd
+      - name: Blackthorn rooms, dialogue and exploration save
+        run: timeout 45s godot --headless --path . --script res://tests/blackthorn_smoke.gd
