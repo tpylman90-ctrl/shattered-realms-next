@@ -21,6 +21,12 @@ var active := false
 var phase := 0.0
 var hits := 0
 var precision := 0
+var browser_category: OptionButton
+var browser_item: OptionButton
+var browser_details: RichTextLabel
+var browser_entries: Array = []
+var forged_history: RichTextLabel
+var forged_count := 0
 
 func _ready() -> void:
 	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(DATA_PATH))
@@ -56,7 +62,7 @@ func _ready() -> void:
 	heading.add_theme_color_override("font_color", GOLD)
 	top.add_child(heading)
 	var disclaimer := Label.new()
-	disclaimer.text = "Prototype subset · unlimited components · does not change campaign inventory."
+	disclaimer.text = "Full 512-entry catalog · unlimited materials · practice mode only · no campaign save changes."
 	column.add_child(disclaimer)
 	family = _picker(column, "Weapon family")
 	frame = _picker(column, "Framework")
@@ -105,6 +111,33 @@ func _ready() -> void:
 	if core.item_count > 0:
 		core.select(0)
 	_select_family()
+
+	var browser_heading := Label.new()
+	browser_heading.text = "CATALOG INSPECTOR · ALL 512 ENTRIES"
+	browser_heading.add_theme_font_size_override("font_size", 23)
+	browser_heading.add_theme_color_override("font_color", GOLD)
+	column.add_child(browser_heading)
+	browser_category = _picker(column, "Item category")
+	browser_item = _picker(column, "Catalog entry")
+	for group in ["Frameworks", "Strikers", "Cores", "Gathering stocks", "Salvage", "Named weapons"]:
+		browser_category.add_item(group)
+	browser_details = RichTextLabel.new()
+	browser_details.bbcode_enabled = true
+	browser_details.custom_minimum_size.y = 145
+	column.add_child(browser_details)
+	browser_category.item_selected.connect(func(_i: int): _fill_browser())
+	browser_item.item_selected.connect(func(_i: int): _inspect_item())
+	browser_category.select(0)
+	_fill_browser()
+	var history_heading := Label.new()
+	history_heading.text = "THIS SESSION'S FORGING RESULTS"
+	history_heading.add_theme_color_override("font_color", GOLD)
+	column.add_child(history_heading)
+	forged_history = RichTextLabel.new()
+	forged_history.bbcode_enabled = true
+	forged_history.custom_minimum_size.y = 75
+	forged_history.text = "[i]Finish five strikes to add a trial result here.[/i]"
+	column.add_child(forged_history)
 
 func _picker(parent: VBoxContainer, label_text: String) -> OptionButton:
 	var line := HBoxContainer.new()
@@ -160,6 +193,29 @@ func _refresh() -> void:
 		formula = "\n[i]Compatible component set; production stat formula not installed. No invented attack result.[/i]"
 	info.text = "[b]%s[/b]\nFramework: %s · Tier %s · Durability %s\nHandling: %s\nStriker: %s · Physical %s\nTrait: %s\nCore: %s · Elemental %s · Chance %s\nEffect: %s%s" % [result, str(a.get("name","")),str(a.get("tier","")),str(a.get("durability","")),str(a.get("handling","")),str(b.get("name","")),str(b.get("physical","")),str(b.get("trait","")),str(c.get("name","")),str(c.get("elemental","")),str(c.get("chance","")),str(c.get("effect","")),formula]
 
+func _fill_browser() -> void:
+	browser_item.clear()
+	browser_entries.clear()
+	var group := browser_category.selected
+	var key := ["frameworks", "strikers", "cores", "stocks", "salvage", "recipes"][group]
+	for entry in data.get(key, []):
+		browser_entries.append(entry)
+		browser_item.add_item(str(entry.get("name", "?")))
+	if not browser_entries.is_empty():
+		browser_item.select(0)
+	_inspect_item()
+
+func _inspect_item() -> void:
+	if browser_item.selected < 0 or browser_entries.is_empty():
+		browser_details.text = ""
+		return
+	var entry: Dictionary = browser_entries[browser_item.selected]
+	var lines := PackedStringArray()
+	for key in entry.keys():
+		if key != "name":
+			lines.append("%s: %s" % [str(key).replace("_", " ").capitalize(), str(entry[key])])
+	browser_details.text = "[b]%s[/b]\\n%s" % [str(entry.get("name", "")), "\\n".join(lines)]
+
 func _heat() -> void:
 	active = true
 	phase = 0.0
@@ -188,6 +244,16 @@ func _strike() -> void:
 		elif precision >= 2:
 			grade = "SERVICEABLE"
 		feedback.text = "%s · %d of 5 precise strikes. Prototype feedback only; nothing was consumed." % [grade, precision]
+		forged_count += 1
+		var a: Dictionary = frame_items[frame.selected]
+		var b: Dictionary = head_items[head.selected]
+		var c: Dictionary = core_items[core.selected]
+		var found := "Uncharted %s assembly" % family.get_item_text(family.selected)
+		for recipe in data.get("recipes", []):
+			if recipe["framework"] == a["name"] and recipe["striker"] == b["name"] and recipe["core"] == c["name"]:
+				found = str(recipe["name"])
+				break
+		forged_history.text = "[b]#%d %s — %s[/b] · %d/5 precise strikes\\n%s" % [forged_count, found, grade, precision, forged_history.text]
 	else:
 		feedback.text = "Strike %d of 5: %s (%.0f%%)" % [hits, "PRECISE" if accurate else "MISSED", timing.value]
 
