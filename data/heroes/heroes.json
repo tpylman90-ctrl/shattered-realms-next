@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "heroes": [
+    {
+      "id": "vesper",
+      "name": "Vesper, The Frostbinder",
+      "territory_id": "frostpeaks",
+      "combat_families": [
+        "cryomancer",
+        "warden"
+      ],
+      "signature_ability": "glacial_bastion"
+    },
+    {
+      "id": "ignis",
+      "name": "Ignis, The Magma-Heart",
+      "territory_id": "ashen_wastes",
+      "combat_families": [
+        "pyromancer",
+        "juggernaut"
+      ],
+      "signature_ability": "eruption_strike"
+    },
+    {
+      "id": "lyra_vane",
+      "name": "Lyra Vane, The Shadow Stalker",
+      "territory_id": "ravenwood",
+      "combat_families": [
+        "ranger",
+        "assassin"
+      ],
+      "signature_ability": "phantom_arrows"
+    },
+    {
+      "id": "morana",
+      "name": "Morana, The Rot-Weaver",
+      "territory_id": "blighted_marsh",
+      "combat_families": [
+        "plague_shaman",
+        "witch"
+      ],
+      "signature_ability": "venomous_miasma"
+    },
+    {
+      "id": "captain_jora_stormtide",
+      "name": "Captain Jora Stormtide",
+      "territory_id": "veiled_sea",
+      "combat_families": [
+        "naval_commander",
+        "swashbuckler"
+      ],
+      "signature_ability": "tidal_blade"
+    },
+    {
+      "id": "dareth_scalebreaker",
+      "name": "Dareth Scalebreaker",
+      "territory_id": "drakeshard_range",
+      "combat_families": [
+        "dragon_slayer",
+        "vanguard"
+      ],
+      "signature_ability": "draconic_cleave"
+    },
+    {
+      "id": "general_cedric_ironclad",
+      "name": "General Cedric Ironclad",
+      "territory_id": "iron_plains",
+      "combat_families": [
+        "heavy_cavalry_commander"
+      ],
+      "signature_ability": "phalanx_charge"
+    },
+    {
+      "id": "ignacia",
+      "name": "Ignacia, Flame of the Coast",
+      "territory_id": "ember_coast",
+      "combat_families": [
+        "dragon_tamer",
+        "sorceress"
+      ],
+      "signature_ability": "dragon_breath"
+    },
+    {
+      "id": "thorvald_thunderbrow",
+      "name": "Thorvald Thunderbrow, The Peak Sentinel",
+      "territory_id": "stormcrown_keep",
+      "combat_families": [
+        "tempest_warrior",
+        "smith"
+      ],
+      "signature_ability": "lightning_smash"
+    }
+  ]
+}
