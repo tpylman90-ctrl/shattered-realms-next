@@ -160,7 +160,7 @@ func show_title() -> void:
 
 
 func show_forge_lab() -> void:
-	var script_path := "res://scripts/forge_lab.gd"
+	var script_path := "res://scripts/forge_lab_v2.gd"
 	var data_path := "res://data/entropic_forge/forge_test_catalog.json"
 	if not ResourceLoader.exists(script_path) or not FileAccess.file_exists(data_path):
 		var popup := AcceptDialog.new()
