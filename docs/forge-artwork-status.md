@@ -16,3 +16,6 @@ The icon path contract is `assets/entropic_forge/icons/{frameworks,strikers,core
 3. Catalog inspector can browse all six classes and all 512 entries.
 4. Five-strike trial produces rough/serviceable/masterwork and appends history without changing campaign save.
 5. Android artifact `ShatteredRealmsNext-Android` is produced.
+
+## Safe asset-only ZIP (recommended)
+Use `shattered_realms_forge_assets_only.zip` instead of the original overlay, because the original ZIP also contains an older copy of `scripts/forge_lab.gd`. The asset-only ZIP contains precisely 512 item PNG files plus `assets/forge/forge_room.png`, without scripts, data or Git metadata. Extract its `assets/` directory into the root of this feature branch, then commit and push. CI runs `python3 tools/verify_forge_art.py`, validates the Godot project and builds the Android APK.
