@@ -1,0 +1,19 @@
+name: Validate Shattered Realms
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  godot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.7.2
+          use-dotnet: false
+      - name: Import project and validate scripts
+        run: godot --headless --editor --path . --quit
+      - name: Smoke start
+        run: timeout 20s godot --headless --path . --quit-after 3
