@@ -1,0 +1,494 @@
+{
+  "framework_traits": {
+    "sure_grip": {
+      "accuracy": 5,
+      "durability_pct": 0,
+      "speed_pct": 0,
+      "description": "+5 accuracy points."
+    },
+    "quick_recovery": {
+      "accuracy": -2,
+      "durability_pct": -10,
+      "speed_pct": 10,
+      "description": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    "enduring": {
+      "accuracy": 0,
+      "durability_pct": 25,
+      "speed_pct": -5,
+      "description": "+25% durability; -5% action speed."
+    },
+    "extended": {
+      "accuracy": -3,
+      "durability_pct": 0,
+      "speed_pct": -5,
+      "reach_m": 0.4,
+      "description": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    "channelled": {
+      "accuracy": 0,
+      "durability_pct": -15,
+      "speed_pct": 0,
+      "element_pct": 15,
+      "description": "+15% elemental attack; -15% durability."
+    },
+    "braced": {
+      "accuracy": 8,
+      "durability_pct": 10,
+      "speed_pct": -10,
+      "description": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    "volatile_conduit": {
+      "accuracy": -4,
+      "durability_pct": -20,
+      "speed_pct": 0,
+      "element_pct": 22,
+      "description": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+    }
+  },
+  "striker_traits": {
+    "balanced_edge": {
+      "trigger": "direct_hit",
+      "description": "+3 accuracy points.",
+      "accuracy": 3
+    },
+    "armor_teeth": {
+      "trigger": "direct_hit",
+      "description": "Ignore 10% of physical armor for this hit.",
+      "armor_ignore_pct": 10
+    },
+    "hollow_channel": {
+      "trigger": "direct_hit",
+      "description": "Physical attack -12%; elemental attack +20%.",
+      "physical_pct": -12,
+      "element_pct": 20
+    },
+    "serrated": {
+      "trigger": "first_direct_hit_per_action",
+      "description": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "chance_pct": 20,
+      "bleed_pct": 12,
+      "duration_actions": 2
+    },
+    "concussive": {
+      "trigger": "first_direct_hit_per_action",
+      "description": "15% chance to remove 6 ATB points; once per target action.",
+      "chance_pct": 15,
+      "atb_delay_points": 6
+    },
+    "wardbreaker": {
+      "trigger": "direct_hit",
+      "description": "+25% direct damage against barriers only.",
+      "barrier_damage_pct": 25
+    },
+    "farshot": {
+      "trigger": "base_stats",
+      "description": "+2 m range; -5 accuracy points.",
+      "reach_m": 2,
+      "accuracy": -5
+    },
+    "close_quarters": {
+      "trigger": "base_stats",
+      "description": "+8% physical attack; -0.2 m reach.",
+      "physical_pct": 8,
+      "reach_m": -0.2
+    },
+    "precision": {
+      "trigger": "direct_hit",
+      "description": "+6 critical chance points; -8% physical attack.",
+      "crit_points": 6,
+      "physical_pct": -8
+    },
+    "cleaving": {
+      "trigger": "first_direct_hit_per_action",
+      "description": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "splash_pct": 18,
+      "max_extra_targets": 1
+    },
+    "conductive": {
+      "trigger": "base_stats",
+      "description": "+12% elemental attack; -6% physical attack.",
+      "element_pct": 12,
+      "physical_pct": -6
+    },
+    "soul_notch": {
+      "trigger": "direct_hit",
+      "description": "+20% physical damage against undead; no effect on other targets.",
+      "undead_physical_pct": 20
+    }
+  },
+  "core_effects": {
+    "thorn_bind": {
+      "status": "root",
+      "duration_actions": 1,
+      "magnitude": 0,
+      "description": "Root for 1 action; boss substitute: -8% action speed."
+    },
+    "hunters_mark": {
+      "status": "marked",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Next allied hit gains +12% accuracy for 2 actions; mark consumed on hit."
+    },
+    "grove_guard": {
+      "status": "barrier",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Wielder gains a barrier equal to 12% of base physical + elemental attack for 2 actions."
+    },
+    "ignite": {
+      "status": "burn",
+      "duration_actions": 2,
+      "magnitude": 18,
+      "description": "Burn deals 18% of base elemental attack per action for 2 actions."
+    },
+    "magma_pool": {
+      "status": "ground_damage",
+      "duration_actions": 2,
+      "magnitude": 20,
+      "description": "Leaves a 1.2 m pool for 2 actions, dealing 20% base elemental attack to all occupants each action."
+    },
+    "ash_blind": {
+      "status": "accuracy_down",
+      "duration_actions": 2,
+      "magnitude": 10,
+      "description": "Target loses 10 accuracy points for 2 actions."
+    },
+    "chill": {
+      "status": "speed_down",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Target action speed -12% for 2 actions."
+    },
+    "whiteout": {
+      "status": "accuracy_down",
+      "duration_actions": 2,
+      "magnitude": 15,
+      "description": "Target loses 15 accuracy points for 2 actions."
+    },
+    "frost_guard": {
+      "status": "barrier",
+      "duration_actions": 2,
+      "magnitude": 15,
+      "description": "Wielder barrier = 15% base physical + elemental attack, lasting 2 actions."
+    },
+    "drake_scorch": {
+      "status": "armor_down",
+      "duration_actions": 2,
+      "magnitude": 8,
+      "description": "Physical armor -8% for 2 actions."
+    },
+    "scale_break": {
+      "status": "armor_down",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Physical armor -12% for 2 actions."
+    },
+    "brood_guard": {
+      "status": "guard",
+      "duration_actions": 1,
+      "magnitude": 10,
+      "description": "Wielder takes 10% less physical damage until its next action."
+    },
+    "solar_mark": {
+      "status": "marked",
+      "duration_actions": 2,
+      "magnitude": 10,
+      "description": "Next allied hit adds 10% base elemental solar damage; mark consumed."
+    },
+    "mirage_feint": {
+      "status": "evasion",
+      "duration_actions": 1,
+      "magnitude": 8,
+      "description": "Wielder gains 8 evasion points until its next action."
+    },
+    "solar_purge": {
+      "status": "dispel",
+      "duration_actions": 0,
+      "magnitude": 1,
+      "description": "Remove 1 removable positive effect from the struck enemy."
+    },
+    "poison": {
+      "status": "poison",
+      "duration_actions": 3,
+      "magnitude": 12,
+      "description": "Poison deals 12% base elemental attack per action for 3 actions."
+    },
+    "cleanse_guard": {
+      "status": "cleanse",
+      "duration_actions": 0,
+      "magnitude": 1,
+      "description": "Remove 1 poison stack from the wielder."
+    },
+    "rot_spread": {
+      "status": "rot",
+      "duration_actions": 2,
+      "magnitude": 18,
+      "description": "Rot deals 18% base elemental per action for 2 actions; on death transfers remaining duration to 1 enemy within 2 m."
+    },
+    "soul_scar": {
+      "status": "healing_down",
+      "duration_actions": 2,
+      "magnitude": 20,
+      "description": "Target receives 20% less healing for 2 actions."
+    },
+    "hex_weaken": {
+      "status": "attack_down",
+      "duration_actions": 2,
+      "magnitude": 10,
+      "description": "Target physical attack -10% for 2 actions."
+    },
+    "spirit_release": {
+      "status": "undead_damage",
+      "duration_actions": 0,
+      "magnitude": 25,
+      "description": "Add spirit damage = 25% base elemental attack against undead only."
+    },
+    "gloam_expose": {
+      "status": "evasion_down",
+      "duration_actions": 2,
+      "magnitude": 10,
+      "description": "Target loses 10 evasion points for 2 actions."
+    },
+    "web_tether": {
+      "status": "root",
+      "duration_actions": 1,
+      "magnitude": 0,
+      "description": "Root for 1 action; boss substitute: -8% action speed."
+    },
+    "canopy_decay": {
+      "status": "resistance_down",
+      "duration_actions": 2,
+      "magnitude": 10,
+      "description": "Target rot resistance -10 percentage points for 2 actions."
+    },
+    "steadfast": {
+      "status": "displacement_resist",
+      "duration_actions": 1,
+      "magnitude": 50,
+      "description": "Wielder gains 50% displacement resistance until its next action."
+    },
+    "rally": {
+      "status": "next_hit",
+      "duration_actions": 1,
+      "magnitude": 10,
+      "description": "Wielder’s next direct hit gains 10% base physical damage; cannot stack."
+    },
+    "siege_break": {
+      "status": "barrier_damage",
+      "duration_actions": 0,
+      "magnitude": 30,
+      "description": "Deal an additional 30% base physical + elemental attack to barriers only."
+    },
+    "salt_erosion": {
+      "status": "armor_down",
+      "duration_actions": 2,
+      "magnitude": 8,
+      "description": "Physical armor -8% for 2 actions."
+    },
+    "undertow": {
+      "status": "pull",
+      "duration_actions": 0,
+      "magnitude": 1,
+      "description": "Pull target 1 m toward the wielder; immune targets take 10% base elemental tide damage instead."
+    },
+    "squall": {
+      "status": "splash",
+      "duration_actions": 0,
+      "magnitude": 15,
+      "description": "Deal 15% base elemental storm damage to 1 extra enemy within 2 m."
+    },
+    "ember_trail": {
+      "status": "ground_damage",
+      "duration_actions": 2,
+      "magnitude": 15,
+      "description": "Leave a 1 m trail at target for 2 actions, dealing 15% base elemental to all occupants each action."
+    },
+    "cinderwake": {
+      "status": "ground_damage",
+      "duration_actions": 2,
+      "magnitude": 25,
+      "description": "Leave a 1.5 m patch for 2 actions, dealing 25% base elemental to all occupants each action."
+    },
+    "dragon_flare": {
+      "status": "splash",
+      "duration_actions": 0,
+      "magnitude": 25,
+      "description": "Deal 25% base elemental fire damage to at most 2 extra enemies within 2 m."
+    },
+    "shock": {
+      "status": "atb_delay",
+      "duration_actions": 0,
+      "magnitude": 8,
+      "description": "Remove 8 percentage points from target ATB; once per target action."
+    },
+    "chain_arc": {
+      "status": "chain",
+      "duration_actions": 0,
+      "magnitude": 20,
+      "description": "Jump to at most 2 different enemies within 2 m for 20% base elemental storm damage each."
+    },
+    "ward_charge": {
+      "status": "magic_guard",
+      "duration_actions": 1,
+      "magnitude": 12,
+      "description": "Wielder takes 12% less elemental damage until its next action."
+    },
+    "moon_expose": {
+      "status": "critical_resist_down",
+      "duration_actions": 2,
+      "magnitude": 6,
+      "description": "Target critical resistance -6 points for 2 actions."
+    },
+    "star_echo": {
+      "status": "echo",
+      "duration_actions": 0,
+      "magnitude": 20,
+      "description": "Add one astral pulse of 20% base elemental attack; pulse cannot trigger procs."
+    },
+    "gravity_well": {
+      "status": "pull",
+      "duration_actions": 0,
+      "magnitude": 1.5,
+      "description": "Pull struck target up to 1.5 m toward its nearest enemy ally; immune targets take 15% base elemental astral damage instead."
+    },
+    "recoil_charge": {
+      "status": "next_hit",
+      "duration_actions": 1,
+      "magnitude": 12,
+      "description": "Next direct physical hit gains 12% base physical damage; cannot stack."
+    },
+    "pressure_pulse": {
+      "status": "push",
+      "duration_actions": 0,
+      "magnitude": 1,
+      "description": "Push target 1 m away; immune targets take 10% base elemental kinetic damage instead."
+    },
+    "governed_overload": {
+      "status": "splash",
+      "duration_actions": 0,
+      "magnitude": 25,
+      "description": "Deal 25% base elemental storm damage to 1 extra enemy within 2 m. Does not reveal cracked durability."
+    },
+    "wind_cut": {
+      "status": "armor_pierce_pulse",
+      "duration_actions": 0,
+      "magnitude": 15,
+      "description": "Add 15% base elemental wind damage ignoring 20% resistance for this pulse."
+    },
+    "sand_shear": {
+      "status": "accuracy_down",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Target loses 12 accuracy points for 2 actions."
+    },
+    "horizon_pierce": {
+      "status": "line_pulse",
+      "duration_actions": 0,
+      "magnitude": 25,
+      "description": "Add 25% base elemental mirage damage to the first enemy behind the target, within 3 m."
+    },
+    "bell_silence": {
+      "status": "silence",
+      "duration_actions": 1,
+      "magnitude": 0,
+      "description": "Silence for 1 action; boss substitute: magic attack -8% for 1 action."
+    },
+    "lantern_ward": {
+      "status": "curse_guard",
+      "duration_actions": 1,
+      "magnitude": 25,
+      "description": "Wielder gains 25 curse-resistance points until its next action."
+    },
+    "procession": {
+      "status": "healing_down",
+      "duration_actions": 3,
+      "magnitude": 25,
+      "description": "Target receives 25% less healing for 3 actions."
+    },
+    "mist_veil": {
+      "status": "evasion",
+      "duration_actions": 1,
+      "magnitude": 6,
+      "description": "Wielder gains 6 evasion points until its next action."
+    },
+    "veil_echo": {
+      "status": "echo",
+      "duration_actions": 0,
+      "magnitude": 25,
+      "description": "Add one astral pulse of 25% base elemental attack; pulse cannot trigger procs."
+    },
+    "relic_release": {
+      "status": "resistance_down",
+      "duration_actions": 2,
+      "magnitude": 12,
+      "description": "Target astral resistance -12 percentage points for 2 actions."
+    },
+    "rift_cut": {
+      "status": "barrier_damage",
+      "duration_actions": 0,
+      "magnitude": 35,
+      "description": "Add 35% base elemental void damage to barriers only."
+    },
+    "hunger": {
+      "status": "drain",
+      "duration_actions": 0,
+      "magnitude": 8,
+      "description": "Heal wielder for 8% of the direct elemental damage actually dealt; excludes bursts and shields."
+    },
+    "singularity": {
+      "status": "splash",
+      "duration_actions": 0,
+      "magnitude": 30,
+      "description": "Deal 30% base elemental void damage to at most 2 extra enemies within 2 m."
+    },
+    "worldroot": {
+      "status": "root",
+      "duration_actions": 2,
+      "magnitude": 0,
+      "description": "Root for 2 actions; boss substitute: -12% action speed for 2 actions."
+    },
+    "first_furnace": {
+      "status": "burn",
+      "duration_actions": 3,
+      "magnitude": 22,
+      "description": "Burn deals 22% base elemental magma damage per action for 3 actions."
+    },
+    "stillwinter": {
+      "status": "speed_down",
+      "duration_actions": 3,
+      "magnitude": 18,
+      "description": "Target action speed -18% for 3 actions."
+    },
+    "funeral_star": {
+      "status": "undead_damage",
+      "duration_actions": 0,
+      "magnitude": 45,
+      "description": "Add 45% base elemental spirit damage against undead only."
+    },
+    "prime_governor": {
+      "status": "push",
+      "duration_actions": 0,
+      "magnitude": 2,
+      "description": "Push target 2 m; immune targets take 20% base elemental kinetic damage instead. No durability stabilization."
+    },
+    "first_dawn": {
+      "status": "dispel",
+      "duration_actions": 0,
+      "magnitude": 2,
+      "description": "Remove up to 2 removable enemy positive effects."
+    }
+  },
+  "proc_rules": {
+    "roll": "Once on the first successful direct target per offensive action; listed core chance.",
+    "source_values": "Base P0/E0 after component passives, before forging state and forge multipliers. Prevents recursive scaling.",
+    "stacking": "Same named status refreshes duration, never stacks; different sources use strongest magnitude.",
+    "duration": "Target completed actions, not seconds. Wielder effects use wielder actions.",
+    "limits": "Hard-control immune bosses receive listed substitutes; all effects respect immunity flags.",
+    "secondary_hits": "DoTs, echoes, splashes, bursts and shatter cannot roll weapon procs.",
+    "cracked": "Core proc chance gains 4 percentage points per excess forge strike, capped at 50%; effect magnitude unchanged.",
+    "friendly_fire": "All persistent ground damage and terminal/ordnance bursts affect both sides. Other listed extra-enemy effects target enemies only.",
+    "critical": "Direct hits only; critical damage 1.5x before defense; proc damage and terminal bursts cannot crit.",
+    "armor": "Attack values are pre-defense weapon contribution, not promised final HP damage. Combat integration determines defense formula."
+  }
+}

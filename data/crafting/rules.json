@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "status": "balance_proposal",
+  "compatibility": "One framework + one matching-family striker + any one core. No fourth equipment part.",
+  "skill_bonus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "limit": "min(10, framework.strikes + striker.strikes + core.strikes + skill_bonus)",
+  "snapshot": "Skill bonus and forge are frozen at craft creation; later respec cannot retroactively change an item.",
+  "strike_cap": "Universal maximum 15 blows for every combination. Never stop at a limit-relative count: that would disclose the hidden limit. Excess blows continue scaling elemental leakage; durability floors at 5% of base before its hidden random roll.",
+  "cancel": "Until the first blow, cancellation returns all components. After a blow, stopping finalizes the current item; no material refunds.",
+  "critical_note": "175% and 200% mean 1.75x and 2.00x total attack, not +175%/+200%.",
+  "forge_locations": {
+    "standard": [
+      "ashenreach",
+      "stormcrown_keep",
+      "ironhold",
+      "dragons_rest"
+    ],
+    "mistvale": "relic outside Mistvale city, unlocked through courier story",
+    "sands": "secret Golden Expanse forge, revealed only after first completed Mistvale craft"
+  },
+  "mistvale_bonus": "1.10x final physical and elemental weapon attack; does not stack with sands forge bonus.",
+  "sands_bonus": "Perfect curve is 1.25 + 0.75*(2**((L-2)/8)-1), reaching 2.00x. Under-struck attack uses 1.15x base-state output. Neither stacks with Mistvale; Sands is stronger at every limit.",
+  "formula_source": "tools/build_crafting_catalog.py: stats() is the exact balance reference, not game runtime.",
+  "salvage": {
+    "shatter_shards": 2,
+    "tinkerer_payload_shards": 1,
+    "fusion_shards": 5,
+    "fusion_fee": "25% of that core appraisal, rounded half-up; restore the SAME core id.",
+    "degraded_stock": "One degraded framework stock and one degraded striker stock; four same-material degraded pieces + 5 gold recover one original raw stock.",
+    "intact_disassembly": "At a suitable workshop, consumes weapon and returns 1 core shard plus 2 degraded stocks. Never returns original parts.",
+    "cracked_repair": "Cannot repair, stabilize, dismantle safely into original parts, or reveal remaining durability.",
+    "ordnance_recovery": "Survive battle and recover salvage at impact/device site; no automatic remote salvage.",
+    "fusion_gate": "Must previously discover the whole core; neither fusion nor salvage unlocks an undiscovered core."
+  },
+  "anti_exploit": {
+    "terminal": "Remove weapon/ordnance from inventory before damage event; one unique detonation id prevents duplicate bursts.",
+    "ordnance": "Tessa: 1 full action + 14 MP. Tobin: 1 full action + 18 MP; device arms at end of his action, max 1 deployed. Proposed costs.",
+    "payload": "Use the same pre-defense terminal budget and radius as that cracked weapon. Remaining hidden durability never increases payload strength.",
+    "self_feed": "Firing a cracked cannon does not recursively consume loaded cracked ordnance. One payload item and one detonation event.",
+    "staff": "Every offensive weapon-channeling action consumes durability; healing, guard and non-weapon spells do not. Multi-hit actions pay once.",
+    "hidden_life": "On crack: hidden starting durability sampled uniformly from integer range shown in designer data. Each offensive action spends 1–3 hidden points uniformly. Item RNG state persists through save/load.",
+    "reload": "Outcome and RNG progression committed with item/action transaction; reloading cannot reroll a completed forge or hit.",
+    "no_danger_meter": true
+  },
+  "ledger": {
+    "acquired": "On accepting the first courier mission.",
+    "ordinary_recipes": "Knowledge aids experimentation; discovered parts may be combined before their recipe page is owned.",
+    "hidden_values": "Component strike contributions only revealed by acquired pages; other hidden values never appear in ordinary equipment UI.",
+    "secret_reveal": "First finalized Mistvale forge use after restoration triggers the book and new sand map once. Under-struck, Masterwork and cracked outcomes all qualify; preview/cancel does not."
+  },
+  "purchased_equipment": "Existing loot/shop items keep independent identities and benefits; do not automatically replace them with generated catalog recipes."
+}

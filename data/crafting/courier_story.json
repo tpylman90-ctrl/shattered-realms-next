@@ -1,0 +1,435 @@
+{
+  "status": "authored_proposal_not_runtime_integrated",
+  "quests": [
+    {
+      "id": "courier_ravenwood",
+      "title": "A Ledger Without Ink",
+      "giver": "Blackthorn courier steward",
+      "objective": "Recover the lost satchel on the Old Watch Trail, gather 3 Ironbark Heartwood, and bring both to the fort.",
+      "recipient": "Blackthorn workshop keeper",
+      "prerequisites": [
+        "blackthorn_squad_tutorial_completed"
+      ],
+      "reward_page_id": "page_ravenwood",
+      "reward_gold": 70,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [
+        "grant_ancient_ledger"
+      ],
+      "on_complete": [
+        "first_courier_completed"
+      ]
+    },
+    {
+      "id": "courier_ashen_wastes",
+      "title": "A Furnace That Remembers",
+      "giver": "Ashenreach foundry steward",
+      "objective": "Collect 4 Basalt Iron and 2 Froststeel Ore; use the cold stock to repair a cooling regulator, then carry the restored regulator to the foundry.",
+      "recipient": "Ashenreach furnace crew",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:ashen_wastes"
+      ],
+      "reward_page_id": "page_ashen_wastes",
+      "reward_gold": 180,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_frostpeaks",
+      "title": "The Last Warm Mile",
+      "giver": "Icehelm provisioner",
+      "objective": "Recover a stranded supply sled, gather 3 Cinderwood in the Ashen Wastes, then escort the sled through one ambush encounter.",
+      "recipient": "Icehelm mountain refuge",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:frostpeaks"
+      ],
+      "reward_page_id": "page_frostpeaks",
+      "reward_gold": 170,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_drakeshard_range",
+      "title": "What the Brood Left Behind",
+      "giver": "Ironhold naturalist",
+      "objective": "Gather 3 shed Drake Sinew at abandoned nesting ledges and recover a stolen field journal without harming healthy drakes.",
+      "recipient": "Ironhold scale worker",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:drakeshard_range"
+      ],
+      "reward_page_id": "page_drakeshard_range",
+      "reward_gold": 180,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_golden_expanse",
+      "title": "Water Beneath the Road",
+      "giver": "Sunspire caravan steward",
+      "objective": "Bring 3 Tidebronze and 3 Oiled Reed Cord from two regions, repair a buried well, and deliver water to the stranded caravan.",
+      "recipient": "Sunspire well keeper",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:golden_expanse"
+      ],
+      "reward_page_id": "page_golden_expanse",
+      "reward_gold": 190,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_blighted_marsh",
+      "title": "A Cure in Three Parcels",
+      "giver": "Marsh healer",
+      "objective": "Gather 3 Bogroot Fiber, 2 Rimepine resin samples and 2 saltwater culture samples; protect the healer while the antidote is prepared.",
+      "recipient": "Marsh refuge dispensary",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:blighted_marsh"
+      ],
+      "reward_page_id": "page_blighted_marsh",
+      "reward_gold": 180,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_cursed_mire",
+      "title": "Names Under the Mud",
+      "giver": "Mire archivist",
+      "objective": "Recover three named grave tablets and carry rubbings to Deadwind Hollow for comparison; return the matched names to their families.",
+      "recipient": "Mire remembrance keeper",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:cursed_mire"
+      ],
+      "reward_page_id": "page_cursed_mire",
+      "reward_gold": 190,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_shadowfen_forest",
+      "title": "The Thread That Leads Home",
+      "giver": "Forest pathfinder",
+      "objective": "Follow a missing courier’s thread trail, defeat the creature holding the courier, and recover 3 Webglass with the abandoned route markers.",
+      "recipient": "Shadowfen waystation",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:shadowfen_forest"
+      ],
+      "reward_page_id": "page_shadowfen_forest",
+      "reward_gold": 180,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_iron_plains",
+      "title": "Orders for the Living",
+      "giver": "Harrowstead quartermaster",
+      "objective": "Recover a captured dispatch case, obtain 4 Blackthorn Iron and 3 Tempered Plainsteel, and deliver repaired field braces to an isolated unit.",
+      "recipient": "Harrowstead field surgeon",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:iron_plains"
+      ],
+      "reward_page_id": "page_iron_plains",
+      "reward_gold": 170,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_veiled_sea",
+      "title": "Salvage Rights",
+      "giver": "Westhaven shipwright",
+      "objective": "Recover a ship’s bell from a wreck, gather 4 Saltbound Oak, and arbitrate a salvage dispute before delivering the repaired bell.",
+      "recipient": "Silverkeep harbor watch",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:veiled_sea"
+      ],
+      "reward_page_id": "page_veiled_sea",
+      "reward_gold": 180,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_ember_coast",
+      "title": "Cargo Too Hot to Carry",
+      "giver": "Dragon’s Rest keeper",
+      "objective": "Collect 3 Drakeglass and 3 Froststeel Ore to build an insulated carrier, then escort a rescued egg to its rookery.",
+      "recipient": "Dragon’s Rest rookery",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:ember_coast"
+      ],
+      "reward_page_id": "page_ember_coast",
+      "reward_gold": 190,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_stormcrown_keep",
+      "title": "A Voice Through the Storm",
+      "giver": "Stormcrown ward smith",
+      "objective": "Gather 3 Thundersteel and 2 Singing Quartz, restore two relay posts, and carry their calibration record back through the pass.",
+      "recipient": "Stormcrown forge keeper",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:stormcrown_keep"
+      ],
+      "reward_page_id": "page_stormcrown_keep",
+      "reward_gold": 200,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_moonfall_highlands",
+      "title": "The Missing Constellation",
+      "giver": "Observatory apprentice",
+      "objective": "Recover three lens fragments from separate landmarks and obtain 3 Veil Silver for their mounts; return the repaired observation plate.",
+      "recipient": "Moonfall observatory",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:moonfall_highlands"
+      ],
+      "reward_page_id": "page_moonfall_highlands",
+      "reward_gold": 210,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_copperfen_basin",
+      "title": "Return to Sender, Explosively",
+      "giver": "Copperfen repair guild",
+      "objective": "Recover a misrouted pressure chest, gather 4 Springbrass and 2 Tidebronze, and test a replacement safety valve in a controlled encounter.",
+      "recipient": "Copperfen pump engineer",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:copperfen_basin"
+      ],
+      "reward_page_id": "page_copperfen_basin",
+      "reward_gold": 200,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_glasswind_steppe",
+      "title": "Music for a Silent Crossing",
+      "giver": "Steppe caravan musician",
+      "objective": "Gather 4 Singing Quartz and 2 Storm Cedar, restore a wind beacon, then guide a lost caravan using its recovered melody.",
+      "recipient": "Glasswind crossing keeper",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:glasswind_steppe"
+      ],
+      "reward_page_id": "page_glasswind_steppe",
+      "reward_gold": 200,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_deadwind_hollow",
+      "title": "The Bell With No Name",
+      "giver": "Hollow funerary attendant",
+      "objective": "Retrieve a bell clapper, obtain the grave rubbings recovered in the Mire, and deliver the reunited records after a spirit encounter.",
+      "recipient": "Deadwind remembrance hall",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:deadwind_hollow",
+        "courier_cursed_mire_completed"
+      ],
+      "reward_page_id": "page_deadwind_hollow",
+      "reward_gold": 200,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_mistvale",
+      "title": "The Keeper’s Unfinished Parcel",
+      "giver": "Mistvale bookbinder",
+      "objective": "Collect 3 Mist Silk, 3 Moon Yew and a courier seal from an abandoned aqueduct; restore an old case containing directions to the relic outside the city.",
+      "recipient": "Mistvale relic caretaker",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:mistvale",
+        "at_least_6_regional_pages"
+      ],
+      "reward_page_id": "page_mistvale",
+      "reward_gold": 240,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "courier_devouring_deep",
+      "title": "Letters From the Edge",
+      "giver": "Outer Fracture expedition scribe",
+      "objective": "Rescue a survey team, recover three field reports, and obtain 3 Null Obsidian before carrying the reports to a safe mainland archive.",
+      "recipient": "Coastal expedition archive",
+      "prerequisites": [
+        "first_courier_completed",
+        "region_access:devouring_deep"
+      ],
+      "reward_page_id": "page_devouring_deep",
+      "reward_gold": 250,
+      "repeatable": false,
+      "timed": false,
+      "hero_choice_required": false,
+      "on_accept": [],
+      "on_complete": []
+    },
+    {
+      "id": "restore_mistvale",
+      "title": "The Last Ember of the Old Craft",
+      "giver": "Mistvale relic caretaker",
+      "prerequisites": [
+        "courier_mistvale_completed",
+        "at_least_8_regional_pages_from_8_territories",
+        "courier_stormcrown_keep_completed OR courier_copperfen_basin_completed"
+      ],
+      "objective": "Recover the aqueduct’s focusing ring; deliver 6 Veil Silver, 4 Thundersteel and 4 Springbrass; restore the channels and defeat the relic guardian.",
+      "reward": "Mistvale relic forge unlocked; apparent finale, celebration and complete journal entry. No secret-forge silhouette or percentage-complete hint.",
+      "repeatable": false,
+      "timed": false
+    },
+    {
+      "id": "book_awakening",
+      "title": "A Map Beneath the Ink",
+      "prerequisites": [
+        "restore_mistvale_completed",
+        "first_finalized_mistvale_weapon"
+      ],
+      "objective": "Automatic once-only scene: blue energy touches the ledger, old marks align, and a previously blank spread becomes a map into the sands.",
+      "reward": "Unlock the hidden chapter and offer its three investigations simultaneously.",
+      "hidden_until_trigger": true,
+      "qualifying_outcomes": [
+        "under_struck",
+        "masterwork",
+        "cracked"
+      ],
+      "excluded_events": [
+        "preview",
+        "cancel_before_first_blow",
+        "merely_enter_forge"
+      ]
+    },
+    {
+      "id": "sands_lens",
+      "title": "Where Dawn Was Buried",
+      "prerequisites": [
+        "book_awakening_completed"
+      ],
+      "giver": "Sunspire map reader",
+      "objective": "Follow three shifting landmarks to the Dawnwell Ruins, solve their shadow alignment and recover a solar lens; carry it to the buried threshold.",
+      "reward": "Solar lens installed.",
+      "repeatable": false,
+      "timed": false,
+      "hidden_until_trigger": true
+    },
+    {
+      "id": "sands_pressure",
+      "title": "A Weight the World Forgot",
+      "prerequisites": [
+        "book_awakening_completed"
+      ],
+      "giver": "Copperfen repair guild",
+      "objective": "Gather 6 Springbrass, 4 Scaleiron and 4 Thundersteel across three territories, recover a pressure diagram, and deliver the completed regulator to the buried threshold.",
+      "reward": "Ancient pressure regulator installed.",
+      "repeatable": false,
+      "timed": false,
+      "hidden_until_trigger": true
+    },
+    {
+      "id": "sands_memory",
+      "title": "The Metal Remembers",
+      "prerequisites": [
+        "book_awakening_completed"
+      ],
+      "giver": "Mistvale relic caretaker",
+      "objective": "Obtain a Relic Memory Core and 4 Sunbronze, use Mistvale to imprint a calibration token without consuming an equipped weapon, and carry it to the buried threshold.",
+      "reward": "Memory seal installed; the core is consumed in the quest token.",
+      "repeatable": false,
+      "timed": false,
+      "hidden_until_trigger": true
+    },
+    {
+      "id": "restore_sands",
+      "title": "The Forge Beneath All Names",
+      "prerequisites": [
+        "sands_lens_completed",
+        "sands_pressure_completed",
+        "sands_memory_completed"
+      ],
+      "giver": "Ancient ledger",
+      "objective": "Open the buried chamber, survive its guardian encounter and align all three restored mechanisms.",
+      "reward": "Greatest forge unlocked: up to 200% perfect attack, smooth silver/gold finish and yellow static; original core element remains.",
+      "repeatable": false,
+      "timed": false,
+      "hidden_until_trigger": true
+    }
+  ],
+  "global_rules": {
+    "optional": "Never gates main campaign liberation, travel or hero recruitment.",
+    "order": "After the opening commission, regional commissions can be accepted and completed in any accessible order except the linked Mire/Hollow record task and Mistvale milestones.",
+    "pages": "One regional reward is a folio containing several leaves, not a single tiny page. All 18 folios have explicit rewards; 8 are sufficient to approach Mistvale. The player can keep collecting the others afterward.",
+    "book": "Granted on first mission acceptance, before its completion. Recipe names and hidden numbers appear only when earned. Discovery never creates an item or unlocks an unknown source automatically.",
+    "delivery": "Gathered objectives accept previously collected ordinary stock. Named quest objects are bound, non-sellable and cannot be irreversibly lost. Rare core objectives explicitly warn of consumption.",
+    "clocks": "No expiration, real-time countdown, daily rotation, or forced grinding to retain progress.",
+    "curse": "Both Mire and Hollow remain unliberated until their shared main-story climax; courier record recovery does not cleanse either map.",
+    "spoilers": "Sands investigations are absent from player quest menus, completion counts, map pins and NPC hints until book_awakening.",
+    "access": "No mission requires recruiting a specific hero. Resident hero and guild contacts remain available on either branch.",
+    "recovery": "If a required battle is lost, objectives remain retryable; consumed turn-in goods commit with rewards atomically."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "salvage_items": 96,
+  "components": 200,
+  "raw_materials": 36,
+  "named_recipes": 180,
+  "legal_assemblies": 18000,
+  "forge_state_boundary_groups": 108000,
+  "regional_folios": 18,
+  "story_entries": 24,
+  "max_direct_buy_shape_forge_sell_profit_gold": -149,
+  "limits": "Numerical and reference validation only; no combat playtest, runtime integration or full campaign economy simulation."
+}
