@@ -173,8 +173,10 @@ func show_forge_lab() -> void:
 	_new_page("forge_lab")
 	var lab := load(script_path).new() as Control
 	lab.connect("return_requested", Callable(self, "show_title"))
-	_margin(page, 10).add_child(lab)
+	page.add_child(lab)
 	lab.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	lab.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	lab.size_flags_vertical = Control.SIZE_EXPAND_FILL
 
 
 func start_campaign() -> void:
