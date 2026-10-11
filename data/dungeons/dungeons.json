@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "dungeons": [
+    {
+      "id": "ravenwood_hidden_dungeon",
+      "territory_id": "ravenwood",
+      "discovery": "hidden"
+    },
+    {
+      "id": "sundered_vault",
+      "territory_id": "ashen_wastes",
+      "discovery": "hidden"
+    },
+    {
+      "id": "frostpeaks_hidden_dungeon",
+      "territory_id": "frostpeaks",
+      "discovery": "hidden"
+    },
+    {
+      "id": "drakeshard_hidden_dungeon",
+      "territory_id": "drakeshard_range",
+      "discovery": "hidden"
+    },
+    {
+      "id": "golden_expanse_hidden_dungeon",
+      "territory_id": "golden_expanse",
+      "discovery": "hidden"
+    },
+    {
+      "id": "blighted_marsh_hidden_dungeon",
+      "territory_id": "blighted_marsh",
+      "discovery": "hidden"
+    },
+    {
+      "id": "cursed_mire_hidden_dungeon",
+      "territory_id": "cursed_mire",
+      "discovery": "hidden"
+    },
+    {
+      "id": "shadowfen_hidden_dungeon",
+      "territory_id": "shadowfen_forest",
+      "discovery": "hidden"
+    },
+    {
+      "id": "iron_plains_hidden_dungeon",
+      "territory_id": "iron_plains",
+      "discovery": "hidden"
+    },
+    {
+      "id": "veiled_sea_hidden_dungeon",
+      "territory_id": "veiled_sea",
+      "discovery": "hidden"
+    },
+    {
+      "id": "ember_coast_hidden_dungeon",
+      "territory_id": "ember_coast",
+      "discovery": "hidden"
+    },
+    {
+      "id": "stormcrown_hidden_dungeon",
+      "territory_id": "stormcrown_keep",
+      "discovery": "hidden"
+    }
+  ]
+}
