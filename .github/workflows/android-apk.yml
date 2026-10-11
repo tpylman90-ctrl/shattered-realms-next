@@ -58,6 +58,8 @@ jobs:
           mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
           unzip -q templates.tpz 'templates/*' -d template_extract
           mv template_extract/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+      - name: Validate forge catalog and artwork integrity
+        run: python3 tools/verify_forge_art.py
       - name: Validate Godot import
         shell: bash
         run: |
