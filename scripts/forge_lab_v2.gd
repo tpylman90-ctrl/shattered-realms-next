@@ -30,6 +30,10 @@ var content_root: VBoxContainer
 var selection_view: Control
 var result_view: Control
 var stage_description: Label
+var assembly_row: HBoxContainer
+var result_art: TextureRect
+var composite_preview: Control
+var result_note: Label
 
 func _ready() -> void:
 	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(CATALOG))
@@ -125,25 +129,27 @@ func _build() -> void:
 	stage_description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	excol.add_child(stage_description)
 	# Above the scrolling grid we keep all three assembly slots on display.
-	var assembly := HBoxContainer.new()
-	assembly.add_theme_constant_override("separation",8)
-	content_root.add_child(assembly)
+	assembly_row = HBoxContainer.new()
+	assembly_row.add_theme_constant_override("separation",8)
+	content_root.add_child(assembly_row)
 	for index in range(3):
 		var panel := _panel(Color(0.035,0.09,0.14,0.93),Color("#665c4b"))
 		panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		assembly.add_child(panel)
+		assembly_row.add_child(panel)
 		var inside := HBoxContainer.new()
 		panel.add_child(inside)
 		var pic := TextureRect.new()
-		pic.custom_minimum_size = Vector2(76,78)
+		pic.custom_minimum_size = Vector2(86,82)
 		pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		inside.add_child(pic)
 		slot_pictures.append(pic)
 		var names := VBoxContainer.new()
+		names.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		inside.add_child(names)
 		names.add_child(_label(["FRAMEWORK","STRIKER","CORE"][index],13,GOLD))
 		var value := _label("Empty",16)
+		value.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		value.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		names.add_child(value)
 		slot_names.append(value)
@@ -178,23 +184,47 @@ func _build() -> void:
 	result_panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	result_scroll.add_child(result_panel)
 	var result_stack := VBoxContainer.new()
-	result_stack.add_theme_constant_override("separation",10)
+	result_stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	result_stack.add_theme_constant_override("separation",6)
 	result_panel.add_child(result_stack)
-	center_label = _label("",30,GOLD)
+	center_label = _label("",29,GOLD)
 	center_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	result_stack.add_child(center_label)
-	var hero := TextureRect.new()
-	hero.name = "ResultWeaponImage"
-	hero.custom_minimum_size = Vector2(0,220)
-	hero.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	hero.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	result_stack.add_child(hero)
+	var reveal := HBoxContainer.new()
+	reveal.add_theme_constant_override("separation",18)
+	result_stack.add_child(reveal)
+	var showcase := VBoxContainer.new()
+	showcase.custom_minimum_size.x = 400
+	showcase.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	reveal.add_child(showcase)
+	var display_surface := _panel(Color(0.025,0.055,0.09,0.92),GOLD)
+	showcase.add_child(display_surface)
+	var display_center := CenterContainer.new()
+	display_center.custom_minimum_size.y = 246
+	display_surface.add_child(display_center)
+	var art_stack := Control.new()
+	art_stack.custom_minimum_size = Vector2(415,244)
+	display_center.add_child(art_stack)
+	result_art = TextureRect.new()
+	result_art.name = "ResultWeaponImage"
+	result_art.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	result_art.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	result_art.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	art_stack.add_child(result_art)
+	composite_preview = Control.new()
+	composite_preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	art_stack.add_child(composite_preview)
+	result_note = _label("",14,Color("#d7c9ac"))
+	result_note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	result_note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	showcase.add_child(result_note)
 	details = RichTextLabel.new()
 	details.bbcode_enabled = true
 	details.fit_content = true
 	details.scroll_active = false
-	details.custom_minimum_size.y = 160
-	result_stack.add_child(details)
+	details.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	details.custom_minimum_size = Vector2(370,160)
+	reveal.add_child(details)
 	var footer := HBoxContainer.new()
 	footer.add_theme_constant_override("separation",12)
 	content_root.add_child(footer)
@@ -268,6 +298,7 @@ func _set_step(index: int) -> void:
 	][step]
 	_rebuild_inventory()
 	_refresh_slots()
+	assembly_row.visible = true
 	prev.disabled = step == 0
 	action.text = "START CRAFT" if step == 4 else "NEXT STAGE ›"
 	action.disabled = choice[step] < 0
@@ -281,10 +312,11 @@ func _rebuild_inventory() -> void:
 		cards.remove_child(old)
 		old.queue_free()
 	var options := _options()
+	cards.columns = mini(4, maxi(1, options.size()))
 	for i in options.size():
 		var item: Dictionary = options[i]
 		var tile := Button.new()
-		tile.custom_minimum_size = Vector2(175,145)
+		tile.custom_minimum_size = Vector2(205,184) if options.size() <= 6 else Vector2(175,158)
 		tile.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		tile.clip_contents = true
 		var chosen: bool = i == choice[step]
@@ -299,13 +331,13 @@ func _rebuild_inventory() -> void:
 		box.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		var pic := TextureRect.new()
 		pic.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		pic.custom_minimum_size.y = 83
+		pic.custom_minimum_size.y = 108 if options.size() <= 6 else 91
 		pic.size_flags_vertical = Control.SIZE_EXPAND_FILL
 		pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		pic.texture = _icon(item)
 		box.add_child(pic)
-		var name := _label(str(item.get("name","Unknown")),14,GOLD if chosen else Color("#f7efde"))
+		var name := _label(str(item.get("name","Unknown")),16,GOLD if chosen else Color("#f7efde"))
 		name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		name.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		name.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -389,11 +421,23 @@ func _show_result() -> void:
 			break
 	selection_view.visible = false
 	result_view.visible = true
+	assembly_row.visible = false
 	stage_heading.text = "CRAFTING COMPLETE — PRACTICE RESULT"
 	stage_description.text = "Hammer timing will be added here later. No items, gold or campaign progress are consumed."
 	center_label.text = str(result.get("name","UNCHARTED ASSEMBLY"))
-	var image: TextureRect = result_view.find_child("ResultWeaponImage",true,false) as TextureRect
-	image.texture = _icon(result) if not result.is_empty() else _icon(b)
+	result_art.texture = null
+	for child in composite_preview.get_children():
+		composite_preview.remove_child(child)
+		child.queue_free()
+	var finished_texture := _icon(result) if not result.is_empty() else null
+	if finished_texture != null:
+		result_art.texture = finished_texture
+		result_note.text = "NAMED RECIPE ARTWORK — catalog concept"
+	else:
+		result_note.text = "UNNAMED ASSEMBLY — component concept preview (final assembled art pending)"
+		_add_composite_component(a,Vector2(36,8),Vector2(296,224))
+		_add_composite_component(b,Vector2(180,21),Vector2(210,188))
+		_add_composite_component(c,Vector2(325,158),Vector2(78,72))
 	var stat := "[b]Weapon family:[/b] %s\n[b]Framework:[/b] %s\n[b]Striker:[/b] %s\n[b]Entropic core:[/b] %s\n[b]Forge:[/b] %s\n" % [
 		families[choice[0]],a["name"],b["name"],c["name"],["Standard","Mistvale","Sands"][choice[4]]]
 	stat += "\n[b]Handling:[/b] %s\n[b]Striker trait:[/b] %s\n[b]Core effect:[/b] %s\n" % [a.get("handling",""),b.get("trait",""),c.get("effect","")]
@@ -416,3 +460,16 @@ func _craft_again() -> void:
 	action.pressed.connect(_advance)
 	prev.text = "‹ PREVIOUS"
 	_set_step(0)
+
+func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vector2) -> void:
+	var texture := _icon(item)
+	if texture == null:
+		return
+	var layer := TextureRect.new()
+	layer.texture = texture
+	layer.position = origin
+	layer.size = dimensions
+	layer.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	layer.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	composite_preview.add_child(layer)
