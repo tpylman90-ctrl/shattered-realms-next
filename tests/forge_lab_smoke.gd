@@ -27,7 +27,7 @@ func _run() -> void:
 	if lab != null:
 		_check(lab.size.x > 300 and lab.size.y > 250, "Forge screen must fill viewport")
 		_check(lab.families.size() == 15, "15 families must be selectable")
-		_check(lab.total_entries == 512, "Full catalog should contain 512 entries")
+		_check(lab.total_entries == 702, "Expanded catalog should contain 702 entries")
 		_check(lab.cards.get_child_count() == 15, "Inventory should begin with 15 family cards")
 		lab._choose(0)
 		lab._advance()
