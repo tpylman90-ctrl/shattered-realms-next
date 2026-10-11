@@ -1,0 +1,1505 @@
+{
+  "items": [
+    {
+      "id": "shard_core_thornseed",
+      "name": "Thornseed Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_thornseed",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_thornseed",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_huntsman_s_echo",
+      "name": "Huntsman’s Echo Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_huntsman_s_echo",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_huntsman_s_echo",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_heart_of_the_old_grove",
+      "name": "Heart of the Old Grove Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_heart_of_the_old_grove",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_heart_of_the_old_grove",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_cinder_pearl",
+      "name": "Cinder Pearl Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_cinder_pearl",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_cinder_pearl",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_magma_heart",
+      "name": "Magma Heart Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_magma_heart",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_magma_heart",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_ashen_crown",
+      "name": "Ashen Crown Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_ashen_crown",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_ashen_crown",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_rime_shard",
+      "name": "Rime Shard Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_rime_shard",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_rime_shard",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_whiteout_eye",
+      "name": "Whiteout Eye Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_whiteout_eye",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_whiteout_eye",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_glacial_heart",
+      "name": "Glacial Heart Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_glacial_heart",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_glacial_heart",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_drake_ember",
+      "name": "Drake Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_drake_ember",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_drake_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_scale_resonance",
+      "name": "Scale Resonance Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_scale_resonance",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_scale_resonance",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_brood_oath",
+      "name": "Brood Oath Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_brood_oath",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_brood_oath",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_sunwell_spark",
+      "name": "Sunwell Spark Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_sunwell_spark",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_sunwell_spark",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_mirage_eye",
+      "name": "Mirage Eye Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_mirage_eye",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_mirage_eye",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_buried_dawn",
+      "name": "Buried Dawn Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_buried_dawn",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_buried_dawn",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_adder_bile",
+      "name": "Adder Bile Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_adder_bile",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_adder_bile",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_mire_lantern",
+      "name": "Mire Lantern Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_mire_lantern",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_mire_lantern",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_rotmother_spore",
+      "name": "Rotmother Spore Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_rotmother_spore",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_rotmother_spore",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_grave_ember",
+      "name": "Grave Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_grave_ember",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_grave_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_hexbound_tear",
+      "name": "Hexbound Tear Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_hexbound_tear",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_hexbound_tear",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_anchorless_soul",
+      "name": "Anchorless Soul Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_anchorless_soul",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_anchorless_soul",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_gloam_mote",
+      "name": "Gloam Mote Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_gloam_mote",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_gloam_mote",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_widow_s_knot",
+      "name": "Widow’s Knot Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_widow_s_knot",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_widow_s_knot",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_hollow_canopy",
+      "name": "Hollow Canopy Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_hollow_canopy",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_hollow_canopy",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_marching_spark",
+      "name": "Marching Spark Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_marching_spark",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_marching_spark",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_warhorn_echo",
+      "name": "Warhorn Echo Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_warhorn_echo",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_warhorn_echo",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_siegeheart",
+      "name": "Siegeheart Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_siegeheart",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_siegeheart",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_salt_pearl",
+      "name": "Salt Pearl Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_salt_pearl",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_salt_pearl",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_undertow_knot",
+      "name": "Undertow Knot Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_undertow_knot",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_undertow_knot",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_tempest_bottle",
+      "name": "Tempest Bottle Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_tempest_bottle",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_tempest_bottle",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_coalglass_ember",
+      "name": "Coalglass Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_coalglass_ember",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_coalglass_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_cinderwake_pearl",
+      "name": "Cinderwake Pearl Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_cinderwake_pearl",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_cinderwake_pearl",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_dragon_pact_ember",
+      "name": "Dragon Pact Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_dragon_pact_ember",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_dragon_pact_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_stormglass_spark",
+      "name": "Stormglass Spark Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_stormglass_spark",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_stormglass_spark",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_thundercoil",
+      "name": "Thundercoil Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_thundercoil",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_thundercoil",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_skyward_seal",
+      "name": "Skyward Seal Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_skyward_seal",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_skyward_seal",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_moonlit_flake",
+      "name": "Moonlit Flake Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_moonlit_flake",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_moonlit_flake",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_fallen_star",
+      "name": "Fallen Star Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_fallen_star",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_fallen_star",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_observatory_heart",
+      "name": "Observatory Heart Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_observatory_heart",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_observatory_heart",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_clockwork_spark",
+      "name": "Clockwork Spark Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_clockwork_spark",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_clockwork_spark",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_pressure_pearl",
+      "name": "Pressure Pearl Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_pressure_pearl",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_pressure_pearl",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_overload_governor",
+      "name": "Overload Governor Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_overload_governor",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_overload_governor",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_whisperglass",
+      "name": "Whisperglass Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_whisperglass",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_whisperglass",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_sand_singer",
+      "name": "Sand-Singer Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_sand_singer",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_sand_singer",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_horizon_prism",
+      "name": "Horizon Prism Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_horizon_prism",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_horizon_prism",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_bell_wraith_ember",
+      "name": "Bell-Wraith Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_bell_wraith_ember",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_bell_wraith_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_lantern_soul",
+      "name": "Lantern Soul Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_lantern_soul",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_lantern_soul",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_pale_procession",
+      "name": "Pale Procession Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_pale_procession",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_pale_procession",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_mist_dew",
+      "name": "Mist Dew Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_mist_dew",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_mist_dew",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_veilbound_star",
+      "name": "Veilbound Star Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_veilbound_star",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_veilbound_star",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_relic_memory",
+      "name": "Relic Memory Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_relic_memory",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_relic_memory",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_rift_cinder",
+      "name": "Rift Cinder Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_rift_cinder",
+      "appraisal_gold": 22,
+      "buy_gold": null,
+      "sell_gold": 2,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 28,
+        "output_id": "core_rift_cinder",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_hunger_fragment",
+      "name": "Hunger Fragment Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_hunger_fragment",
+      "appraisal_gold": 52,
+      "buy_gold": null,
+      "sell_gold": 5,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 65,
+        "output_id": "core_hunger_fragment",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_quiet_singularity",
+      "name": "Quiet Singularity Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_quiet_singularity",
+      "appraisal_gold": 102,
+      "buy_gold": null,
+      "sell_gold": 10,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 128,
+        "output_id": "core_quiet_singularity",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_worldroot_seed",
+      "name": "Worldroot Seed Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_worldroot_seed",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_worldroot_seed",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_first_furnace_ember",
+      "name": "First Furnace Ember Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_first_furnace_ember",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_first_furnace_ember",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_stillwinter_heart",
+      "name": "Stillwinter Heart Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_stillwinter_heart",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_stillwinter_heart",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_unbound_funeral_star",
+      "name": "Unbound Funeral Star Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_unbound_funeral_star",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_unbound_funeral_star",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_prime_kettari_governor",
+      "name": "Prime Kettari Governor Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_prime_kettari_governor",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_prime_kettari_governor",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "shard_core_dawn_before_kings",
+      "name": "Dawn Before Kings Core Shard",
+      "kind": "core_shard",
+      "core_id": "core_dawn_before_kings",
+      "appraisal_gold": 210,
+      "buy_gold": null,
+      "sell_gold": 21,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 5,
+        "fee_gold": 263,
+        "output_id": "core_dawn_before_kings",
+        "requires_whole_core_discovered": true
+      }
+    },
+    {
+      "id": "degraded_mat_ironbark_heartwood",
+      "name": "Degraded Ironbark Heartwood",
+      "kind": "degraded_stock",
+      "material_id": "mat_ironbark_heartwood",
+      "appraisal_gold": 2,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_ironbark_heartwood"
+      }
+    },
+    {
+      "id": "degraded_mat_blackthorn_iron",
+      "name": "Degraded Blackthorn Iron",
+      "kind": "degraded_stock",
+      "material_id": "mat_blackthorn_iron",
+      "appraisal_gold": 4,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_blackthorn_iron"
+      }
+    },
+    {
+      "id": "degraded_mat_cinderwood",
+      "name": "Degraded Cinderwood",
+      "kind": "degraded_stock",
+      "material_id": "mat_cinderwood",
+      "appraisal_gold": 3,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_cinderwood"
+      }
+    },
+    {
+      "id": "degraded_mat_basalt_iron",
+      "name": "Degraded Basalt Iron",
+      "kind": "degraded_stock",
+      "material_id": "mat_basalt_iron",
+      "appraisal_gold": 4,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_basalt_iron"
+      }
+    },
+    {
+      "id": "degraded_mat_rimepine",
+      "name": "Degraded Rimepine",
+      "kind": "degraded_stock",
+      "material_id": "mat_rimepine",
+      "appraisal_gold": 3,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_rimepine"
+      }
+    },
+    {
+      "id": "degraded_mat_froststeel_ore",
+      "name": "Degraded Froststeel Ore",
+      "kind": "degraded_stock",
+      "material_id": "mat_froststeel_ore",
+      "appraisal_gold": 5,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_froststeel_ore"
+      }
+    },
+    {
+      "id": "degraded_mat_drake_sinew",
+      "name": "Degraded Drake Sinew",
+      "kind": "degraded_stock",
+      "material_id": "mat_drake_sinew",
+      "appraisal_gold": 4,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_drake_sinew"
+      }
+    },
+    {
+      "id": "degraded_mat_scaleiron",
+      "name": "Degraded Scaleiron",
+      "kind": "degraded_stock",
+      "material_id": "mat_scaleiron",
+      "appraisal_gold": 5,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_scaleiron"
+      }
+    },
+    {
+      "id": "degraded_mat_dunepalm_heartwood",
+      "name": "Degraded Dunepalm Heartwood",
+      "kind": "degraded_stock",
+      "material_id": "mat_dunepalm_heartwood",
+      "appraisal_gold": 4,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_dunepalm_heartwood"
+      }
+    },
+    {
+      "id": "degraded_mat_sunbronze",
+      "name": "Degraded Sunbronze",
+      "kind": "degraded_stock",
+      "material_id": "mat_sunbronze",
+      "appraisal_gold": 6,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_sunbronze"
+      }
+    },
+    {
+      "id": "degraded_mat_bogroot_fiber",
+      "name": "Degraded Bogroot Fiber",
+      "kind": "degraded_stock",
+      "material_id": "mat_bogroot_fiber",
+      "appraisal_gold": 5,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_bogroot_fiber"
+      }
+    },
+    {
+      "id": "degraded_mat_mire_iron",
+      "name": "Degraded Mire Iron",
+      "kind": "degraded_stock",
+      "material_id": "mat_mire_iron",
+      "appraisal_gold": 6,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_mire_iron"
+      }
+    },
+    {
+      "id": "degraded_mat_gravewillow",
+      "name": "Degraded Gravewillow",
+      "kind": "degraded_stock",
+      "material_id": "mat_gravewillow",
+      "appraisal_gold": 5,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_gravewillow"
+      }
+    },
+    {
+      "id": "degraded_mat_hexstone",
+      "name": "Degraded Hexstone",
+      "kind": "degraded_stock",
+      "material_id": "mat_hexstone",
+      "appraisal_gold": 7,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_hexstone"
+      }
+    },
+    {
+      "id": "degraded_mat_gloamwood",
+      "name": "Degraded Gloamwood",
+      "kind": "degraded_stock",
+      "material_id": "mat_gloamwood",
+      "appraisal_gold": 6,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_gloamwood"
+      }
+    },
+    {
+      "id": "degraded_mat_webglass",
+      "name": "Degraded Webglass",
+      "kind": "degraded_stock",
+      "material_id": "mat_webglass",
+      "appraisal_gold": 7,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_webglass"
+      }
+    },
+    {
+      "id": "degraded_mat_warhorse_sinew",
+      "name": "Degraded Warhorse Sinew",
+      "kind": "degraded_stock",
+      "material_id": "mat_warhorse_sinew",
+      "appraisal_gold": 6,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_warhorse_sinew"
+      }
+    },
+    {
+      "id": "degraded_mat_tempered_plainsteel",
+      "name": "Degraded Tempered Plainsteel",
+      "kind": "degraded_stock",
+      "material_id": "mat_tempered_plainsteel",
+      "appraisal_gold": 8,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_tempered_plainsteel"
+      }
+    },
+    {
+      "id": "degraded_mat_saltbound_oak",
+      "name": "Degraded Saltbound Oak",
+      "kind": "degraded_stock",
+      "material_id": "mat_saltbound_oak",
+      "appraisal_gold": 7,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_saltbound_oak"
+      }
+    },
+    {
+      "id": "degraded_mat_tidebronze",
+      "name": "Degraded Tidebronze",
+      "kind": "degraded_stock",
+      "material_id": "mat_tidebronze",
+      "appraisal_gold": 8,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_tidebronze"
+      }
+    },
+    {
+      "id": "degraded_mat_ashsail_cord",
+      "name": "Degraded Ashsail Cord",
+      "kind": "degraded_stock",
+      "material_id": "mat_ashsail_cord",
+      "appraisal_gold": 7,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_ashsail_cord"
+      }
+    },
+    {
+      "id": "degraded_mat_drakeglass",
+      "name": "Degraded Drakeglass",
+      "kind": "degraded_stock",
+      "material_id": "mat_drakeglass",
+      "appraisal_gold": 9,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_drakeglass"
+      }
+    },
+    {
+      "id": "degraded_mat_storm_cedar",
+      "name": "Degraded Storm Cedar",
+      "kind": "degraded_stock",
+      "material_id": "mat_storm_cedar",
+      "appraisal_gold": 8,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_storm_cedar"
+      }
+    },
+    {
+      "id": "degraded_mat_thundersteel",
+      "name": "Degraded Thundersteel",
+      "kind": "degraded_stock",
+      "material_id": "mat_thundersteel",
+      "appraisal_gold": 9,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_thundersteel"
+      }
+    },
+    {
+      "id": "degraded_mat_moon_yew",
+      "name": "Degraded Moon Yew",
+      "kind": "degraded_stock",
+      "material_id": "mat_moon_yew",
+      "appraisal_gold": 8,
+      "buy_gold": null,
+      "sell_gold": 0,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_moon_yew"
+      }
+    },
+    {
+      "id": "degraded_mat_star_slate",
+      "name": "Degraded Star Slate",
+      "kind": "degraded_stock",
+      "material_id": "mat_star_slate",
+      "appraisal_gold": 10,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_star_slate"
+      }
+    },
+    {
+      "id": "degraded_mat_oiled_reed_cord",
+      "name": "Degraded Oiled Reed Cord",
+      "kind": "degraded_stock",
+      "material_id": "mat_oiled_reed_cord",
+      "appraisal_gold": 9,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_oiled_reed_cord"
+      }
+    },
+    {
+      "id": "degraded_mat_springbrass",
+      "name": "Degraded Springbrass",
+      "kind": "degraded_stock",
+      "material_id": "mat_springbrass",
+      "appraisal_gold": 10,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_springbrass"
+      }
+    },
+    {
+      "id": "degraded_mat_windreed",
+      "name": "Degraded Windreed",
+      "kind": "degraded_stock",
+      "material_id": "mat_windreed",
+      "appraisal_gold": 9,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_windreed"
+      }
+    },
+    {
+      "id": "degraded_mat_singing_quartz",
+      "name": "Degraded Singing Quartz",
+      "kind": "degraded_stock",
+      "material_id": "mat_singing_quartz",
+      "appraisal_gold": 11,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_singing_quartz"
+      }
+    },
+    {
+      "id": "degraded_mat_shroud_thread",
+      "name": "Degraded Shroud Thread",
+      "kind": "degraded_stock",
+      "material_id": "mat_shroud_thread",
+      "appraisal_gold": 10,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_shroud_thread"
+      }
+    },
+    {
+      "id": "degraded_mat_belliron",
+      "name": "Degraded Belliron",
+      "kind": "degraded_stock",
+      "material_id": "mat_belliron",
+      "appraisal_gold": 11,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_belliron"
+      }
+    },
+    {
+      "id": "degraded_mat_mist_silk",
+      "name": "Degraded Mist Silk",
+      "kind": "degraded_stock",
+      "material_id": "mat_mist_silk",
+      "appraisal_gold": 10,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_mist_silk"
+      }
+    },
+    {
+      "id": "degraded_mat_veil_silver",
+      "name": "Degraded Veil Silver",
+      "kind": "degraded_stock",
+      "material_id": "mat_veil_silver",
+      "appraisal_gold": 12,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_veil_silver"
+      }
+    },
+    {
+      "id": "degraded_mat_rift_tendon",
+      "name": "Degraded Rift Tendon",
+      "kind": "degraded_stock",
+      "material_id": "mat_rift_tendon",
+      "appraisal_gold": 11,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_rift_tendon"
+      }
+    },
+    {
+      "id": "degraded_mat_null_obsidian",
+      "name": "Degraded Null Obsidian",
+      "kind": "degraded_stock",
+      "material_id": "mat_null_obsidian",
+      "appraisal_gold": 12,
+      "buy_gold": null,
+      "sell_gold": 1,
+      "stack_limit": 99,
+      "combine": {
+        "quantity": 4,
+        "fee_gold": 5,
+        "output_id": "mat_null_obsidian"
+      }
+    }
+  ],
+  "rules": "Salvage is recovered after combat. Each destroyed item drops one degraded unit of the framework primary shaping stock and one of the striker primary shaping stock; identical stocks stack. Ordinary shatter gives two same-core shards; tinkerer payload gives one. Intact disassembly gives one shard and the same two stocks."
+}

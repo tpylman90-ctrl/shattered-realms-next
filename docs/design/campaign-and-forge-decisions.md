@@ -101,3 +101,10 @@ An empty crafting ledger is acquired early. Permanent long-haul delivery side qu
 ## New crafting requirement, 2026-10-11
 
 Create a LARGE library of discoverable components, supporting many new craftable weapons beyond the existing weapons available as loot or purchases. Preserve found and purchased equipment as valid parts of the game. Component counts, compatible families, specific catalog entries, rarity distribution, economy, blueprints and balance are the next design discussion; do not treat proposed numbers as approved implementation.
+
+
+## Crafting catalog and courier continuation — 2026-10-11
+
+The user confirmed that the optional courier storyline unlocks the great forges. It includes gathering across the world before delivery and other mission types, rather than only point-to-point deliveries. The ancient recipe book is received on accepting the first assignment; permanent commissions progressively supply its missing pages. Mistvale should feel like the final discovery. Only its first completed forge use makes the book respond to the relic magic and reveal a new map, beginning the journey into the sands. Do not expose the desert chapter earlier in a player-facing quest list.
+
+The requested extensive crafting list is now authored as a balance proposal in [the crafting design library](../crafting/README.md): 200 assembly components, 36 gathering stocks, 96 salvage definitions and 180 named recipes across 15 families. Exact formulas, values, quests and new names remain proposed until playtested; this does not retroactively mark previously open numerical choices as user-confirmed. The reference evaluator and structured data are not integrated into game inventory or combat.
