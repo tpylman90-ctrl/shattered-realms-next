@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shattered Realms Equipment Definition",
+  "type": "object",
+  "required": ["id", "name", "slots", "base_effect", "synergies"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "name": { "type": "string" },
+    "territory_id": { "type": ["string", "null"] },
+    "slots": { "type": "array", "items": { "enum": ["head", "chest", "arms", "legs", "feet", "back", "right_hand", "left_hand", "relic_1", "relic_2"] } },
+    "base_effect": { "type": "object" },
+    "synergies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tags", "effect"],
+        "properties": {
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "effect": { "type": "object" }
+        }
+      }
+    }
+  }
+}
