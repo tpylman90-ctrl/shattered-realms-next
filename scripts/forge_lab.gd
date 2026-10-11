@@ -238,7 +238,7 @@ func _fill_browser() -> void:
 	browser_item.clear()
 	browser_entries.clear()
 	var group := browser_category.selected
-	var key := ["frameworks", "strikers", "cores", "stocks", "salvage", "recipes"][group]
+	var key: String = ["frameworks", "strikers", "cores", "stocks", "salvage", "recipes"][group]
 	for entry in data.get(key, []):
 		browser_entries.append(entry)
 		browser_item.add_item(str(entry.get("name", "?")))
