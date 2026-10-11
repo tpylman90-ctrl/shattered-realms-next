@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "home_city": "ravenford",
+  "first_expedition": "ravenwood",
+  "territories": [
+    {
+      "id": "ravenwood",
+      "name": "Ravenwood",
+      "stronghold": "blackthorn",
+      "region_theme": "deep_forest",
+      "connects_to": [],
+      "city_id": "blackthorn",
+      "dungeon_id": "ravenwood_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "ashen_wastes",
+      "name": "Ashen Wastes",
+      "stronghold": "ashenreach",
+      "region_theme": "volcanic_basalt",
+      "connects_to": [],
+      "city_id": "ashenreach",
+      "dungeon_id": "sundered_vault",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "frostpeaks",
+      "name": "Frostpeaks",
+      "stronghold": "icehelm",
+      "region_theme": "glacial_mountain",
+      "connects_to": [],
+      "city_id": "icehelm",
+      "dungeon_id": "frostpeaks_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "drakeshard_range",
+      "name": "Drakeshard Range",
+      "stronghold": "ironhold",
+      "region_theme": "dragon_scarred_highlands",
+      "connects_to": [],
+      "city_id": "ironhold",
+      "dungeon_id": "drakeshard_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "golden_expanse",
+      "name": "Golden Expanse",
+      "stronghold": null,
+      "region_theme": "golden_badlands",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "golden_expanse_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "blighted_marsh",
+      "name": "Blighted Marsh",
+      "stronghold": null,
+      "region_theme": "poisoned_marsh",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "blighted_marsh_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "cursed_mire",
+      "name": "Cursed Mire",
+      "stronghold": null,
+      "region_theme": "cursed_wetlands",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "cursed_mire_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "shadowfen_forest",
+      "name": "Shadowfen Forest",
+      "stronghold": null,
+      "region_theme": "haunted_forest",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "shadowfen_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "iron_plains",
+      "name": "Iron Plains",
+      "stronghold": "harrowstead",
+      "region_theme": "open_grassland",
+      "connects_to": [],
+      "city_id": "harrowstead",
+      "dungeon_id": "iron_plains_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "veiled_sea",
+      "name": "Veiled Sea",
+      "stronghold": "silverkeep",
+      "region_theme": "storm_torn_coast",
+      "connects_to": [],
+      "city_id": "silverkeep",
+      "dungeon_id": "veiled_sea_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "ember_coast",
+      "name": "Ember Coast",
+      "stronghold": "dragons_rest",
+      "region_theme": "volcanic_coast",
+      "connects_to": [],
+      "city_id": "dragons_rest",
+      "dungeon_id": "ember_coast_hidden_dungeon",
+      "connection_state": "unmapped"
+    },
+    {
+      "id": "stormcrown_keep",
+      "name": "Stormcrown Keep",
+      "stronghold": null,
+      "region_theme": "alpine_stormlands",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "stormcrown_hidden_dungeon",
+      "connection_state": "unmapped"
+    }
+  ],
+  "opening": {
+    "home_city": "ravenford",
+    "first_expedition": "ravenwood",
+    "first_arrival": "old_forest_road"
+  }
+}
