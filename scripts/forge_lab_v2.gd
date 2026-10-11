@@ -351,6 +351,8 @@ func _rebuild_inventory() -> void:
 			item_detail = str(item.get("elemental",""))
 		elif step == 4:
 			item_detail = str(item.get("description",""))
+		if item.has("art_status"):
+			item_detail += "  •  CONCEPT ART"
 		var sub := _label(item_detail,12,Color("#d7c9ac"))
 		sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
