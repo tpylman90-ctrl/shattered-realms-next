@@ -17,3 +17,5 @@ jobs:
         run: godot --headless --editor --path . --quit
       - name: Smoke start
         run: timeout 20s godot --headless --path . --quit-after 3
+      - name: Front-end navigation and touch checks
+        run: timeout 30s godot --headless --path . --script res://tests/front_end_smoke.gd

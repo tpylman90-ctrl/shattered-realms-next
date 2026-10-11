@@ -60,6 +60,36 @@
       "id": "stormcrown_hidden_dungeon",
       "territory_id": "stormcrown_keep",
       "discovery": "hidden"
+    },
+    {
+      "id": "moonfall_highlands_hidden_dungeon",
+      "territory_id": "moonfall_highlands",
+      "discovery": "hidden"
+    },
+    {
+      "id": "copperfen_basin_hidden_dungeon",
+      "territory_id": "copperfen_basin",
+      "discovery": "hidden"
+    },
+    {
+      "id": "glasswind_steppe_hidden_dungeon",
+      "territory_id": "glasswind_steppe",
+      "discovery": "hidden"
+    },
+    {
+      "id": "deadwind_hollow_hidden_dungeon",
+      "territory_id": "deadwind_hollow",
+      "discovery": "hidden"
+    },
+    {
+      "id": "mistvale_hidden_dungeon",
+      "territory_id": "mistvale",
+      "discovery": "hidden"
+    },
+    {
+      "id": "devouring_deep_hidden_dungeon",
+      "territory_id": "devouring_deep",
+      "discovery": "hidden"
     }
   ]
 }
