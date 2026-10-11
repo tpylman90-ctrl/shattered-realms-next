@@ -1,0 +1,24 @@
+; Shattered Realms clean foundation
+; Runtime assets and systems are introduced through validated vertical slices.
+
+config_version=5
+
+[application]
+
+config/name="Shattered Realms"
+config/description="A connected-territory fantasy campaign"
+run/main_scene="res://scenes/foundation_check.tscn"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+environment/defaults/default_clear_color=Color(0.025, 0.031, 0.043, 1)
