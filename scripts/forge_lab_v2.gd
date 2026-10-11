@@ -287,7 +287,7 @@ func _rebuild_inventory() -> void:
 		tile.custom_minimum_size = Vector2(175,145)
 		tile.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		tile.clip_contents = true
-		var chosen := i == choice[step]
+		var chosen: bool = i == choice[step]
 		var skin := StyleBoxFlat.new()
 		skin.bg_color = Color("#324b50") if chosen else Color("#142b3a")
 		skin.border_color = GOLD if chosen else Color("#566777")
@@ -341,7 +341,7 @@ func _choose(index: int) -> void:
 
 func _refresh_slots() -> void:
 	for i in range(3):
-		var option_idx := choice[i+1]
+		var option_idx: int = int(choice[i+1])
 		if option_idx < 0 or choice[0] < 0:
 			slot_pictures[i].texture = null
 			slot_names[i].text = "Empty"
