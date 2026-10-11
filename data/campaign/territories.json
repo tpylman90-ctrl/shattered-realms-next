@@ -1,6 +1,5 @@
 {
   "schema_version": 1,
-  "home_city": "ravenford",
   "first_expedition": "ravenwood",
   "territories": [
     {
@@ -11,7 +10,9 @@
       "connects_to": [],
       "city_id": "blackthorn",
       "dungeon_id": "ravenwood_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "ashen_wastes",
@@ -21,7 +22,9 @@
       "connects_to": [],
       "city_id": "ashenreach",
       "dungeon_id": "sundered_vault",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "frostpeaks",
@@ -31,7 +34,9 @@
       "connects_to": [],
       "city_id": "icehelm",
       "dungeon_id": "frostpeaks_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "drakeshard_range",
@@ -41,17 +46,21 @@
       "connects_to": [],
       "city_id": "ironhold",
       "dungeon_id": "drakeshard_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "golden_expanse",
       "name": "Golden Expanse",
-      "stronghold": null,
+      "stronghold": "sunspire",
       "region_theme": "golden_badlands",
       "connects_to": [],
-      "city_id": null,
+      "city_id": "sunspire",
       "dungeon_id": "golden_expanse_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "blighted_marsh",
@@ -61,7 +70,9 @@
       "connects_to": [],
       "city_id": null,
       "dungeon_id": "blighted_marsh_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "cursed_mire",
@@ -71,7 +82,9 @@
       "connects_to": [],
       "city_id": null,
       "dungeon_id": "cursed_mire_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "shadowfen_forest",
@@ -81,7 +94,9 @@
       "connects_to": [],
       "city_id": null,
       "dungeon_id": "shadowfen_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "iron_plains",
@@ -91,7 +106,9 @@
       "connects_to": [],
       "city_id": "harrowstead",
       "dungeon_id": "iron_plains_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "veiled_sea",
@@ -101,7 +118,9 @@
       "connects_to": [],
       "city_id": "silverkeep",
       "dungeon_id": "veiled_sea_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "ember_coast",
@@ -111,22 +130,100 @@
       "connects_to": [],
       "city_id": "dragons_rest",
       "dungeon_id": "ember_coast_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     },
     {
       "id": "stormcrown_keep",
-      "name": "Stormcrown Keep",
-      "stronghold": null,
+      "name": "Stormcrown Mountains",
+      "stronghold": "stormcrown_keep",
       "region_theme": "alpine_stormlands",
       "connects_to": [],
-      "city_id": null,
+      "city_id": "stormcrown_keep",
       "dungeon_id": "stormcrown_hidden_dungeon",
-      "connection_state": "unmapped"
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "moonfall_highlands",
+      "name": "Moonfall Highlands",
+      "stronghold": "duskwatch",
+      "region_theme": "moonfall_highlands",
+      "connects_to": [],
+      "city_id": "duskwatch",
+      "dungeon_id": "moonfall_highlands_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "copperfen_basin",
+      "name": "Copperfen Basin",
+      "stronghold": "cogspire",
+      "region_theme": "copperfen_basin",
+      "connects_to": [],
+      "city_id": "cogspire",
+      "dungeon_id": "copperfen_basin_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "glasswind_steppe",
+      "name": "Glasswind Steppe",
+      "stronghold": "windrest",
+      "region_theme": "glasswind_steppe",
+      "connects_to": [],
+      "city_id": "windrest",
+      "dungeon_id": "glasswind_steppe_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "deadwind_hollow",
+      "name": "Deadwind Hollow",
+      "stronghold": null,
+      "region_theme": "deadwind_hollow",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "deadwind_hollow_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "mistvale",
+      "name": "Mistvale",
+      "stronghold": "mistvale",
+      "region_theme": "mistvale",
+      "connects_to": [],
+      "city_id": "mistvale",
+      "dungeon_id": "mistvale_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
+    },
+    {
+      "id": "devouring_deep",
+      "name": "The Devouring Deep",
+      "stronghold": null,
+      "region_theme": "devouring_deep",
+      "connects_to": [],
+      "city_id": null,
+      "dungeon_id": "devouring_deep_hidden_dungeon",
+      "connection_state": "unmapped",
+      "board_mode": "3d_tile_pieces",
+      "board_scene": null
     }
   ],
   "opening": {
-    "home_city": "ravenford",
-    "first_expedition": "ravenwood",
-    "first_arrival": "old_forest_road"
-  }
+    "starting_territory": "ravenwood",
+    "first_city": "blackthorn",
+    "first_arrival": "forest_path",
+    "prototype_city_access": "direct_from_atlas"
+  },
+  "starting_territory": "ravenwood"
 }

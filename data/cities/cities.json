@@ -4,14 +4,16 @@
     {
       "id": "ravenford",
       "name": "Ravenford",
-      "role": "home_city",
+      "role": "capital",
       "territory_id": null
     },
     {
       "id": "blackthorn",
       "name": "Blackthorn",
       "role": "stronghold",
-      "territory_id": "ravenwood"
+      "territory_id": "ravenwood",
+      "scene_entry": "blackthorn",
+      "first_room": "inside_gates"
     },
     {
       "id": "ashenreach",
@@ -48,6 +50,72 @@
       "name": "Dragon's Rest",
       "role": "stronghold",
       "territory_id": "ember_coast"
+    },
+    {
+      "id": "cogspire",
+      "name": "Cogspire",
+      "territory_id": "copperfen_basin",
+      "role": "city"
+    },
+    {
+      "id": "rivetbank",
+      "name": "Rivetbank",
+      "territory_id": "copperfen_basin",
+      "role": "village"
+    },
+    {
+      "id": "duskwatch",
+      "name": "Duskwatch",
+      "territory_id": "moonfall_highlands",
+      "role": "town"
+    },
+    {
+      "id": "bellmere",
+      "name": "Bellmere",
+      "territory_id": "moonfall_highlands",
+      "role": "village"
+    },
+    {
+      "id": "windrest",
+      "name": "Windrest",
+      "territory_id": "glasswind_steppe",
+      "role": "town"
+    },
+    {
+      "id": "mistvale",
+      "name": "Mistvale",
+      "territory_id": "mistvale",
+      "role": "city"
+    },
+    {
+      "id": "sunspire",
+      "name": "Sunspire",
+      "territory_id": "golden_expanse",
+      "role": "city"
+    },
+    {
+      "id": "stormcrown_keep",
+      "name": "Stormcrown Keep",
+      "territory_id": "stormcrown_keep",
+      "role": "stronghold"
+    },
+    {
+      "id": "westhaven",
+      "name": "Westhaven",
+      "territory_id": "veiled_sea",
+      "role": "port"
+    },
+    {
+      "id": "eldergrove",
+      "name": "Eldergrove",
+      "territory_id": null,
+      "role": "town"
+    },
+    {
+      "id": "ravens_hold",
+      "name": "Raven's Hold",
+      "territory_id": null,
+      "role": "stronghold"
     }
   ]
 }

@@ -14,13 +14,13 @@ The world map, territory board, and city/dungeon scenes are distinct views of th
 ## Visual methods
 
 - **World map:** readable sculpted overview with subtle POI markers and labels shown on selection.
-- **Territory boards:** detailed 3D dioramas. Board data owns cells, elevations, terrain, hazards, obstacles, roads, rivers, bridges, cliffs, and connections. Most open ground is freely traversable; authored obstacles define movement limits.
+- **Territory boards:** large detailed 3D game boards, with characters represented by 3D pieces moving tile by tile. Board data owns cells, elevations, terrain, hazards, obstacles, roads, rivers, bridges, cliffs, connections, several locations, monster spawn points, and hidden dungeons. The user authors boards in the separate builder.
 - **Cities:** fixed camera matched to hand-painted backgrounds. Use 2D painted plates, a true 3D walkmesh, perspective-scaled characters, and separate foreground occlusion layers. Ashenreach is the current method pilot: obsidian basalt, black iron, lava light, and one room at a time.
 - **Battles:** high-resolution region-specific painted arenas with 3D combatants and clear ground contact.
 
 ## Campaign and combat rules
 
-- The campaign opens in Ravenford, then sends the party to Ravenwood by the old forest road. Later connected territories can be approached in different orders; do not force a linear campaign.
+- The campaign opens in Ravenwood and teaches board movement and the first creature encounter before arrival in Blackthorn. An inn stay precedes the alpha-wolf squad tutorial. The captain stays at camp as the mission contact; the regional hero joins at the boss stage. Later connected territories can be approached in different orders; do not force a linear campaign.
 - Only author a territory edge when its connection is established. The current scaffold intentionally leaves undocumented route edges unmapped. Reconnecting a territory opens neighboring routes. Enemy pressure can reclaim unsecured territory; garrisons protect holdings.
 - Encounters scale with party progress while retaining regional level floors, elites, and apex threats.
 - A battle party consists of the hero and up to four army units. Command position is front, middle, or rear. Only the active unit shows a hollow selection ring.
