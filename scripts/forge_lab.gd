@@ -27,6 +27,8 @@ var browser_details: RichTextLabel
 var browser_entries: Array = []
 var forged_history: RichTextLabel
 var forged_count := 0
+var icon_previews: Array[TextureRect] = []
+var browser_icon: TextureRect
 
 func _ready() -> void:
 	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(DATA_PATH))
@@ -34,8 +36,16 @@ func _ready() -> void:
 		push_error("Forge test data is missing")
 		return
 	data = parsed
-	var background := Control.new()
-	background.set_script(load("res://scripts/forge_room_backdrop.gd"))
+	var background: Control
+	if ResourceLoader.exists("res://assets/forge/forge_room.png"):
+		var plate := TextureRect.new()
+		plate.texture = load("res://assets/forge/forge_room.png")
+		plate.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		plate.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		background = plate
+	else:
+		background = Control.new()
+		background.set_script(load("res://scripts/forge_room_backdrop.gd"))
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(background)
 	background.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -71,6 +81,23 @@ func _ready() -> void:
 	forge = _picker(column, "Forge tier")
 	for value in ["Standard", "Mistvale", "Sands"]:
 		forge.add_item(value)
+	var artwork_row := HBoxContainer.new()
+	artwork_row.add_theme_constant_override("separation", 10)
+	column.add_child(artwork_row)
+	for title in ["FRAMEWORK", "STRIKER", "CORE"]:
+		var cell := VBoxContainer.new()
+		cell.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		artwork_row.add_child(cell)
+		var cap := Label.new()
+		cap.text = title
+		cap.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		cell.add_child(cap)
+		var image := TextureRect.new()
+		image.custom_minimum_size = Vector2(0, 108)
+		image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		cell.add_child(image)
+		icon_previews.append(image)
 	info = RichTextLabel.new()
 	info.bbcode_enabled = true
 	info.custom_minimum_size.y = 250
@@ -121,6 +148,11 @@ func _ready() -> void:
 	browser_item = _picker(column, "Catalog entry")
 	for group in ["Frameworks", "Strikers", "Cores", "Gathering stocks", "Salvage", "Named weapons"]:
 		browser_category.add_item(group)
+	browser_icon = TextureRect.new()
+	browser_icon.custom_minimum_size = Vector2(0, 110)
+	browser_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	browser_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	column.add_child(browser_icon)
 	browser_details = RichTextLabel.new()
 	browser_details.bbcode_enabled = true
 	browser_details.custom_minimum_size.y = 145
@@ -180,6 +212,9 @@ func _refresh() -> void:
 	var a: Dictionary = frame_items[frame.selected]
 	var b: Dictionary = head_items[head.selected]
 	var c: Dictionary = core_items[core.selected]
+	for idx in range(3):
+		var item: Dictionary = [a, b, c][idx]
+		icon_previews[idx].texture = _item_texture(item)
 	var result := "Uncharted assembly"
 	var formula := ""
 	for recipe in data.get("recipes", []):
@@ -192,6 +227,12 @@ func _refresh() -> void:
 	if formula.is_empty():
 		formula = "\n[i]Compatible component set; production stat formula not installed. No invented attack result.[/i]"
 	info.text = "[b]%s[/b]\nFramework: %s · Tier %s · Durability %s\nHandling: %s\nStriker: %s · Physical %s\nTrait: %s\nCore: %s · Elemental %s · Chance %s\nEffect: %s%s" % [result, str(a.get("name","")),str(a.get("tier","")),str(a.get("durability","")),str(a.get("handling","")),str(b.get("name","")),str(b.get("physical","")),str(b.get("trait","")),str(c.get("name","")),str(c.get("elemental","")),str(c.get("chance","")),str(c.get("effect","")),formula]
+
+func _item_texture(item: Dictionary) -> Texture2D:
+	var path := str(item.get("icon", ""))
+	if path != "" and ResourceLoader.exists(path):
+		return load(path)
+	return null
 
 func _fill_browser() -> void:
 	browser_item.clear()
@@ -210,6 +251,7 @@ func _inspect_item() -> void:
 		browser_details.text = ""
 		return
 	var entry: Dictionary = browser_entries[browser_item.selected]
+	browser_icon.texture = _item_texture(entry)
 	var lines := PackedStringArray()
 	for key in entry.keys():
 		if key != "name":
