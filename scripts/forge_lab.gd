@@ -28,10 +28,11 @@ func _ready() -> void:
 		push_error("Forge test data is missing")
 		return
 	data = parsed
-	var background := ColorRect.new()
-	background.color = Color("10171c")
-	background.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var background := Control.new()
+	background.set_script(load("res://scripts/forge_room_backdrop.gd"))
+	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(background)
+	background.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var scroll := ScrollContainer.new()
 	scroll.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(scroll)
