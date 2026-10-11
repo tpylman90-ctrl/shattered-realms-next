@@ -310,16 +310,16 @@ func _rebuild_inventory() -> void:
 		name.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		name.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		box.add_child(name)
-		var trait := ""
+		var item_detail := ""
 		if step == 1:
-			trait = "TIER %s  •  DUR %s" % [item.get("tier",0),item.get("durability",0)]
+			item_detail = "TIER %s  •  DUR %s" % [item.get("tier",0),item.get("durability",0)]
 		elif step == 2:
-			trait = str(item.get("physical",""))
+			item_detail = str(item.get("physical",""))
 		elif step == 3:
-			trait = str(item.get("elemental",""))
+			item_detail = str(item.get("elemental",""))
 		elif step == 4:
-			trait = str(item.get("description",""))
-		var sub := _label(trait,12,Color("#d7c9ac"))
+			item_detail = str(item.get("description",""))
+		var sub := _label(item_detail,12,Color("#d7c9ac"))
 		sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		sub.mouse_filter = Control.MOUSE_FILTER_IGNORE
