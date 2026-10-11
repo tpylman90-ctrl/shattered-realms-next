@@ -64,6 +64,7 @@ jobs:
           if [ -f assets/forge_art.part01 ] && [ -f assets/forge_art.part02 ]; then
             cat assets/forge_art.part01 assets/forge_art.part02 > "$RUNNER_TEMP/forge_art.zip"
             echo "a5e3090446ca55626e01a1a6697c0d2e2208e68d04cd8aef69d6bf347484504f  $RUNNER_TEMP/forge_art.zip" | sha256sum -c -
+            unzip -tq "$RUNNER_TEMP/forge_art.zip"
             unzip -q -o "$RUNNER_TEMP/forge_art.zip" -d .
           elif [ -f assets/forge_art.part01 ] || [ -f assets/forge_art.part02 ]; then
             echo "::error::Both forge artwork parts must be uploaded to assets/."
