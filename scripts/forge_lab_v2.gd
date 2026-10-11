@@ -4,6 +4,8 @@ signal return_requested
 
 const CATALOG := "res://data/entropic_forge/forge_test_catalog.json"
 const ART := "res://assets/forge/forge_room.png"
+const SWORD_MANIFEST := "res://sword_snap_manifest.json"
+var sword_snap: Dictionary = {}
 const GOLD := Color("#e9c889")
 const INK := Color("#081923")
 const BLUE := Color("#16304a")
@@ -41,6 +43,10 @@ func _ready() -> void:
 		_show_error("Forge catalog is missing or invalid.")
 		return
 	catalog = parsed
+	if FileAccess.file_exists(SWORD_MANIFEST):
+		var snap_data: Variant = JSON.parse_string(FileAccess.get_file_as_string(SWORD_MANIFEST))
+		if snap_data is Dictionary:
+			sword_snap = snap_data
 	for entry in catalog.get("frameworks", []):
 		var name := str(entry.get("family", ""))
 		if not families.has(name):
@@ -432,7 +438,9 @@ func _show_result() -> void:
 		composite_preview.remove_child(child)
 		child.queue_free()
 	var finished_texture := _icon(result) if not result.is_empty() else null
-	if finished_texture != null:
+	if families[int(choice[0])] == "Sword" and not sword_snap.is_empty() and _show_sword_snap(a,b):
+		result_note.text = "SWORD SNAP TEST — two separate components joined at catalog anchors; core material not yet applied"
+	elif finished_texture != null:
 		result_art.texture = finished_texture
 		result_note.text = "NAMED RECIPE ARTWORK — catalog concept"
 	else:
@@ -475,3 +483,39 @@ func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vec
 	layer.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	composite_preview.add_child(layer)
+
+
+func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
+	var assets: Dictionary = sword_snap.get("assets", {})
+	var frame_record: Dictionary = {}
+	var blade_record: Dictionary = {}
+	for entry in assets.get("frameworks", []):
+		if str(entry.get("name", "")) == str(frame_part.get("name", "")):
+			frame_record = entry
+			break
+	for entry in assets.get("strikers", []):
+		if str(entry.get("name", "")) == str(blade_part.get("name", "")):
+			blade_record = entry
+			break
+	if frame_record.is_empty() or blade_record.is_empty():
+		return false
+	for record in [frame_record,blade_record]:
+		var image_path := "res://" + str(record.get("file", ""))
+		if not ResourceLoader.exists(image_path):
+			return false
+	# Snap the declared normalized join coordinates together in one shared view.
+	var join := Vector2(207,122)
+	var draw_size := Vector2(134,134)
+	for record in [frame_record,blade_record]:
+		var image_path := "res://" + str(record.get("file", ""))
+		var point: Dictionary = record.get("anchor_normalized", {})
+		var normalized := Vector2(float(point.get("x", 0.5)),float(point.get("y", 0.5)))
+		var layer := TextureRect.new()
+		layer.texture = load(image_path)
+		layer.position = join - normalized * draw_size
+		layer.size = draw_size
+		layer.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		layer.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		composite_preview.add_child(layer)
+	return true
