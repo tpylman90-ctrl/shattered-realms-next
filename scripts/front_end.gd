@@ -162,7 +162,7 @@ func show_title() -> void:
 func show_hero_gallery() -> void:
 	_new_page("heroes")
 	var gallery := load("res://scripts/hero_gallery.gd").new() as Control
-	gallery.return_requested.connect(show_title)
+	gallery.connect("return_requested", Callable(self, "show_title"))
 	_margin(page, 20).add_child(gallery)
 	gallery.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
