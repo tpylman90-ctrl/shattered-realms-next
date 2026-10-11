@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "scope": "CI demo subset of CATALOG.md; complete pack not yet committed",
+  "frameworks": [
+    {
+      "name": "Watchman’s Leather Grip",
+      "family": "Sword",
+      "tier": 1,
+      "durability": 55,
+      "handling": "+5 accuracy points."
+    },
+    {
+      "name": "Duelist’s Tideguard",
+      "family": "Sword",
+      "tier": 3,
+      "durability": 70,
+      "handling": "+10% action speed; -2 accuracy; -10% durability."
+    },
+    {
+      "name": "Militia Longgrip",
+      "family": "Greatsword",
+      "tier": 1,
+      "durability": 55,
+      "handling": "+8 accuracy; +10% durability; -10% action speed."
+    },
+    {
+      "name": "Drakespine Wargrip",
+      "family": "Greatsword",
+      "tier": 3,
+      "durability": 70,
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+    },
+    {
+      "name": "Poacher’s Thumbgrip",
+      "family": "Dagger",
+      "tier": 1,
+      "durability": 55,
+      "handling": "+5 accuracy points."
+    }
+  ],
+  "strikers": [
+    {
+      "name": "Plainsteel Straight Blade",
+      "family": "Sword",
+      "physical": "20 slash",
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Serrated Fang Blade",
+      "family": "Sword",
+      "physical": "27 slash",
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+    },
+    {
+      "name": "Broad Militia Blade",
+      "family": "Greatsword",
+      "physical": "34 slash",
+      "trait": "+3 accuracy points."
+    },
+    {
+      "name": "Notched Siege Blade",
+      "family": "Greatsword",
+      "physical": "46 slash",
+      "trait": "+25% direct damage against barriers only."
+    },
+    {
+      "name": "Watchman’s Point",
+      "family": "Dagger",
+      "physical": "12 pierce",
+      "trait": "+3 accuracy points."
+    }
+  ],
+  "cores": [
+    {
+      "name": "Thornseed Core",
+      "elemental": "12 verdant",
+      "chance": "18%",
+      "effect": "Root for 1 action; boss substitute: -8% action speed."
+    },
+    {
+      "name": "Cinder Pearl Core",
+      "elemental": "12 fire",
+      "chance": "18%",
+      "effect": "Burn deals 18% of base elemental attack per action for 2 actions."
+    },
+    {
+      "name": "Rime Shard Core",
+      "elemental": "12 frost",
+      "chance": "18%",
+      "effect": "Target action speed -12% for 2 actions."
+    },
+    {
+      "name": "Drake Ember Core",
+      "elemental": "12 fire",
+      "chance": "18%",
+      "effect": "Physical armor -8% for 2 actions."
+    }
+  ],
+  "recipes": [
+    {
+      "name": "Briar Oath",
+      "framework": "Watchman’s Leather Grip",
+      "striker": "Plainsteel Straight Blade",
+      "core": "Thornseed Core",
+      "attack": "26/16 → 28/17 → 29/18",
+      "durability": 75,
+      "interval": "1.8"
+    },
+    {
+      "name": "Cinder Vow",
+      "framework": "Duelist’s Tideguard",
+      "striker": "Serrated Fang Blade",
+      "core": "Cinder Pearl Core",
+      "attack": "39/17 → 43/19 → 45/20",
+      "durability": 85,
+      "interval": "1.718"
+    },
+    {
+      "name": "Winter’s Debt",
+      "framework": "Militia Longgrip",
+      "striker": "Broad Militia Blade",
+      "core": "Rime Shard Core",
+      "attack": "44/23 → 48/26 → 50/27",
+      "durability": 83,
+      "interval": "3.333"
+    }
+  ]
+}
