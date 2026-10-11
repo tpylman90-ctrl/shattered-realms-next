@@ -151,11 +151,20 @@ func show_title() -> void:
 	var start := _button("START CAMPAIGN", start_campaign)
 	start.name = "StartCampaign"
 	stack.add_child(start)
+	stack.add_child(_button("HERO GALLERY", show_hero_gallery))
 	stack.add_child(_button("SETTINGS", show_settings))
 	var note := _label("THE BLACKTHORN CHAPTER", 17, GOLD)
 	note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	stack.add_child(note)
 	start.grab_focus()
+
+
+func show_hero_gallery() -> void:
+	_new_page("heroes")
+	var gallery := load("res://scripts/hero_gallery.gd").new() as Control
+	gallery.return_requested.connect(show_title)
+	_margin(page, 20).add_child(gallery)
+	gallery.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
 
 func start_campaign() -> void:
@@ -326,6 +335,8 @@ func go_back() -> void:
 		return
 	if screen == "blackthorn":
 		show_atlas()
+	elif screen == "heroes":
+		show_title()
 	elif screen == "atlas":
 		show_title()
 
