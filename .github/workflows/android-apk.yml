@@ -1,0 +1,124 @@
+name: Build Shattered Realms Next APK
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feature/android-forge-build
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'scenes/**'
+      - 'project.godot'
+      - 'export_presets.cfg'
+      - '.github/workflows/android-apk.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'scenes/**'
+      - 'project.godot'
+      - 'export_presets.cfg'
+      - '.github/workflows/android-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+      ANDROID_HOME: /usr/local/lib/android/sdk
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Configure SDK
+        shell: bash
+        run: |
+          echo "$ANDROID_SDK_ROOT/platform-tools" >> "$GITHUB_PATH"
+          echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
+          yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "build-tools;36.0.0" "platforms;android-36"
+      - name: Install Godot
+        shell: bash
+        run: |
+          curl -L --fail --retry 3 -o godot.zip "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip"
+          unzip -q godot.zip
+          chmod +x Godot_v4.7.2-stable_linux.x86_64
+          echo "$GITHUB_WORKSPACE" >> "$GITHUB_PATH"
+          curl -L --fail --retry 3 -o templates.tpz "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz"
+          mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          unzip -q templates.tpz 'templates/*' -d template_extract
+          mv template_extract/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+      - name: Reassemble uploaded forge artwork
+        shell: bash
+        run: |
+          if [ -f assets/forge_art.part01 ] && [ -f assets/forge_art.part02 ]; then
+            cat assets/forge_art.part01 assets/forge_art.part02 > "$RUNNER_TEMP/forge_art.zip"
+            echo "a5e3090446ca55626e01a1a6697c0d2e2208e68d04cd8aef69d6bf347484504f  $RUNNER_TEMP/forge_art.zip" | sha256sum -c -
+            unzip -tq "$RUNNER_TEMP/forge_art.zip"
+            unzip -q -o "$RUNNER_TEMP/forge_art.zip" -d .
+          elif [ -f assets/forge_art.part01 ] || [ -f assets/forge_art.part02 ]; then
+            echo "::error::Both forge artwork parts must be uploaded to assets/."
+            exit 1
+          else
+            echo "Artwork parts not yet uploaded; building existing fallback room."
+          fi
+      - name: Validate forge catalog and artwork integrity
+        run: python3 tools/verify_forge_art.py
+      - name: Validate Godot import
+        shell: bash
+        run: |
+          set -o pipefail
+          Godot_v4.7.2-stable_linux.x86_64 --headless --editor --path . --quit 2>&1 | tee validation.log
+          if grep -E "SCRIPT ERROR:|Parse Error:|Failed to load script" validation.log; then exit 1; fi
+      - name: Require permanent Android update signing
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ] || [ -z "$ANDROID_KEYSTORE_PASSWORD" ] || [ -z "$ANDROID_KEY_ALIAS" ] || [ -z "$ANDROID_KEY_PASSWORD" ]; then
+            echo "::error::Missing permanent Android signing secrets. Configure ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, and ANDROID_KEY_PASSWORD in this repository's Actions secrets. Refusing to generate a non-updateable APK."
+            exit 1
+          fi
+          mkdir -p "$RUNNER_TEMP/android-signing"
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/android-signing/shattered-next.jks"
+          chmod 600 "$RUNNER_TEMP/android-signing/shattered-next.jks"
+          echo "GODOT_ANDROID_KEYSTORE_RELEASE_PATH=$RUNNER_TEMP/android-signing/shattered-next.jks" >> "$GITHUB_ENV"
+          echo "GODOT_ANDROID_KEYSTORE_RELEASE_USER=$ANDROID_KEY_ALIAS" >> "$GITHUB_ENV"
+          echo "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD=$ANDROID_KEY_PASSWORD" >> "$GITHUB_ENV"
+      - name: Runtime Foundry smoke test
+        shell: bash
+        run: |
+          set -o pipefail
+          Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script res://tests/forge_lab_smoke.gd 2>&1 | tee forge-smoke.log
+          if grep -E "SCRIPT ERROR:|Parse Error:|Failed to load script" forge-smoke.log; then exit 1; fi
+      - name: Android version
+        shell: bash
+        run: |
+          sed -i "s@version/code=.*@version/code=${GITHUB_RUN_NUMBER}@" export_presets.cfg
+          sed -i "s@version/name=.*@version/name=\"0.1.${GITHUB_RUN_NUMBER}\"@" export_presets.cfg
+      - name: Export permanently signed update APK
+        shell: bash
+        run: |
+          mkdir -p build
+          Godot_v4.7.2-stable_linux.x86_64 --headless --path . --export-release 'Android APK' build/ShatteredRealmsNext.apk
+          test -s build/ShatteredRealmsNext.apk
+      - name: Upload update APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShatteredRealmsNext-Android-Update
+          path: build/ShatteredRealmsNext.apk
+          if-no-files-found: error
+          retention-days: 7

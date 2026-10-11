@@ -151,11 +151,32 @@ func show_title() -> void:
 	var start := _button("START CAMPAIGN", start_campaign)
 	start.name = "StartCampaign"
 	stack.add_child(start)
+	stack.add_child(_button("FORGE LAB", show_forge_lab))
 	stack.add_child(_button("SETTINGS", show_settings))
 	var note := _label("THE BLACKTHORN CHAPTER", 17, GOLD)
 	note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	stack.add_child(note)
 	start.grab_focus()
+
+
+func show_forge_lab() -> void:
+	var script_path := "res://scripts/forge_lab_v2.gd"
+	var data_path := "res://data/entropic_forge/forge_test_catalog.json"
+	if not ResourceLoader.exists(script_path) or not FileAccess.file_exists(data_path):
+		var popup := AcceptDialog.new()
+		popup.title = "Forge asset installation required"
+		popup.dialog_text = "Install the Shattered Realms Forge Test Pack at the repository root, preserving the scripts, data, and assets folders. The Forge Lab needs its 200 individual inventory images and catalog data."
+		add_child(popup)
+		popup.confirmed.connect(popup.queue_free)
+		popup.popup_centered()
+		return
+	_new_page("forge_lab")
+	var lab := load(script_path).new() as Control
+	lab.connect("return_requested", Callable(self, "show_title"))
+	page.add_child(lab)
+	lab.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	lab.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	lab.size_flags_vertical = Control.SIZE_EXPAND_FILL
 
 
 func start_campaign() -> void:
@@ -326,6 +347,8 @@ func go_back() -> void:
 		return
 	if screen == "blackthorn":
 		show_atlas()
+	elif screen == "forge_lab":
+		show_title()
 	elif screen == "atlas":
 		show_title()
 
