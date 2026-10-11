@@ -10,7 +10,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "1.8 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/watchmans_leather_grip.png"
     },
     {
       "name": "Duelist’s Tideguard",
@@ -20,7 +21,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "1.636 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/duelists_tideguard.png"
     },
     {
       "name": "Sentinel’s Ironbark Hilt",
@@ -30,7 +32,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "1.895 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sentinels_ironbark_hilt.png"
     },
     {
       "name": "Sunbound Filigree Hilt",
@@ -40,7 +43,8 @@
       "hidden_strikes": 3,
       "durability": 100,
       "interval": "1.8 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sunbound_filigree_hilt.png"
     },
     {
       "name": "Militia Longgrip",
@@ -50,7 +54,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "3.333 s",
-      "handling": "+8 accuracy; +10% durability; -10% action speed."
+      "handling": "+8 accuracy; +10% durability; -10% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_longgrip.png"
     },
     {
       "name": "Drakespine Wargrip",
@@ -60,7 +65,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "3.158 s",
-      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/drakespine_wargrip.png"
     },
     {
       "name": "Black Anvil Twohander",
@@ -70,7 +76,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "3.0 s",
-      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/black_anvil_twohander.png"
     },
     {
       "name": "Poacher’s Thumbgrip",
@@ -80,7 +87,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "1.05 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/poachers_thumbgrip.png"
     },
     {
       "name": "Websilk Loop Grip",
@@ -90,7 +98,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "0.955 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/websilk_loop_grip.png"
     },
     {
       "name": "Mirage Balanced Tang",
@@ -100,7 +109,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "1.05 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/mirage_balanced_tang.png"
     },
     {
       "name": "Ranger’s Ash Haft",
@@ -110,7 +120,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.316 s",
-      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rangers_ash_haft.png"
     },
     {
       "name": "Rimepine Lance Shaft",
@@ -120,7 +131,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.316 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rimepine_lance_shaft.png"
     },
     {
       "name": "Stormkeeper Spear Haft",
@@ -130,7 +142,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.2 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormkeeper_spear_haft.png"
     },
     {
       "name": "Oathroot Longshaft",
@@ -140,7 +153,8 @@
       "hidden_strikes": 3,
       "durability": 100,
       "interval": "2.444 s",
-      "handling": "+8 accuracy; +10% durability; -10% action speed."
+      "handling": "+8 accuracy; +10% durability; -10% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/oathroot_longshaft.png"
     },
     {
       "name": "Woodcutter’s Haft",
@@ -150,7 +164,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.211 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png"
     },
     {
       "name": "Corsair’s Hook Haft",
@@ -160,7 +175,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "1.909 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png"
     },
     {
       "name": "Cinderbrace Split Haft",
@@ -170,7 +186,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.1 s",
-      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png"
     },
     {
       "name": "Quarryman’s Haft",
@@ -180,7 +197,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "3.556 s",
-      "handling": "+8 accuracy; +10% durability; -10% action speed."
+      "handling": "+8 accuracy; +10% durability; -10% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/quarrymans_haft.png"
     },
     {
       "name": "Siegebreaker Shock Haft",
@@ -190,7 +208,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "3.368 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/siegebreaker_shock_haft.png"
     },
     {
       "name": "Thunderbrow Pattern Haft",
@@ -200,7 +219,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "3.2 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/thunderbrow_pattern_haft.png"
     },
     {
       "name": "Gateward Handle",
@@ -210,7 +230,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.05 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/gateward_handle.png"
     },
     {
       "name": "Reedbound Cudgel Haft",
@@ -220,7 +241,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.158 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/reedbound_cudgel_haft.png"
     },
     {
       "name": "Lanternkeeper Flanged Grip",
@@ -230,7 +252,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.05 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/lanternkeeper_flanged_grip.png"
     },
     {
       "name": "Herbalist’s Bogroot Staff",
@@ -240,7 +263,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.632 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/herbalists_bogroot_staff.png"
     },
     {
       "name": "Gloamwood Channel Staff",
@@ -250,7 +274,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.5 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/gloamwood_channel_staff.png"
     },
     {
       "name": "Veil-Silver Casting Shaft",
@@ -260,7 +285,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.273 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/veil_silver_casting_shaft.png"
     },
     {
       "name": "Astral Spiral Staff",
@@ -270,7 +296,8 @@
       "hidden_strikes": 3,
       "durability": 100,
       "interval": "2.5 s",
-      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/astral_spiral_staff.png"
     },
     {
       "name": "Apprentice’s Yew Handle",
@@ -280,7 +307,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "1.5 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/apprentices_yew_handle.png"
     },
     {
       "name": "Crystal-Focus Wand Grip",
@@ -290,7 +318,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "1.5 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/crystal_focus_wand_grip.png"
     },
     {
       "name": "Dawnweaver Conductor",
@@ -300,7 +329,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "1.364 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/dawnweaver_conductor.png"
     },
     {
       "name": "Scout’s Ironbark Riser",
@@ -310,7 +340,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.2 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png"
     },
     {
       "name": "Recurve Sinew Riser",
@@ -320,7 +351,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.316 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png"
     },
     {
       "name": "Moon-Yew Longbow Riser",
@@ -330,7 +362,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.316 s",
-      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/moon_yew_longbow_riser.png"
     },
     {
       "name": "Glasswind Split Riser",
@@ -340,7 +373,8 @@
       "hidden_strikes": 3,
       "durability": 100,
       "interval": "2.0 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/glasswind_split_riser.png"
     },
     {
       "name": "Militia Oak Stock",
@@ -350,7 +384,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "3.222 s",
-      "handling": "+8 accuracy; +10% durability; -10% action speed."
+      "handling": "+8 accuracy; +10% durability; -10% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png"
     },
     {
       "name": "Marine Ratchet Stock",
@@ -360,7 +395,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "3.053 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png"
     },
     {
       "name": "Cogspire Repeating Stock",
@@ -370,7 +406,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.636 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png"
     },
     {
       "name": "Drover’s Wrapped Handle",
@@ -380,7 +417,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "1.95 s",
-      "handling": "+5 accuracy points."
+      "handling": "+5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/drovers_wrapped_handle.png"
     },
     {
       "name": "Stormtide Swivel Handle",
@@ -390,7 +428,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.053 s",
-      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormtide_swivel_handle.png"
     },
     {
       "name": "Veilweave Lash Grip",
@@ -400,7 +439,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "1.95 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/veilweave_lash_grip.png"
     },
     {
       "name": "Reaper’s Farm Shaft",
@@ -410,7 +450,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "2.947 s",
-      "handling": "+0.4 m reach; -3 accuracy; -5% action speed."
+      "handling": "+0.4 m reach; -3 accuracy; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/reapers_farm_shaft.png"
     },
     {
       "name": "Gravewillow Crescent Haft",
@@ -420,7 +461,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "2.8 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/gravewillow_crescent_haft.png"
     },
     {
       "name": "Last-Lantern Balance Shaft",
@@ -430,7 +472,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "2.947 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/last_lantern_balance_shaft.png"
     },
     {
       "name": "Scrapper’s Shoulder Frame",
@@ -440,7 +483,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "4.0 s",
-      "handling": "+8 accuracy; +10% durability; -10% action speed."
+      "handling": "+8 accuracy; +10% durability; -10% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png"
     },
     {
       "name": "Rivetlock Recoil Cradle",
@@ -450,7 +494,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "3.789 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png"
     },
     {
       "name": "Brasswick Vented Cannon Frame",
@@ -460,7 +505,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "3.6 s",
-      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint."
+      "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png"
     },
     {
       "name": "Sundial Artillery Frame",
@@ -470,7 +516,8 @@
       "hidden_strikes": 3,
       "durability": 100,
       "interval": "3.6 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png"
     },
     {
       "name": "Pitfighter’s Wrist Brace",
@@ -480,7 +527,8 @@
       "hidden_strikes": 1,
       "durability": 55,
       "interval": "1.091 s",
-      "handling": "+10% action speed; -2 accuracy; -10% durability."
+      "handling": "+10% action speed; -2 accuracy; -10% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/pitfighters_wrist_brace.png"
     },
     {
       "name": "Scale-Laced Knuckle Frame",
@@ -490,7 +538,8 @@
       "hidden_strikes": 2,
       "durability": 70,
       "interval": "1.263 s",
-      "handling": "+25% durability; -5% action speed."
+      "handling": "+25% durability; -5% action speed.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scale_laced_knuckle_frame.png"
     },
     {
       "name": "Springbrass Piston Brace",
@@ -500,7 +549,8 @@
       "hidden_strikes": 3,
       "durability": 85,
       "interval": "1.2 s",
-      "handling": "+15% elemental attack; -15% durability."
+      "handling": "+15% elemental attack; -15% durability.",
+      "icon": "res://assets/entropic_forge/icons/frameworks/springbrass_piston_brace.png"
     }
   ],
   "strikers": [
@@ -512,7 +562,8 @@
       "hidden_strikes": 1,
       "physical": "20 slash",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_straight_blade.png"
     },
     {
       "name": "Serrated Fang Blade",
@@ -522,7 +573,8 @@
       "hidden_strikes": 2,
       "physical": "27 slash",
       "durability": 24,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/serrated_fang_blade.png"
     },
     {
       "name": "Tidebronze Saber Blade",
@@ -532,7 +584,8 @@
       "hidden_strikes": 2,
       "physical": "35 slash",
       "durability": 30,
-      "trait": "+8% physical attack; -0.2 m reach."
+      "trait": "+8% physical attack; -0.2 m reach.",
+      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_saber_blade.png"
     },
     {
       "name": "Webglass Needle Blade",
@@ -542,7 +595,8 @@
       "hidden_strikes": 3,
       "physical": "33 slash",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/webglass_needle_blade.png"
     },
     {
       "name": "Scaleiron Falchion Blade",
@@ -552,7 +606,8 @@
       "hidden_strikes": 3,
       "physical": "46 slash",
       "durability": 38,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/scaleiron_falchion_blade.png"
     },
     {
       "name": "Veil-Silver Channel Blade",
@@ -562,7 +617,8 @@
       "hidden_strikes": 4,
       "physical": "58 slash",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/veil_silver_channel_blade.png"
     },
     {
       "name": "Broad Militia Blade",
@@ -572,7 +628,8 @@
       "hidden_strikes": 1,
       "physical": "34 slash",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/broad_militia_blade.png"
     },
     {
       "name": "Notched Siege Blade",
@@ -582,7 +639,8 @@
       "hidden_strikes": 2,
       "physical": "46 slash",
       "durability": 24,
-      "trait": "+25% direct damage against barriers only."
+      "trait": "+25% direct damage against barriers only.",
+      "icon": "res://assets/entropic_forge/icons/strikers/notched_siege_blade.png"
     },
     {
       "name": "Drakebone Cleaver",
@@ -592,7 +650,8 @@
       "hidden_strikes": 2,
       "physical": "60 slash",
       "durability": 30,
-      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakebone_cleaver.png"
     },
     {
       "name": "Basalt Execution Blade",
@@ -602,7 +661,8 @@
       "hidden_strikes": 3,
       "physical": "56 slash",
       "durability": 18,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_execution_blade.png"
     },
     {
       "name": "Froststeel Flamberge",
@@ -612,7 +672,8 @@
       "hidden_strikes": 3,
       "physical": "78 slash",
       "durability": 38,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_flamberge.png"
     },
     {
       "name": "Null-Edge Colossus Blade",
@@ -622,7 +683,8 @@
       "hidden_strikes": 4,
       "physical": "99 slash",
       "durability": 28,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png"
     },
     {
       "name": "Watchman’s Point",
@@ -632,7 +694,8 @@
       "hidden_strikes": 1,
       "physical": "12 pierce",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/watchmans_point.png"
     },
     {
       "name": "Hollow Adder Fang",
@@ -642,7 +705,8 @@
       "hidden_strikes": 2,
       "physical": "17 pierce",
       "durability": 24,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/hollow_adder_fang.png"
     },
     {
       "name": "Glasswind Stiletto",
@@ -652,7 +716,8 @@
       "hidden_strikes": 2,
       "physical": "22 pierce",
       "durability": 30,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/glasswind_stiletto.png"
     },
     {
       "name": "Barbed Webglass Point",
@@ -662,7 +727,8 @@
       "hidden_strikes": 3,
       "physical": "20 pierce",
       "durability": 18,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/barbed_webglass_point.png"
     },
     {
       "name": "Belliron Ritual Blade",
@@ -672,7 +738,8 @@
       "hidden_strikes": 3,
       "physical": "29 pierce",
       "durability": 38,
-      "trait": "+20% physical damage against undead; no effect on other targets."
+      "trait": "+20% physical damage against undead; no effect on other targets.",
+      "icon": "res://assets/entropic_forge/icons/strikers/belliron_ritual_blade.png"
     },
     {
       "name": "Star-Slate Crescent",
@@ -682,7 +749,8 @@
       "hidden_strikes": 4,
       "physical": "36 pierce",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent.png"
     },
     {
       "name": "Iron Leaf Spearhead",
@@ -692,7 +760,8 @@
       "hidden_strikes": 1,
       "physical": "24 pierce",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/iron_leaf_spearhead.png"
     },
     {
       "name": "Wyrmtooth Pikehead",
@@ -702,7 +771,8 @@
       "hidden_strikes": 2,
       "physical": "32 pierce",
       "durability": 24,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/wyrmtooth_pikehead.png"
     },
     {
       "name": "Sunbronze Winged Head",
@@ -712,7 +782,8 @@
       "hidden_strikes": 2,
       "physical": "42 pierce",
       "durability": 30,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/sunbronze_winged_head.png"
     },
     {
       "name": "Stormsteel Fork",
@@ -722,7 +793,8 @@
       "hidden_strikes": 3,
       "physical": "40 pierce",
       "durability": 18,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormsteel_fork.png"
     },
     {
       "name": "Froststeel Lance Tip",
@@ -732,7 +804,8 @@
       "hidden_strikes": 3,
       "physical": "55 pierce",
       "durability": 38,
-      "trait": "+25% direct damage against barriers only."
+      "trait": "+25% direct damage against barriers only.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_lance_tip.png"
     },
     {
       "name": "Hollow Veil-Silver Point",
@@ -742,7 +815,8 @@
       "hidden_strikes": 4,
       "physical": "70 pierce",
       "durability": 28,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/hollow_veil_silver_point.png"
     },
     {
       "name": "Forester’s Axe Bit",
@@ -752,7 +826,8 @@
       "hidden_strikes": 1,
       "physical": "24 slash",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/foresters_axe_bit.png"
     },
     {
       "name": "Raider’s Hook Bit",
@@ -762,7 +837,8 @@
       "hidden_strikes": 2,
       "physical": "32 slash",
       "durability": 24,
-      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "icon": "res://assets/entropic_forge/icons/strikers/raiders_hook_bit.png"
     },
     {
       "name": "Drakeglass Bearded Edge",
@@ -772,7 +848,8 @@
       "hidden_strikes": 2,
       "physical": "41 slash",
       "durability": 30,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png"
     },
     {
       "name": "Bog-Iron Hewing Head",
@@ -782,7 +859,8 @@
       "hidden_strikes": 3,
       "physical": "39 slash",
       "durability": 18,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png"
     },
     {
       "name": "Basalt Double Bit",
@@ -792,7 +870,8 @@
       "hidden_strikes": 3,
       "physical": "54 slash",
       "durability": 38,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_double_bit.png"
     },
     {
       "name": "Star-Slate Crescent Bit",
@@ -802,7 +881,8 @@
       "hidden_strikes": 4,
       "physical": "68 slash",
       "durability": 28,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png"
     },
     {
       "name": "Quarry Iron Block",
@@ -812,7 +892,8 @@
       "hidden_strikes": 1,
       "physical": "37 blunt",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/quarry_iron_block.png"
     },
     {
       "name": "Siege Ram Head",
@@ -822,7 +903,8 @@
       "hidden_strikes": 2,
       "physical": "50 blunt",
       "durability": 24,
-      "trait": "+25% direct damage against barriers only."
+      "trait": "+25% direct damage against barriers only.",
+      "icon": "res://assets/entropic_forge/icons/strikers/siege_ram_head.png"
     },
     {
       "name": "Resonant Belliron Head",
@@ -832,7 +914,8 @@
       "hidden_strikes": 2,
       "physical": "65 blunt",
       "durability": 30,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/resonant_belliron_head.png"
     },
     {
       "name": "Basalt Furnace Head",
@@ -842,7 +925,8 @@
       "hidden_strikes": 3,
       "physical": "61 blunt",
       "durability": 18,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_furnace_head.png"
     },
     {
       "name": "Scaleiron Shatter Head",
@@ -852,7 +936,8 @@
       "hidden_strikes": 3,
       "physical": "85 blunt",
       "durability": 38,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/scaleiron_shatter_head.png"
     },
     {
       "name": "Singing-Quartz Impact Head",
@@ -862,7 +947,8 @@
       "hidden_strikes": 4,
       "physical": "107 blunt",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/singing_quartz_impact_head.png"
     },
     {
       "name": "Gatewatch Iron Ball",
@@ -872,7 +958,8 @@
       "hidden_strikes": 1,
       "physical": "22 blunt",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/gatewatch_iron_ball.png"
     },
     {
       "name": "Thorn-Cage Head",
@@ -882,7 +969,8 @@
       "hidden_strikes": 2,
       "physical": "30 blunt",
       "durability": 24,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/thorn_cage_head.png"
     },
     {
       "name": "Sunbronze Flanged Head",
@@ -892,7 +980,8 @@
       "hidden_strikes": 2,
       "physical": "39 blunt",
       "durability": 30,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/sunbronze_flanged_head.png"
     },
     {
       "name": "Hexstone Knob",
@@ -902,7 +991,8 @@
       "hidden_strikes": 3,
       "physical": "37 blunt",
       "durability": 18,
-      "trait": "+20% physical damage against undead; no effect on other targets."
+      "trait": "+20% physical damage against undead; no effect on other targets.",
+      "icon": "res://assets/entropic_forge/icons/strikers/hexstone_knob.png"
     },
     {
       "name": "Froststeel Crown",
@@ -912,7 +1002,8 @@
       "hidden_strikes": 3,
       "physical": "52 blunt",
       "durability": 38,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_crown.png"
     },
     {
       "name": "Veil-Silver Lantern Cage",
@@ -922,7 +1013,8 @@
       "hidden_strikes": 4,
       "physical": "65 blunt",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/veil_silver_lantern_cage.png"
     },
     {
       "name": "Carved Root Crown",
@@ -932,7 +1024,8 @@
       "hidden_strikes": 1,
       "physical": "12 blunt",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/carved_root_crown.png"
     },
     {
       "name": "Marsh-Bone Focus",
@@ -942,7 +1035,8 @@
       "hidden_strikes": 2,
       "physical": "17 blunt",
       "durability": 24,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/marsh_bone_focus.png"
     },
     {
       "name": "Storm Fork Crown",
@@ -952,7 +1046,8 @@
       "hidden_strikes": 2,
       "physical": "22 blunt",
       "durability": 30,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/storm_fork_crown.png"
     },
     {
       "name": "Moon Lens Cradle",
@@ -962,7 +1057,8 @@
       "hidden_strikes": 3,
       "physical": "20 blunt",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/moon_lens_cradle.png"
     },
     {
       "name": "Hexstone Ritual Cage",
@@ -972,7 +1068,8 @@
       "hidden_strikes": 3,
       "physical": "29 blunt",
       "durability": 38,
-      "trait": "+20% physical damage against undead; no effect on other targets."
+      "trait": "+20% physical damage against undead; no effect on other targets.",
+      "icon": "res://assets/entropic_forge/icons/strikers/hexstone_ritual_cage.png"
     },
     {
       "name": "Prismatic Silver Crown",
@@ -982,7 +1079,8 @@
       "hidden_strikes": 4,
       "physical": "36 blunt",
       "durability": 28,
-      "trait": "+25% direct damage against barriers only."
+      "trait": "+25% direct damage against barriers only.",
+      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_silver_crown.png"
     },
     {
       "name": "Copper Casting Tip",
@@ -992,7 +1090,8 @@
       "hidden_strikes": 1,
       "physical": "6 blunt",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/copper_casting_tip.png"
     },
     {
       "name": "Adder-Fang Focus",
@@ -1002,7 +1101,8 @@
       "hidden_strikes": 2,
       "physical": "9 blunt",
       "durability": 24,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/adder_fang_focus.png"
     },
     {
       "name": "Frostglass Prism",
@@ -1012,7 +1112,8 @@
       "hidden_strikes": 2,
       "physical": "11 blunt",
       "durability": 30,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/frostglass_prism.png"
     },
     {
       "name": "Sunbronze Aperture",
@@ -1022,7 +1123,8 @@
       "hidden_strikes": 3,
       "physical": "11 blunt",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/sunbronze_aperture.png"
     },
     {
       "name": "Webglass Needle Focus",
@@ -1032,7 +1134,8 @@
       "hidden_strikes": 3,
       "physical": "15 blunt",
       "durability": 38,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/webglass_needle_focus.png"
     },
     {
       "name": "Star-Slate Lens",
@@ -1042,7 +1145,8 @@
       "hidden_strikes": 4,
       "physical": "19 blunt",
       "durability": 28,
-      "trait": "+25% direct damage against barriers only."
+      "trait": "+25% direct damage against barriers only.",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_lens.png"
     },
     {
       "name": "Plain Yew Limbs",
@@ -1052,7 +1156,8 @@
       "hidden_strikes": 1,
       "physical": "22 pierce",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/plain_yew_limbs.png"
     },
     {
       "name": "Recurved Drakebone Limbs",
@@ -1062,7 +1167,8 @@
       "hidden_strikes": 2,
       "physical": "30 pierce",
       "durability": 24,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/recurved_drakebone_limbs.png"
     },
     {
       "name": "Moon-Yew Long Limbs",
@@ -1072,7 +1178,8 @@
       "hidden_strikes": 2,
       "physical": "39 pierce",
       "durability": 30,
-      "trait": "+2 m range; -5 accuracy points."
+      "trait": "+2 m range; -5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/moon_yew_long_limbs.png"
     },
     {
       "name": "Websilk Composite Limbs",
@@ -1082,7 +1189,8 @@
       "hidden_strikes": 3,
       "physical": "36 pierce",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/websilk_composite_limbs.png"
     },
     {
       "name": "Froststeel Spring Limbs",
@@ -1092,7 +1200,8 @@
       "hidden_strikes": 3,
       "physical": "51 pierce",
       "durability": 38,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_spring_limbs.png"
     },
     {
       "name": "Singing-Quartz Split Limbs",
@@ -1102,7 +1211,8 @@
       "hidden_strikes": 4,
       "physical": "64 pierce",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/singing_quartz_split_limbs.png"
     },
     {
       "name": "Plainsteel Prod",
@@ -1112,7 +1222,8 @@
       "hidden_strikes": 1,
       "physical": "31 pierce",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod.png"
     },
     {
       "name": "Drake-Sinew Compound Prod",
@@ -1122,7 +1233,8 @@
       "hidden_strikes": 2,
       "physical": "42 pierce",
       "durability": 24,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png"
     },
     {
       "name": "Marine Heavy Prod",
@@ -1132,7 +1244,8 @@
       "hidden_strikes": 2,
       "physical": "54 pierce",
       "durability": 30,
-      "trait": "+2 m range; -5 accuracy points."
+      "trait": "+2 m range; -5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod.png"
     },
     {
       "name": "Springbrass Repeater Prod",
@@ -1142,7 +1255,8 @@
       "hidden_strikes": 3,
       "physical": "51 pierce",
       "durability": 18,
-      "trait": "+8% physical attack; -0.2 m reach."
+      "trait": "+8% physical attack; -0.2 m reach.",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png"
     },
     {
       "name": "Froststeel Arbalest Prod",
@@ -1152,7 +1266,8 @@
       "hidden_strikes": 3,
       "physical": "71 pierce",
       "durability": 38,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png"
     },
     {
       "name": "Star-Slate Resonance Prod",
@@ -1162,7 +1277,8 @@
       "hidden_strikes": 4,
       "physical": "90 pierce",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png"
     },
     {
       "name": "Braided Oak Lash",
@@ -1172,7 +1288,8 @@
       "hidden_strikes": 1,
       "physical": "17 slash",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/braided_oak_lash.png"
     },
     {
       "name": "Barbed Drake-Sinew Lash",
@@ -1182,7 +1299,8 @@
       "hidden_strikes": 2,
       "physical": "22 slash",
       "durability": 24,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/barbed_drake_sinew_lash.png"
     },
     {
       "name": "Belliron Chain Lash",
@@ -1192,7 +1310,8 @@
       "hidden_strikes": 2,
       "physical": "29 slash",
       "durability": 30,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/belliron_chain_lash.png"
     },
     {
       "name": "Websilk Razor Lash",
@@ -1202,7 +1321,8 @@
       "hidden_strikes": 3,
       "physical": "27 slash",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/websilk_razor_lash.png"
     },
     {
       "name": "Drakeglass Segmented Lash",
@@ -1212,7 +1332,8 @@
       "hidden_strikes": 3,
       "physical": "38 slash",
       "durability": 38,
-      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_segmented_lash.png"
     },
     {
       "name": "Veil-Silver Ribbon Lash",
@@ -1222,7 +1343,8 @@
       "hidden_strikes": 4,
       "physical": "48 slash",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/veil_silver_ribbon_lash.png"
     },
     {
       "name": "Harvest Iron Crescent",
@@ -1232,7 +1354,8 @@
       "hidden_strikes": 1,
       "physical": "28 slash",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/harvest_iron_crescent.png"
     },
     {
       "name": "Gravehook Crescent",
@@ -1242,7 +1365,8 @@
       "hidden_strikes": 2,
       "physical": "38 slash",
       "durability": 24,
-      "trait": "Ignore 10% of physical armor for this hit."
+      "trait": "Ignore 10% of physical armor for this hit.",
+      "icon": "res://assets/entropic_forge/icons/strikers/gravehook_crescent.png"
     },
     {
       "name": "Webglass Reaping Edge",
@@ -1252,7 +1376,8 @@
       "hidden_strikes": 2,
       "physical": "49 slash",
       "durability": 30,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/webglass_reaping_edge.png"
     },
     {
       "name": "Belliron Soul Crescent",
@@ -1262,7 +1387,8 @@
       "hidden_strikes": 3,
       "physical": "46 slash",
       "durability": 18,
-      "trait": "+20% physical damage against undead; no effect on other targets."
+      "trait": "+20% physical damage against undead; no effect on other targets.",
+      "icon": "res://assets/entropic_forge/icons/strikers/belliron_soul_crescent.png"
     },
     {
       "name": "Froststeel Sickle Arc",
@@ -1272,7 +1398,8 @@
       "hidden_strikes": 3,
       "physical": "64 slash",
       "durability": 38,
-      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_sickle_arc.png"
     },
     {
       "name": "Null Obsidian Reaping Arc",
@@ -1282,7 +1409,8 @@
       "hidden_strikes": 4,
       "physical": "81 slash",
       "durability": 28,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/null_obsidian_reaping_arc.png"
     },
     {
       "name": "Riveted Iron Barrel",
@@ -1292,7 +1420,8 @@
       "hidden_strikes": 1,
       "physical": "38 pierce",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel.png"
     },
     {
       "name": "Scatterbore Barrel",
@@ -1302,7 +1431,8 @@
       "hidden_strikes": 2,
       "physical": "51 pierce",
       "durability": 24,
-      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc."
+      "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
+      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel.png"
     },
     {
       "name": "Tidebronze Longbore",
@@ -1312,7 +1442,8 @@
       "hidden_strikes": 2,
       "physical": "67 pierce",
       "durability": 30,
-      "trait": "+2 m range; -5 accuracy points."
+      "trait": "+2 m range; -5 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore.png"
     },
     {
       "name": "Springbrass Spiral Barrel",
@@ -1322,7 +1453,8 @@
       "hidden_strikes": 3,
       "physical": "63 pierce",
       "durability": 18,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png"
     },
     {
       "name": "Basalt Siege Barrel",
@@ -1332,7 +1464,8 @@
       "hidden_strikes": 3,
       "physical": "87 pierce",
       "durability": 38,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel.png"
     },
     {
       "name": "Prismatic Breach Barrel",
@@ -1342,7 +1475,8 @@
       "hidden_strikes": 4,
       "physical": "110 pierce",
       "durability": 28,
-      "trait": "Physical attack -12%; elemental attack +20%."
+      "trait": "Physical attack -12%; elemental attack +20%.",
+      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png"
     },
     {
       "name": "Plainsteel Knuckle Plate",
@@ -1352,7 +1486,8 @@
       "hidden_strikes": 1,
       "physical": "14 blunt",
       "durability": 20,
-      "trait": "+3 accuracy points."
+      "trait": "+3 accuracy points.",
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_knuckle_plate.png"
     },
     {
       "name": "Wyrmfang Knuckle Row",
@@ -1362,7 +1497,8 @@
       "hidden_strikes": 2,
       "physical": "18 blunt",
       "durability": 24,
-      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack."
+      "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/wyrmfang_knuckle_row.png"
     },
     {
       "name": "Belliron Palm Plate",
@@ -1372,7 +1508,8 @@
       "hidden_strikes": 2,
       "physical": "24 blunt",
       "durability": 30,
-      "trait": "15% chance to remove 6 ATB points; once per target action."
+      "trait": "15% chance to remove 6 ATB points; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/strikers/belliron_palm_plate.png"
     },
     {
       "name": "Springbrass Ram Knuckle",
@@ -1382,7 +1519,8 @@
       "hidden_strikes": 3,
       "physical": "22 blunt",
       "durability": 18,
-      "trait": "+8% physical attack; -0.2 m reach."
+      "trait": "+8% physical attack; -0.2 m reach.",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_ram_knuckle.png"
     },
     {
       "name": "Froststeel Talon Plate",
@@ -1392,7 +1530,8 @@
       "hidden_strikes": 3,
       "physical": "31 blunt",
       "durability": 38,
-      "trait": "+6 critical chance points; -8% physical attack."
+      "trait": "+6 critical chance points; -8% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_talon_plate.png"
     },
     {
       "name": "Veil-Silver Channel Knuckle",
@@ -1402,7 +1541,8 @@
       "hidden_strikes": 4,
       "physical": "39 blunt",
       "durability": 28,
-      "trait": "+12% elemental attack; -6% physical attack."
+      "trait": "+12% elemental attack; -6% physical attack.",
+      "icon": "res://assets/entropic_forge/icons/strikers/veil_silver_channel_knuckle.png"
     }
   ],
   "cores": [
@@ -1415,7 +1555,8 @@
       "elemental": "12 verdant",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Root for 1 action; boss substitute: -8% action speed."
+      "effect": "Root for 1 action; boss substitute: -8% action speed.",
+      "icon": "res://assets/entropic_forge/icons/cores/thornseed_core.png"
     },
     {
       "name": "Huntsman’s Echo Core",
@@ -1426,7 +1567,8 @@
       "elemental": "21 spirit",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Next allied hit gains +12% accuracy for 2 actions; mark consumed on hit."
+      "effect": "Next allied hit gains +12% accuracy for 2 actions; mark consumed on hit.",
+      "icon": "res://assets/entropic_forge/icons/cores/huntsmans_echo_core.png"
     },
     {
       "name": "Heart of the Old Grove Core",
@@ -1437,7 +1579,8 @@
       "elemental": "32 verdant",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Wielder gains a barrier equal to 12% of base physical + elemental attack for 2 actions."
+      "effect": "Wielder gains a barrier equal to 12% of base physical + elemental attack for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/heart_of_the_old_grove_core.png"
     },
     {
       "name": "Worldroot Seed Core",
@@ -1448,7 +1591,8 @@
       "elemental": "45 verdant",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Root for 2 actions; boss substitute: -12% action speed for 2 actions."
+      "effect": "Root for 2 actions; boss substitute: -12% action speed for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/worldroot_seed_core.png"
     },
     {
       "name": "Cinder Pearl Core",
@@ -1459,7 +1603,8 @@
       "elemental": "12 fire",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Burn deals 18% of base elemental attack per action for 2 actions."
+      "effect": "Burn deals 18% of base elemental attack per action for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/cinder_pearl_core.png"
     },
     {
       "name": "Magma Heart Core",
@@ -1470,7 +1615,8 @@
       "elemental": "21 magma",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Leaves a 1.2 m pool for 2 actions, dealing 20% base elemental attack to all occupants each action."
+      "effect": "Leaves a 1.2 m pool for 2 actions, dealing 20% base elemental attack to all occupants each action.",
+      "icon": "res://assets/entropic_forge/icons/cores/magma_heart_core.png"
     },
     {
       "name": "Ashen Crown Core",
@@ -1481,7 +1627,8 @@
       "elemental": "32 ash",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Target loses 10 accuracy points for 2 actions."
+      "effect": "Target loses 10 accuracy points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/ashen_crown_core.png"
     },
     {
       "name": "First Furnace Ember Core",
@@ -1492,7 +1639,8 @@
       "elemental": "45 magma",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Burn deals 22% base elemental magma damage per action for 3 actions."
+      "effect": "Burn deals 22% base elemental magma damage per action for 3 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/first_furnace_ember_core.png"
     },
     {
       "name": "Rime Shard Core",
@@ -1503,7 +1651,8 @@
       "elemental": "12 frost",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Target action speed -12% for 2 actions."
+      "effect": "Target action speed -12% for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/rime_shard_core.png"
     },
     {
       "name": "Whiteout Eye Core",
@@ -1514,7 +1663,8 @@
       "elemental": "21 frost",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Target loses 15 accuracy points for 2 actions."
+      "effect": "Target loses 15 accuracy points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/whiteout_eye_core.png"
     },
     {
       "name": "Glacial Heart Core",
@@ -1525,7 +1675,8 @@
       "elemental": "32 frost",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Wielder barrier = 15% base physical + elemental attack, lasting 2 actions."
+      "effect": "Wielder barrier = 15% base physical + elemental attack, lasting 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/glacial_heart_core.png"
     },
     {
       "name": "Stillwinter Heart Core",
@@ -1536,7 +1687,8 @@
       "elemental": "45 frost",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Target action speed -18% for 3 actions."
+      "effect": "Target action speed -18% for 3 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/stillwinter_heart_core.png"
     },
     {
       "name": "Drake Ember Core",
@@ -1547,7 +1699,8 @@
       "elemental": "12 fire",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Physical armor -8% for 2 actions."
+      "effect": "Physical armor -8% for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/drake_ember_core.png"
     },
     {
       "name": "Scale Resonance Core",
@@ -1558,7 +1711,8 @@
       "elemental": "21 earth",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Physical armor -12% for 2 actions."
+      "effect": "Physical armor -12% for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/scale_resonance_core.png"
     },
     {
       "name": "Brood Oath Core",
@@ -1569,7 +1723,8 @@
       "elemental": "32 spirit",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Wielder takes 10% less physical damage until its next action."
+      "effect": "Wielder takes 10% less physical damage until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/brood_oath_core.png"
     },
     {
       "name": "Sunwell Spark Core",
@@ -1580,7 +1735,8 @@
       "elemental": "12 solar",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Next allied hit adds 10% base elemental solar damage; mark consumed."
+      "effect": "Next allied hit adds 10% base elemental solar damage; mark consumed.",
+      "icon": "res://assets/entropic_forge/icons/cores/sunwell_spark_core.png"
     },
     {
       "name": "Mirage Eye Core",
@@ -1591,7 +1747,8 @@
       "elemental": "21 mirage",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Wielder gains 8 evasion points until its next action."
+      "effect": "Wielder gains 8 evasion points until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/mirage_eye_core.png"
     },
     {
       "name": "Buried Dawn Core",
@@ -1602,7 +1759,8 @@
       "elemental": "32 solar",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Remove 1 removable positive effect from the struck enemy."
+      "effect": "Remove 1 removable positive effect from the struck enemy.",
+      "icon": "res://assets/entropic_forge/icons/cores/buried_dawn_core.png"
     },
     {
       "name": "Dawn Before Kings Core",
@@ -1613,7 +1771,8 @@
       "elemental": "45 solar",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Remove up to 2 removable enemy positive effects."
+      "effect": "Remove up to 2 removable enemy positive effects.",
+      "icon": "res://assets/entropic_forge/icons/cores/dawn_before_kings_core.png"
     },
     {
       "name": "Adder Bile Core",
@@ -1624,7 +1783,8 @@
       "elemental": "12 venom",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Poison deals 12% base elemental attack per action for 3 actions."
+      "effect": "Poison deals 12% base elemental attack per action for 3 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/adder_bile_core.png"
     },
     {
       "name": "Mire Lantern Core",
@@ -1635,7 +1795,8 @@
       "elemental": "21 verdant",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Remove 1 poison stack from the wielder."
+      "effect": "Remove 1 poison stack from the wielder.",
+      "icon": "res://assets/entropic_forge/icons/cores/mire_lantern_core.png"
     },
     {
       "name": "Rotmother Spore Core",
@@ -1646,7 +1807,8 @@
       "elemental": "32 rot",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Rot deals 18% base elemental per action for 2 actions; on death transfers remaining duration to 1 enemy within 2 m."
+      "effect": "Rot deals 18% base elemental per action for 2 actions; on death transfers remaining duration to 1 enemy within 2 m.",
+      "icon": "res://assets/entropic_forge/icons/cores/rotmother_spore_core.png"
     },
     {
       "name": "Grave Ember Core",
@@ -1657,7 +1819,8 @@
       "elemental": "12 spirit",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Target receives 20% less healing for 2 actions."
+      "effect": "Target receives 20% less healing for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/grave_ember_core.png"
     },
     {
       "name": "Hexbound Tear Core",
@@ -1668,7 +1831,8 @@
       "elemental": "21 curse",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Target physical attack -10% for 2 actions."
+      "effect": "Target physical attack -10% for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/hexbound_tear_core.png"
     },
     {
       "name": "Anchorless Soul Core",
@@ -1679,7 +1843,8 @@
       "elemental": "32 spirit",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Add spirit damage = 25% base elemental attack against undead only."
+      "effect": "Add spirit damage = 25% base elemental attack against undead only.",
+      "icon": "res://assets/entropic_forge/icons/cores/anchorless_soul_core.png"
     },
     {
       "name": "Gloam Mote Core",
@@ -1690,7 +1855,8 @@
       "elemental": "12 shadow",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Target loses 10 evasion points for 2 actions."
+      "effect": "Target loses 10 evasion points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/gloam_mote_core.png"
     },
     {
       "name": "Widow’s Knot Core",
@@ -1701,7 +1867,8 @@
       "elemental": "21 shadow",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Root for 1 action; boss substitute: -8% action speed."
+      "effect": "Root for 1 action; boss substitute: -8% action speed.",
+      "icon": "res://assets/entropic_forge/icons/cores/widows_knot_core.png"
     },
     {
       "name": "Hollow Canopy Core",
@@ -1712,7 +1879,8 @@
       "elemental": "32 rot",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Target rot resistance -10 percentage points for 2 actions."
+      "effect": "Target rot resistance -10 percentage points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/hollow_canopy_core.png"
     },
     {
       "name": "Marching Spark Core",
@@ -1723,7 +1891,8 @@
       "elemental": "12 earth",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Wielder gains 50% displacement resistance until its next action."
+      "effect": "Wielder gains 50% displacement resistance until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/marching_spark_core.png"
     },
     {
       "name": "Warhorn Echo Core",
@@ -1734,7 +1903,8 @@
       "elemental": "21 spirit",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Wielder’s next direct hit gains 10% base physical damage; cannot stack."
+      "effect": "Wielder’s next direct hit gains 10% base physical damage; cannot stack.",
+      "icon": "res://assets/entropic_forge/icons/cores/warhorn_echo_core.png"
     },
     {
       "name": "Siegeheart Core",
@@ -1745,7 +1915,8 @@
       "elemental": "32 earth",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Deal an additional 30% base physical + elemental attack to barriers only."
+      "effect": "Deal an additional 30% base physical + elemental attack to barriers only.",
+      "icon": "res://assets/entropic_forge/icons/cores/siegeheart_core.png"
     },
     {
       "name": "Salt Pearl Core",
@@ -1756,7 +1927,8 @@
       "elemental": "12 tide",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Physical armor -8% for 2 actions."
+      "effect": "Physical armor -8% for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/salt_pearl_core.png"
     },
     {
       "name": "Undertow Knot Core",
@@ -1767,7 +1939,8 @@
       "elemental": "21 tide",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Pull target 1 m toward the wielder; immune targets take 10% base elemental tide damage instead."
+      "effect": "Pull target 1 m toward the wielder; immune targets take 10% base elemental tide damage instead.",
+      "icon": "res://assets/entropic_forge/icons/cores/undertow_knot_core.png"
     },
     {
       "name": "Tempest Bottle Core",
@@ -1778,7 +1951,8 @@
       "elemental": "32 storm",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Deal 15% base elemental storm damage to 1 extra enemy within 2 m."
+      "effect": "Deal 15% base elemental storm damage to 1 extra enemy within 2 m.",
+      "icon": "res://assets/entropic_forge/icons/cores/tempest_bottle_core.png"
     },
     {
       "name": "Coalglass Ember Core",
@@ -1789,7 +1963,8 @@
       "elemental": "12 fire",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Leave a 1 m trail at target for 2 actions, dealing 15% base elemental to all occupants each action."
+      "effect": "Leave a 1 m trail at target for 2 actions, dealing 15% base elemental to all occupants each action.",
+      "icon": "res://assets/entropic_forge/icons/cores/coalglass_ember_core.png"
     },
     {
       "name": "Cinderwake Pearl Core",
@@ -1800,7 +1975,8 @@
       "elemental": "21 magma",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Leave a 1.5 m patch for 2 actions, dealing 25% base elemental to all occupants each action."
+      "effect": "Leave a 1.5 m patch for 2 actions, dealing 25% base elemental to all occupants each action.",
+      "icon": "res://assets/entropic_forge/icons/cores/cinderwake_pearl_core.png"
     },
     {
       "name": "Dragon Pact Ember Core",
@@ -1811,7 +1987,8 @@
       "elemental": "32 fire",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Deal 25% base elemental fire damage to at most 2 extra enemies within 2 m."
+      "effect": "Deal 25% base elemental fire damage to at most 2 extra enemies within 2 m.",
+      "icon": "res://assets/entropic_forge/icons/cores/dragon_pact_ember_core.png"
     },
     {
       "name": "Stormglass Spark Core",
@@ -1822,7 +1999,8 @@
       "elemental": "12 storm",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Remove 8 percentage points from target ATB; once per target action."
+      "effect": "Remove 8 percentage points from target ATB; once per target action.",
+      "icon": "res://assets/entropic_forge/icons/cores/stormglass_spark_core.png"
     },
     {
       "name": "Thundercoil Core",
@@ -1833,7 +2011,8 @@
       "elemental": "21 storm",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Jump to at most 2 different enemies within 2 m for 20% base elemental storm damage each."
+      "effect": "Jump to at most 2 different enemies within 2 m for 20% base elemental storm damage each.",
+      "icon": "res://assets/entropic_forge/icons/cores/thundercoil_core.png"
     },
     {
       "name": "Skyward Seal Core",
@@ -1844,7 +2023,8 @@
       "elemental": "32 storm",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Wielder takes 12% less elemental damage until its next action."
+      "effect": "Wielder takes 12% less elemental damage until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/skyward_seal_core.png"
     },
     {
       "name": "Moonlit Flake Core",
@@ -1855,7 +2035,8 @@
       "elemental": "12 lunar",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Target critical resistance -6 points for 2 actions."
+      "effect": "Target critical resistance -6 points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/moonlit_flake_core.png"
     },
     {
       "name": "Fallen Star Core",
@@ -1866,7 +2047,8 @@
       "elemental": "21 astral",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Add one astral pulse of 20% base elemental attack; pulse cannot trigger procs."
+      "effect": "Add one astral pulse of 20% base elemental attack; pulse cannot trigger procs.",
+      "icon": "res://assets/entropic_forge/icons/cores/fallen_star_core.png"
     },
     {
       "name": "Observatory Heart Core",
@@ -1877,7 +2059,8 @@
       "elemental": "32 astral",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Pull struck target up to 1.5 m toward its nearest enemy ally; immune targets take 15% base elemental astral damage instead."
+      "effect": "Pull struck target up to 1.5 m toward its nearest enemy ally; immune targets take 15% base elemental astral damage instead.",
+      "icon": "res://assets/entropic_forge/icons/cores/observatory_heart_core.png"
     },
     {
       "name": "Clockwork Spark Core",
@@ -1888,7 +2071,8 @@
       "elemental": "12 kinetic",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Next direct physical hit gains 12% base physical damage; cannot stack."
+      "effect": "Next direct physical hit gains 12% base physical damage; cannot stack.",
+      "icon": "res://assets/entropic_forge/icons/cores/clockwork_spark_core.png"
     },
     {
       "name": "Pressure Pearl Core",
@@ -1899,7 +2083,8 @@
       "elemental": "21 kinetic",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Push target 1 m away; immune targets take 10% base elemental kinetic damage instead."
+      "effect": "Push target 1 m away; immune targets take 10% base elemental kinetic damage instead.",
+      "icon": "res://assets/entropic_forge/icons/cores/pressure_pearl_core.png"
     },
     {
       "name": "Overload Governor Core",
@@ -1910,7 +2095,8 @@
       "elemental": "32 storm",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Deal 25% base elemental storm damage to 1 extra enemy within 2 m. Does not reveal cracked durability."
+      "effect": "Deal 25% base elemental storm damage to 1 extra enemy within 2 m. Does not reveal cracked durability.",
+      "icon": "res://assets/entropic_forge/icons/cores/overload_governor_core.png"
     },
     {
       "name": "Prime Kettari Governor Core",
@@ -1921,7 +2107,8 @@
       "elemental": "45 kinetic",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Push target 2 m; immune targets take 20% base elemental kinetic damage instead. No durability stabilization."
+      "effect": "Push target 2 m; immune targets take 20% base elemental kinetic damage instead. No durability stabilization.",
+      "icon": "res://assets/entropic_forge/icons/cores/prime_kettari_governor_core.png"
     },
     {
       "name": "Whisperglass Core",
@@ -1932,7 +2119,8 @@
       "elemental": "12 wind",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Add 15% base elemental wind damage ignoring 20% resistance for this pulse."
+      "effect": "Add 15% base elemental wind damage ignoring 20% resistance for this pulse.",
+      "icon": "res://assets/entropic_forge/icons/cores/whisperglass_core.png"
     },
     {
       "name": "Sand-Singer Core",
@@ -1943,7 +2131,8 @@
       "elemental": "21 wind",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Target loses 12 accuracy points for 2 actions."
+      "effect": "Target loses 12 accuracy points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/sand_singer_core.png"
     },
     {
       "name": "Horizon Prism Core",
@@ -1954,7 +2143,8 @@
       "elemental": "32 mirage",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Add 25% base elemental mirage damage to the first enemy behind the target, within 3 m."
+      "effect": "Add 25% base elemental mirage damage to the first enemy behind the target, within 3 m.",
+      "icon": "res://assets/entropic_forge/icons/cores/horizon_prism_core.png"
     },
     {
       "name": "Bell-Wraith Ember Core",
@@ -1965,7 +2155,8 @@
       "elemental": "12 spirit",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Silence for 1 action; boss substitute: magic attack -8% for 1 action."
+      "effect": "Silence for 1 action; boss substitute: magic attack -8% for 1 action.",
+      "icon": "res://assets/entropic_forge/icons/cores/bell_wraith_ember_core.png"
     },
     {
       "name": "Lantern Soul Core",
@@ -1976,7 +2167,8 @@
       "elemental": "21 spirit",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Wielder gains 25 curse-resistance points until its next action."
+      "effect": "Wielder gains 25 curse-resistance points until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/lantern_soul_core.png"
     },
     {
       "name": "Pale Procession Core",
@@ -1987,7 +2179,8 @@
       "elemental": "32 curse",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Target receives 25% less healing for 3 actions."
+      "effect": "Target receives 25% less healing for 3 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/pale_procession_core.png"
     },
     {
       "name": "Unbound Funeral Star Core",
@@ -1998,7 +2191,8 @@
       "elemental": "45 spirit",
       "volatility": 4,
       "chance": "30%",
-      "effect": "Add 45% base elemental spirit damage against undead only."
+      "effect": "Add 45% base elemental spirit damage against undead only.",
+      "icon": "res://assets/entropic_forge/icons/cores/unbound_funeral_star_core.png"
     },
     {
       "name": "Mist Dew Core",
@@ -2009,7 +2203,8 @@
       "elemental": "12 mist",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Wielder gains 6 evasion points until its next action."
+      "effect": "Wielder gains 6 evasion points until its next action.",
+      "icon": "res://assets/entropic_forge/icons/cores/mist_dew_core.png"
     },
     {
       "name": "Veilbound Star Core",
@@ -2020,7 +2215,8 @@
       "elemental": "21 astral",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Add one astral pulse of 25% base elemental attack; pulse cannot trigger procs."
+      "effect": "Add one astral pulse of 25% base elemental attack; pulse cannot trigger procs.",
+      "icon": "res://assets/entropic_forge/icons/cores/veilbound_star_core.png"
     },
     {
       "name": "Relic Memory Core",
@@ -2031,7 +2227,8 @@
       "elemental": "32 astral",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Target astral resistance -12 percentage points for 2 actions."
+      "effect": "Target astral resistance -12 percentage points for 2 actions.",
+      "icon": "res://assets/entropic_forge/icons/cores/relic_memory_core.png"
     },
     {
       "name": "Rift Cinder Core",
@@ -2042,7 +2239,8 @@
       "elemental": "12 void",
       "volatility": 1,
       "chance": "18%",
-      "effect": "Add 35% base elemental void damage to barriers only."
+      "effect": "Add 35% base elemental void damage to barriers only.",
+      "icon": "res://assets/entropic_forge/icons/cores/rift_cinder_core.png"
     },
     {
       "name": "Hunger Fragment Core",
@@ -2053,7 +2251,8 @@
       "elemental": "21 void",
       "volatility": 2,
       "chance": "22%",
-      "effect": "Heal wielder for 8% of the direct elemental damage actually dealt; excludes bursts and shields."
+      "effect": "Heal wielder for 8% of the direct elemental damage actually dealt; excludes bursts and shields.",
+      "icon": "res://assets/entropic_forge/icons/cores/hunger_fragment_core.png"
     },
     {
       "name": "Quiet Singularity Core",
@@ -2064,7 +2263,8 @@
       "elemental": "32 void",
       "volatility": 3,
       "chance": "26%",
-      "effect": "Deal 30% base elemental void damage to at most 2 extra enemies within 2 m."
+      "effect": "Deal 30% base elemental void damage to at most 2 extra enemies within 2 m.",
+      "icon": "res://assets/entropic_forge/icons/cores/quiet_singularity_core.png"
     }
   ],
   "recipes": [
@@ -2077,7 +2277,8 @@
       "attack": "26/16 → 28/17 → 29/18",
       "durability": 75,
       "interval": "1.8",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/briar_oath.png"
     },
     {
       "name": "Cinder Vow",
@@ -2088,7 +2289,8 @@
       "attack": "39/17 → 43/19 → 45/20",
       "durability": 85,
       "interval": "1.718",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cinder_vow.png"
     },
     {
       "name": "White Mercy",
@@ -2099,7 +2301,8 @@
       "attack": "58/19 → 64/20 → 67/21",
       "durability": 144,
       "interval": "2.047",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/white_mercy.png"
     },
     {
       "name": "Scale Promise",
@@ -2110,7 +2313,8 @@
       "attack": "50/23 → 55/25 → 57/26",
       "durability": 100,
       "interval": "1.692",
-      "sands_fee_resale": "258 / 347 g"
+      "sands_fee_resale": "258 / 347 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/scale_promise.png"
     },
     {
       "name": "Sunlit Verdict",
@@ -2121,7 +2325,8 @@
       "attack": "67/17 → 73/19 → 76/20",
       "durability": 93,
       "interval": "2.052",
-      "sands_fee_resale": "146 / 191 g"
+      "sands_fee_resale": "146 / 191 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/sunlit_verdict.png"
     },
     {
       "name": "Adder’s Courtesy",
@@ -2132,7 +2337,8 @@
       "attack": "90/22 → 98/24 → 102/25",
       "durability": 88,
       "interval": "1.8",
-      "sands_fee_resale": "258 / 347 g"
+      "sands_fee_resale": "258 / 347 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/adders_courtesy.png"
     },
     {
       "name": "Gravewarden",
@@ -2143,7 +2349,8 @@
       "attack": "29/17 → 32/19 → 33/20",
       "durability": 131,
       "interval": "1.895",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/gravewarden.png"
     },
     {
       "name": "Widow’s Answer",
@@ -2154,7 +2361,8 @@
       "attack": "42/21 → 46/23 → 48/24",
       "durability": 105,
       "interval": "1.89",
-      "sands_fee_resale": "228 / 305 g"
+      "sands_fee_resale": "228 / 305 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/widows_answer.png"
     },
     {
       "name": "Marchkeeper",
@@ -2165,7 +2373,8 @@
       "attack": "52/16 → 57/18 → 59/19",
       "durability": 85,
       "interval": "1.944",
-      "sands_fee_resale": "96 / 121 g"
+      "sands_fee_resale": "96 / 121 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/marchkeeper.png"
     },
     {
       "name": "Salt Testament",
@@ -2176,7 +2385,8 @@
       "attack": "47/19 → 52/20 → 53/21",
       "durability": 79,
       "interval": "1.538",
-      "sands_fee_resale": "138 / 179 g"
+      "sands_fee_resale": "138 / 179 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/salt_testament.png"
     },
     {
       "name": "Ashwake Saber",
@@ -2187,7 +2397,8 @@
       "attack": "76/20 → 83/22 → 86/23",
       "durability": 154,
       "interval": "2.16",
-      "sands_fee_resale": "225 / 301 g"
+      "sands_fee_resale": "225 / 301 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ashwake_saber.png"
     },
     {
       "name": "Stormlit Promise",
@@ -2198,7 +2409,8 @@
       "attack": "95/27 → 105/30 → 109/31",
       "durability": 109,
       "interval": "1.98",
-      "sands_fee_resale": "378 / 515 g"
+      "sands_fee_resale": "378 / 515 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stormlit_promise.png"
     },
     {
       "name": "Winter’s Debt",
@@ -2209,7 +2421,8 @@
       "attack": "44/23 → 48/26 → 50/27",
       "durability": 83,
       "interval": "3.333",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winters_debt.png"
     },
     {
       "name": "Wyrm’s Reproach",
@@ -2220,7 +2433,8 @@
       "attack": "67/26 → 73/29 → 76/30",
       "durability": 94,
       "interval": "3.316",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/wyrms_reproach.png"
     },
     {
       "name": "Dawn Divider",
@@ -2231,7 +2445,8 @@
       "attack": "93/34 → 102/37 → 106/39",
       "durability": 92,
       "interval": "3.24",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawn_divider.png"
     },
     {
       "name": "Bog King’s Fall",
@@ -2242,7 +2457,8 @@
       "attack": "81/26 → 89/29 → 93/30",
       "durability": 80,
       "interval": "3.133",
-      "sands_fee_resale": "104 / 131 g"
+      "sands_fee_resale": "104 / 131 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/bog_kings_fall.png"
     },
     {
       "name": "Cursebreaker’s Burden",
@@ -2253,7 +2469,8 @@
       "attack": "120/28 → 132/31 → 137/32",
       "durability": 108,
       "interval": "3.6",
-      "sands_fee_resale": "180 / 238 g"
+      "sands_fee_resale": "180 / 238 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cursebreakers_burden.png"
     },
     {
       "name": "Canopy Reaver",
@@ -2264,7 +2481,8 @@
       "attack": "152/46 → 168/51 → 174/53",
       "durability": 90,
       "interval": "3.3",
-      "sands_fee_resale": "303 / 410 g"
+      "sands_fee_resale": "303 / 410 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/canopy_reaver.png"
     },
     {
       "name": "Last Battle Line",
@@ -2275,7 +2493,8 @@
       "attack": "44/23 → 48/26 → 50/27",
       "durability": 83,
       "interval": "3.333",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/last_battle_line.png"
     },
     {
       "name": "Breakwater Blade",
@@ -2286,7 +2505,8 @@
       "attack": "67/26 → 73/29 → 76/30",
       "durability": 94,
       "interval": "3.316",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/breakwater_blade.png"
     },
     {
       "name": "Nestkeeper’s Fury",
@@ -2297,7 +2517,8 @@
       "attack": "93/34 → 102/37 → 106/39",
       "durability": 92,
       "interval": "3.24",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/nestkeepers_fury.png"
     },
     {
       "name": "Summit Judgment",
@@ -2308,7 +2529,8 @@
       "attack": "81/26 → 89/29 → 93/30",
       "durability": 80,
       "interval": "3.133",
-      "sands_fee_resale": "104 / 131 g"
+      "sands_fee_resale": "104 / 131 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/summit_judgment.png"
     },
     {
       "name": "Moonfall Monument",
@@ -2319,7 +2541,8 @@
       "attack": "120/28 → 132/31 → 137/32",
       "durability": 108,
       "interval": "3.6",
-      "sands_fee_resale": "180 / 238 g"
+      "sands_fee_resale": "180 / 238 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moonfall_monument.png"
     },
     {
       "name": "Foundry Requiem",
@@ -2330,7 +2553,8 @@
       "attack": "152/46 → 168/51 → 174/53",
       "durability": 90,
       "interval": "3.3",
-      "sands_fee_resale": "303 / 410 g"
+      "sands_fee_resale": "303 / 410 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/foundry_requiem.png"
     },
     {
       "name": "Salt Whisper",
@@ -2341,7 +2565,8 @@
       "attack": "16/9 → 17/10 → 18/11",
       "durability": 75,
       "interval": "1.05",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/salt_whisper.png"
     },
     {
       "name": "Ember Needle",
@@ -2352,7 +2577,8 @@
       "attack": "22/13 → 24/14 → 25/14",
       "durability": 85,
       "interval": "1.003",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ember_needle.png"
     },
     {
       "name": "Thunder’s Wink",
@@ -2363,7 +2589,8 @@
       "attack": "31/13 → 34/14 → 36/15",
       "durability": 98,
       "interval": "1.134",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/thunders_wink.png"
     },
     {
       "name": "Moonless Kiss",
@@ -2374,7 +2601,8 @@
       "attack": "29/10 → 32/12 → 33/12",
       "durability": 73,
       "interval": "0.987",
-      "sands_fee_resale": "104 / 131 g"
+      "sands_fee_resale": "104 / 131 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moonless_kiss.png"
     },
     {
       "name": "Clockwork Stiletto",
@@ -2385,7 +2613,8 @@
       "attack": "45/11 → 49/12 → 51/13",
       "durability": 97,
       "interval": "1.089",
-      "sands_fee_resale": "180 / 238 g"
+      "sands_fee_resale": "180 / 238 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/clockwork_stiletto.png"
     },
     {
       "name": "Glasswind Secret",
@@ -2396,7 +2625,8 @@
       "attack": "59/16 → 65/18 → 68/19",
       "durability": 96,
       "interval": "1.155",
-      "sands_fee_resale": "303 / 410 g"
+      "sands_fee_resale": "303 / 410 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/glasswind_secret.png"
     },
     {
       "name": "Bellringer’s Debt",
@@ -2407,7 +2637,8 @@
       "attack": "16/9 → 17/10 → 18/11",
       "durability": 75,
       "interval": "1.05",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/bellringers_debt.png"
     },
     {
       "name": "Mist Thief",
@@ -2418,7 +2649,8 @@
       "attack": "22/13 → 24/14 → 25/14",
       "durability": 85,
       "interval": "1.003",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mist_thief.png"
     },
     {
       "name": "Hunger’s Point",
@@ -2429,7 +2661,8 @@
       "attack": "31/13 → 34/14 → 36/15",
       "durability": 98,
       "interval": "1.134",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hungers_point.png"
     },
     {
       "name": "Root Assassin",
@@ -2440,7 +2673,8 @@
       "attack": "35/47 → 39/52 → 40/54",
       "durability": 73,
       "interval": "0.987",
-      "sands_fee_resale": "339 / 460 g"
+      "sands_fee_resale": "339 / 460 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/root_assassin.png"
     },
     {
       "name": "Furnace Splinter",
@@ -2451,7 +2685,8 @@
       "attack": "51/47 → 56/52 → 58/54",
       "durability": 97,
       "interval": "1.089",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/furnace_splinter.png"
     },
     {
       "name": "Winter Widow",
@@ -2462,7 +2697,8 @@
       "attack": "59/61 → 65/67 → 68/70",
       "durability": 96,
       "interval": "1.155",
-      "sands_fee_resale": "538 / 739 g"
+      "sands_fee_resale": "538 / 739 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winter_widow.png"
     },
     {
       "name": "Moonwarden’s Reach",
@@ -2473,7 +2709,8 @@
       "attack": "31/16 → 34/18 → 35/19",
       "durability": 75,
       "interval": "2.316",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moonwardens_reach.png"
     },
     {
       "name": "Pressure Lance",
@@ -2484,7 +2721,8 @@
       "attack": "46/18 → 51/20 → 53/21",
       "durability": 118,
       "interval": "2.432",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pressure_lance.png"
     },
     {
       "name": "Horizon Harpoon",
@@ -2495,7 +2733,8 @@
       "attack": "60/22 → 66/25 → 68/26",
       "durability": 98,
       "interval": "2.376",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/horizon_harpoon.png"
     },
     {
       "name": "Funeral Standard",
@@ -2506,7 +2745,8 @@
       "attack": "62/23 → 68/25 → 71/26",
       "durability": 130,
       "interval": "2.297",
-      "sands_fee_resale": "258 / 347 g"
+      "sands_fee_resale": "258 / 347 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_standard.png"
     },
     {
       "name": "Veilpiercer",
@@ -2517,7 +2757,8 @@
       "attack": "80/18 → 88/20 → 91/21",
       "durability": 93,
       "interval": "2.64",
-      "sands_fee_resale": "146 / 191 g"
+      "sands_fee_resale": "146 / 191 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/veilpiercer.png"
     },
     {
       "name": "Rift Skewer",
@@ -2528,7 +2769,8 @@
       "attack": "101/25 → 111/27 → 116/28",
       "durability": 123,
       "interval": "2.548",
-      "sands_fee_resale": "258 / 347 g"
+      "sands_fee_resale": "258 / 347 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/rift_skewer.png"
     },
     {
       "name": "Rootbound Watch",
@@ -2539,7 +2781,8 @@
       "attack": "42/95 → 46/105 → 48/109",
       "durability": 89,
       "interval": "2.2",
-      "sands_fee_resale": "376 / 513 g"
+      "sands_fee_resale": "376 / 513 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/rootbound_watch.png"
     },
     {
       "name": "First Flame Pike",
@@ -2550,7 +2793,8 @@
       "attack": "56/83 → 62/91 → 64/95",
       "durability": 136,
       "interval": "2.566",
-      "sands_fee_resale": "463 / 634 g"
+      "sands_fee_resale": "463 / 634 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_flame_pike.png"
     },
     {
       "name": "Stillwinter Thorn",
@@ -2561,7 +2805,8 @@
       "attack": "63/78 → 70/85 → 72/89",
       "durability": 85,
       "interval": "2.501",
-      "sands_fee_resale": "331 / 450 g"
+      "sands_fee_resale": "331 / 450 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_thorn.png"
     },
     {
       "name": "Pale Sentinel",
@@ -2572,7 +2817,8 @@
       "attack": "66/93 → 72/102 → 75/106",
       "durability": 110,
       "interval": "2.177",
-      "sands_fee_resale": "373 / 507 g"
+      "sands_fee_resale": "373 / 507 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pale_sentinel.png"
     },
     {
       "name": "Governor’s Reach",
@@ -2583,7 +2829,8 @@
       "attack": "96/95 → 106/105 → 110/109",
       "durability": 105,
       "interval": "2.508",
-      "sands_fee_resale": "460 / 630 g"
+      "sands_fee_resale": "460 / 630 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/governors_reach.png"
     },
     {
       "name": "Dawnwatch Lance",
@@ -2594,7 +2841,8 @@
       "attack": "108/99 → 119/109 → 123/113",
       "durability": 141,
       "interval": "2.688",
-      "sands_fee_resale": "613 / 844 g"
+      "sands_fee_resale": "613 / 844 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawnwatch_lance.png"
     },
     {
       "name": "Lantern Hew",
@@ -2605,7 +2853,8 @@
       "attack": "31/16 → 34/17 → 35/18",
       "durability": 94,
       "interval": "2.211",
-      "sands_fee_resale": "63 / 74 g"
+      "sands_fee_resale": "63 / 74 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/lantern_hew.png"
     },
     {
       "name": "Mistfall Hatchet",
@@ -2616,7 +2865,8 @@
       "attack": "46/17 → 51/19 → 53/20",
       "durability": 85,
       "interval": "2.004",
-      "sands_fee_resale": "108 / 137 g"
+      "sands_fee_resale": "108 / 137 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mistfall_hatchet.png"
     },
     {
       "name": "Hunger Hewn",
@@ -2627,7 +2877,8 @@
       "attack": "63/23 → 70/25 → 72/26",
       "durability": 92,
       "interval": "2.268",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hunger_hewn.png"
     },
     {
       "name": "Worldroot Splitter",
@@ -2638,7 +2889,8 @@
       "attack": "68/79 → 75/87 → 78/90",
       "durability": 91,
       "interval": "2.078",
-      "sands_fee_resale": "339 / 460 g"
+      "sands_fee_resale": "339 / 460 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_splitter.png"
     },
     {
       "name": "First Furnace Bite",
@@ -2649,7 +2901,8 @@
       "attack": "95/79 → 104/87 → 108/90",
       "durability": 97,
       "interval": "2.176",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_furnace_bite.png"
     },
     {
       "name": "Stillwinter Hook",
@@ -2660,7 +2913,8 @@
       "attack": "109/96 → 120/106 → 125/110",
       "durability": 90,
       "interval": "2.31",
-      "sands_fee_resale": "538 / 739 g"
+      "sands_fee_resale": "538 / 739 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_hook.png"
     },
     {
       "name": "Funeral Crescent",
@@ -2671,7 +2925,8 @@
       "attack": "37/69 → 41/76 → 42/79",
       "durability": 94,
       "interval": "2.211",
-      "sands_fee_resale": "298 / 403 g"
+      "sands_fee_resale": "298 / 403 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_crescent.png"
     },
     {
       "name": "Clockwork Woodsman",
@@ -2682,7 +2937,8 @@
       "attack": "56/79 → 62/87 → 64/90",
       "durability": 85,
       "interval": "2.004",
-      "sands_fee_resale": "343 / 465 g"
+      "sands_fee_resale": "343 / 465 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/clockwork_woodsman.png"
     },
     {
       "name": "Dawncleaver",
@@ -2693,7 +2949,8 @@
       "attack": "72/96 → 79/106 → 82/110",
       "durability": 92,
       "interval": "2.268",
-      "sands_fee_resale": "410 / 560 g"
+      "sands_fee_resale": "410 / 560 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawncleaver.png"
     },
     {
       "name": "Briar Butcher",
@@ -2704,7 +2961,8 @@
       "attack": "57/17 → 62/19 → 65/20",
       "durability": 91,
       "interval": "2.078",
-      "sands_fee_resale": "104 / 131 g"
+      "sands_fee_resale": "104 / 131 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/briar_butcher.png"
     },
     {
       "name": "Ashkeeper’s Hook",
@@ -2715,7 +2973,8 @@
       "attack": "83/19 → 92/20 → 95/21",
       "durability": 97,
       "interval": "2.176",
-      "sands_fee_resale": "180 / 238 g"
+      "sands_fee_resale": "180 / 238 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ashkeepers_hook.png"
     },
     {
       "name": "White Pass Reaver",
@@ -2726,7 +2985,8 @@
       "attack": "109/26 → 120/28 → 125/29",
       "durability": 90,
       "interval": "2.31",
-      "sands_fee_resale": "303 / 410 g"
+      "sands_fee_resale": "303 / 410 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/white_pass_reaver.png"
     },
     {
       "name": "Gatebreaker",
@@ -2737,7 +2997,8 @@
       "attack": "51/43 → 56/47 → 58/49",
       "durability": 83,
       "interval": "3.556",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/gatebreaker.png"
     },
     {
       "name": "Ember Bell",
@@ -2748,7 +3009,8 @@
       "attack": "77/49 → 85/53 → 88/55",
       "durability": 118,
       "interval": "3.536",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ember_bell.png"
     },
     {
       "name": "Rime Knell",
@@ -2759,7 +3021,8 @@
       "attack": "107/59 → 117/65 → 122/68",
       "durability": 98,
       "interval": "3.456",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/rime_knell.png"
     },
     {
       "name": "Drakefall",
@@ -2770,7 +3033,8 @@
       "attack": "83/58 → 91/64 → 95/67",
       "durability": 80,
       "interval": "3.343",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/drakefall.png"
     },
     {
       "name": "Dawn Ram",
@@ -2781,7 +3045,8 @@
       "attack": "140/52 → 154/57 → 159/59",
       "durability": 135,
       "interval": "3.84",
-      "sands_fee_resale": "218 / 291 g"
+      "sands_fee_resale": "218 / 291 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawn_ram.png"
     },
     {
       "name": "Mirebound Mallet",
@@ -2792,7 +3057,8 @@
       "attack": "176/71 → 194/78 → 201/81",
       "durability": 96,
       "interval": "3.52",
-      "sands_fee_resale": "340 / 462 g"
+      "sands_fee_resale": "340 / 462 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mirebound_mallet.png"
     },
     {
       "name": "Curse Anchor",
@@ -2803,7 +3069,8 @@
       "attack": "51/43 → 56/47 → 58/49",
       "durability": 83,
       "interval": "3.556",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/curse_anchor.png"
     },
     {
       "name": "Webbreaker",
@@ -2814,7 +3081,8 @@
       "attack": "77/49 → 85/53 → 88/55",
       "durability": 118,
       "interval": "3.536",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/webbreaker.png"
     },
     {
       "name": "Siege Psalm",
@@ -2825,7 +3093,8 @@
       "attack": "107/59 → 117/65 → 122/68",
       "durability": 98,
       "interval": "3.456",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/siege_psalm.png"
     },
     {
       "name": "Tidehammer",
@@ -2836,7 +3105,8 @@
       "attack": "83/58 → 91/64 → 95/67",
       "durability": 80,
       "interval": "3.343",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/tidehammer.png"
     },
     {
       "name": "Cinderquake",
@@ -2847,7 +3117,8 @@
       "attack": "140/52 → 154/57 → 159/59",
       "durability": 135,
       "interval": "3.84",
-      "sands_fee_resale": "218 / 291 g"
+      "sands_fee_resale": "218 / 291 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cinderquake.png"
     },
     {
       "name": "Storm Anvil",
@@ -2858,7 +3129,8 @@
       "attack": "176/71 → 194/78 → 201/81",
       "durability": 96,
       "interval": "3.52",
-      "sands_fee_resale": "340 / 462 g"
+      "sands_fee_resale": "340 / 462 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/storm_anvil.png"
     },
     {
       "name": "Winter Crown",
@@ -2869,7 +3141,8 @@
       "attack": "30/29 → 33/32 → 34/33",
       "durability": 75,
       "interval": "2.05",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winter_crown.png"
     },
     {
       "name": "Broodkeeper",
@@ -2880,7 +3153,8 @@
       "attack": "46/32 → 51/36 → 53/37",
       "durability": 118,
       "interval": "2.266",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/broodkeeper.png"
     },
     {
       "name": "Sunlit Rebuke",
@@ -2891,7 +3165,8 @@
       "attack": "64/40 → 70/44 → 73/45",
       "durability": 98,
       "interval": "2.214",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/sunlit_rebuke.png"
     },
     {
       "name": "Reedwarden",
@@ -2902,7 +3177,8 @@
       "attack": "57/32 → 63/36 → 65/37",
       "durability": 73,
       "interval": "1.927",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/reedwarden.png"
     },
     {
       "name": "Grave Lantern",
@@ -2913,7 +3189,8 @@
       "attack": "85/34 → 94/38 → 98/39",
       "durability": 135,
       "interval": "2.46",
-      "sands_fee_resale": "218 / 291 g"
+      "sands_fee_resale": "218 / 291 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/grave_lantern.png"
     },
     {
       "name": "Gloam Cudgel",
@@ -2924,7 +3201,8 @@
       "attack": "107/47 → 118/52 → 122/54",
       "durability": 96,
       "interval": "2.255",
-      "sands_fee_resale": "340 / 462 g"
+      "sands_fee_resale": "340 / 462 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/gloam_cudgel.png"
     },
     {
       "name": "Marching Bell",
@@ -2935,7 +3213,8 @@
       "attack": "30/29 → 33/32 → 34/33",
       "durability": 75,
       "interval": "2.05",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/marching_bell.png"
     },
     {
       "name": "Saltwarden",
@@ -2946,7 +3225,8 @@
       "attack": "46/32 → 51/36 → 53/37",
       "durability": 118,
       "interval": "2.266",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/saltwarden.png"
     },
     {
       "name": "Hearthguard",
@@ -2957,7 +3237,8 @@
       "attack": "64/40 → 70/44 → 73/45",
       "durability": 98,
       "interval": "2.214",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hearthguard.png"
     },
     {
       "name": "Thunder Chapel",
@@ -2968,7 +3249,8 @@
       "attack": "57/32 → 63/36 → 65/37",
       "durability": 73,
       "interval": "1.927",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/thunder_chapel.png"
     },
     {
       "name": "Moonward",
@@ -2979,7 +3261,8 @@
       "attack": "85/34 → 94/38 → 98/39",
       "durability": 135,
       "interval": "2.46",
-      "sands_fee_resale": "218 / 291 g"
+      "sands_fee_resale": "218 / 291 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moonward.png"
     },
     {
       "name": "Pressure Saint",
@@ -2990,7 +3273,8 @@
       "attack": "107/47 → 118/52 → 122/54",
       "durability": 96,
       "interval": "2.255",
-      "sands_fee_resale": "340 / 462 g"
+      "sands_fee_resale": "340 / 462 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pressure_saint.png"
     },
     {
       "name": "Tidal Testament",
@@ -3001,7 +3285,8 @@
       "attack": "16/49 → 18/54 → 19/56",
       "durability": 94,
       "interval": "2.632",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/tidal_testament.png"
     },
     {
       "name": "Cinder Shepherd",
@@ -3012,7 +3297,8 @@
       "attack": "23/76 → 25/84 → 26/87",
       "durability": 80,
       "interval": "2.625",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cinder_shepherd.png"
     },
     {
       "name": "Stormbranch",
@@ -3023,7 +3309,8 @@
       "attack": "34/66 → 37/72 → 39/75",
       "durability": 104,
       "interval": "2.455",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stormbranch.png"
     },
     {
       "name": "Moon Observatory",
@@ -3034,7 +3321,8 @@
       "attack": "32/76 → 35/84 → 37/87",
       "durability": 94,
       "interval": "2.35",
-      "sands_fee_resale": "295 / 399 g"
+      "sands_fee_resale": "295 / 399 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moon_observatory.png"
     },
     {
       "name": "Clockmaker’s Crook",
@@ -3045,7 +3333,8 @@
       "attack": "45/55 → 49/61 → 51/63",
       "durability": 116,
       "interval": "3.0",
-      "sands_fee_resale": "184 / 243 g"
+      "sands_fee_resale": "184 / 243 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/clockmakers_crook.png"
     },
     {
       "name": "Windglass Pilgrim",
@@ -3056,7 +3345,8 @@
       "attack": "63/72 → 69/79 → 72/82",
       "durability": 83,
       "interval": "2.75",
-      "sands_fee_resale": "295 / 399 g"
+      "sands_fee_resale": "295 / 399 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/windglass_pilgrim.png"
     },
     {
       "name": "Last Procession",
@@ -3067,7 +3357,8 @@
       "attack": "19/55 → 20/61 → 21/63",
       "durability": 95,
       "interval": "2.273",
-      "sands_fee_resale": "179 / 236 g"
+      "sands_fee_resale": "179 / 236 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/last_procession.png"
     },
     {
       "name": "Mistvale Memory",
@@ -3078,7 +3369,8 @@
       "attack": "25/86 → 27/94 → 28/98",
       "durability": 99,
       "interval": "2.625",
-      "sands_fee_resale": "265 / 357 g"
+      "sands_fee_resale": "265 / 357 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mistvale_memory.png"
     },
     {
       "name": "Rift Interpreter",
@@ -3089,7 +3381,8 @@
       "attack": "30/58 → 33/64 → 34/66",
       "durability": 106,
       "interval": "2.843",
-      "sands_fee_resale": "134 / 173 g"
+      "sands_fee_resale": "134 / 173 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/rift_interpreter.png"
     },
     {
       "name": "Worldroot Cantor",
@@ -3100,7 +3393,8 @@
       "attack": "32/154 → 35/169 → 37/176",
       "durability": 75,
       "interval": "2.35",
-      "sands_fee_resale": "373 / 507 g"
+      "sands_fee_resale": "373 / 507 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_cantor.png"
     },
     {
       "name": "First Furnace Oracle",
@@ -3111,7 +3405,8 @@
       "attack": "51/134 → 56/147 → 58/153",
       "durability": 111,
       "interval": "2.591",
-      "sands_fee_resale": "460 / 630 g"
+      "sands_fee_resale": "460 / 630 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_furnace_oracle.png"
     },
     {
       "name": "Stillwinter Scribe",
@@ -3122,7 +3417,8 @@
       "attack": "63/163 → 69/180 → 72/187",
       "durability": 102,
       "interval": "2.75",
-      "sands_fee_resale": "613 / 844 g"
+      "sands_fee_resale": "613 / 844 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_scribe.png"
     },
     {
       "name": "Moon Needle",
@@ -3133,7 +3429,8 @@
       "attack": "8/33 → 9/36 → 9/38",
       "durability": 75,
       "interval": "1.5",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moon_needle.png"
     },
     {
       "name": "Pressure Pointer",
@@ -3144,7 +3441,8 @@
       "attack": "12/51 → 13/57 → 14/59",
       "durability": 80,
       "interval": "1.575",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pressure_pointer.png"
     },
     {
       "name": "Horizon Quill",
@@ -3155,7 +3453,8 @@
       "attack": "17/44 → 19/49 → 19/51",
       "durability": 104,
       "interval": "1.473",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/horizon_quill.png"
     },
     {
       "name": "Pale Bell",
@@ -3166,7 +3465,8 @@
       "attack": "16/37 → 17/41 → 18/43",
       "durability": 73,
       "interval": "1.41",
-      "sands_fee_resale": "141 / 184 g"
+      "sands_fee_resale": "141 / 184 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pale_bell.png"
     },
     {
       "name": "Veil Signature",
@@ -3177,7 +3477,8 @@
       "attack": "25/46 → 27/50 → 28/52",
       "durability": 92,
       "interval": "1.71",
-      "sands_fee_resale": "218 / 291 g"
+      "sands_fee_resale": "218 / 291 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/veil_signature.png"
     },
     {
       "name": "Null Stylus",
@@ -3188,7 +3489,8 @@
       "attack": "33/42 → 37/46 → 38/48",
       "durability": 102,
       "interval": "1.5",
-      "sands_fee_resale": "340 / 462 g"
+      "sands_fee_resale": "340 / 462 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/null_stylus.png"
     },
     {
       "name": "Grove Script",
@@ -3199,7 +3501,8 @@
       "attack": "9/80 → 10/88 → 11/91",
       "durability": 75,
       "interval": "1.5",
-      "sands_fee_resale": "298 / 403 g"
+      "sands_fee_resale": "298 / 403 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/grove_script.png"
     },
     {
       "name": "Furnace Whisper",
@@ -3210,7 +3513,8 @@
       "attack": "14/125 → 15/137 → 16/143",
       "durability": 80,
       "interval": "1.575",
-      "sands_fee_resale": "343 / 465 g"
+      "sands_fee_resale": "343 / 465 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/furnace_whisper.png"
     },
     {
       "name": "Winter Cipher",
@@ -3221,7 +3525,8 @@
       "attack": "18/101 → 20/112 → 21/116",
       "durability": 104,
       "interval": "1.473",
-      "sands_fee_resale": "410 / 560 g"
+      "sands_fee_resale": "410 / 560 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winter_cipher.png"
     },
     {
       "name": "Funeral Reed",
@@ -3232,7 +3537,8 @@
       "attack": "18/91 → 19/100 → 20/103",
       "durability": 73,
       "interval": "1.41",
-      "sands_fee_resale": "339 / 460 g"
+      "sands_fee_resale": "339 / 460 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_reed.png"
     },
     {
       "name": "Prime Conductor",
@@ -3243,7 +3549,8 @@
       "attack": "26/104 → 29/115 → 30/119",
       "durability": 92,
       "interval": "1.71",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/prime_conductor.png"
     },
     {
       "name": "First Dawn Quill",
@@ -3254,7 +3561,8 @@
       "attack": "33/91 → 37/100 → 38/103",
       "durability": 102,
       "interval": "1.5",
-      "sands_fee_resale": "538 / 739 g"
+      "sands_fee_resale": "538 / 739 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_dawn_quill.png"
     },
     {
       "name": "Last Lantern Bow",
@@ -3265,7 +3573,8 @@
       "attack": "30/32 → 33/35 → 34/36",
       "durability": 75,
       "interval": "2.2",
-      "sands_fee_resale": "100 / 126 g"
+      "sands_fee_resale": "100 / 126 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/last_lantern_bow.png"
     },
     {
       "name": "Veilstrung",
@@ -3276,7 +3585,8 @@
       "attack": "46/36 → 51/39 → 53/41",
       "durability": 118,
       "interval": "2.432",
-      "sands_fee_resale": "145 / 189 g"
+      "sands_fee_resale": "145 / 189 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/veilstrung.png"
     },
     {
       "name": "Hunger at Distance",
@@ -3287,7 +3597,8 @@
       "attack": "64/38 → 70/42 → 73/43",
       "durability": 115,
       "interval": "2.501",
-      "sands_fee_resale": "213 / 284 g"
+      "sands_fee_resale": "213 / 284 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hunger_at_distance.png"
     },
     {
       "name": "Worldroot Vigil",
@@ -3298,7 +3609,8 @@
       "attack": "58/87 → 64/95 → 66/99",
       "durability": 106,
       "interval": "1.88",
-      "sands_fee_resale": "493 / 676 g"
+      "sands_fee_resale": "493 / 676 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_vigil.png"
     },
     {
       "name": "Furnace Recurve",
@@ -3309,7 +3621,8 @@
       "attack": "89/87 → 98/95 → 102/99",
       "durability": 93,
       "interval": "2.508",
-      "sands_fee_resale": "381 / 520 g"
+      "sands_fee_resale": "381 / 520 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/furnace_recurve.png"
     },
     {
       "name": "Stillwinter Longbow",
@@ -3320,7 +3633,8 @@
       "attack": "105/97 → 116/107 → 120/111",
       "durability": 123,
       "interval": "2.548",
-      "sands_fee_resale": "493 / 676 g"
+      "sands_fee_resale": "493 / 676 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_longbow.png"
     },
     {
       "name": "Funeral Archer",
@@ -3331,7 +3645,8 @@
       "attack": "39/87 → 42/95 → 44/99",
       "durability": 105,
       "interval": "2.316",
-      "sands_fee_resale": "376 / 513 g"
+      "sands_fee_resale": "376 / 513 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_archer.png"
     },
     {
       "name": "Clockwork Canopy",
@@ -3342,7 +3657,8 @@
       "attack": "53/87 → 58/95 → 60/99",
       "durability": 112,
       "interval": "2.1",
-      "sands_fee_resale": "463 / 634 g"
+      "sands_fee_resale": "463 / 634 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/clockwork_canopy.png"
     },
     {
       "name": "Dawn Horizon",
@@ -3353,7 +3669,8 @@
       "attack": "64/81 → 70/89 → 73/93",
       "durability": 85,
       "interval": "2.376",
-      "sands_fee_resale": "331 / 450 g"
+      "sands_fee_resale": "331 / 450 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawn_horizon.png"
     },
     {
       "name": "Briar Whisper",
@@ -3364,7 +3681,8 @@
       "attack": "54/38 → 60/42 → 62/43",
       "durability": 110,
       "interval": "2.177",
-      "sands_fee_resale": "175 / 231 g"
+      "sands_fee_resale": "175 / 231 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/briar_whisper.png"
     },
     {
       "name": "Ashwind",
@@ -3375,7 +3693,8 @@
       "attack": "89/40 → 98/44 → 102/46",
       "durability": 123,
       "interval": "2.64",
-      "sands_fee_resale": "263 / 354 g"
+      "sands_fee_resale": "263 / 354 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ashwind.png"
     },
     {
       "name": "White Hunter",
@@ -3386,7 +3705,8 @@
       "attack": "105/45 → 116/50 → 120/52",
       "durability": 115,
       "interval": "2.2",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/white_hunter.png"
     },
     {
       "name": "Watchman’s Promise",
@@ -3397,7 +3717,8 @@
       "attack": "45/63 → 50/69 → 51/72",
       "durability": 83,
       "interval": "3.222",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/watchmans_promise.png"
     },
     {
       "name": "Cinder Bolt",
@@ -3408,7 +3729,8 @@
       "attack": "63/71 → 70/78 → 72/81",
       "durability": 118,
       "interval": "3.206",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cinder_bolt.png"
     },
     {
       "name": "Icebound Warrant",
@@ -3419,7 +3741,8 @@
       "attack": "95/76 → 104/83 → 108/86",
       "durability": 104,
       "interval": "2.847",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/icebound_warrant.png"
     },
     {
       "name": "Wyrm Marshal",
@@ -3430,7 +3753,8 @@
       "attack": "90/71 → 99/78 → 103/81",
       "durability": 80,
       "interval": "3.029",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/wyrm_marshal.png"
     },
     {
       "name": "Dawn Mechanism",
@@ -3441,7 +3765,8 @@
       "attack": "124/76 → 137/83 → 142/86",
       "durability": 135,
       "interval": "3.48",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawn_mechanism.png"
     },
     {
       "name": "Adder’s Writ",
@@ -3452,7 +3777,8 @@
       "attack": "148/85 → 163/93 → 169/97",
       "durability": 102,
       "interval": "2.9",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/adders_writ.png"
     },
     {
       "name": "Grave Arbiter",
@@ -3463,7 +3789,8 @@
       "attack": "45/63 → 50/69 → 51/72",
       "durability": 83,
       "interval": "3.222",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/grave_arbiter.png"
     },
     {
       "name": "Webline",
@@ -3474,7 +3801,8 @@
       "attack": "63/71 → 70/78 → 72/81",
       "durability": 118,
       "interval": "3.206",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/webline.png"
     },
     {
       "name": "Siege Witness",
@@ -3485,7 +3813,8 @@
       "attack": "95/76 → 104/83 → 108/86",
       "durability": 104,
       "interval": "2.847",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/siege_witness.png"
     },
     {
       "name": "Marine’s Return",
@@ -3496,7 +3825,8 @@
       "attack": "90/71 → 99/78 → 103/81",
       "durability": 80,
       "interval": "3.029",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/marines_return.png"
     },
     {
       "name": "Rookery Guard",
@@ -3507,7 +3837,8 @@
       "attack": "124/76 → 137/83 → 142/86",
       "durability": 135,
       "interval": "3.48",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/rookery_guard.png"
     },
     {
       "name": "Storm Ratchet",
@@ -3518,7 +3849,8 @@
       "attack": "148/85 → 163/93 → 169/97",
       "durability": 102,
       "interval": "2.9",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/storm_ratchet.png"
     },
     {
       "name": "Winter Lash",
@@ -3529,7 +3861,8 @@
       "attack": "25/49 → 27/54 → 28/56",
       "durability": 75,
       "interval": "1.95",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winter_lash.png"
     },
     {
       "name": "Broodbinder",
@@ -3540,7 +3873,8 @@
       "attack": "36/55 → 40/61 → 41/63",
       "durability": 94,
       "interval": "2.156",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/broodbinder.png"
     },
     {
       "name": "Suncoil",
@@ -3551,7 +3885,8 @@
       "attack": "51/68 → 56/74 → 58/77",
       "durability": 98,
       "interval": "2.106",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/suncoil.png"
     },
     {
       "name": "Fen Shepherd",
@@ -3562,7 +3897,8 @@
       "attack": "41/55 → 45/61 → 47/63",
       "durability": 73,
       "interval": "1.833",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/fen_shepherd.png"
     },
     {
       "name": "Gravechain",
@@ -3573,7 +3909,8 @@
       "attack": "67/59 → 73/65 → 76/67",
       "durability": 108,
       "interval": "2.34",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/gravechain.png"
     },
     {
       "name": "Widow’s Thread",
@@ -3584,7 +3921,8 @@
       "attack": "79/76 → 87/83 → 90/87",
       "durability": 96,
       "interval": "2.145",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/widows_thread.png"
     },
     {
       "name": "Iron Reins",
@@ -3595,7 +3933,8 @@
       "attack": "25/49 → 27/54 → 28/56",
       "durability": 75,
       "interval": "1.95",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/iron_reins.png"
     },
     {
       "name": "Undertow Lash",
@@ -3606,7 +3945,8 @@
       "attack": "36/55 → 40/61 → 41/63",
       "durability": 94,
       "interval": "2.156",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/undertow_lash.png"
     },
     {
       "name": "Cinder Ribbon",
@@ -3617,7 +3957,8 @@
       "attack": "51/68 → 56/74 → 58/77",
       "durability": 98,
       "interval": "2.106",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/cinder_ribbon.png"
     },
     {
       "name": "Skyline Lash",
@@ -3628,7 +3969,8 @@
       "attack": "41/55 → 45/61 → 47/63",
       "durability": 73,
       "interval": "1.833",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/skyline_lash.png"
     },
     {
       "name": "Mooncord",
@@ -3639,7 +3981,8 @@
       "attack": "67/59 → 73/65 → 76/67",
       "durability": 108,
       "interval": "2.34",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mooncord.png"
     },
     {
       "name": "Pressure Serpent",
@@ -3650,7 +3993,8 @@
       "attack": "79/76 → 87/83 → 90/87",
       "durability": 96,
       "interval": "2.145",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pressure_serpent.png"
     },
     {
       "name": "Tide Reaper",
@@ -3661,7 +4005,8 @@
       "attack": "41/65 → 45/72 → 46/74",
       "durability": 75,
       "interval": "2.947",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/tide_reaper.png"
     },
     {
       "name": "Ash Harvest",
@@ -3672,7 +4017,8 @@
       "attack": "62/85 → 69/93 → 71/97",
       "durability": 80,
       "interval": "2.94",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ash_harvest.png"
     },
     {
       "name": "Storm Crescent",
@@ -3683,7 +4029,8 @@
       "attack": "86/78 → 94/86 → 98/90",
       "durability": 144,
       "interval": "3.183",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/storm_crescent.png"
     },
     {
       "name": "Moon’s Toll",
@@ -3694,7 +4041,8 @@
       "attack": "76/74 → 83/81 → 86/84",
       "durability": 73,
       "interval": "2.77",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moons_toll.png"
     },
     {
       "name": "Clockwork Harvest",
@@ -3705,7 +4053,8 @@
       "attack": "112/90 → 123/99 → 128/103",
       "durability": 92,
       "interval": "3.192",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/clockwork_harvest.png"
     },
     {
       "name": "Glasswind Requiem",
@@ -3716,7 +4065,8 @@
       "attack": "125/94 → 137/103 → 143/108",
       "durability": 141,
       "interval": "3.242",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/glasswind_requiem.png"
     },
     {
       "name": "Pale Procession Scythe",
@@ -3727,7 +4077,8 @@
       "attack": "41/65 → 45/72 → 46/74",
       "durability": 75,
       "interval": "2.947",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pale_procession_scythe.png"
     },
     {
       "name": "Mist Mourner",
@@ -3738,7 +4089,8 @@
       "attack": "62/85 → 69/93 → 71/97",
       "durability": 80,
       "interval": "2.94",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mist_mourner.png"
     },
     {
       "name": "Hunger’s Harvest",
@@ -3749,7 +4101,8 @@
       "attack": "86/78 → 94/86 → 98/90",
       "durability": 144,
       "interval": "3.183",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hungers_harvest.png"
     },
     {
       "name": "Worldroot Reclaimer",
@@ -3760,7 +4113,8 @@
       "attack": "81/110 → 89/121 → 92/126",
       "durability": 73,
       "interval": "2.77",
-      "sands_fee_resale": "339 / 460 g"
+      "sands_fee_resale": "339 / 460 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_reclaimer.png"
     },
     {
       "name": "First Furnace Reaper",
@@ -3771,7 +4125,8 @@
       "attack": "112/127 → 123/139 → 128/145",
       "durability": 92,
       "interval": "3.192",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_furnace_reaper.png"
     },
     {
       "name": "Stillwinter Requiem",
@@ -3782,7 +4137,8 @@
       "attack": "125/132 → 137/146 → 143/151",
       "durability": 141,
       "interval": "3.242",
-      "sands_fee_resale": "538 / 739 g"
+      "sands_fee_resale": "538 / 739 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_requiem.png"
     },
     {
       "name": "Moonshot",
@@ -3793,7 +4149,8 @@
       "attack": "55/74 → 61/82 → 63/85",
       "durability": 83,
       "interval": "4.0",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/moonshot.png"
     },
     {
       "name": "Pressure Sermon",
@@ -3804,7 +4161,8 @@
       "attack": "84/84 → 92/92 → 96/96",
       "durability": 118,
       "interval": "3.978",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/pressure_sermon.png"
     },
     {
       "name": "Horizon Breaker",
@@ -3815,7 +4173,8 @@
       "attack": "117/109 → 129/120 → 134/125",
       "durability": 92,
       "interval": "3.888",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/horizon_breaker.png"
     },
     {
       "name": "Funeral Broadside",
@@ -3826,7 +4185,8 @@
       "attack": "101/103 → 112/113 → 116/118",
       "durability": 100,
       "interval": "3.384",
-      "sands_fee_resale": "358 / 486 g"
+      "sands_fee_resale": "358 / 486 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_broadside.png"
     },
     {
       "name": "Veil Breach",
@@ -3837,7 +4197,8 @@
       "attack": "143/84 → 157/92 → 163/96",
       "durability": 102,
       "interval": "4.56",
-      "sands_fee_resale": "246 / 331 g"
+      "sands_fee_resale": "246 / 331 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/veil_breach.png"
     },
     {
       "name": "Null Battery",
@@ -3848,7 +4209,8 @@
       "attack": "169/108 → 186/118 → 194/123",
       "durability": 123,
       "interval": "4.168",
-      "sands_fee_resale": "358 / 486 g"
+      "sands_fee_resale": "358 / 486 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/null_battery.png"
     },
     {
       "name": "Worldroot Salvo",
@@ -3859,7 +4221,8 @@
       "attack": "67/154 → 73/169 → 76/176",
       "durability": 84,
       "interval": "3.6",
-      "sands_fee_resale": "376 / 513 g"
+      "sands_fee_resale": "376 / 513 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_salvo.png"
     },
     {
       "name": "First Furnace Mortar",
@@ -3870,7 +4233,8 @@
       "attack": "89/145 → 98/159 → 102/166",
       "durability": 105,
       "interval": "3.78",
-      "sands_fee_resale": "463 / 634 g"
+      "sands_fee_resale": "463 / 634 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_furnace_mortar.png"
     },
     {
       "name": "Stillwinter Battery",
@@ -3881,7 +4245,8 @@
       "attack": "110/118 → 121/130 → 126/135",
       "durability": 94,
       "interval": "4.32",
-      "sands_fee_resale": "331 / 450 g"
+      "sands_fee_resale": "331 / 450 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/stillwinter_battery.png"
     },
     {
       "name": "Lantern Thunder",
@@ -3892,7 +4257,8 @@
       "attack": "101/126 → 112/139 → 116/144",
       "durability": 110,
       "interval": "3.562",
-      "sands_fee_resale": "373 / 507 g"
+      "sands_fee_resale": "373 / 507 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/lantern_thunder.png"
     },
     {
       "name": "Prime Shardcaster",
@@ -3903,7 +4269,8 @@
       "attack": "152/154 → 167/169 → 174/176",
       "durability": 98,
       "interval": "4.104",
-      "sands_fee_resale": "460 / 630 g"
+      "sands_fee_resale": "460 / 630 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/prime_shardcaster.png"
     },
     {
       "name": "First Dawn Artillery",
@@ -3914,7 +4281,8 @@
       "attack": "169/174 → 186/191 → 194/199",
       "durability": 109,
       "interval": "3.96",
-      "sands_fee_resale": "613 / 844 g"
+      "sands_fee_resale": "613 / 844 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/first_dawn_artillery.png"
     },
     {
       "name": "Lantern Fist",
@@ -3925,7 +4293,8 @@
       "attack": "20/30 → 22/33 → 23/34",
       "durability": 68,
       "interval": "1.091",
-      "sands_fee_resale": "163 / 214 g"
+      "sands_fee_resale": "163 / 214 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/lantern_fist.png"
     },
     {
       "name": "Mist Palm",
@@ -3936,7 +4305,8 @@
       "attack": "30/34 → 33/38 → 34/39",
       "durability": 118,
       "interval": "1.326",
-      "sands_fee_resale": "208 / 277 g"
+      "sands_fee_resale": "208 / 277 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/mist_palm.png"
     },
     {
       "name": "Hunger Knuckle",
@@ -3947,7 +4317,8 @@
       "attack": "42/42 → 46/46 → 48/48",
       "durability": 98,
       "interval": "1.296",
-      "sands_fee_resale": "275 / 371 g"
+      "sands_fee_resale": "275 / 371 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/hunger_knuckle.png"
     },
     {
       "name": "Worldroot Grasp",
@@ -3958,7 +4329,8 @@
       "attack": "42/51 → 46/56 → 48/59",
       "durability": 66,
       "interval": "1.026",
-      "sands_fee_resale": "339 / 460 g"
+      "sands_fee_resale": "339 / 460 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/worldroot_grasp.png"
     },
     {
       "name": "Furnace Piston",
@@ -3969,7 +4341,8 @@
       "attack": "50/51 → 55/56 → 57/59",
       "durability": 135,
       "interval": "1.44",
-      "sands_fee_resale": "415 / 567 g"
+      "sands_fee_resale": "415 / 567 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/furnace_piston.png"
     },
     {
       "name": "Winter Claw",
@@ -3980,7 +4353,8 @@
       "attack": "64/66 → 71/73 → 73/75",
       "durability": 96,
       "interval": "1.32",
-      "sands_fee_resale": "538 / 739 g"
+      "sands_fee_resale": "538 / 739 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/winter_claw.png"
     },
     {
       "name": "Funeral Hand",
@@ -3991,7 +4365,8 @@
       "attack": "22/45 → 24/50 → 25/52",
       "durability": 68,
       "interval": "1.091",
-      "sands_fee_resale": "298 / 403 g"
+      "sands_fee_resale": "298 / 403 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/funeral_hand.png"
     },
     {
       "name": "Prime Impact",
@@ -4002,7 +4377,8 @@
       "attack": "32/51 → 35/56 → 36/59",
       "durability": 118,
       "interval": "1.326",
-      "sands_fee_resale": "343 / 465 g"
+      "sands_fee_resale": "343 / 465 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/prime_impact.png"
     },
     {
       "name": "Dawnbringer’s Grip",
@@ -4013,7 +4389,8 @@
       "attack": "42/59 → 46/65 → 48/67",
       "durability": 98,
       "interval": "1.296",
-      "sands_fee_resale": "410 / 560 g"
+      "sands_fee_resale": "410 / 560 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/dawnbringers_grip.png"
     },
     {
       "name": "Briar Knuckle",
@@ -4024,7 +4401,8 @@
       "attack": "39/34 → 43/38 → 45/39",
       "durability": 66,
       "interval": "1.026",
-      "sands_fee_resale": "204 / 271 g"
+      "sands_fee_resale": "204 / 271 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/briar_knuckle.png"
     },
     {
       "name": "Ashboxer",
@@ -4035,7 +4413,8 @@
       "attack": "50/36 → 55/40 → 57/42",
       "durability": 135,
       "interval": "1.44",
-      "sands_fee_resale": "280 / 378 g"
+      "sands_fee_resale": "280 / 378 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/ashboxer.png"
     },
     {
       "name": "Whiteclaw",
@@ -4046,7 +4425,8 @@
       "attack": "64/47 → 71/52 → 73/54",
       "durability": 96,
       "interval": "1.32",
-      "sands_fee_resale": "403 / 550 g"
+      "sands_fee_resale": "403 / 550 g",
+      "icon": "res://assets/entropic_forge/icons/recipes/whiteclaw.png"
     }
   ],
   "stocks": [
@@ -4054,699 +4434,831 @@
       "name": "Ironbark Heartwood",
       "territory": "ravenwood",
       "harvest_site": "Old Watch Trail",
-      "buy_sell": "8 / 2"
+      "buy_sell": "8 / 2",
+      "icon": "res://assets/entropic_forge/icons/stocks/ironbark_heartwood.png"
     },
     {
       "name": "Blackthorn Iron",
       "territory": "ravenwood",
       "harvest_site": "Rootbound Quarry",
-      "buy_sell": "14 / 4"
+      "buy_sell": "14 / 4",
+      "icon": "res://assets/entropic_forge/icons/stocks/blackthorn_iron.png"
     },
     {
       "name": "Cinderwood",
       "territory": "ashen_wastes",
       "harvest_site": "Cinder Terraces",
-      "buy_sell": "10 / 3"
+      "buy_sell": "10 / 3",
+      "icon": "res://assets/entropic_forge/icons/stocks/cinderwood.png"
     },
     {
       "name": "Basalt Iron",
       "territory": "ashen_wastes",
       "harvest_site": "Cooling Galleries",
-      "buy_sell": "16 / 4"
+      "buy_sell": "16 / 4",
+      "icon": "res://assets/entropic_forge/icons/stocks/basalt_iron.png"
     },
     {
       "name": "Rimepine",
       "territory": "frostpeaks",
       "harvest_site": "White Pass",
-      "buy_sell": "12 / 3"
+      "buy_sell": "12 / 3",
+      "icon": "res://assets/entropic_forge/icons/stocks/rimepine.png"
     },
     {
       "name": "Froststeel Ore",
       "territory": "frostpeaks",
       "harvest_site": "Blue Ice Galleries",
-      "buy_sell": "18 / 5"
+      "buy_sell": "18 / 5",
+      "icon": "res://assets/entropic_forge/icons/stocks/froststeel_ore.png"
     },
     {
       "name": "Drake Sinew",
       "territory": "drakeshard_range",
       "harvest_site": "Broodfall Ledges",
-      "buy_sell": "14 / 4"
+      "buy_sell": "14 / 4",
+      "icon": "res://assets/entropic_forge/icons/stocks/drake_sinew.png"
     },
     {
       "name": "Scaleiron",
       "territory": "drakeshard_range",
       "harvest_site": "Highland Scree",
-      "buy_sell": "20 / 5"
+      "buy_sell": "20 / 5",
+      "icon": "res://assets/entropic_forge/icons/stocks/scaleiron.png"
     },
     {
       "name": "Dunepalm Heartwood",
       "territory": "golden_expanse",
       "harvest_site": "Buried Caravan Wells",
-      "buy_sell": "16 / 4"
+      "buy_sell": "16 / 4",
+      "icon": "res://assets/entropic_forge/icons/stocks/dunepalm_heartwood.png"
     },
     {
       "name": "Sunbronze",
       "territory": "golden_expanse",
       "harvest_site": "Sunken Foundry",
-      "buy_sell": "22 / 6"
+      "buy_sell": "22 / 6",
+      "icon": "res://assets/entropic_forge/icons/stocks/sunbronze.png"
     },
     {
       "name": "Bogroot Fiber",
       "territory": "blighted_marsh",
       "harvest_site": "Reedkeeper Pools",
-      "buy_sell": "18 / 5"
+      "buy_sell": "18 / 5",
+      "icon": "res://assets/entropic_forge/icons/stocks/bogroot_fiber.png"
     },
     {
       "name": "Mire Iron",
       "territory": "blighted_marsh",
       "harvest_site": "Drowned Kilns",
-      "buy_sell": "24 / 6"
+      "buy_sell": "24 / 6",
+      "icon": "res://assets/entropic_forge/icons/stocks/mire_iron.png"
     },
     {
       "name": "Gravewillow",
       "territory": "cursed_mire",
       "harvest_site": "Bound Marsh",
-      "buy_sell": "20 / 5"
+      "buy_sell": "20 / 5",
+      "icon": "res://assets/entropic_forge/icons/stocks/gravewillow.png"
     },
     {
       "name": "Hexstone",
       "territory": "cursed_mire",
       "harvest_site": "Curse Anchor Ruins",
-      "buy_sell": "26 / 7"
+      "buy_sell": "26 / 7",
+      "icon": "res://assets/entropic_forge/icons/stocks/hexstone.png"
     },
     {
       "name": "Gloamwood",
       "territory": "shadowfen_forest",
       "harvest_site": "Silent Canopy",
-      "buy_sell": "22 / 6"
+      "buy_sell": "22 / 6",
+      "icon": "res://assets/entropic_forge/icons/stocks/gloamwood.png"
     },
     {
       "name": "Webglass",
       "territory": "shadowfen_forest",
       "harvest_site": "Spider Reliquary",
-      "buy_sell": "28 / 7"
+      "buy_sell": "28 / 7",
+      "icon": "res://assets/entropic_forge/icons/stocks/webglass.png"
     },
     {
       "name": "Warhorse Sinew",
       "territory": "iron_plains",
       "harvest_site": "Remount Fields",
-      "buy_sell": "24 / 6"
+      "buy_sell": "24 / 6",
+      "icon": "res://assets/entropic_forge/icons/stocks/warhorse_sinew.png"
     },
     {
       "name": "Tempered Plainsteel",
       "territory": "iron_plains",
       "harvest_site": "Abandoned Siegeworks",
-      "buy_sell": "30 / 8"
+      "buy_sell": "30 / 8",
+      "icon": "res://assets/entropic_forge/icons/stocks/tempered_plainsteel.png"
     },
     {
       "name": "Saltbound Oak",
       "territory": "veiled_sea",
       "harvest_site": "Shipwright Strand",
-      "buy_sell": "26 / 7"
+      "buy_sell": "26 / 7",
+      "icon": "res://assets/entropic_forge/icons/stocks/saltbound_oak.png"
     },
     {
       "name": "Tidebronze",
       "territory": "veiled_sea",
       "harvest_site": "Wreck Shoals",
-      "buy_sell": "32 / 8"
+      "buy_sell": "32 / 8",
+      "icon": "res://assets/entropic_forge/icons/stocks/tidebronze.png"
     },
     {
       "name": "Ashsail Cord",
       "territory": "ember_coast",
       "harvest_site": "Scorched Rookery",
-      "buy_sell": "28 / 7"
+      "buy_sell": "28 / 7",
+      "icon": "res://assets/entropic_forge/icons/stocks/ashsail_cord.png"
     },
     {
       "name": "Drakeglass",
       "territory": "ember_coast",
       "harvest_site": "Obsidian Tidepools",
-      "buy_sell": "34 / 9"
+      "buy_sell": "34 / 9",
+      "icon": "res://assets/entropic_forge/icons/stocks/drakeglass.png"
     },
     {
       "name": "Storm Cedar",
       "territory": "stormcrown_keep",
       "harvest_site": "Split Summit",
-      "buy_sell": "30 / 8"
+      "buy_sell": "30 / 8",
+      "icon": "res://assets/entropic_forge/icons/stocks/storm_cedar.png"
     },
     {
       "name": "Thundersteel",
       "territory": "stormcrown_keep",
       "harvest_site": "Wardkeeper Mines",
-      "buy_sell": "36 / 9"
+      "buy_sell": "36 / 9",
+      "icon": "res://assets/entropic_forge/icons/stocks/thundersteel.png"
     },
     {
       "name": "Moon Yew",
       "territory": "moonfall_highlands",
       "harvest_site": "Observatory Orchard",
-      "buy_sell": "32 / 8"
+      "buy_sell": "32 / 8",
+      "icon": "res://assets/entropic_forge/icons/stocks/moon_yew.png"
     },
     {
       "name": "Star Slate",
       "territory": "moonfall_highlands",
       "harvest_site": "Fallen Lens Crater",
-      "buy_sell": "38 / 10"
+      "buy_sell": "38 / 10",
+      "icon": "res://assets/entropic_forge/icons/stocks/star_slate.png"
     },
     {
       "name": "Oiled Reed Cord",
       "territory": "copperfen_basin",
       "harvest_site": "Canal Reeds",
-      "buy_sell": "34 / 9"
+      "buy_sell": "34 / 9",
+      "icon": "res://assets/entropic_forge/icons/stocks/oiled_reed_cord.png"
     },
     {
       "name": "Springbrass",
       "territory": "copperfen_basin",
       "harvest_site": "Collapsed Pumpworks",
-      "buy_sell": "40 / 10"
+      "buy_sell": "40 / 10",
+      "icon": "res://assets/entropic_forge/icons/stocks/springbrass.png"
     },
     {
       "name": "Windreed",
       "territory": "glasswind_steppe",
       "harvest_site": "Whistling Flats",
-      "buy_sell": "36 / 9"
+      "buy_sell": "36 / 9",
+      "icon": "res://assets/entropic_forge/icons/stocks/windreed.png"
     },
     {
       "name": "Singing Quartz",
       "territory": "glasswind_steppe",
       "harvest_site": "Glass Ridge",
-      "buy_sell": "42 / 11"
+      "buy_sell": "42 / 11",
+      "icon": "res://assets/entropic_forge/icons/stocks/singing_quartz.png"
     },
     {
       "name": "Shroud Thread",
       "territory": "deadwind_hollow",
       "harvest_site": "Silent Cloister",
-      "buy_sell": "38 / 10"
+      "buy_sell": "38 / 10",
+      "icon": "res://assets/entropic_forge/icons/stocks/shroud_thread.png"
     },
     {
       "name": "Belliron",
       "territory": "deadwind_hollow",
       "harvest_site": "Broken Belfry",
-      "buy_sell": "44 / 11"
+      "buy_sell": "44 / 11",
+      "icon": "res://assets/entropic_forge/icons/stocks/belliron.png"
     },
     {
       "name": "Mist Silk",
       "territory": "mistvale",
       "harvest_site": "Cloud Orchard",
-      "buy_sell": "40 / 10"
+      "buy_sell": "40 / 10",
+      "icon": "res://assets/entropic_forge/icons/stocks/mist_silk.png"
     },
     {
       "name": "Veil Silver",
       "territory": "mistvale",
       "harvest_site": "Forgotten Aqueduct",
-      "buy_sell": "46 / 12"
+      "buy_sell": "46 / 12",
+      "icon": "res://assets/entropic_forge/icons/stocks/veil_silver.png"
     },
     {
       "name": "Rift Tendon",
       "territory": "devouring_deep",
       "harvest_site": "Outer Fracture",
-      "buy_sell": "42 / 11"
+      "buy_sell": "42 / 11",
+      "icon": "res://assets/entropic_forge/icons/stocks/rift_tendon.png"
     },
     {
       "name": "Null Obsidian",
       "territory": "devouring_deep",
       "harvest_site": "Drowned Watch Ruins",
-      "buy_sell": "48 / 12"
+      "buy_sell": "48 / 12",
+      "icon": "res://assets/entropic_forge/icons/stocks/null_obsidian.png"
     }
   ],
   "salvage": [
     {
       "name": "Thornseed Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Thornseed Core"
+      "combine": "5 pieces + 28 gold → Thornseed Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/thornseed_core_shard.png"
     },
     {
       "name": "Huntsman’s Echo Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Huntsman’s Echo Core"
+      "combine": "5 pieces + 65 gold → Huntsman’s Echo Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/huntsmans_echo_core_shard.png"
     },
     {
       "name": "Heart of the Old Grove Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Heart of the Old Grove Core"
+      "combine": "5 pieces + 128 gold → Heart of the Old Grove Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/heart_of_the_old_grove_core_shard.png"
     },
     {
       "name": "Cinder Pearl Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Cinder Pearl Core"
+      "combine": "5 pieces + 28 gold → Cinder Pearl Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/cinder_pearl_core_shard.png"
     },
     {
       "name": "Magma Heart Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Magma Heart Core"
+      "combine": "5 pieces + 65 gold → Magma Heart Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/magma_heart_core_shard.png"
     },
     {
       "name": "Ashen Crown Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Ashen Crown Core"
+      "combine": "5 pieces + 128 gold → Ashen Crown Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/ashen_crown_core_shard.png"
     },
     {
       "name": "Rime Shard Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Rime Shard Core"
+      "combine": "5 pieces + 28 gold → Rime Shard Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/rime_shard_core_shard.png"
     },
     {
       "name": "Whiteout Eye Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Whiteout Eye Core"
+      "combine": "5 pieces + 65 gold → Whiteout Eye Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/whiteout_eye_core_shard.png"
     },
     {
       "name": "Glacial Heart Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Glacial Heart Core"
+      "combine": "5 pieces + 128 gold → Glacial Heart Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/glacial_heart_core_shard.png"
     },
     {
       "name": "Drake Ember Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Drake Ember Core"
+      "combine": "5 pieces + 28 gold → Drake Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/drake_ember_core_shard.png"
     },
     {
       "name": "Scale Resonance Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Scale Resonance Core"
+      "combine": "5 pieces + 65 gold → Scale Resonance Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/scale_resonance_core_shard.png"
     },
     {
       "name": "Brood Oath Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Brood Oath Core"
+      "combine": "5 pieces + 128 gold → Brood Oath Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/brood_oath_core_shard.png"
     },
     {
       "name": "Sunwell Spark Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Sunwell Spark Core"
+      "combine": "5 pieces + 28 gold → Sunwell Spark Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/sunwell_spark_core_shard.png"
     },
     {
       "name": "Mirage Eye Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Mirage Eye Core"
+      "combine": "5 pieces + 65 gold → Mirage Eye Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/mirage_eye_core_shard.png"
     },
     {
       "name": "Buried Dawn Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Buried Dawn Core"
+      "combine": "5 pieces + 128 gold → Buried Dawn Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/buried_dawn_core_shard.png"
     },
     {
       "name": "Adder Bile Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Adder Bile Core"
+      "combine": "5 pieces + 28 gold → Adder Bile Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/adder_bile_core_shard.png"
     },
     {
       "name": "Mire Lantern Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Mire Lantern Core"
+      "combine": "5 pieces + 65 gold → Mire Lantern Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/mire_lantern_core_shard.png"
     },
     {
       "name": "Rotmother Spore Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Rotmother Spore Core"
+      "combine": "5 pieces + 128 gold → Rotmother Spore Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/rotmother_spore_core_shard.png"
     },
     {
       "name": "Grave Ember Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Grave Ember Core"
+      "combine": "5 pieces + 28 gold → Grave Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/grave_ember_core_shard.png"
     },
     {
       "name": "Hexbound Tear Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Hexbound Tear Core"
+      "combine": "5 pieces + 65 gold → Hexbound Tear Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/hexbound_tear_core_shard.png"
     },
     {
       "name": "Anchorless Soul Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Anchorless Soul Core"
+      "combine": "5 pieces + 128 gold → Anchorless Soul Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/anchorless_soul_core_shard.png"
     },
     {
       "name": "Gloam Mote Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Gloam Mote Core"
+      "combine": "5 pieces + 28 gold → Gloam Mote Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/gloam_mote_core_shard.png"
     },
     {
       "name": "Widow’s Knot Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Widow’s Knot Core"
+      "combine": "5 pieces + 65 gold → Widow’s Knot Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/widows_knot_core_shard.png"
     },
     {
       "name": "Hollow Canopy Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Hollow Canopy Core"
+      "combine": "5 pieces + 128 gold → Hollow Canopy Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/hollow_canopy_core_shard.png"
     },
     {
       "name": "Marching Spark Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Marching Spark Core"
+      "combine": "5 pieces + 28 gold → Marching Spark Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/marching_spark_core_shard.png"
     },
     {
       "name": "Warhorn Echo Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Warhorn Echo Core"
+      "combine": "5 pieces + 65 gold → Warhorn Echo Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/warhorn_echo_core_shard.png"
     },
     {
       "name": "Siegeheart Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Siegeheart Core"
+      "combine": "5 pieces + 128 gold → Siegeheart Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/siegeheart_core_shard.png"
     },
     {
       "name": "Salt Pearl Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Salt Pearl Core"
+      "combine": "5 pieces + 28 gold → Salt Pearl Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/salt_pearl_core_shard.png"
     },
     {
       "name": "Undertow Knot Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Undertow Knot Core"
+      "combine": "5 pieces + 65 gold → Undertow Knot Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/undertow_knot_core_shard.png"
     },
     {
       "name": "Tempest Bottle Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Tempest Bottle Core"
+      "combine": "5 pieces + 128 gold → Tempest Bottle Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/tempest_bottle_core_shard.png"
     },
     {
       "name": "Coalglass Ember Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Coalglass Ember Core"
+      "combine": "5 pieces + 28 gold → Coalglass Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/coalglass_ember_core_shard.png"
     },
     {
       "name": "Cinderwake Pearl Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Cinderwake Pearl Core"
+      "combine": "5 pieces + 65 gold → Cinderwake Pearl Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/cinderwake_pearl_core_shard.png"
     },
     {
       "name": "Dragon Pact Ember Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Dragon Pact Ember Core"
+      "combine": "5 pieces + 128 gold → Dragon Pact Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/dragon_pact_ember_core_shard.png"
     },
     {
       "name": "Stormglass Spark Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Stormglass Spark Core"
+      "combine": "5 pieces + 28 gold → Stormglass Spark Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/stormglass_spark_core_shard.png"
     },
     {
       "name": "Thundercoil Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Thundercoil Core"
+      "combine": "5 pieces + 65 gold → Thundercoil Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/thundercoil_core_shard.png"
     },
     {
       "name": "Skyward Seal Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Skyward Seal Core"
+      "combine": "5 pieces + 128 gold → Skyward Seal Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/skyward_seal_core_shard.png"
     },
     {
       "name": "Moonlit Flake Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Moonlit Flake Core"
+      "combine": "5 pieces + 28 gold → Moonlit Flake Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/moonlit_flake_core_shard.png"
     },
     {
       "name": "Fallen Star Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Fallen Star Core"
+      "combine": "5 pieces + 65 gold → Fallen Star Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/fallen_star_core_shard.png"
     },
     {
       "name": "Observatory Heart Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Observatory Heart Core"
+      "combine": "5 pieces + 128 gold → Observatory Heart Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/observatory_heart_core_shard.png"
     },
     {
       "name": "Clockwork Spark Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Clockwork Spark Core"
+      "combine": "5 pieces + 28 gold → Clockwork Spark Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/clockwork_spark_core_shard.png"
     },
     {
       "name": "Pressure Pearl Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Pressure Pearl Core"
+      "combine": "5 pieces + 65 gold → Pressure Pearl Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/pressure_pearl_core_shard.png"
     },
     {
       "name": "Overload Governor Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Overload Governor Core"
+      "combine": "5 pieces + 128 gold → Overload Governor Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/overload_governor_core_shard.png"
     },
     {
       "name": "Whisperglass Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Whisperglass Core"
+      "combine": "5 pieces + 28 gold → Whisperglass Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/whisperglass_core_shard.png"
     },
     {
       "name": "Sand-Singer Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Sand-Singer Core"
+      "combine": "5 pieces + 65 gold → Sand-Singer Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/sand_singer_core_shard.png"
     },
     {
       "name": "Horizon Prism Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Horizon Prism Core"
+      "combine": "5 pieces + 128 gold → Horizon Prism Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/horizon_prism_core_shard.png"
     },
     {
       "name": "Bell-Wraith Ember Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Bell-Wraith Ember Core"
+      "combine": "5 pieces + 28 gold → Bell-Wraith Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/bell_wraith_ember_core_shard.png"
     },
     {
       "name": "Lantern Soul Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Lantern Soul Core"
+      "combine": "5 pieces + 65 gold → Lantern Soul Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/lantern_soul_core_shard.png"
     },
     {
       "name": "Pale Procession Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Pale Procession Core"
+      "combine": "5 pieces + 128 gold → Pale Procession Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/pale_procession_core_shard.png"
     },
     {
       "name": "Mist Dew Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Mist Dew Core"
+      "combine": "5 pieces + 28 gold → Mist Dew Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/mist_dew_core_shard.png"
     },
     {
       "name": "Veilbound Star Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Veilbound Star Core"
+      "combine": "5 pieces + 65 gold → Veilbound Star Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/veilbound_star_core_shard.png"
     },
     {
       "name": "Relic Memory Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Relic Memory Core"
+      "combine": "5 pieces + 128 gold → Relic Memory Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/relic_memory_core_shard.png"
     },
     {
       "name": "Rift Cinder Core Shard",
       "value_sell": "22 / 2",
-      "combine": "5 pieces + 28 gold → Rift Cinder Core"
+      "combine": "5 pieces + 28 gold → Rift Cinder Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/rift_cinder_core_shard.png"
     },
     {
       "name": "Hunger Fragment Core Shard",
       "value_sell": "52 / 5",
-      "combine": "5 pieces + 65 gold → Hunger Fragment Core"
+      "combine": "5 pieces + 65 gold → Hunger Fragment Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/hunger_fragment_core_shard.png"
     },
     {
       "name": "Quiet Singularity Core Shard",
       "value_sell": "102 / 10",
-      "combine": "5 pieces + 128 gold → Quiet Singularity Core"
+      "combine": "5 pieces + 128 gold → Quiet Singularity Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/quiet_singularity_core_shard.png"
     },
     {
       "name": "Worldroot Seed Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → Worldroot Seed Core"
+      "combine": "5 pieces + 263 gold → Worldroot Seed Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/worldroot_seed_core_shard.png"
     },
     {
       "name": "First Furnace Ember Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → First Furnace Ember Core"
+      "combine": "5 pieces + 263 gold → First Furnace Ember Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/first_furnace_ember_core_shard.png"
     },
     {
       "name": "Stillwinter Heart Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → Stillwinter Heart Core"
+      "combine": "5 pieces + 263 gold → Stillwinter Heart Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/stillwinter_heart_core_shard.png"
     },
     {
       "name": "Unbound Funeral Star Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → Unbound Funeral Star Core"
+      "combine": "5 pieces + 263 gold → Unbound Funeral Star Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/unbound_funeral_star_core_shard.png"
     },
     {
       "name": "Prime Kettari Governor Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → Prime Kettari Governor Core"
+      "combine": "5 pieces + 263 gold → Prime Kettari Governor Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/prime_kettari_governor_core_shard.png"
     },
     {
       "name": "Dawn Before Kings Core Shard",
       "value_sell": "210 / 21",
-      "combine": "5 pieces + 263 gold → Dawn Before Kings Core"
+      "combine": "5 pieces + 263 gold → Dawn Before Kings Core",
+      "icon": "res://assets/entropic_forge/icons/salvage/dawn_before_kings_core_shard.png"
     },
     {
       "name": "Degraded Ironbark Heartwood",
       "value_sell": "2 / 0",
-      "combine": "4 pieces + 5 gold → Ironbark Heartwood"
+      "combine": "4 pieces + 5 gold → Ironbark Heartwood",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_ironbark_heartwood.png"
     },
     {
       "name": "Degraded Blackthorn Iron",
       "value_sell": "4 / 0",
-      "combine": "4 pieces + 5 gold → Blackthorn Iron"
+      "combine": "4 pieces + 5 gold → Blackthorn Iron",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_blackthorn_iron.png"
     },
     {
       "name": "Degraded Cinderwood",
       "value_sell": "3 / 0",
-      "combine": "4 pieces + 5 gold → Cinderwood"
+      "combine": "4 pieces + 5 gold → Cinderwood",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_cinderwood.png"
     },
     {
       "name": "Degraded Basalt Iron",
       "value_sell": "4 / 0",
-      "combine": "4 pieces + 5 gold → Basalt Iron"
+      "combine": "4 pieces + 5 gold → Basalt Iron",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_basalt_iron.png"
     },
     {
       "name": "Degraded Rimepine",
       "value_sell": "3 / 0",
-      "combine": "4 pieces + 5 gold → Rimepine"
+      "combine": "4 pieces + 5 gold → Rimepine",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_rimepine.png"
     },
     {
       "name": "Degraded Froststeel Ore",
       "value_sell": "5 / 0",
-      "combine": "4 pieces + 5 gold → Froststeel Ore"
+      "combine": "4 pieces + 5 gold → Froststeel Ore",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_froststeel_ore.png"
     },
     {
       "name": "Degraded Drake Sinew",
       "value_sell": "4 / 0",
-      "combine": "4 pieces + 5 gold → Drake Sinew"
+      "combine": "4 pieces + 5 gold → Drake Sinew",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_drake_sinew.png"
     },
     {
       "name": "Degraded Scaleiron",
       "value_sell": "5 / 0",
-      "combine": "4 pieces + 5 gold → Scaleiron"
+      "combine": "4 pieces + 5 gold → Scaleiron",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_scaleiron.png"
     },
     {
       "name": "Degraded Dunepalm Heartwood",
       "value_sell": "4 / 0",
-      "combine": "4 pieces + 5 gold → Dunepalm Heartwood"
+      "combine": "4 pieces + 5 gold → Dunepalm Heartwood",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_dunepalm_heartwood.png"
     },
     {
       "name": "Degraded Sunbronze",
       "value_sell": "6 / 0",
-      "combine": "4 pieces + 5 gold → Sunbronze"
+      "combine": "4 pieces + 5 gold → Sunbronze",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_sunbronze.png"
     },
     {
       "name": "Degraded Bogroot Fiber",
       "value_sell": "5 / 0",
-      "combine": "4 pieces + 5 gold → Bogroot Fiber"
+      "combine": "4 pieces + 5 gold → Bogroot Fiber",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_bogroot_fiber.png"
     },
     {
       "name": "Degraded Mire Iron",
       "value_sell": "6 / 0",
-      "combine": "4 pieces + 5 gold → Mire Iron"
+      "combine": "4 pieces + 5 gold → Mire Iron",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_mire_iron.png"
     },
     {
       "name": "Degraded Gravewillow",
       "value_sell": "5 / 0",
-      "combine": "4 pieces + 5 gold → Gravewillow"
+      "combine": "4 pieces + 5 gold → Gravewillow",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_gravewillow.png"
     },
     {
       "name": "Degraded Hexstone",
       "value_sell": "7 / 0",
-      "combine": "4 pieces + 5 gold → Hexstone"
+      "combine": "4 pieces + 5 gold → Hexstone",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_hexstone.png"
     },
     {
       "name": "Degraded Gloamwood",
       "value_sell": "6 / 0",
-      "combine": "4 pieces + 5 gold → Gloamwood"
+      "combine": "4 pieces + 5 gold → Gloamwood",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_gloamwood.png"
     },
     {
       "name": "Degraded Webglass",
       "value_sell": "7 / 0",
-      "combine": "4 pieces + 5 gold → Webglass"
+      "combine": "4 pieces + 5 gold → Webglass",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_webglass.png"
     },
     {
       "name": "Degraded Warhorse Sinew",
       "value_sell": "6 / 0",
-      "combine": "4 pieces + 5 gold → Warhorse Sinew"
+      "combine": "4 pieces + 5 gold → Warhorse Sinew",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_warhorse_sinew.png"
     },
     {
       "name": "Degraded Tempered Plainsteel",
       "value_sell": "8 / 0",
-      "combine": "4 pieces + 5 gold → Tempered Plainsteel"
+      "combine": "4 pieces + 5 gold → Tempered Plainsteel",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_tempered_plainsteel.png"
     },
     {
       "name": "Degraded Saltbound Oak",
       "value_sell": "7 / 0",
-      "combine": "4 pieces + 5 gold → Saltbound Oak"
+      "combine": "4 pieces + 5 gold → Saltbound Oak",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_saltbound_oak.png"
     },
     {
       "name": "Degraded Tidebronze",
       "value_sell": "8 / 0",
-      "combine": "4 pieces + 5 gold → Tidebronze"
+      "combine": "4 pieces + 5 gold → Tidebronze",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_tidebronze.png"
     },
     {
       "name": "Degraded Ashsail Cord",
       "value_sell": "7 / 0",
-      "combine": "4 pieces + 5 gold → Ashsail Cord"
+      "combine": "4 pieces + 5 gold → Ashsail Cord",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_ashsail_cord.png"
     },
     {
       "name": "Degraded Drakeglass",
       "value_sell": "9 / 1",
-      "combine": "4 pieces + 5 gold → Drakeglass"
+      "combine": "4 pieces + 5 gold → Drakeglass",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_drakeglass.png"
     },
     {
       "name": "Degraded Storm Cedar",
       "value_sell": "8 / 0",
-      "combine": "4 pieces + 5 gold → Storm Cedar"
+      "combine": "4 pieces + 5 gold → Storm Cedar",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_storm_cedar.png"
     },
     {
       "name": "Degraded Thundersteel",
       "value_sell": "9 / 1",
-      "combine": "4 pieces + 5 gold → Thundersteel"
+      "combine": "4 pieces + 5 gold → Thundersteel",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_thundersteel.png"
     },
     {
       "name": "Degraded Moon Yew",
       "value_sell": "8 / 0",
-      "combine": "4 pieces + 5 gold → Moon Yew"
+      "combine": "4 pieces + 5 gold → Moon Yew",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_moon_yew.png"
     },
     {
       "name": "Degraded Star Slate",
       "value_sell": "10 / 1",
-      "combine": "4 pieces + 5 gold → Star Slate"
+      "combine": "4 pieces + 5 gold → Star Slate",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_star_slate.png"
     },
     {
       "name": "Degraded Oiled Reed Cord",
       "value_sell": "9 / 1",
-      "combine": "4 pieces + 5 gold → Oiled Reed Cord"
+      "combine": "4 pieces + 5 gold → Oiled Reed Cord",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_oiled_reed_cord.png"
     },
     {
       "name": "Degraded Springbrass",
       "value_sell": "10 / 1",
-      "combine": "4 pieces + 5 gold → Springbrass"
+      "combine": "4 pieces + 5 gold → Springbrass",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_springbrass.png"
     },
     {
       "name": "Degraded Windreed",
       "value_sell": "9 / 1",
-      "combine": "4 pieces + 5 gold → Windreed"
+      "combine": "4 pieces + 5 gold → Windreed",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_windreed.png"
     },
     {
       "name": "Degraded Singing Quartz",
       "value_sell": "11 / 1",
-      "combine": "4 pieces + 5 gold → Singing Quartz"
+      "combine": "4 pieces + 5 gold → Singing Quartz",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_singing_quartz.png"
     },
     {
       "name": "Degraded Shroud Thread",
       "value_sell": "10 / 1",
-      "combine": "4 pieces + 5 gold → Shroud Thread"
+      "combine": "4 pieces + 5 gold → Shroud Thread",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_shroud_thread.png"
     },
     {
       "name": "Degraded Belliron",
       "value_sell": "11 / 1",
-      "combine": "4 pieces + 5 gold → Belliron"
+      "combine": "4 pieces + 5 gold → Belliron",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_belliron.png"
     },
     {
       "name": "Degraded Mist Silk",
       "value_sell": "10 / 1",
-      "combine": "4 pieces + 5 gold → Mist Silk"
+      "combine": "4 pieces + 5 gold → Mist Silk",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_mist_silk.png"
     },
     {
       "name": "Degraded Veil Silver",
       "value_sell": "12 / 1",
-      "combine": "4 pieces + 5 gold → Veil Silver"
+      "combine": "4 pieces + 5 gold → Veil Silver",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_veil_silver.png"
     },
     {
       "name": "Degraded Rift Tendon",
       "value_sell": "11 / 1",
-      "combine": "4 pieces + 5 gold → Rift Tendon"
+      "combine": "4 pieces + 5 gold → Rift Tendon",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_rift_tendon.png"
     },
     {
       "name": "Degraded Null Obsidian",
       "value_sell": "12 / 1",
-      "combine": "4 pieces + 5 gold → Null Obsidian"
+      "combine": "4 pieces + 5 gold → Null Obsidian",
+      "icon": "res://assets/entropic_forge/icons/salvage/degraded_null_obsidian.png"
     }
   ]
 }
