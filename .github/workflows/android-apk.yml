@@ -72,6 +72,24 @@ jobs:
           else
             echo "Artwork parts not yet uploaded; building existing fallback room."
           fi
+      - name: Install Sword snap-test artwork
+        shell: bash
+        run: |
+          if [ -f assets/shattered_realms_sword_snap_test_22_components.zip ]; then
+            unzip -tq assets/shattered_realms_sword_snap_test_22_components.zip
+            unzip -q -o assets/shattered_realms_sword_snap_test_22_components.zip -d .
+            python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("sword_snap_manifest.json").read_text())
+          for group,count in (("frameworks",10),("strikers",12)):
+              items=m["assets"][group]
+              assert len(items)==count
+              for item in items:
+                  assert Path(item["file"]).is_file(),item["file"]
+          print("Sword snap-test: 22 cutouts and manifest validated.")
+          PY
+          fi
       - name: Validate forge catalog and artwork integrity
         run: python3 tools/verify_forge_art.py
       - name: Validate Godot import
