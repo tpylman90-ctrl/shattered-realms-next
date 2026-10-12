@@ -122,7 +122,11 @@ jobs:
           set -o pipefail
           Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script res://tests/forge_lab_smoke.gd 2>&1 | tee forge-smoke.log
           if grep -E "SCRIPT ERROR:|Parse Error:|Failed to load script" forge-smoke.log; then exit 1; fi
-      - name: Android version
+      - name: Sword attachment overlap and containment
+        # Socket assertions run after the snap-test artwork is restored above.
+        run: |
+          Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script res://tests/sword_socket_smoke.gd
+      - name: Set Android version
         shell: bash
         run: |
           sed -i "s@version/code=.*@version/code=${GITHUB_RUN_NUMBER}@" export_presets.cfg

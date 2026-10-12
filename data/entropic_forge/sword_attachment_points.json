@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "canvas_padding_px": 18,
+  "overlap_px": 5,
+  "note": "Pixel sockets measured in source coordinates. Frame forward end overlaps blade root; blades draw behind hilts. Crops exclude baked handles and neighboring sheet fragments. Inventory icons are unchanged.",
+  "frameworks": {
+    "Watchman’s Leather Grip": {
+      "region_px": [
+        129,
+        12,
+        253,
+        450
+      ],
+      "socket_px": [
+        258.5,
+        460
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Duelist’s Tideguard": {
+      "region_px": [
+        125,
+        12,
+        262,
+        442
+      ],
+      "socket_px": [
+        252.5,
+        452
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Sentinel’s Ironbark Hilt": {
+      "region_px": [
+        122,
+        12,
+        267,
+        445
+      ],
+      "socket_px": [
+        251.0,
+        455
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Sunbound Filigree Hilt": {
+      "region_px": [
+        125,
+        12,
+        262,
+        430
+      ],
+      "socket_px": [
+        250.0,
+        440
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Ravenwood Thornhook": {
+      "region_px": [
+        133,
+        12,
+        246,
+        450
+      ],
+      "socket_px": [
+        271.5,
+        460
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Ashen Emberguard": {
+      "region_px": [
+        134,
+        12,
+        244,
+        430
+      ],
+      "socket_px": [
+        252.5,
+        440
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Icehelm Splitguard": {
+      "region_px": [
+        120,
+        12,
+        271,
+        430
+      ],
+      "socket_px": [
+        262.0,
+        440
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Harbor Basket Hilt": {
+      "region_px": [
+        121,
+        12,
+        270,
+        446
+      ],
+      "socket_px": [
+        243.5,
+        456
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Mirebone Fanggrip": {
+      "region_px": [
+        119,
+        12,
+        273,
+        438
+      ],
+      "socket_px": [
+        247.0,
+        448
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    },
+    "Stormcrown Coil Hilt": {
+      "region_px": [
+        146,
+        12,
+        220,
+        434
+      ],
+      "socket_px": [
+        265.0,
+        444
+      ],
+      "rotation": "ccw",
+      "display_length_px": 126
+    }
+  },
+  "strikers": {
+    "Plainsteel Straight Blade": {
+      "region_px": [
+        165,
+        12,
+        181,
+        328
+      ],
+      "socket_px": [
+        273.0,
+        338
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Serrated Fang Blade": {
+      "region_px": [
+        143,
+        12,
+        170,
+        326
+      ],
+      "socket_px": [
+        240.0,
+        336
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Tidebronze Saber Blade": {
+      "region_px": [
+        145,
+        12,
+        104,
+        352
+      ],
+      "socket_px": [
+        181.5,
+        362
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Webglass Needle Blade": {
+      "region_px": [
+        145,
+        12,
+        118,
+        347
+      ],
+      "socket_px": [
+        183.0,
+        357
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Scaleiron Falchion Blade": {
+      "region_px": [
+        143,
+        12,
+        95,
+        310
+      ],
+      "socket_px": [
+        162.0,
+        320
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Veil-Silver Channel Blade": {
+      "region_px": [
+        154,
+        12,
+        204,
+        352
+      ],
+      "socket_px": [
+        176.5,
+        362
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Ravenwood Thorn Sabre": {
+      "region_px": [
+        142,
+        12,
+        228,
+        355
+      ],
+      "socket_px": [
+        299.0,
+        365
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Ashen Magma Edge": {
+      "region_px": [
+        142,
+        12,
+        228,
+        350
+      ],
+      "socket_px": [
+        282.0,
+        360
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Icehelm Crystal Longblade": {
+      "region_px": [
+        144,
+        12,
+        224,
+        332
+      ],
+      "socket_px": [
+        239.5,
+        342
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Ironhold Breaker Falchion": {
+      "region_px": [
+        142,
+        12,
+        227,
+        352
+      ],
+      "socket_px": [
+        234.0,
+        362
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Stormcrown Lightning Rapier": {
+      "region_px": [
+        143,
+        12,
+        226,
+        352
+      ],
+      "socket_px": [
+        214.5,
+        362
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    },
+    "Veiled Sea Boarding Cutlass": {
+      "region_px": [
+        152,
+        12,
+        207,
+        352
+      ],
+      "socket_px": [
+        229.5,
+        362
+      ],
+      "rotation": "cw",
+      "display_length_px": 245
+    }
+  }
+}

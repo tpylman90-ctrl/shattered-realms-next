@@ -210,6 +210,7 @@ func _build() -> void:
 	display_surface.add_child(display_center)
 	var art_stack := Control.new()
 	art_stack.custom_minimum_size = Vector2(415,244)
+	art_stack.clip_contents = true
 	display_center.add_child(art_stack)
 	result_art = TextureRect.new()
 	result_art.name = "ResultWeaponImage"
@@ -439,7 +440,7 @@ func _show_result() -> void:
 		child.queue_free()
 	var finished_texture := _icon(result) if not result.is_empty() else null
 	if families[int(choice[0])] == "Sword" and not sword_snap.is_empty() and _show_sword_snap(a,b):
-		result_note.text = "SWORD SNAP TEST ACTIVE — hilt and blade aligned; core material follows after art cleanup"
+		result_note.text = "SWORD SNAP TEST — socket join with slight overlap; core effects pending"
 	elif finished_texture != null:
 		result_art.texture = finished_texture
 		result_note.text = "NAMED RECIPE ARTWORK — catalog concept"
@@ -486,78 +487,29 @@ func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vec
 
 
 func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
-	# Sandbox-only: never overwrite inventory icons or catalog image paths.
+	var point_path := "res://data/entropic_forge/sword_attachment_points.json"
+	var calibration: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(point_path))
 	var assets: Dictionary = sword_snap.get("assets", {})
 	var frame_record: Dictionary = {}
 	var blade_record: Dictionary = {}
 	for entry in assets.get("frameworks", []):
 		if str(entry.get("name", "")) == str(frame_part.get("name", "")):
-			frame_record = entry
-			break
+			frame_record = entry.duplicate(true)
 	for entry in assets.get("strikers", []):
 		if str(entry.get("name", "")) == str(blade_part.get("name", "")):
-			blade_record = entry
-			break
-	if frame_record.is_empty() or blade_record.is_empty():
+			blade_record = entry.duplicate(true)
+	var frame_points: Dictionary = calibration.get("frameworks", {}).get(frame_part.get("name", ""), {})
+	var blade_points: Dictionary = calibration.get("strikers", {}).get(blade_part.get("name", ""), {})
+	if frame_record.is_empty() or blade_record.is_empty() or frame_points.is_empty() or blade_points.is_empty():
 		return false
-	var frame_path := "res://" + str(frame_record.get("file", ""))
-	var blade_path := "res://" + str(blade_record.get("file", ""))
-	if not ResourceLoader.exists(frame_path) or not ResourceLoader.exists(blade_path):
+	frame_record.merge(frame_points, true)
+	blade_record.merge(blade_points, true)
+	var preview := preload("res://scripts/weapon_snap_preview.gd").new()
+	if not preview.configure(frame_record, blade_record, float(calibration.get("overlap_px", 5.0))):
+		preview.free()
 		return false
-	var frame_img: Image = (load(frame_path) as Texture2D).get_image()
-	var blade_img: Image = (load(blade_path) as Texture2D).get_image()
-	if frame_img == null or blade_img == null:
-		return false
-	# The generated grip sheets show the pommel at the top. Turn each hilt
-	# so the guard points UP and the handle ends at the bottom of the weapon.
-	frame_img.flip_x()
-	frame_img.flip_y()
-	# Cropping visible pixels eliminates the large invisible sheet margins,
-	# which caused the two pieces to appear detached in the earlier test.
-	var grip_rect := frame_img.get_used_rect()
-	var edge_rect := blade_img.get_used_rect()
-	if grip_rect.size.x < 8 or grip_rect.size.y < 8 or edge_rect.size.x < 8 or edge_rect.size.y < 8:
-		return false
-	# Draw both parts horizontally. Framework's guard end joins the blade root,
-	# with a small 5px seam overlap, not center-to-center stacking.
-	var grip_crop := frame_img.get_region(grip_rect)
-	# The striker sprites were originally painted as entire short swords.
-	# Strip the lower baked-in hilt BEFORE rotating so the selected framework
-	# supplies the only pommel, grip and guard. Keep the upper blade body.
-	var blade_cut_height := maxi(20, roundi(float(edge_rect.size.y) * 0.76))
-	var blade_region := Rect2i(edge_rect.position, Vector2i(edge_rect.size.x, blade_cut_height))
-	# Several concept sheets contain a second floating blade/shard beside the
-	# actual edge. Restrict these to the primary left-hand blade silhouette.
-	var blade_name := str(blade_record.get("name", "")).to_lower()
-	if blade_name.contains("scaleiron") or blade_name.contains("tidebronze") or blade_name.contains("webglass"):
-		blade_region.size.x = maxi(20, roundi(float(blade_region.size.x) * 0.57))
-	var blade_crop := blade_img.get_region(blade_region)
-	# Source art stands vertically: the framework has been inverted above,
-	# so clockwise is handle-left/guard-right; striker tip becomes right.
-	grip_crop.rotate_90(CLOCKWISE)
-	blade_crop.rotate_90(CLOCKWISE)
-	var grip_tex := ImageTexture.create_from_image(grip_crop)
-	var edge_tex := ImageTexture.create_from_image(blade_crop)
-	# Edge to edge: only a small overlap conceals the connection.
-	var grip_width := 119.0
-	var edge_width := 198.0
-	var seam := 7.0
-	var start_x := (415.0 - (grip_width + edge_width - seam)) * 0.5
-	var join_x := start_x + grip_width - seam
-	var grip_height := minf(122.0, grip_width * float(grip_crop.get_height()) / float(grip_crop.get_width()))
-	var edge_height := minf(122.0, edge_width * float(blade_crop.get_height()) / float(blade_crop.get_width()))
-	var center_y := 122.0
-	_add_sword_layer(grip_tex, Vector2(start_x, center_y - grip_height * 0.5), Vector2(grip_width, grip_height))
-	_add_sword_layer(edge_tex, Vector2(join_x, center_y - edge_height * 0.5), Vector2(edge_width, edge_height))
+	preview.name = "SocketAlignedSword"
+	preview.padding_px = float(calibration.get("canvas_padding_px", 18.0))
+	preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	composite_preview.add_child(preview)
 	return true
-
-
-func _add_sword_layer(tex: Texture2D, position_on_canvas: Vector2, display_size: Vector2) -> void:
-	var part := TextureRect.new()
-	part.texture = tex
-	part.position = position_on_canvas
-	part.size = display_size
-	part.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	part.stretch_mode = TextureRect.STRETCH_SCALE
-	part.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	composite_preview.add_child(part)
