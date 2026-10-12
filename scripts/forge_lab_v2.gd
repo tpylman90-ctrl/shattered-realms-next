@@ -439,7 +439,7 @@ func _show_result() -> void:
 		child.queue_free()
 	var finished_texture := _icon(result) if not result.is_empty() else null
 	if families[int(choice[0])] == "Sword" and not sword_snap.is_empty() and _show_sword_snap(a,b):
-		result_note.text = "SWORD SNAP TEST — two separate components joined at catalog anchors; core material not yet applied"
+		result_note.text = "SWORD SNAP TEST ACTIVE — hilt and blade aligned; core material follows after art cleanup"
 	elif finished_texture != null:
 		result_art.texture = finished_texture
 		result_note.text = "NAMED RECIPE ARTWORK — catalog concept"
@@ -486,6 +486,7 @@ func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vec
 
 
 func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
+	# Sandbox-only: never overwrite inventory icons or catalog image paths.
 	var assets: Dictionary = sword_snap.get("assets", {})
 	var frame_record: Dictionary = {}
 	var blade_record: Dictionary = {}
@@ -499,23 +500,42 @@ func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
 			break
 	if frame_record.is_empty() or blade_record.is_empty():
 		return false
-	for record in [frame_record,blade_record]:
-		var image_path := "res://" + str(record.get("file", ""))
-		if not ResourceLoader.exists(image_path):
-			return false
-	# Snap the declared normalized join coordinates together in one shared view.
-	var join := Vector2(207,122)
-	var draw_size := Vector2(134,134)
-	for record in [frame_record,blade_record]:
-		var image_path := "res://" + str(record.get("file", ""))
-		var point: Dictionary = record.get("anchor_normalized", {})
-		var normalized := Vector2(float(point.get("x", 0.5)),float(point.get("y", 0.5)))
-		var layer := TextureRect.new()
-		layer.texture = load(image_path)
-		layer.position = join - normalized * draw_size
-		layer.size = draw_size
-		layer.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		layer.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		composite_preview.add_child(layer)
+	var frame_path := "res://" + str(frame_record.get("file", ""))
+	var blade_path := "res://" + str(blade_record.get("file", ""))
+	if not ResourceLoader.exists(frame_path) or not ResourceLoader.exists(blade_path):
+		return false
+	var frame_img: Image = (load(frame_path) as Texture2D).get_image()
+	var blade_img: Image = (load(blade_path) as Texture2D).get_image()
+	if frame_img == null or blade_img == null:
+		return false
+	# The generated grip sheets show the pommel at the top. Turn each hilt
+	# so the guard points UP and the handle ends at the bottom of the weapon.
+	frame_img.flip_x()
+	frame_img.flip_y()
+	# Cropping visible pixels eliminates the large invisible sheet margins,
+	# which caused the two pieces to appear detached in the earlier test.
+	var grip_rect := frame_img.get_used_rect()
+	var edge_rect := blade_img.get_used_rect()
+	if grip_rect.size.x < 8 or grip_rect.size.y < 8 or edge_rect.size.x < 8 or edge_rect.size.y < 8:
+		return false
+	var grip_tex := ImageTexture.create_from_image(frame_img.get_region(grip_rect))
+	var edge_tex := ImageTexture.create_from_image(blade_img.get_region(edge_rect))
+	var junction := Vector2(207.0, 133.0)
+	var grip_height := 102.0
+	var blade_height := 128.0
+	var grip_width := clampf(grip_height * float(grip_rect.size.x) / float(grip_rect.size.y), 30.0, 174.0)
+	var blade_width := clampf(blade_height * float(edge_rect.size.x) / float(edge_rect.size.y), 24.0, 189.0)
+	_add_sword_layer(edge_tex, Vector2(junction.x - blade_width * 0.5, junction.y - blade_height + 3.0), Vector2(blade_width, blade_height))
+	_add_sword_layer(grip_tex, Vector2(junction.x - grip_width * 0.5, junction.y - 5.0), Vector2(grip_width, grip_height))
 	return true
+
+
+func _add_sword_layer(tex: Texture2D, position_on_canvas: Vector2, display_size: Vector2) -> void:
+	var part := TextureRect.new()
+	part.texture = tex
+	part.position = position_on_canvas
+	part.size = display_size
+	part.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	part.stretch_mode = TextureRect.STRETCH_SCALE
+	part.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	composite_preview.add_child(part)
