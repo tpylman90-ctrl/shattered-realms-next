@@ -519,14 +519,18 @@ func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
 	if grip_rect.size.x < 8 or grip_rect.size.y < 8 or edge_rect.size.x < 8 or edge_rect.size.y < 8:
 		return false
 	var grip_tex := ImageTexture.create_from_image(frame_img.get_region(grip_rect))
-	var edge_tex := ImageTexture.create_from_image(blade_img.get_region(edge_rect))
-	var junction := Vector2(207.0, 133.0)
-	var grip_height := 102.0
-	var blade_height := 128.0
-	var grip_width := clampf(grip_height * float(grip_rect.size.x) / float(grip_rect.size.y), 30.0, 174.0)
-	var blade_width := clampf(blade_height * float(edge_rect.size.x) / float(edge_rect.size.y), 24.0, 189.0)
-	_add_sword_layer(edge_tex, Vector2(junction.x - blade_width * 0.5, junction.y - blade_height + 3.0), Vector2(blade_width, blade_height))
-	_add_sword_layer(grip_tex, Vector2(junction.x - grip_width * 0.5, junction.y - 5.0), Vector2(grip_width, grip_height))
+	# Remove the lower tang/miniature grip commonly baked into source blade cutouts.
+	# The actual framework supplies the handle and guard in this snap experiment.
+	var blade_body := Rect2i(edge_rect.position, Vector2i(edge_rect.size.x, maxi(8, roundi(float(edge_rect.size.y) * 0.79))))
+	var edge_tex := ImageTexture.create_from_image(blade_img.get_region(blade_body))
+	# The compositing canvas is 415 x 244; keep the *entire* sword inside it.
+	var junction := Vector2(207.0, 135.0)
+	var grip_height := 79.0
+	var blade_height := 111.0
+	var grip_width := clampf(grip_height * float(grip_rect.size.x) / float(grip_rect.size.y), 23.0, 116.0)
+	var blade_width := clampf(blade_height * float(blade_body.size.x) / float(blade_body.size.y), 20.0, 105.0)
+	_add_sword_layer(edge_tex, Vector2(junction.x - blade_width * 0.5, junction.y - blade_height + 8.0), Vector2(blade_width, blade_height))
+	_add_sword_layer(grip_tex, Vector2(junction.x - grip_width * 0.5, junction.y - 4.0), Vector2(grip_width, grip_height))
 	return true
 
 
