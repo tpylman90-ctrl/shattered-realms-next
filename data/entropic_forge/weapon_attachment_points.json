@@ -2552,6 +2552,654 @@
       "display_length_px": 235,
       "family": "Whip",
       "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/ashen_furnace_zweihander.png": {
+      "file": "assets/entropic_forge/icons/strikers/ashen_furnace_zweihander.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        248.75,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/frostpeak_avalanche_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/frostpeak_avalanche_blade.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        247.48,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drakeshard_dragonspine_edge.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakeshard_dragonspine_edge.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        246.7,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/ravenwood_thorn_reaver.png": {
+      "file": "assets/entropic_forge/icons/strikers/ravenwood_thorn_reaver.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        247.32,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/iron_plains_bastion_sword.png": {
+      "file": "assets/entropic_forge/icons/strikers/iron_plains_bastion_sword.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        248.07,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/stormcrown_titan_cleaver.png": {
+      "file": "assets/entropic_forge/icons/strikers/stormcrown_titan_cleaver.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        246.78,
+        427.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/icebreaker_double_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/icebreaker_double_grip.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        481.58,
+        256.21
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/harrowstead_reaver_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/harrowstead_reaver_handle.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        482.08,
+        255.93
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/sunken_anchor_hilt.png": {
+      "file": "assets/entropic_forge/icons/frameworks/sunken_anchor_hilt.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        481.64,
+        255.83
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/stormpeak_giant_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/stormpeak_giant_grip.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        480.66,
+        256.14
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/blackthorn_rootbinder.png": {
+      "file": "assets/entropic_forge/icons/frameworks/blackthorn_rootbinder.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        481.77,
+        255.94
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "scale_axis": "x",
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/ashen_obsidian_beak.png": {
+      "file": "assets/entropic_forge/icons/strikers/ashen_obsidian_beak.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        255.4,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/icehelm_avalanche_bit.png": {
+      "file": "assets/entropic_forge/icons/strikers/icehelm_avalanche_bit.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        174.27,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drakeshard_twin_drake_axehead.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakeshard_twin_drake_axehead.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        180.46,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/ravenwood_thorn_cleaver.png": {
+      "file": "assets/entropic_forge/icons/strikers/ravenwood_thorn_cleaver.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        349.64,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/stormcrown_thunderhead.png": {
+      "file": "assets/entropic_forge/icons/strikers/stormcrown_thunderhead.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        353.46,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/veiled_sea_anchor_cutter.png": {
+      "file": "assets/entropic_forge/icons/strikers/veiled_sea_anchor_cutter.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        179.32,
+        464.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/ravenwood_split_oak_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ravenwood_split_oak_haft.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        255.95,
+        28.82
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/ironhold_cleaver_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ironhold_cleaver_handle.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        256.01,
+        28.85
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/blazebound_furnace_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/blazebound_furnace_haft.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        256.08,
+        28.83
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/frostline_hook_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/frostline_hook_grip.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        255.99,
+        28.82
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/harbor_boarding_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/harbor_boarding_handle.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        255.98,
+        28.84
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/thunderhead_coil_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/thunderhead_coil_haft.png",
+      "region_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "socket_px": [
+        256.24,
+        28.83
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/ironhold_braced_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ironhold_braced_riser.png",
+      "region_px": [
+        52,
+        24,
+        407,
+        464
+      ],
+      "socket_px": [
+        256.02,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/ashen_blackglass_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ashen_blackglass_riser.png",
+      "region_px": [
+        26,
+        24,
+        459,
+        464
+      ],
+      "socket_px": [
+        286.83,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/stormcrown_thunderwood_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/stormcrown_thunderwood_riser.png",
+      "region_px": [
+        34,
+        24,
+        443,
+        464
+      ],
+      "socket_px": [
+        260.5,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/veiled_sea_corsair_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/veiled_sea_corsair_riser.png",
+      "region_px": [
+        32,
+        24,
+        448,
+        464
+      ],
+      "socket_px": [
+        292.31,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/ravenwood_hunter_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ravenwood_hunter_riser.png",
+      "region_px": [
+        34,
+        24,
+        443,
+        464
+      ],
+      "socket_px": [
+        264.3,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/cursed_mire_bone_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/cursed_mire_bone_riser.png",
+      "region_px": [
+        27,
+        24,
+        458,
+        464
+      ],
+      "socket_px": [
+        270.2,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 80,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/drakeshard_ribcage_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakeshard_ribcage_limbs.png",
+      "region_px": [
+        171,
+        24,
+        169,
+        464
+      ],
+      "socket_px": [
+        199.1,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/ravenwood_thorn_recurve.png": {
+      "file": "assets/entropic_forge/icons/strikers/ravenwood_thorn_recurve.png",
+      "region_px": [
+        145,
+        24,
+        221,
+        464
+      ],
+      "socket_px": [
+        209.21,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/stormcrown_conductive_bowarms.png": {
+      "file": "assets/entropic_forge/icons/strikers/stormcrown_conductive_bowarms.png",
+      "region_px": [
+        156,
+        24,
+        199,
+        464
+      ],
+      "socket_px": [
+        221.78,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/veiled_sea_whalebone_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/veiled_sea_whalebone_limbs.png",
+      "region_px": [
+        145,
+        24,
+        221,
+        464
+      ],
+      "socket_px": [
+        215.49,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/ashen_obsidian_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/ashen_obsidian_limbs.png",
+      "region_px": [
+        49,
+        24,
+        414,
+        464
+      ],
+      "socket_px": [
+        233.33,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/frostpeak_glacier_bowarms.png": {
+      "file": "assets/entropic_forge/icons/strikers/frostpeak_glacier_bowarms.png",
+      "region_px": [
+        42,
+        24,
+        428,
+        464
+      ],
+      "socket_px": [
+        206.65,
+        256.0
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "scale_axis": "y",
+      "family": "Bow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/harrowstead_dual_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/harrowstead_dual_grip.png",
+      "region_px": [
+        38,
+        24,
+        435,
+        464
+      ],
+      "socket_px": [
+        260.6,
+        35.6
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "scale_axis": "x",
+      "family": "Axe",
+      "category": "frameworks"
     }
   }
 }

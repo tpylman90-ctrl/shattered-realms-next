@@ -777,8 +777,8 @@
       "durability": 72,
       "interval": "3.000 s",
       "handling": "+7 accuracy points; -8% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/black_anvil_twohander.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/icebreaker_double_grip.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Icebreaker Double Grip — Indexed grip",
       "mechanics": {
         "label": "Indexed grip",
@@ -792,7 +792,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -804,8 +804,8 @@
       "durability": 86,
       "interval": "3.158 s",
       "handling": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_longgrip.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harrowstead_reaver_handle.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Harrowstead Reaver Handle — Extended leverage",
       "mechanics": {
         "label": "Extended leverage",
@@ -819,7 +819,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -831,8 +831,8 @@
       "durability": 86,
       "interval": "3.158 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/drakespine_wargrip.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sunken_anchor_hilt.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Sunken Anchor Hilt — Braced housing",
       "mechanics": {
         "label": "Braced housing",
@@ -846,7 +846,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -858,8 +858,8 @@
       "durability": 98,
       "interval": "3.158 s",
       "handling": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/black_anvil_twohander.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormpeak_giant_grip.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Stormpeak Giant Grip — Extended leverage",
       "mechanics": {
         "label": "Extended leverage",
@@ -873,7 +873,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -885,8 +885,8 @@
       "durability": 72,
       "interval": "3.125 s",
       "handling": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_longgrip.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/blackthorn_rootbinder.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Blackthorn Rootbinder — Vented core seat",
       "mechanics": {
         "label": "Vented core seat",
@@ -900,7 +900,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1263,8 +1263,8 @@
       "durability": 62,
       "interval": "2.165 s",
       "handling": "+5 accuracy points; +10% durability; -3% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ravenwood_split_oak_haft.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ravenwood Split Oak Haft — Guarded grip",
       "mechanics": {
         "label": "Guarded grip",
@@ -1278,7 +1278,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1290,8 +1290,8 @@
       "durability": 72,
       "interval": "2.211 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ironhold_cleaver_handle.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ironhold Cleaver Handle — Braced housing",
       "mechanics": {
         "label": "Braced housing",
@@ -1305,7 +1305,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1317,8 +1317,8 @@
       "durability": 72,
       "interval": "2.188 s",
       "handling": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/blazebound_furnace_haft.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Blazebound Furnace Haft — Vented core seat",
       "mechanics": {
         "label": "Vented core seat",
@@ -1332,7 +1332,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1344,8 +1344,8 @@
       "durability": 86,
       "interval": "1.944 s",
       "handling": "+8% action speed; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/frostline_hook_grip.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Frostline Hook Grip — Light counterbalance",
       "mechanics": {
         "label": "Light counterbalance",
@@ -1359,7 +1359,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1371,8 +1371,8 @@
       "durability": 86,
       "interval": "2.211 s",
       "handling": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harbor_boarding_handle.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Harbor Boarding Handle — Extended leverage",
       "mechanics": {
         "label": "Extended leverage",
@@ -1386,7 +1386,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1398,8 +1398,8 @@
       "durability": 98,
       "interval": "2.100 s",
       "handling": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/thunderhead_coil_haft.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Thunderhead Coil Haft — Insulated conduit",
       "mechanics": {
         "label": "Insulated conduit",
@@ -1413,7 +1413,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -1425,8 +1425,8 @@
       "durability": 72,
       "interval": "2.211 s",
       "handling": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harrowstead_dual_grip.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Harrowstead Dual Grip — Extended leverage",
       "mechanics": {
         "label": "Extended leverage",
@@ -1440,7 +1440,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2181,8 +2181,8 @@
       "durability": 62,
       "interval": "2.316 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ironhold_braced_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ironhold Braced Riser — Braced housing",
       "mechanics": {
         "label": "Braced housing",
@@ -2196,7 +2196,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2208,8 +2208,8 @@
       "durability": 72,
       "interval": "2.316 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ashen_blackglass_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ashen Blackglass Riser — Braced housing",
       "mechanics": {
         "label": "Braced housing",
@@ -2223,7 +2223,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2235,8 +2235,8 @@
       "durability": 72,
       "interval": "2.200 s",
       "handling": "+7 accuracy points; -8% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/moon_yew_longbow_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormcrown_thunderwood_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Stormcrown Thunderwood Riser — Indexed grip",
       "mechanics": {
         "label": "Indexed grip",
@@ -2250,7 +2250,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2262,8 +2262,8 @@
       "durability": 86,
       "interval": "2.037 s",
       "handling": "+8% action speed; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/glasswind_split_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/veiled_sea_corsair_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Veiled Sea Corsair Riser — Light counterbalance",
       "mechanics": {
         "label": "Light counterbalance",
@@ -2277,7 +2277,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2289,8 +2289,8 @@
       "durability": 86,
       "interval": "2.200 s",
       "handling": "+7 accuracy points; -8% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ravenwood_hunter_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ravenwood Hunter Riser — Indexed grip",
       "mechanics": {
         "label": "Indexed grip",
@@ -2304,7 +2304,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -2316,8 +2316,8 @@
       "durability": 98,
       "interval": "2.200 s",
       "handling": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cursed_mire_bone_riser.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Cursed Mire Bone Riser — Insulated conduit",
       "mechanics": {
         "label": "Insulated conduit",
@@ -2331,7 +2331,7 @@
         "interval_includes_speed_modifier": true,
         "durability_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4401,8 +4401,8 @@
       "physical": "45 slash",
       "durability": 24,
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/broad_militia_blade.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_furnace_zweihander.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ashen Furnace Zweihander — Fine point",
       "mechanics": {
         "label": "Fine point",
@@ -4412,7 +4412,7 @@
         "role_id": "precision",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4424,8 +4424,8 @@
       "physical": "61 slash",
       "durability": 29,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/notched_siege_blade.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/frostpeak_avalanche_blade.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Frostpeak Avalanche Blade — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -4435,7 +4435,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4447,8 +4447,8 @@
       "physical": "58 slash",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakebone_cleaver.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_dragonspine_edge.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Drakeshard Dragonspine Edge — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -4461,7 +4461,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4473,8 +4473,8 @@
       "physical": "78 slash",
       "durability": 37,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_execution_blade.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_reaver.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ravenwood Thorn-Reaver — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -4487,7 +4487,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4499,8 +4499,8 @@
       "physical": "80 slash",
       "durability": 37,
       "trait": "+20% direct physical damage against barriers; -3 accuracy points. No bonus against ordinary armor.",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_flamberge.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/iron_plains_bastion_sword.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Iron Plains Bastion Sword — Breaching face",
       "mechanics": {
         "label": "Breaching face",
@@ -4511,7 +4511,7 @@
         "role_id": "barrier",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4523,8 +4523,8 @@
       "physical": "97 slash",
       "durability": 29,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_titan_cleaver.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Stormcrown Titan Cleaver — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -4534,7 +4534,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4837,8 +4837,8 @@
       "physical": "31 slash",
       "durability": 24,
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/foresters_axe_bit.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_obsidian_beak.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ashen Obsidian Beak — Fine point",
       "mechanics": {
         "label": "Fine point",
@@ -4848,7 +4848,7 @@
         "role_id": "precision",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4860,8 +4860,8 @@
       "physical": "42 slash",
       "durability": 29,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/raiders_hook_bit.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/icehelm_avalanche_bit.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Icehelm Avalanche Bit — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -4871,7 +4871,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4883,8 +4883,8 @@
       "physical": "39 slash",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_twin_drake_axehead.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Drakeshard Twin-Drake Axehead — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -4897,7 +4897,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4909,8 +4909,8 @@
       "physical": "54 slash",
       "durability": 37,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_cleaver.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ravenwood Thorn Cleaver — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -4923,7 +4923,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4935,8 +4935,8 @@
       "physical": "56 slash",
       "durability": 37,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_double_bit.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_thunderhead.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Stormcrown Thunderhead — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -4946,7 +4946,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -4958,8 +4958,8 @@
       "physical": "67 slash",
       "durability": 29,
       "trait": "One extra enemy within 1 m takes 15% base physical attack; -5% primary physical attack; no recursive procs.",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/veiled_sea_anchor_cutter.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Veiled Sea Anchor Cutter — Sweeping face",
       "mechanics": {
         "label": "Sweeping face",
@@ -4971,7 +4971,7 @@
         "role_id": "cleave",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork from user-supplied component sheet.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5553,8 +5553,8 @@
       "physical": "29 pierce",
       "durability": 24,
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/plain_yew_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_obsidian_limbs.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ashen Obsidian Limbs — Fine point",
       "mechanics": {
         "label": "Fine point",
@@ -5564,7 +5564,7 @@
         "role_id": "precision",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5576,8 +5576,8 @@
       "physical": "40 pierce",
       "durability": 29,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/recurved_drakebone_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/frostpeak_glacier_bowarms.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Frostpeak Glacier Bowarms — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -5587,7 +5587,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5599,8 +5599,8 @@
       "physical": "37 pierce",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/moon_yew_long_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_ribcage_limbs.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Drakeshard Ribcage Limbs — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -5613,7 +5613,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5625,8 +5625,8 @@
       "physical": "51 pierce",
       "durability": 37,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/websilk_composite_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_recurve.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Ravenwood Thorn Recurve — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -5639,7 +5639,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5651,8 +5651,8 @@
       "physical": "53 pierce",
       "durability": 37,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_spring_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_conductive_bowarms.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Stormcrown Conductive Bowarms — Core channel",
       "mechanics": {
         "label": "Core channel",
@@ -5662,7 +5662,7 @@
         "role_id": "channel",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {
@@ -5674,8 +5674,8 @@
       "physical": "63 pierce",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/singing_quartz_split_limbs.png",
-      "art_status": "placeholder_existing_family_component",
+      "icon": "res://assets/entropic_forge/icons/strikers/veiled_sea_whalebone_limbs.png",
+      "art_status": "distinct_inventory_component",
       "silhouette": "Veiled Sea Whalebone Limbs — Raking edge",
       "mechanics": {
         "label": "Raking edge",
@@ -5688,7 +5688,7 @@
         "role_id": "bleed",
         "physical_includes_modifier": false
       },
-      "art_scope": "Inventory icon only; existing Sword assembly cutouts and anchors remain separate.",
+      "art_scope": "Shared inventory and socket assembly artwork.",
       "balance_status": "proposed_unplaytested_expansion_refinement"
     },
     {

@@ -1,7 +1,7 @@
 {
   "scope": "Distinct component images shared by inventory tabs and socket assemblies.",
-  "completed": 14,
-  "pending": 176,
+  "completed": 50,
+  "pending": 140,
   "items": [
     {
       "name": "Ravenwood Thornhook",
@@ -80,45 +80,45 @@
       "category": "frameworks",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/frameworks/icebreaker_double_grip.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Icebreaker Double Grip\", Greatsword framework. The actual object must be long two-handed greatsword grip and broad crossguard only, no blade. Design a distinctive functional silhouette that specifically expresses \"Icebreaker Double Grip\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Harrowstead Reaver Handle",
       "category": "frameworks",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/frameworks/harrowstead_reaver_handle.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Harrowstead Reaver Handle\", Greatsword framework. The actual object must be long two-handed greatsword grip and broad crossguard only, no blade. Design a distinctive functional silhouette that specifically expresses \"Harrowstead Reaver Handle\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Sunken Anchor Hilt",
       "category": "frameworks",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/frameworks/sunken_anchor_hilt.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Sunken Anchor Hilt\", Greatsword framework. The actual object must be long two-handed greatsword grip and broad crossguard only, no blade. Design a distinctive functional silhouette that specifically expresses \"Sunken Anchor Hilt\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Stormpeak Giant Grip",
       "category": "frameworks",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/frameworks/stormpeak_giant_grip.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormpeak Giant Grip\", Greatsword framework. The actual object must be long two-handed greatsword grip and broad crossguard only, no blade. Design a distinctive functional silhouette that specifically expresses \"Stormpeak Giant Grip\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Blackthorn Rootbinder",
       "category": "frameworks",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/frameworks/blackthorn_rootbinder.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Blackthorn Rootbinder\", Greatsword framework. The actual object must be long two-handed greatsword grip and broad crossguard only, no blade. Design a distinctive functional silhouette that specifically expresses \"Blackthorn Rootbinder\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Silent Raven Tang",
@@ -242,62 +242,62 @@
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/ravenwood_split_oak_haft.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Split Oak Haft\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Split Oak Haft\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Ironhold Cleaver Handle",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/ironhold_cleaver_handle.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ironhold Cleaver Handle\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Ironhold Cleaver Handle\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Blazebound Furnace Haft",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/blazebound_furnace_haft.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Blazebound Furnace Haft\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Blazebound Furnace Haft\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Frostline Hook Grip",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/frostline_hook_grip.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Frostline Hook Grip\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Frostline Hook Grip\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Harbor Boarding Handle",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/harbor_boarding_handle.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Harbor Boarding Handle\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Harbor Boarding Handle\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Thunderhead Coil Haft",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/thunderhead_coil_haft.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Thunderhead Coil Haft\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Thunderhead Coil Haft\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Harrowstead Dual Grip",
       "category": "frameworks",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/frameworks/harrowstead_dual_grip.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Harrowstead Dual Grip\", Axe framework. The actual object must be sturdy axe haft with empty mounting eye at the far end, no axe head. Design a distinctive functional silhouette that specifically expresses \"Harrowstead Dual Grip\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Square 1:1 inventory icon, genuine transparent background. One isolated SHORT VERTICAL WOODEN AXE HANDLE named Harrowstead Dual Grip. Two leather grip sections separated by oak wood, iron band fittings, pointed small iron pommel bottom, bare narrow metal connector top. No axe head. Premium crisp detailed hand-painted fantasy JRPG item sprite like a 3D object. Whole handle centered with generous clear space. NO halo, bloom, aura, haze, shadows, glow, lights, backdrop, text, labels or other objects. Hard clean cutout edges with transparent pixels directly adjacent to the object.",
       "provider": "built-in image_gen"
     },
     {
@@ -548,8 +548,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/ironhold_braced_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ironhold Braced Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Ironhold Braced Riser\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Ironhold Braced Riser: vertical iron-braced leather grip only with aligned connector studs, detailed JRPG sprite, transparent background.",
       "provider": "built-in image_gen"
     },
     {
@@ -557,8 +557,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/ashen_blackglass_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ashen Blackglass Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Ashen Blackglass Riser\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Ashen Blackglass Riser. Short vertical ergonomic handgrip, black obsidian and dark iron, copper rivets, subtle red mineral seams. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
       "provider": "built-in image_gen"
     },
     {
@@ -566,8 +566,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/stormcrown_thunderwood_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormcrown Thunderwood Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Stormcrown Thunderwood Riser\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Stormcrown Thunderwood Riser. Short vertical ergonomic handgrip, silver rune-etched braces around dark blue-gray thunderwood, indexed leather grip. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
       "provider": "built-in image_gen"
     },
     {
@@ -575,8 +575,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/veiled_sea_corsair_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Veiled Sea Corsair Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Veiled Sea Corsair Riser\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Veiled Sea Corsair Riser. Short vertical ergonomic handgrip, weathered bronze, salt-worn dark blue leather, carved wave scrollwork, compact light construction. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
       "provider": "built-in image_gen"
     },
     {
@@ -584,8 +584,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/ravenwood_hunter_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Hunter Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Hunter Riser\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Ravenwood Hunter Riser. Short vertical ergonomic handgrip, dark ironbark wood, green leather grip, aged brass thorn and leaf engravings. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
       "provider": "built-in image_gen"
     },
     {
@@ -593,8 +593,8 @@
       "category": "frameworks",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/frameworks/cursed_mire_bone_riser.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Cursed Mire Bone Riser\", Bow framework. The actual object must be central bow riser with grip and two empty limb mounting fittings only, no bow limbs, no bowstring. Design a distinctive functional silhouette that specifically expresses \"Cursed Mire Bone Riser\", not a generic renamed item. Mire craftsmanship: aged carved bone, black iron fittings, dark plum leather, sinew bindings and etched funerary detail; no green magic glow. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Cursed Mire Bone Riser. Short vertical ergonomic handgrip, ivory carved bone reinforcement, black leather grip, tarnished silver spirit-channel inlays. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
       "provider": "built-in image_gen"
     },
     {
@@ -974,54 +974,54 @@
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/ashen_furnace_zweihander.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ashen Furnace Zweihander\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Ashen Furnace Zweihander\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Frostpeak Avalanche Blade",
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/frostpeak_avalanche_blade.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Frostpeak Avalanche Blade\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Frostpeak Avalanche Blade\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Drakeshard Dragonspine Edge",
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/drakeshard_dragonspine_edge.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Drakeshard Dragonspine Edge\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Drakeshard Dragonspine Edge\", not a generic renamed item. Drakeshard craftsmanship: overlapping dark scaleiron, carved horn and bone reinforcing plates, burgundy leather, heavy robust joins. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Ravenwood Thorn-Reaver",
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/ravenwood_thorn_reaver.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Thorn-Reaver\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Thorn-Reaver\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Iron Plains Bastion Sword",
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/iron_plains_bastion_sword.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Iron Plains Bastion Sword\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Iron Plains Bastion Sword\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Stormcrown Titan Cleaver",
       "category": "strikers",
       "family": "Greatsword",
       "target": "assets/entropic_forge/icons/strikers/stormcrown_titan_cleaver.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormcrown Titan Cleaver\", Greatsword striker. The actual object must be detached massive greatsword blade only, short mounting tang left, blade tip right, no grip or guard. Design a distinctive functional silhouette that specifically expresses \"Stormcrown Titan Cleaver\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Blackthorn Hookfang",
@@ -1136,54 +1136,54 @@
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/ashen_obsidian_beak.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ashen Obsidian Beak\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Ashen Obsidian Beak\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Icehelm Avalanche Bit",
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/icehelm_avalanche_bit.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Icehelm Avalanche Bit\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Icehelm Avalanche Bit\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Drakeshard Twin-Drake Axehead",
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/drakeshard_twin_drake_axehead.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Drakeshard Twin-Drake Axehead\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Drakeshard Twin-Drake Axehead\", not a generic renamed item. Drakeshard craftsmanship: overlapping dark scaleiron, carved horn and bone reinforcing plates, burgundy leather, heavy robust joins. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Ravenwood Thorn Cleaver",
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/ravenwood_thorn_cleaver.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Thorn Cleaver\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Thorn Cleaver\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Stormcrown Thunderhead",
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/stormcrown_thunderhead.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormcrown Thunderhead\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Stormcrown Thunderhead\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Veiled Sea Anchor Cutter",
       "category": "strikers",
       "family": "Axe",
       "target": "assets/entropic_forge/icons/strikers/veiled_sea_anchor_cutter.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Veiled Sea Anchor Cutter\", Axe striker. The actual object must be axe head only with visible mounting eye, no haft or handle. Design a distinctive functional silhouette that specifically expresses \"Veiled Sea Anchor Cutter\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "user-supplied artwork"
     },
     {
       "name": "Magmaforge Impact Face",
@@ -1406,8 +1406,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/ashen_obsidian_limbs.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ashen Obsidian Limbs\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Ashen Obsidian Limbs\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Single game inventory SPRITE on transparent background. Square 1:1 image. Ashen Obsidian Limbs: a slender vertical recurve bow limb assembly, solid polished black volcanic glass and unlit copper seams. Two matching curved arms forming a tall parenthesis ( with the center at the left, ends pointing right. Only a narrow plain mounting strip at center, no handgrip, bowstring or arrow. Entire object height 80 percent canvas. Small dark fantasy hand-painted object with crisp hard contours and detailed surfaces. NO lighting effects, NO aura, NO haze, NO bloom, NO cast shadow, NO scene. Fully clear transparent pixels immediately outside the object.",
       "provider": "built-in image_gen"
     },
     {
@@ -1415,8 +1415,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/frostpeak_glacier_bowarms.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Frostpeak Glacier Bowarms\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Frostpeak Glacier Bowarms\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Single game inventory SPRITE on transparent background. Square 1:1 image. Frostpeak Glacier Bowarms: a slender vertical recurve bow limb assembly, opaque pale blue enamel over silver steel, engraved ice facets. Two matching curved arms forming a tall parenthesis ( with the center at the left, ends pointing right. Only a narrow plain mounting strip at center, no handgrip, bowstring or arrow. Entire object height 80 percent canvas. Small dark fantasy hand-painted object with crisp hard contours and detailed surfaces. NO lighting effects, NO aura, NO haze, NO bloom, NO cast shadow, NO scene. Fully clear transparent pixels immediately outside the object.",
       "provider": "built-in image_gen"
     },
     {
@@ -1424,8 +1424,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/drakeshard_ribcage_limbs.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Drakeshard Ribcage Limbs\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Drakeshard Ribcage Limbs\", not a generic renamed item. Drakeshard craftsmanship: overlapping dark scaleiron, carved horn and bone reinforcing plates, burgundy leather, heavy robust joins. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Drakeshard Ribcage Limbs, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, ivory drake ribs and red scaled composite, small swept bony barbs. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
       "provider": "built-in image_gen"
     },
     {
@@ -1433,8 +1433,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/ravenwood_thorn_recurve.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Thorn Recurve\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Thorn Recurve\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Ravenwood Thorn Recurve, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, dark forest ironbark wrapped with sparse thorn vines and aged brass bands. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
       "provider": "built-in image_gen"
     },
     {
@@ -1442,8 +1442,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/stormcrown_conductive_bowarms.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormcrown Conductive Bowarms\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Stormcrown Conductive Bowarms\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Stormcrown Conductive Bowarms, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, blue-gray stormwood with silver and copper conductive inlay tracks. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
       "provider": "built-in image_gen"
     },
     {
@@ -1451,8 +1451,8 @@
       "category": "strikers",
       "family": "Bow",
       "target": "assets/entropic_forge/icons/strikers/veiled_sea_whalebone_limbs.png",
-      "status": "pending_usage_limit",
-      "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Veiled Sea Whalebone Limbs\", Bow striker. The actual object must be one matched pair of detached bow limbs neatly arranged as a single inventory component, visible empty riser sockets, no central riser or grip, no arrows. Design a distinctive functional silhouette that specifically expresses \"Veiled Sea Whalebone Limbs\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
+      "status": "generated_inventory_icon",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Veiled Sea Whalebone Limbs, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, aged ivory whalebone, turquoise bronze bindings and etched wave motifs. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
       "provider": "built-in image_gen"
     },
     {

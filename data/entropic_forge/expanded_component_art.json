@@ -78,46 +78,46 @@
       "name": "Icebreaker Double Grip",
       "family": "Greatsword",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/black_anvil_twohander.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/icebreaker_double_grip.png",
       "role": "Indexed grip",
       "trait": "+7 accuracy points; -8% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Harrowstead Reaver Handle",
       "family": "Greatsword",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_longgrip.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harrowstead_reaver_handle.png",
       "role": "Extended leverage",
       "trait": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Sunken Anchor Hilt",
       "family": "Greatsword",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/drakespine_wargrip.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sunken_anchor_hilt.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormpeak Giant Grip",
       "family": "Greatsword",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/black_anvil_twohander.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormpeak_giant_grip.png",
       "role": "Extended leverage",
       "trait": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Blackthorn Rootbinder",
       "family": "Greatsword",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_longgrip.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/blackthorn_rootbinder.png",
       "role": "Vented core seat",
       "trait": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Silent Raven Tang",
@@ -240,64 +240,64 @@
       "name": "Ravenwood Split Oak Haft",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ravenwood_split_oak_haft.png",
       "role": "Guarded grip",
       "trait": "+5 accuracy points; +10% durability; -3% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ironhold Cleaver Handle",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ironhold_cleaver_handle.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Blazebound Furnace Haft",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/blazebound_furnace_haft.png",
       "role": "Vented core seat",
       "trait": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Frostline Hook Grip",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/frostline_hook_grip.png",
       "role": "Light counterbalance",
       "trait": "+8% action speed; -2 accuracy points; -10% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Harbor Boarding Handle",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harbor_boarding_handle.png",
       "role": "Extended leverage",
       "trait": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Thunderhead Coil Haft",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/thunderhead_coil_haft.png",
       "role": "Insulated conduit",
       "trait": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Harrowstead Dual Grip",
       "family": "Axe",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/harrowstead_dual_grip.png",
       "role": "Extended leverage",
       "trait": "+0.3 m reach; -3 accuracy points; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ember Coast Foundry Handle",
@@ -546,55 +546,55 @@
       "name": "Ironhold Braced Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ironhold_braced_riser.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ashen Blackglass Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ashen_blackglass_riser.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormcrown Thunderwood Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/moon_yew_longbow_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/stormcrown_thunderwood_riser.png",
       "role": "Indexed grip",
       "trait": "+7 accuracy points; -8% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Veiled Sea Corsair Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/glasswind_split_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/veiled_sea_corsair_riser.png",
       "role": "Light counterbalance",
       "trait": "+8% action speed; -2 accuracy points; -10% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ravenwood Hunter Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/ravenwood_hunter_riser.png",
       "role": "Indexed grip",
       "trait": "+7 accuracy points; -8% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Cursed Mire Bone Riser",
       "family": "Bow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cursed_mire_bone_riser.png",
       "role": "Insulated conduit",
       "trait": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ironhold Siege Stock",
@@ -960,55 +960,55 @@
       "name": "Ashen Furnace Zweihander",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/broad_militia_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_furnace_zweihander.png",
       "role": "Fine point",
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Frostpeak Avalanche Blade",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/notched_siege_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/frostpeak_avalanche_blade.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Drakeshard Dragonspine Edge",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakebone_cleaver.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_dragonspine_edge.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ravenwood Thorn-Reaver",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_execution_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_reaver.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Iron Plains Bastion Sword",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_flamberge.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/iron_plains_bastion_sword.png",
       "role": "Breaching face",
       "trait": "+20% direct physical damage against barriers; -3 accuracy points. No bonus against ordinary armor.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormcrown Titan Cleaver",
       "family": "Greatsword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_titan_cleaver.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Blackthorn Hookfang",
@@ -1122,55 +1122,55 @@
       "name": "Ashen Obsidian Beak",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/foresters_axe_bit.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_obsidian_beak.png",
       "role": "Fine point",
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Icehelm Avalanche Bit",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/raiders_hook_bit.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/icehelm_avalanche_bit.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Drakeshard Twin-Drake Axehead",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_twin_drake_axehead.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ravenwood Thorn Cleaver",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_cleaver.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormcrown Thunderhead",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_double_bit.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_thunderhead.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Veiled Sea Anchor Cutter",
       "family": "Axe",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/veiled_sea_anchor_cutter.png",
       "role": "Sweeping face",
       "trait": "One extra enemy within 1 m takes 15% base physical attack; -5% primary physical attack; no recursive procs.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Magmaforge Impact Face",
@@ -1392,55 +1392,55 @@
       "name": "Ashen Obsidian Limbs",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/plain_yew_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_obsidian_limbs.png",
       "role": "Fine point",
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Frostpeak Glacier Bowarms",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/recurved_drakebone_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/frostpeak_glacier_bowarms.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Drakeshard Ribcage Limbs",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/moon_yew_long_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeshard_ribcage_limbs.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ravenwood Thorn Recurve",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/websilk_composite_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_recurve.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormcrown Conductive Bowarms",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_spring_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_conductive_bowarms.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Veiled Sea Whalebone Limbs",
       "family": "Bow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/singing_quartz_split_limbs.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/veiled_sea_whalebone_limbs.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ashen Furnace Prod",

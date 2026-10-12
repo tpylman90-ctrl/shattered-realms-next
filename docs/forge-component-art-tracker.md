@@ -1,21 +1,21 @@
 # Entropic Forge — component artwork production tracker
 
-The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 190 expansion components, **14 have distinct art (8 frameworks and 6 strikers); 176 remain pending (92 frameworks and 84 strikers).** Inventory and assembled previews now use the same source images, with attachment data for all 15 families.
+The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 190 expansion components, **50 have distinct art (26 frameworks and 24 strikers); 140 remain pending (74 frameworks and 66 strikers).** Inventory and assembled previews now use the same source images, with attachment data for all 15 families.
 
 **Art acceptance criteria:** independently cropped transparent RGBA PNG; distinct geometry, not recolor; neutral unlit metal/material pass; consistent forward orientation per family; visually readable at 128–256 pixels; a defined assembly join point on each component; core material/emissive treatment will be applied *later*, not painted as a permanent incompatible glow. Use real per-item images instead of atlas crops with embedded text. Existing 140 original component images should also have their join points and orientation checked.
 
 | Family | New frameworks | New strikers | Stage |
 |---|---:|---:|---|
 | Sword | 0 | 0 | All six expanded hilts and six expanded blades have distinct art and calibrated sockets |
-| Greatsword | 5 | 6 | Two replacement framework inventory icons complete; remainder pending |
+| Greatsword | 0 | 0 | All expansion components have individual art and assembly sockets |
 | Dagger | 7 | 6 | Concept pass / sprite pending |
 | Spear | 6 | 6 | Concept pass / sprite pending |
-| Axe | 7 | 6 | Concept pass / sprite pending |
+| Axe | 0 | 0 | All expansion components have individual art and assembly sockets |
 | Hammer | 7 | 6 | Concept pass / sprite pending |
 | Mace | 7 | 6 | Concept pass / sprite pending |
 | Staff | 6 | 6 | Concept pass / sprite pending |
 | Wand | 7 | 6 | Concept pass / sprite pending |
-| Bow | 6 | 6 | Concept pass / sprite pending |
+| Bow | 0 | 0 | All expansion components have individual art and assembly sockets |
 | Crossbow | 7 | 6 | Concept pass / sprite pending |
 | Whip | 7 | 6 | Concept pass / sprite pending |
 | Scythe | 7 | 6 | Concept pass / sprite pending |
@@ -45,19 +45,19 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 19
 ### Frameworks
 - [x] Ironhold Bastion Grip — distinct inventory and assembly image
 - [x] Volcanic Furnace Tang — distinct inventory and assembly image
-- [ ] Icebreaker Double Grip
-- [ ] Harrowstead Reaver Handle
-- [ ] Sunken Anchor Hilt
-- [ ] Stormpeak Giant Grip
-- [ ] Blackthorn Rootbinder
+- [x] Icebreaker Double Grip
+- [x] Harrowstead Reaver Handle
+- [x] Sunken Anchor Hilt
+- [x] Stormpeak Giant Grip
+- [x] Blackthorn Rootbinder
 
 ### Strikers
-- [ ] Ashen Furnace Zweihander
-- [ ] Frostpeak Avalanche Blade
-- [ ] Drakeshard Dragonspine Edge
-- [ ] Ravenwood Thorn-Reaver
-- [ ] Iron Plains Bastion Sword
-- [ ] Stormcrown Titan Cleaver
+- [x] Ashen Furnace Zweihander
+- [x] Frostpeak Avalanche Blade
+- [x] Drakeshard Dragonspine Edge
+- [x] Ravenwood Thorn-Reaver
+- [x] Iron Plains Bastion Sword
+- [x] Stormcrown Titan Cleaver
 
 ## Dagger
 
@@ -99,21 +99,21 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 19
 ## Axe
 
 ### Frameworks
-- [ ] Ravenwood Split Oak Haft
-- [ ] Ironhold Cleaver Handle
-- [ ] Blazebound Furnace Haft
-- [ ] Frostline Hook Grip
-- [ ] Harbor Boarding Handle
-- [ ] Thunderhead Coil Haft
-- [ ] Harrowstead Dual Grip
+- [x] Ravenwood Split Oak Haft
+- [x] Ironhold Cleaver Handle
+- [x] Blazebound Furnace Haft
+- [x] Frostline Hook Grip
+- [x] Harbor Boarding Handle
+- [x] Thunderhead Coil Haft
+- [x] Harrowstead Dual Grip
 
 ### Strikers
-- [ ] Ashen Obsidian Beak
-- [ ] Icehelm Avalanche Bit
-- [ ] Drakeshard Twin-Drake Axehead
-- [ ] Ravenwood Thorn Cleaver
-- [ ] Stormcrown Thunderhead
-- [ ] Veiled Sea Anchor Cutter
+- [x] Ashen Obsidian Beak
+- [x] Icehelm Avalanche Bit
+- [x] Drakeshard Twin-Drake Axehead
+- [x] Ravenwood Thorn Cleaver
+- [x] Stormcrown Thunderhead
+- [x] Veiled Sea Anchor Cutter
 
 ## Hammer
 
@@ -193,20 +193,20 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 19
 ## Bow
 
 ### Frameworks
-- [ ] Ironhold Braced Riser
-- [ ] Ashen Blackglass Riser
-- [ ] Stormcrown Thunderwood Riser
-- [ ] Veiled Sea Corsair Riser
-- [ ] Ravenwood Hunter Riser
-- [ ] Cursed Mire Bone Riser
+- [x] Ironhold Braced Riser
+- [x] Ashen Blackglass Riser
+- [x] Stormcrown Thunderwood Riser
+- [x] Veiled Sea Corsair Riser
+- [x] Ravenwood Hunter Riser
+- [x] Cursed Mire Bone Riser
 
 ### Strikers
-- [ ] Ashen Obsidian Limbs
-- [ ] Frostpeak Glacier Bowarms
-- [ ] Drakeshard Ribcage Limbs
-- [ ] Ravenwood Thorn Recurve
-- [ ] Stormcrown Conductive Bowarms
-- [ ] Veiled Sea Whalebone Limbs
+- [x] Ashen Obsidian Limbs
+- [x] Frostpeak Glacier Bowarms
+- [x] Drakeshard Ribcage Limbs
+- [x] Ravenwood Thorn Recurve
+- [x] Stormcrown Conductive Bowarms
+- [x] Veiled Sea Whalebone Limbs
 
 ## Crossbow
 
@@ -310,3 +310,9 @@ Family-specific alignment guides and sockets; framework + striker sprite alignme
 ## Reproducible production queue
 
 `data/entropic_forge/component_art_jobs.json` records all 190 prompts, exact output paths and completion states. These are inventory images only, not verified character equipment overlays or approved assembly cutouts. The user-approved original inventory images and existing Sword snap ZIP are preserved.
+
+## Greatsword, Axe and Bow art pass
+
+36 additional placeholders replaced: 11 Greatsword, 13 Axe and 12 Bow components. The four user-supplied sheets provide 23 isolated sprites; built-in image generation provides six Bow risers, six Bow limb assemblies and Harrowstead Dual Grip. One supplied Greatsword hilt is not assigned because the remaining Greatsword framework slots already have individual art.
+
+Inventory and assembled previews share each PNG. Gameplay values are unchanged. Transparent sprites are normalized to 512×512 without stretching. Item-specific sockets, orientation and scale are stored in `weapon_attachment_points.json`. Original Sword and Bow attachment records are preserved. Material colors in the supplied art are retained; dynamic core recoloring remains a later task.

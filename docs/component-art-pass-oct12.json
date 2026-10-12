@@ -1,0 +1,209 @@
+{
+  "supplied": [
+    {
+      "name": "Ashen Furnace Zweihander",
+      "sheet_index": 2,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Frostpeak Avalanche Blade",
+      "sheet_index": 3,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Drakeshard Dragonspine Edge",
+      "sheet_index": 1,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Ravenwood Thorn-Reaver",
+      "sheet_index": 5,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Iron Plains Bastion Sword",
+      "sheet_index": 0,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Stormcrown Titan Cleaver",
+      "sheet_index": 4,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    {
+      "name": "Icebreaker Double Grip",
+      "sheet_index": 2,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    {
+      "name": "Harrowstead Reaver Handle",
+      "sheet_index": 4,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    {
+      "name": "Sunken Anchor Hilt",
+      "sheet_index": 1,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    {
+      "name": "Stormpeak Giant Grip",
+      "sheet_index": 0,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    {
+      "name": "Blackthorn Rootbinder",
+      "sheet_index": 5,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    {
+      "name": "Ashen Obsidian Beak",
+      "sheet_index": 4,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Icehelm Avalanche Bit",
+      "sheet_index": 5,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Drakeshard Twin-Drake Axehead",
+      "sheet_index": 2,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Ravenwood Thorn Cleaver",
+      "sheet_index": 3,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Stormcrown Thunderhead",
+      "sheet_index": 0,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Veiled Sea Anchor Cutter",
+      "sheet_index": 1,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    {
+      "name": "Ravenwood Split Oak Haft",
+      "sheet_index": 0,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    {
+      "name": "Ironhold Cleaver Handle",
+      "sheet_index": 1,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    {
+      "name": "Blazebound Furnace Haft",
+      "sheet_index": 2,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    {
+      "name": "Frostline Hook Grip",
+      "sheet_index": 4,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    {
+      "name": "Harbor Boarding Handle",
+      "sheet_index": 3,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    {
+      "name": "Thunderhead Coil Haft",
+      "sheet_index": 5,
+      "family": "Axe",
+      "category": "frameworks"
+    }
+  ],
+  "generated": [
+    {
+      "name": "Ironhold Braced Riser",
+      "prompt": "Ironhold Braced Riser: vertical iron-braced leather grip only with aligned connector studs, detailed JRPG sprite, transparent background.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Ashen Blackglass Riser",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Ashen Blackglass Riser. Short vertical ergonomic handgrip, black obsidian and dark iron, copper rivets, subtle red mineral seams. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Stormcrown Thunderwood Riser",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Stormcrown Thunderwood Riser. Short vertical ergonomic handgrip, silver rune-etched braces around dark blue-gray thunderwood, indexed leather grip. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Veiled Sea Corsair Riser",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Veiled Sea Corsair Riser. Short vertical ergonomic handgrip, weathered bronze, salt-worn dark blue leather, carved wave scrollwork, compact light construction. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Ravenwood Hunter Riser",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Ravenwood Hunter Riser. Short vertical ergonomic handgrip, dark ironbark wood, green leather grip, aged brass thorn and leaf engravings. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Cursed Mire Bone Riser",
+      "prompt": "Use case: stylized-concept. ONE isolated modular fantasy bow central RISER ONLY named Cursed Mire Bone Riser. Short vertical ergonomic handgrip, ivory carved bone reinforcement, black leather grip, tarnished silver spirit-channel inlays. Upper and lower straight narrow connector studs on the same vertical centerline. No bow limbs, bowstring, arrows or entire bow. Premium detailed hand-painted classic JRPG inventory sprite, sculptural 3D-looking 2D artwork, realistic textures and crisp bevels, neutral upper-left light. Whole component centered with margins, square canvas, genuine transparent background. No text, border, pedestal, cast shadow or VFX.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Drakeshard Ribcage Limbs",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Drakeshard Ribcage Limbs, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, ivory drake ribs and red scaled composite, small swept bony barbs. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Ravenwood Thorn Recurve",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Ravenwood Thorn Recurve, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, dark forest ironbark wrapped with sparse thorn vines and aged brass bands. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Stormcrown Conductive Bowarms",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Stormcrown Conductive Bowarms, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, blue-gray stormwood with silver and copper conductive inlay tracks. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Veiled Sea Whalebone Limbs",
+      "prompt": "Use case: stylized-concept. ONE modular fantasy bow limb assembly named Veiled Sea Whalebone Limbs, for a high-detail JRPG. Upright slim elegant recurve bow silhouette shaped like a tall parenthesis (, symmetrical upper and lower flexible arms, aged ivory whalebone, turquoise bronze bindings and etched wave motifs. The two limbs meet at an extremely narrow plain vertical central mounting strip, NO handgrip or riser artwork at the center because a separate riser will overlay that strip. No bowstring, no arrow. Whole long slender assembly isolated on genuine transparent background with generous margins, orthographic side view, no perspective tilt. Realistic sculptural 3D-looking hand-painted 2D inventory sprite, sharp textures, neutral upper-left lighting, no text, no decorative background, no outer glow. Height about five times total width. Top and bottom tips curve right; central mounting strip is at leftmost middle.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Ashen Obsidian Limbs",
+      "prompt": "Single game inventory SPRITE on transparent background. Square 1:1 image. Ashen Obsidian Limbs: a slender vertical recurve bow limb assembly, solid polished black volcanic glass and unlit copper seams. Two matching curved arms forming a tall parenthesis ( with the center at the left, ends pointing right. Only a narrow plain mounting strip at center, no handgrip, bowstring or arrow. Entire object height 80 percent canvas. Small dark fantasy hand-painted object with crisp hard contours and detailed surfaces. NO lighting effects, NO aura, NO haze, NO bloom, NO cast shadow, NO scene. Fully clear transparent pixels immediately outside the object.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Frostpeak Glacier Bowarms",
+      "prompt": "Single game inventory SPRITE on transparent background. Square 1:1 image. Frostpeak Glacier Bowarms: a slender vertical recurve bow limb assembly, opaque pale blue enamel over silver steel, engraved ice facets. Two matching curved arms forming a tall parenthesis ( with the center at the left, ends pointing right. Only a narrow plain mounting strip at center, no handgrip, bowstring or arrow. Entire object height 80 percent canvas. Small dark fantasy hand-painted object with crisp hard contours and detailed surfaces. NO lighting effects, NO aura, NO haze, NO bloom, NO cast shadow, NO scene. Fully clear transparent pixels immediately outside the object.",
+      "provider": "built-in image_gen"
+    },
+    {
+      "name": "Harrowstead Dual Grip",
+      "prompt": "Square 1:1 inventory icon, genuine transparent background. One isolated SHORT VERTICAL WOODEN AXE HANDLE named Harrowstead Dual Grip. Two leather grip sections separated by oak wood, iron band fittings, pointed small iron pommel bottom, bare narrow metal connector top. No axe head. Premium crisp detailed hand-painted fantasy JRPG item sprite like a 3D object. Whole handle centered with generous clear space. NO halo, bloom, aura, haze, shadows, glow, lights, backdrop, text, labels or other objects. Hard clean cutout edges with transparent pixels directly adjacent to the object.",
+      "provider": "built-in image_gen"
+    }
+  ]
+}
