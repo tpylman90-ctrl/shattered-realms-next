@@ -30,15 +30,16 @@ func _prepare_part(record: Dictionary) -> Dictionary:
 	var rect := Rect2i(int(region[0]), int(region[1]), int(region[2]), int(region[3]))
 	var cropped: Image = source.get_region(rect)
 	var local_socket := Vector2(float(socket[0]) - rect.position.x, float(socket[1]) - rect.position.y)
-	var rotated_socket: Vector2
-	if str(record.get("rotation", "cw")) == "cw":
-		rotated_socket = Vector2(rect.size.y - 1 - local_socket.y, local_socket.x)
-		cropped.rotate_90(CLOCKWISE)
-	else:
-		rotated_socket = Vector2(local_socket.y, rect.size.x - 1 - local_socket.x)
-		cropped.rotate_90(COUNTERCLOCKWISE)
-	var part_scale: float = float(record.get("display_length_px", 200.0)) / cropped.get_width()
-	return {"texture": ImageTexture.create_from_image(cropped), "size": Vector2(cropped.get_size()) * part_scale, "socket": rotated_socket * part_scale}
+	var angle := deg_to_rad(float(record.get("rotation_degrees", 0.0)))
+	var rotation_transform := Transform2D(angle, Vector2.ZERO)
+	var bounds := Rect2(rotation_transform * Vector2.ZERO, Vector2.ZERO)
+	for corner in [Vector2(rect.size.x, 0), Vector2(rect.size), Vector2(0, rect.size.y)]:
+		bounds = bounds.expand(rotation_transform * corner)
+	var part_scale: float = float(record.get("display_length_px", 200.0)) / bounds.size.x
+	return {"texture": ImageTexture.create_from_image(cropped), "size": bounds.size * part_scale,
+		"socket": (rotation_transform * local_socket - bounds.position) * part_scale,
+		"origin": -bounds.position * part_scale, "angle": angle, "part_scale": part_scale,
+		"source_file": path}
 
 func layout_for_canvas(canvas: Vector2) -> Dictionary:
 	if frame.is_empty() or blade.is_empty():
@@ -59,5 +60,11 @@ func _draw() -> void:
 	if placed.is_empty():
 		return
 	# The hilt collar conceals the tiny insertion seam, never the whole blade.
-	draw_texture_rect(blade["texture"] as Texture2D, placed["blade"], false)
-	draw_texture_rect(frame["texture"] as Texture2D, placed["frame"], false)
+	_draw_part(blade, placed["blade"], float(placed["scale"]))
+	_draw_part(frame, placed["frame"], float(placed["scale"]))
+	draw_set_transform(Vector2.ZERO)
+
+func _draw_part(part: Dictionary, rect: Rect2, fit: float) -> void:
+	draw_set_transform(rect.position + Vector2(part["origin"]) * fit,
+		float(part["angle"]), Vector2.ONE * float(part["part_scale"]) * fit)
+	draw_texture(part["texture"] as Texture2D, Vector2.ZERO)

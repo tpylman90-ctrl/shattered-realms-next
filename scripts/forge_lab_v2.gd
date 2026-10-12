@@ -4,8 +4,8 @@ signal return_requested
 
 const CATALOG := "res://data/entropic_forge/forge_test_catalog.json"
 const ART := "res://assets/forge/forge_room.png"
-const SWORD_MANIFEST := "res://sword_snap_manifest.json"
-var sword_snap: Dictionary = {}
+const SWORD_POINTS := "res://data/entropic_forge/sword_attachment_points.json"
+var sword_points: Dictionary = {}
 const GOLD := Color("#e9c889")
 const INK := Color("#081923")
 const BLUE := Color("#16304a")
@@ -43,10 +43,7 @@ func _ready() -> void:
 		_show_error("Forge catalog is missing or invalid.")
 		return
 	catalog = parsed
-	if FileAccess.file_exists(SWORD_MANIFEST):
-		var snap_data: Variant = JSON.parse_string(FileAccess.get_file_as_string(SWORD_MANIFEST))
-		if snap_data is Dictionary:
-			sword_snap = snap_data
+	sword_points = JSON.parse_string(FileAccess.get_file_as_string(SWORD_POINTS))
 	for entry in catalog.get("frameworks", []):
 		var name := str(entry.get("family", ""))
 		if not families.has(name):
@@ -439,7 +436,7 @@ func _show_result() -> void:
 		composite_preview.remove_child(child)
 		child.queue_free()
 	var finished_texture := _icon(result) if not result.is_empty() else null
-	if families[int(choice[0])] == "Sword" and not sword_snap.is_empty() and _show_sword_snap(a,b):
+	if families[int(choice[0])] == "Sword" and not sword_points.is_empty() and _show_sword_snap(a,b):
 		result_note.text = "SWORD SNAP TEST — socket join with slight overlap; core effects pending"
 	elif finished_texture != null:
 		result_art.texture = finished_texture
@@ -487,29 +484,23 @@ func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vec
 
 
 func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
-	var point_path := "res://data/entropic_forge/sword_attachment_points.json"
-	var calibration: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(point_path))
-	var assets: Dictionary = sword_snap.get("assets", {})
-	var frame_record: Dictionary = {}
-	var blade_record: Dictionary = {}
-	for entry in assets.get("frameworks", []):
-		if str(entry.get("name", "")) == str(frame_part.get("name", "")):
-			frame_record = entry.duplicate(true)
-	for entry in assets.get("strikers", []):
-		if str(entry.get("name", "")) == str(blade_part.get("name", "")):
-			blade_record = entry.duplicate(true)
-	var frame_points: Dictionary = calibration.get("frameworks", {}).get(frame_part.get("name", ""), {})
-	var blade_points: Dictionary = calibration.get("strikers", {}).get(blade_part.get("name", ""), {})
-	if frame_record.is_empty() or blade_record.is_empty() or frame_points.is_empty() or blade_points.is_empty():
+	var frame_record := _sword_record(frame_part, "frameworks")
+	var blade_record := _sword_record(blade_part, "strikers")
+	if frame_record.is_empty() or blade_record.is_empty():
 		return false
-	frame_record.merge(frame_points, true)
-	blade_record.merge(blade_points, true)
 	var preview := preload("res://scripts/weapon_snap_preview.gd").new()
-	if not preview.configure(frame_record, blade_record, float(calibration.get("overlap_px", 5.0))):
+	if not preview.configure(frame_record, blade_record, float(sword_points.get("overlap_px", 5.0))):
 		preview.free()
 		return false
 	preview.name = "SocketAlignedSword"
-	preview.padding_px = float(calibration.get("canvas_padding_px", 18.0))
+	preview.padding_px = float(sword_points.get("canvas_padding_px", 18.0))
 	preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	composite_preview.add_child(preview)
 	return true
+
+func _sword_record(item: Dictionary, group: String) -> Dictionary:
+	var record: Dictionary = sword_points.get(group, {}).get(item.get("name", ""), {}).duplicate(true)
+	# Never silently substitute an unrelated prototype for a selected component.
+	if record.get("file", "") != str(item.get("icon", "")).trim_prefix("res://"):
+		return {}
+	return record

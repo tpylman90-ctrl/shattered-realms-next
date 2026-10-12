@@ -1,317 +1,339 @@
 {
-  "version": 1,
+  "version": 2,
   "canvas_padding_px": 18,
   "overlap_px": 5,
-  "note": "Pixel sockets measured in source coordinates. Frame forward end overlaps blade root; blades draw behind hilts. Crops exclude baked handles and neighboring sheet fragments. Inventory icons are unchanged.",
+  "note": "Catalog icon is the authoritative assembly image. Preserve the entire silhouette; rotate and scale around its measured socket. No separate snap-test artwork.",
   "frameworks": {
     "Watchman’s Leather Grip": {
+      "file": "assets/entropic_forge/icons/frameworks/watchmans_leather_grip.png",
       "region_px": [
-        129,
-        12,
-        253,
-        450
+        19,
+        16,
+        217,
+        224
       ],
       "socket_px": [
-        258.5,
-        460
+        183,
+        208
       ],
-      "rotation": "ccw",
+      "rotation_degrees": -56,
       "display_length_px": 126
     },
     "Duelist’s Tideguard": {
+      "file": "assets/entropic_forge/icons/frameworks/duelists_tideguard.png",
       "region_px": [
-        125,
-        12,
-        262,
-        442
+        16,
+        22,
+        224,
+        211
       ],
       "socket_px": [
-        252.5,
-        452
+        184,
+        210
       ],
-      "rotation": "ccw",
+      "rotation_degrees": -60,
       "display_length_px": 126
     },
     "Sentinel’s Ironbark Hilt": {
+      "file": "assets/entropic_forge/icons/frameworks/sentinels_ironbark_hilt.png",
       "region_px": [
-        122,
-        12,
-        267,
-        445
+        20,
+        16,
+        215,
+        224
       ],
       "socket_px": [
-        251.0,
-        455
+        181,
+        208
       ],
-      "rotation": "ccw",
+      "rotation_degrees": -61,
       "display_length_px": 126
     },
     "Sunbound Filigree Hilt": {
+      "file": "assets/entropic_forge/icons/frameworks/sunbound_filigree_hilt.png",
       "region_px": [
-        125,
-        12,
-        262,
-        430
+        20,
+        16,
+        216,
+        224
       ],
       "socket_px": [
-        250.0,
-        440
+        166,
+        222
       ],
-      "rotation": "ccw",
+      "rotation_degrees": -62,
       "display_length_px": 126
     },
     "Ravenwood Thornhook": {
+      "file": "assets/entropic_forge/icons/frameworks/ravenwood_thornhook.png",
       "region_px": [
-        133,
-        12,
-        246,
-        450
+        24,
+        141,
+        464,
+        229
       ],
       "socket_px": [
-        271.5,
-        460
+        476,
+        250
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 0,
       "display_length_px": 126
     },
     "Ashen Emberguard": {
+      "file": "assets/entropic_forge/icons/frameworks/ashen_emberguard.png",
       "region_px": [
-        134,
-        12,
-        244,
-        430
+        24,
+        31,
+        464,
+        450
       ],
       "socket_px": [
-        252.5,
-        440
+        476,
+        255
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 0,
       "display_length_px": 126
     },
     "Icehelm Splitguard": {
+      "file": "assets/entropic_forge/icons/frameworks/icehelm_splitguard.png",
       "region_px": [
-        120,
-        12,
-        271,
-        430
+        27,
+        24,
+        457,
+        464
       ],
       "socket_px": [
-        262.0,
-        440
+        60,
+        253
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 180,
       "display_length_px": 126
     },
     "Harbor Basket Hilt": {
+      "file": "assets/entropic_forge/icons/frameworks/harbor_basket_hilt.png",
       "region_px": [
-        121,
-        12,
-        270,
-        446
+        24,
+        25,
+        464,
+        462
       ],
       "socket_px": [
-        243.5,
-        456
+        477,
+        267
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 0,
       "display_length_px": 126
     },
     "Mirebone Fanggrip": {
+      "file": "assets/entropic_forge/icons/frameworks/mirebone_fanggrip.png",
       "region_px": [
-        119,
-        12,
-        273,
-        438
+        24,
+        25,
+        464,
+        461
       ],
       "socket_px": [
-        247.0,
-        448
+        477,
+        249
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 0,
       "display_length_px": 126
     },
     "Stormcrown Coil Hilt": {
+      "file": "assets/entropic_forge/icons/frameworks/stormcrown_coil_hilt.png",
       "region_px": [
-        146,
-        12,
-        220,
-        434
+        24,
+        30,
+        464,
+        451
       ],
       "socket_px": [
-        265.0,
-        444
+        477,
+        253
       ],
-      "rotation": "ccw",
+      "rotation_degrees": 0,
       "display_length_px": 126
     }
   },
   "strikers": {
     "Plainsteel Straight Blade": {
+      "file": "assets/entropic_forge/icons/strikers/plainsteel_straight_blade.png",
       "region_px": [
-        165,
-        12,
-        181,
-        328
+        71,
+        16,
+        114,
+        224
       ],
       "socket_px": [
-        273.0,
-        338
+        128,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Serrated Fang Blade": {
+      "file": "assets/entropic_forge/icons/strikers/serrated_fang_blade.png",
       "region_px": [
-        143,
-        12,
-        170,
-        326
+        72,
+        16,
+        111,
+        224
       ],
       "socket_px": [
-        240.0,
-        336
+        135,
+        233
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Tidebronze Saber Blade": {
+      "file": "assets/entropic_forge/icons/strikers/tidebronze_saber_blade.png",
       "region_px": [
-        145,
-        12,
-        104,
-        352
+        75,
+        16,
+        107,
+        224
       ],
       "socket_px": [
-        181.5,
-        362
+        147,
+        231
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Webglass Needle Blade": {
+      "file": "assets/entropic_forge/icons/strikers/webglass_needle_blade.png",
       "region_px": [
-        145,
-        12,
-        118,
-        347
+        70,
+        16,
+        116,
+        224
       ],
       "socket_px": [
-        183.0,
-        357
+        139,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Scaleiron Falchion Blade": {
+      "file": "assets/entropic_forge/icons/strikers/scaleiron_falchion_blade.png",
       "region_px": [
-        143,
-        12,
-        95,
-        310
+        72,
+        16,
+        112,
+        224
       ],
       "socket_px": [
-        162.0,
-        320
+        110,
+        231
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Veil-Silver Channel Blade": {
+      "file": "assets/entropic_forge/icons/strikers/veil_silver_channel_blade.png",
       "region_px": [
-        154,
-        12,
-        204,
-        352
+        79,
+        16,
+        97,
+        224
       ],
       "socket_px": [
-        176.5,
-        362
+        129,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Ravenwood Thorn Sabre": {
+      "file": "assets/entropic_forge/icons/strikers/plainsteel_straight_blade.png",
       "region_px": [
-        142,
-        12,
-        228,
-        355
+        71,
+        16,
+        114,
+        224
       ],
       "socket_px": [
-        299.0,
-        365
+        128,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Ashen Magma Edge": {
+      "file": "assets/entropic_forge/icons/strikers/serrated_fang_blade.png",
       "region_px": [
-        142,
-        12,
-        228,
-        350
+        72,
+        16,
+        111,
+        224
       ],
       "socket_px": [
-        282.0,
-        360
+        135,
+        233
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Icehelm Crystal Longblade": {
+      "file": "assets/entropic_forge/icons/strikers/tidebronze_saber_blade.png",
       "region_px": [
-        144,
-        12,
-        224,
-        332
+        75,
+        16,
+        107,
+        224
       ],
       "socket_px": [
-        239.5,
-        342
+        147,
+        231
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Ironhold Breaker Falchion": {
+      "file": "assets/entropic_forge/icons/strikers/webglass_needle_blade.png",
       "region_px": [
-        142,
-        12,
-        227,
-        352
+        70,
+        16,
+        116,
+        224
       ],
       "socket_px": [
-        234.0,
-        362
+        139,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Stormcrown Lightning Rapier": {
+      "file": "assets/entropic_forge/icons/strikers/scaleiron_falchion_blade.png",
       "region_px": [
-        143,
-        12,
-        226,
-        352
+        72,
+        16,
+        112,
+        224
       ],
       "socket_px": [
-        214.5,
-        362
+        110,
+        231
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     },
     "Veiled Sea Boarding Cutlass": {
+      "file": "assets/entropic_forge/icons/strikers/veil_silver_channel_blade.png",
       "region_px": [
-        152,
-        12,
-        207,
-        352
+        79,
+        16,
+        97,
+        224
       ],
       "socket_px": [
-        229.5,
-        362
+        129,
+        232
       ],
-      "rotation": "cw",
+      "rotation_degrees": 90,
       "display_length_px": 245
     }
   }

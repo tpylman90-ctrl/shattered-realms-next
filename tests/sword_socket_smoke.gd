@@ -6,10 +6,28 @@ func _initialize() -> void:
 	call_deferred("_run")
 
 func _run() -> void:
-	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://sword_snap_manifest.json"))
+	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/entropic_forge/forge_test_catalog.json"))
 	var points: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/entropic_forge/sword_attachment_points.json"))
-	var frames: Array = manifest["assets"]["frameworks"]
-	var blades: Array = manifest["assets"]["strikers"]
+	var frames: Array = catalog["frameworks"].filter(func(item: Dictionary) -> bool: return item["family"] == "Sword")
+	var blades: Array = catalog["strikers"].filter(func(item: Dictionary) -> bool: return item["family"] == "Sword")
+	var forge := preload("res://scripts/forge_lab_v2.gd").new()
+	root.add_child(forge)
+	for group in ["frameworks", "strikers"]:
+		for item in catalog[group]:
+			if item["family"] != "Sword":
+				continue
+			var record: Dictionary = forge._sword_record(item, group)
+			if "res://" + str(record.get("file", "")) != item["icon"]:
+				errors.append("Selected and assembled artwork differ: " + str(item["name"]))
+			var checker := preload("res://scripts/weapon_snap_preview.gd").new()
+			var prepared: Dictionary = checker._prepare_part(record)
+			checker.free()
+			var selected: Image = forge._icon(item).get_image()
+			var r: Array = record["region_px"]
+			var expected: Image = selected.get_region(Rect2i(r[0], r[1], r[2], r[3]))
+			if prepared["texture"].get_image().get_data() != expected.get_data():
+				errors.append("Assembly changed selected pixels: " + str(item["name"]))
+	forge.queue_free()
 	var count := 0
 	for f in frames:
 		for b in blades:
