@@ -518,19 +518,31 @@ func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
 	var edge_rect := blade_img.get_used_rect()
 	if grip_rect.size.x < 8 or grip_rect.size.y < 8 or edge_rect.size.x < 8 or edge_rect.size.y < 8:
 		return false
-	var grip_tex := ImageTexture.create_from_image(frame_img.get_region(grip_rect))
-	# Remove the lower tang/miniature grip commonly baked into source blade cutouts.
-	# The actual framework supplies the handle and guard in this snap experiment.
-	var blade_body := Rect2i(edge_rect.position, Vector2i(edge_rect.size.x, maxi(8, roundi(float(edge_rect.size.y) * 0.79))))
-	var edge_tex := ImageTexture.create_from_image(blade_img.get_region(blade_body))
-	# The compositing canvas is 415 x 244; keep the *entire* sword inside it.
-	var junction := Vector2(207.0, 135.0)
-	var grip_height := 79.0
-	var blade_height := 111.0
-	var grip_width := clampf(grip_height * float(grip_rect.size.x) / float(grip_rect.size.y), 23.0, 116.0)
-	var blade_width := clampf(blade_height * float(blade_body.size.x) / float(blade_body.size.y), 20.0, 105.0)
-	_add_sword_layer(edge_tex, Vector2(junction.x - blade_width * 0.5, junction.y - blade_height + 8.0), Vector2(blade_width, blade_height))
-	_add_sword_layer(grip_tex, Vector2(junction.x - grip_width * 0.5, junction.y - 4.0), Vector2(grip_width, grip_height))
+	# Draw both parts horizontally. Framework's guard end joins the blade root,
+	# with a small 5px seam overlap, not center-to-center stacking.
+	var grip_crop := frame_img.get_region(grip_rect)
+	var blade_crop := blade_img.get_region(edge_rect)
+	# Source images are upright with the joining ends at the top/bottom.
+	# Rotate both clockwise so framework join is at RIGHT and blade tip at RIGHT.
+	grip_crop.rotate_90(CLOCKWISE)
+	blade_crop.rotate_90(CLOCKWISE)
+	var grip_tex := ImageTexture.create_from_image(grip_crop)
+	# Remove striker's baked-in tang / mini-hilt from its LEFT end after rotation.
+	var trim_left := roundi(float(blade_crop.get_width()) * 0.18)
+	var useful_width := maxi(8, blade_crop.get_width() - trim_left)
+	var edge_tex := ImageTexture.create_from_image(blade_crop.get_region(Rect2i(trim_left, 0, useful_width, blade_crop.get_height())))
+	# Scale both independently, preserving aspect ratio, then fit the joined
+	# result within the 415x244 showcase. No overlap beyond the seam.
+	var grip_width := 120.0
+	var edge_width := 192.0
+	var seam := 5.0
+	var total_width := grip_width + edge_width - seam
+	var start_x := (415.0 - total_width) * 0.5
+	var join_x := start_x + grip_width - seam
+	var grip_height := minf(130.0, grip_width * float(grip_crop.get_height()) / float(grip_crop.get_width()))
+	var edge_height := minf(130.0, edge_width * float(blade_crop.get_height()) / float(useful_width))
+	_add_sword_layer(grip_tex, Vector2(start_x, (244.0 - grip_height) * 0.5), Vector2(grip_width, grip_height))
+	_add_sword_layer(edge_tex, Vector2(join_x, (244.0 - edge_height) * 0.5), Vector2(edge_width, edge_height))
 	return true
 
 
