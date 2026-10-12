@@ -1,0 +1,2458 @@
+{
+  "version": 1,
+  "note": "Source-image keyed attachment points. Sword overrides remain in sword_attachment_points.json. Shared placeholder images share sockets until replaced.",
+  "families": {
+    "Axe": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Bow": {
+      "overlap_px": 0,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    },
+    "Cannon": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    },
+    "Crossbow": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Dagger": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    },
+    "Gauntlet": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Greatsword": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    },
+    "Hammer": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Mace": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Scythe": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Spear": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    },
+    "Staff": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Wand": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "blade"
+    },
+    "Whip": {
+      "overlap_px": 5,
+      "canvas_padding_px": 18,
+      "front_part": "frame"
+    }
+  },
+  "assets": {
+    "assets/entropic_forge/icons/frameworks/woodcutters_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/woodcutters_haft.png",
+      "region_px": [
+        25,
+        14,
+        207,
+        205
+      ],
+      "socket_px": [
+        51.91,
+        34.5
+      ],
+      "rotation_degrees": 132,
+      "display_length_px": 235,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png",
+      "region_px": [
+        39,
+        14,
+        202,
+        197
+      ],
+      "socket_px": [
+        109.7,
+        37.64
+      ],
+      "rotation_degrees": 126,
+      "display_length_px": 235,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png",
+      "region_px": [
+        36,
+        14,
+        202,
+        192
+      ],
+      "socket_px": [
+        92.56,
+        33.2
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 235,
+      "family": "Axe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/foresters_axe_bit.png": {
+      "file": "assets/entropic_forge/icons/strikers/foresters_axe_bit.png",
+      "region_px": [
+        77,
+        84,
+        107,
+        147
+      ],
+      "socket_px": [
+        98.4,
+        157.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/raiders_hook_bit.png": {
+      "file": "assets/entropic_forge/icons/strikers/raiders_hook_bit.png",
+      "region_px": [
+        74,
+        65,
+        108,
+        167
+      ],
+      "socket_px": [
+        165.8,
+        148.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png",
+      "region_px": [
+        72,
+        61,
+        106,
+        179
+      ],
+      "socket_px": [
+        156.8,
+        150.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png",
+      "region_px": [
+        70,
+        83,
+        95,
+        142
+      ],
+      "socket_px": [
+        94.7,
+        154.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/basalt_double_bit.png": {
+      "file": "assets/entropic_forge/icons/strikers/basalt_double_bit.png",
+      "region_px": [
+        70,
+        68,
+        116,
+        159
+      ],
+      "socket_px": [
+        128.0,
+        147.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png": {
+      "file": "assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png",
+      "region_px": [
+        82,
+        69,
+        98,
+        161
+      ],
+      "socket_px": [
+        160.4,
+        149.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Axe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/scouts_ironbark_riser.png",
+      "region_px": [
+        27,
+        17,
+        202,
+        221
+      ],
+      "socket_px": [
+        128.0,
+        127.5
+      ],
+      "rotation_degrees": -28,
+      "display_length_px": 80,
+      "family": "Bow",
+      "category": "frameworks",
+      "scale_axis": "y"
+    },
+    "assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/recurve_sinew_riser.png",
+      "region_px": [
+        26,
+        18,
+        201,
+        219
+      ],
+      "socket_px": [
+        126.5,
+        127.5
+      ],
+      "rotation_degrees": -25,
+      "display_length_px": 80,
+      "family": "Bow",
+      "category": "frameworks",
+      "scale_axis": "y"
+    },
+    "assets/entropic_forge/icons/frameworks/moon_yew_longbow_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/moon_yew_longbow_riser.png",
+      "region_px": [
+        26,
+        17,
+        203,
+        216
+      ],
+      "socket_px": [
+        127.5,
+        125.0
+      ],
+      "rotation_degrees": -28,
+      "display_length_px": 80,
+      "family": "Bow",
+      "category": "frameworks",
+      "scale_axis": "y"
+    },
+    "assets/entropic_forge/icons/frameworks/glasswind_split_riser.png": {
+      "file": "assets/entropic_forge/icons/frameworks/glasswind_split_riser.png",
+      "region_px": [
+        24,
+        17,
+        206,
+        220
+      ],
+      "socket_px": [
+        127.0,
+        127.0
+      ],
+      "rotation_degrees": -29,
+      "display_length_px": 80,
+      "family": "Bow",
+      "category": "frameworks",
+      "scale_axis": "y"
+    },
+    "assets/entropic_forge/icons/strikers/plain_yew_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/plain_yew_limbs.png",
+      "region_px": [
+        0,
+        0,
+        44,
+        359
+      ],
+      "socket_px": [
+        28.6,
+        179
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          90,
+          25,
+          44,
+          197
+        ],
+        [
+          134,
+          25,
+          44,
+          197
+        ]
+      ],
+      "limb_join_y": 162
+    },
+    "assets/entropic_forge/icons/strikers/recurved_drakebone_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/recurved_drakebone_limbs.png",
+      "region_px": [
+        0,
+        0,
+        58,
+        351
+      ],
+      "socket_px": [
+        37.7,
+        175
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          73,
+          29,
+          57,
+          193
+        ],
+        [
+          130,
+          29,
+          58,
+          193
+        ]
+      ],
+      "limb_join_y": 158
+    },
+    "assets/entropic_forge/icons/strikers/moon_yew_long_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/moon_yew_long_limbs.png",
+      "region_px": [
+        0,
+        0,
+        42,
+        343
+      ],
+      "socket_px": [
+        27.3,
+        171
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          92,
+          33,
+          41,
+          189
+        ],
+        [
+          133,
+          33,
+          42,
+          189
+        ]
+      ],
+      "limb_join_y": 154
+    },
+    "assets/entropic_forge/icons/strikers/websilk_composite_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/websilk_composite_limbs.png",
+      "region_px": [
+        0,
+        0,
+        55,
+        335
+      ],
+      "socket_px": [
+        35.75,
+        167
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          77,
+          37,
+          54,
+          185
+        ],
+        [
+          131,
+          37,
+          55,
+          185
+        ]
+      ],
+      "limb_join_y": 150
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_spring_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_spring_limbs.png",
+      "region_px": [
+        0,
+        0,
+        55,
+        373
+      ],
+      "socket_px": [
+        35.75,
+        186
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          80,
+          18,
+          55,
+          204
+        ],
+        [
+          135,
+          18,
+          55,
+          204
+        ]
+      ],
+      "limb_join_y": 169
+    },
+    "assets/entropic_forge/icons/strikers/singing_quartz_split_limbs.png": {
+      "file": "assets/entropic_forge/icons/strikers/singing_quartz_split_limbs.png",
+      "region_px": [
+        0,
+        0,
+        50,
+        357
+      ],
+      "socket_px": [
+        32.5,
+        178
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 310,
+      "family": "Bow",
+      "category": "strikers",
+      "scale_axis": "y",
+      "limb_regions": [
+        [
+          82,
+          26,
+          49,
+          196
+        ],
+        [
+          131,
+          26,
+          50,
+          196
+        ]
+      ],
+      "limb_join_y": 161
+    },
+    "assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png": {
+      "file": "assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png",
+      "region_px": [
+        16,
+        40,
+        221,
+        176
+      ],
+      "socket_px": [
+        42.52,
+        168.48
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 180,
+      "family": "Cannon",
+      "category": "frameworks",
+      "flip_h": true
+    },
+    "assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png",
+      "region_px": [
+        22,
+        38,
+        209,
+        178
+      ],
+      "socket_px": [
+        47.08,
+        173.28
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 180,
+      "family": "Cannon",
+      "category": "frameworks",
+      "flip_h": true
+    },
+    "assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png": {
+      "file": "assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png",
+      "region_px": [
+        27,
+        27,
+        215,
+        204
+      ],
+      "socket_px": [
+        52.8,
+        177.96
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 180,
+      "family": "Cannon",
+      "category": "frameworks",
+      "flip_h": true
+    },
+    "assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png": {
+      "file": "assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png",
+      "region_px": [
+        25,
+        20,
+        217,
+        214
+      ],
+      "socket_px": [
+        57.55,
+        184.78
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 180,
+      "family": "Cannon",
+      "category": "frameworks",
+      "flip_h": true
+    },
+    "assets/entropic_forge/icons/strikers/riveted_iron_barrel.png": {
+      "file": "assets/entropic_forge/icons/strikers/riveted_iron_barrel.png",
+      "region_px": [
+        76,
+        68,
+        105,
+        174
+      ],
+      "socket_px": [
+        144.25,
+        88.88
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/scatterbore_barrel.png": {
+      "file": "assets/entropic_forge/icons/strikers/scatterbore_barrel.png",
+      "region_px": [
+        74,
+        71,
+        112,
+        171
+      ],
+      "socket_px": [
+        146.8,
+        91.52
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/tidebronze_longbore.png": {
+      "file": "assets/entropic_forge/icons/strikers/tidebronze_longbore.png",
+      "region_px": [
+        70,
+        64,
+        112,
+        178
+      ],
+      "socket_px": [
+        142.8,
+        85.36
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png": {
+      "file": "assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png",
+      "region_px": [
+        70,
+        67,
+        109,
+        175
+      ],
+      "socket_px": [
+        140.85,
+        88.0
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/basalt_siege_barrel.png": {
+      "file": "assets/entropic_forge/icons/strikers/basalt_siege_barrel.png",
+      "region_px": [
+        70,
+        71,
+        116,
+        171
+      ],
+      "socket_px": [
+        145.4,
+        91.52
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png": {
+      "file": "assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png",
+      "region_px": [
+        70,
+        64,
+        110,
+        178
+      ],
+      "socket_px": [
+        141.5,
+        85.36
+      ],
+      "rotation_degrees": -112,
+      "display_length_px": 160,
+      "family": "Cannon",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/militia_oak_stock.png": {
+      "file": "assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "region_px": [
+        26,
+        21,
+        206,
+        215
+      ],
+      "socket_px": [
+        50.72,
+        197.3
+      ],
+      "rotation_degrees": -145,
+      "display_length_px": 210,
+      "family": "Crossbow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png": {
+      "file": "assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png",
+      "region_px": [
+        25,
+        32,
+        217,
+        184
+      ],
+      "socket_px": [
+        51.04,
+        179.2
+      ],
+      "rotation_degrees": -145,
+      "display_length_px": 210,
+      "family": "Crossbow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png": {
+      "file": "assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png",
+      "region_px": [
+        25,
+        21,
+        217,
+        200
+      ],
+      "socket_px": [
+        53.21,
+        177.0
+      ],
+      "rotation_degrees": -145,
+      "display_length_px": 210,
+      "family": "Crossbow",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/plainsteel_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/plainsteel_prod.png",
+      "region_px": [
+        76,
+        75,
+        110,
+        117
+      ],
+      "socket_px": [
+        131.0,
+        162.75
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png",
+      "region_px": [
+        76,
+        73,
+        110,
+        122
+      ],
+      "socket_px": [
+        131.0,
+        164.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/marine_heavy_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/marine_heavy_prod.png",
+      "region_px": [
+        80,
+        75,
+        106,
+        116
+      ],
+      "socket_px": [
+        133.0,
+        162.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png",
+      "region_px": [
+        79,
+        74,
+        107,
+        117
+      ],
+      "socket_px": [
+        132.5,
+        161.75
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png",
+      "region_px": [
+        75,
+        74,
+        111,
+        129
+      ],
+      "socket_px": [
+        130.5,
+        170.75
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png": {
+      "file": "assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png",
+      "region_px": [
+        75,
+        73,
+        107,
+        128
+      ],
+      "socket_px": [
+        128.5,
+        169.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Crossbow",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/poachers_thumbgrip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/poachers_thumbgrip.png",
+      "region_px": [
+        57,
+        27,
+        161,
+        178
+      ],
+      "socket_px": [
+        102.08,
+        53.7
+      ],
+      "rotation_degrees": 125,
+      "display_length_px": 125,
+      "family": "Dagger",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/websilk_loop_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/websilk_loop_grip.png",
+      "region_px": [
+        37,
+        29,
+        195,
+        196
+      ],
+      "socket_px": [
+        85.75,
+        58.4
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 125,
+      "family": "Dagger",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/mirage_balanced_tang.png": {
+      "file": "assets/entropic_forge/icons/frameworks/mirage_balanced_tang.png",
+      "region_px": [
+        48,
+        27,
+        168,
+        206
+      ],
+      "socket_px": [
+        78.24,
+        51.72
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 125,
+      "family": "Dagger",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/watchmans_point.png": {
+      "file": "assets/entropic_forge/icons/strikers/watchmans_point.png",
+      "region_px": [
+        101,
+        48,
+        58,
+        193
+      ],
+      "socket_px": [
+        130.0,
+        227.49
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/hollow_adder_fang.png": {
+      "file": "assets/entropic_forge/icons/strikers/hollow_adder_fang.png",
+      "region_px": [
+        101,
+        47,
+        65,
+        194
+      ],
+      "socket_px": [
+        133.5,
+        227.42
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/glasswind_stiletto.png": {
+      "file": "assets/entropic_forge/icons/strikers/glasswind_stiletto.png",
+      "region_px": [
+        112,
+        44,
+        41,
+        189
+      ],
+      "socket_px": [
+        132.5,
+        219.77
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/barbed_webglass_point.png": {
+      "file": "assets/entropic_forge/icons/strikers/barbed_webglass_point.png",
+      "region_px": [
+        98,
+        45,
+        75,
+        188
+      ],
+      "socket_px": [
+        135.5,
+        219.84
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/belliron_ritual_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/belliron_ritual_blade.png",
+      "region_px": [
+        100,
+        41,
+        67,
+        200
+      ],
+      "socket_px": [
+        133.5,
+        227.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/star_slate_crescent.png": {
+      "file": "assets/entropic_forge/icons/strikers/star_slate_crescent.png",
+      "region_px": [
+        95,
+        45,
+        87,
+        195
+      ],
+      "socket_px": [
+        138.5,
+        226.35
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 160,
+      "family": "Dagger",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/pitfighters_wrist_brace.png": {
+      "file": "assets/entropic_forge/icons/frameworks/pitfighters_wrist_brace.png",
+      "region_px": [
+        36,
+        26,
+        199,
+        208
+      ],
+      "socket_px": [
+        87.74,
+        194.48
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 160,
+      "family": "Gauntlet",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/scale_laced_knuckle_frame.png": {
+      "file": "assets/entropic_forge/icons/frameworks/scale_laced_knuckle_frame.png",
+      "region_px": [
+        17,
+        22,
+        221,
+        214
+      ],
+      "socket_px": [
+        67.83,
+        193.2
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 160,
+      "family": "Gauntlet",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/springbrass_piston_brace.png": {
+      "file": "assets/entropic_forge/icons/frameworks/springbrass_piston_brace.png",
+      "region_px": [
+        18,
+        14,
+        220,
+        225
+      ],
+      "socket_px": [
+        66.4,
+        196.25
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 160,
+      "family": "Gauntlet",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/plainsteel_knuckle_plate.png": {
+      "file": "assets/entropic_forge/icons/strikers/plainsteel_knuckle_plate.png",
+      "region_px": [
+        74,
+        61,
+        114,
+        141
+      ],
+      "socket_px": [
+        140.12,
+        77.92
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/wyrmfang_knuckle_row.png": {
+      "file": "assets/entropic_forge/icons/strikers/wyrmfang_knuckle_row.png",
+      "region_px": [
+        72,
+        52,
+        114,
+        155
+      ],
+      "socket_px": [
+        138.12,
+        70.6
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/belliron_palm_plate.png": {
+      "file": "assets/entropic_forge/icons/strikers/belliron_palm_plate.png",
+      "region_px": [
+        61,
+        55,
+        134,
+        181
+      ],
+      "socket_px": [
+        138.72,
+        76.72
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/springbrass_ram_knuckle.png": {
+      "file": "assets/entropic_forge/icons/strikers/springbrass_ram_knuckle.png",
+      "region_px": [
+        66,
+        61,
+        124,
+        164
+      ],
+      "socket_px": [
+        137.92,
+        80.68
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_talon_plate.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_talon_plate.png",
+      "region_px": [
+        74,
+        58,
+        114,
+        165
+      ],
+      "socket_px": [
+        140.12,
+        77.8
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/veil_silver_channel_knuckle.png": {
+      "file": "assets/entropic_forge/icons/strikers/veil_silver_channel_knuckle.png",
+      "region_px": [
+        71,
+        51,
+        114,
+        167
+      ],
+      "socket_px": [
+        137.12,
+        71.04
+      ],
+      "rotation_degrees": -130,
+      "display_length_px": 110,
+      "family": "Gauntlet",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/militia_longgrip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/militia_longgrip.png",
+      "region_px": [
+        38,
+        18,
+        195,
+        219
+      ],
+      "socket_px": [
+        194.0,
+        204.15
+      ],
+      "rotation_degrees": -56,
+      "display_length_px": 145,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/drakespine_wargrip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/drakespine_wargrip.png",
+      "region_px": [
+        30,
+        16,
+        201,
+        217
+      ],
+      "socket_px": [
+        188.79,
+        196.11
+      ],
+      "rotation_degrees": -55,
+      "display_length_px": 145,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/black_anvil_twohander.png": {
+      "file": "assets/entropic_forge/icons/frameworks/black_anvil_twohander.png",
+      "region_px": [
+        47,
+        20,
+        186,
+        212
+      ],
+      "socket_px": [
+        197.66,
+        198.08
+      ],
+      "rotation_degrees": -56,
+      "display_length_px": 145,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/ironhold_bastion_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/ironhold_bastion_grip.png",
+      "region_px": [
+        25,
+        52,
+        462,
+        399
+      ],
+      "socket_px": [
+        445.42,
+        251.5
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/volcanic_furnace_tang.png": {
+      "file": "assets/entropic_forge/icons/frameworks/volcanic_furnace_tang.png",
+      "region_px": [
+        26,
+        65,
+        460,
+        367
+      ],
+      "socket_px": [
+        444.6,
+        248.5
+      ],
+      "rotation_degrees": 0,
+      "display_length_px": 145,
+      "family": "Greatsword",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/broad_militia_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/broad_militia_blade.png",
+      "region_px": [
+        78,
+        33,
+        98,
+        209
+      ],
+      "socket_px": [
+        122.1,
+        231.55
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/notched_siege_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/notched_siege_blade.png",
+      "region_px": [
+        90,
+        33,
+        95,
+        209
+      ],
+      "socket_px": [
+        132.75,
+        231.55
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drakebone_cleaver.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakebone_cleaver.png",
+      "region_px": [
+        88,
+        36,
+        97,
+        206
+      ],
+      "socket_px": [
+        131.65,
+        231.7
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/basalt_execution_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/basalt_execution_blade.png",
+      "region_px": [
+        86,
+        32,
+        100,
+        210
+      ],
+      "socket_px": [
+        131.0,
+        231.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_flamberge.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_flamberge.png",
+      "region_px": [
+        101,
+        33,
+        69,
+        209
+      ],
+      "socket_px": [
+        132.05,
+        231.55
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png": {
+      "file": "assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png",
+      "region_px": [
+        80,
+        30,
+        101,
+        212
+      ],
+      "socket_px": [
+        125.45,
+        231.4
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 260,
+      "family": "Greatsword",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/quarrymans_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/quarrymans_haft.png",
+      "region_px": [
+        40,
+        14,
+        190,
+        190
+      ],
+      "socket_px": [
+        62.8,
+        33.0
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 235,
+      "family": "Hammer",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/siegebreaker_shock_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/siegebreaker_shock_haft.png",
+      "region_px": [
+        36,
+        14,
+        189,
+        195
+      ],
+      "socket_px": [
+        64.35,
+        35.45
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 235,
+      "family": "Hammer",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/thunderbrow_pattern_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/thunderbrow_pattern_haft.png",
+      "region_px": [
+        36,
+        14,
+        190,
+        188
+      ],
+      "socket_px": [
+        74.0,
+        36.56
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 235,
+      "family": "Hammer",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/quarry_iron_block.png": {
+      "file": "assets/entropic_forge/icons/strikers/quarry_iron_block.png",
+      "region_px": [
+        75,
+        49,
+        107,
+        135
+      ],
+      "socket_px": [
+        128.5,
+        170.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/siege_ram_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/siege_ram_head.png",
+      "region_px": [
+        71,
+        40,
+        114,
+        135
+      ],
+      "socket_px": [
+        128.0,
+        161.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/resonant_belliron_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/resonant_belliron_head.png",
+      "region_px": [
+        71,
+        47,
+        112,
+        137
+      ],
+      "socket_px": [
+        127.0,
+        170.3
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/basalt_furnace_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/basalt_furnace_head.png",
+      "region_px": [
+        69,
+        31,
+        117,
+        153
+      ],
+      "socket_px": [
+        127.5,
+        168.7
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/scaleiron_shatter_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/scaleiron_shatter_head.png",
+      "region_px": [
+        72,
+        42,
+        114,
+        147
+      ],
+      "socket_px": [
+        129.0,
+        174.3
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/singing_quartz_impact_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/singing_quartz_impact_head.png",
+      "region_px": [
+        77,
+        43,
+        106,
+        152
+      ],
+      "socket_px": [
+        130.0,
+        179.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 115,
+      "family": "Hammer",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/gateward_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/gateward_handle.png",
+      "region_px": [
+        44,
+        14,
+        195,
+        180
+      ],
+      "socket_px": [
+        77.15,
+        35.6
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 220,
+      "family": "Mace",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/reedbound_cudgel_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/reedbound_cudgel_haft.png",
+      "region_px": [
+        41,
+        14,
+        201,
+        188
+      ],
+      "socket_px": [
+        77.18,
+        36.56
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 220,
+      "family": "Mace",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/lanternkeeper_flanged_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/lanternkeeper_flanged_grip.png",
+      "region_px": [
+        35,
+        14,
+        201,
+        185
+      ],
+      "socket_px": [
+        67.16,
+        34.35
+      ],
+      "rotation_degrees": 128,
+      "display_length_px": 220,
+      "family": "Mace",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/gatewatch_iron_ball.png": {
+      "file": "assets/entropic_forge/icons/strikers/gatewatch_iron_ball.png",
+      "region_px": [
+        68,
+        53,
+        126,
+        189
+      ],
+      "socket_px": [
+        131.0,
+        223.1
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/thorn_cage_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/thorn_cage_head.png",
+      "region_px": [
+        70,
+        34,
+        125,
+        208
+      ],
+      "socket_px": [
+        132.5,
+        221.2
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/sunbronze_flanged_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/sunbronze_flanged_head.png",
+      "region_px": [
+        71,
+        46,
+        122,
+        196
+      ],
+      "socket_px": [
+        132.0,
+        222.4
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/hexstone_knob.png": {
+      "file": "assets/entropic_forge/icons/strikers/hexstone_knob.png",
+      "region_px": [
+        65,
+        64,
+        122,
+        178
+      ],
+      "socket_px": [
+        126.0,
+        224.2
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_crown.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_crown.png",
+      "region_px": [
+        64,
+        44,
+        127,
+        198
+      ],
+      "socket_px": [
+        127.5,
+        222.2
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/veil_silver_lantern_cage.png": {
+      "file": "assets/entropic_forge/icons/strikers/veil_silver_lantern_cage.png",
+      "region_px": [
+        65,
+        25,
+        123,
+        217
+      ],
+      "socket_px": [
+        126.5,
+        220.3
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 100,
+      "family": "Mace",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/reapers_farm_shaft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/reapers_farm_shaft.png",
+      "region_px": [
+        32,
+        14,
+        203,
+        221
+      ],
+      "socket_px": [
+        200.49,
+        36.1
+      ],
+      "rotation_degrees": 55,
+      "display_length_px": 260,
+      "family": "Scythe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/gravewillow_crescent_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/gravewillow_crescent_haft.png",
+      "region_px": [
+        34,
+        14,
+        208,
+        220
+      ],
+      "socket_px": [
+        190.0,
+        38.2
+      ],
+      "rotation_degrees": 55,
+      "display_length_px": 260,
+      "family": "Scythe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/last_lantern_balance_shaft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/last_lantern_balance_shaft.png",
+      "region_px": [
+        24,
+        14,
+        206,
+        222
+      ],
+      "socket_px": [
+        188.8,
+        36.2
+      ],
+      "rotation_degrees": 55,
+      "display_length_px": 260,
+      "family": "Scythe",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/harvest_iron_crescent.png": {
+      "file": "assets/entropic_forge/icons/strikers/harvest_iron_crescent.png",
+      "region_px": [
+        69,
+        17,
+        119,
+        225
+      ],
+      "socket_px": [
+        165.39,
+        215.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/gravehook_crescent.png": {
+      "file": "assets/entropic_forge/icons/strikers/gravehook_crescent.png",
+      "region_px": [
+        65,
+        32,
+        127,
+        210
+      ],
+      "socket_px": [
+        167.87,
+        216.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/webglass_reaping_edge.png": {
+      "file": "assets/entropic_forge/icons/strikers/webglass_reaping_edge.png",
+      "region_px": [
+        67,
+        38,
+        121,
+        204
+      ],
+      "socket_px": [
+        165.01,
+        217.52
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/belliron_soul_crescent.png": {
+      "file": "assets/entropic_forge/icons/strikers/belliron_soul_crescent.png",
+      "region_px": [
+        62,
+        32,
+        132,
+        210
+      ],
+      "socket_px": [
+        168.92,
+        216.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_sickle_arc.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_sickle_arc.png",
+      "region_px": [
+        69,
+        50,
+        118,
+        192
+      ],
+      "socket_px": [
+        164.58,
+        218.96
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/null_obsidian_reaping_arc.png": {
+      "file": "assets/entropic_forge/icons/strikers/null_obsidian_reaping_arc.png",
+      "region_px": [
+        62,
+        25,
+        125,
+        217
+      ],
+      "socket_px": [
+        163.25,
+        215.96
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 180,
+      "family": "Scythe",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/rangers_ash_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/rangers_ash_haft.png",
+      "region_px": [
+        36,
+        14,
+        193,
+        207
+      ],
+      "socket_px": [
+        59.16,
+        36.77
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 270,
+      "family": "Spear",
+      "category": "frameworks",
+      "exclude_rects": [
+        [
+          0,
+          198,
+          121,
+          58
+        ]
+      ]
+    },
+    "assets/entropic_forge/icons/frameworks/rimepine_lance_shaft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/rimepine_lance_shaft.png",
+      "region_px": [
+        49,
+        14,
+        190,
+        209
+      ],
+      "socket_px": [
+        71.8,
+        34.9
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 270,
+      "family": "Spear",
+      "category": "frameworks",
+      "exclude_rects": [
+        [
+          0,
+          198,
+          121,
+          58
+        ]
+      ]
+    },
+    "assets/entropic_forge/icons/frameworks/stormkeeper_spear_haft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/stormkeeper_spear_haft.png",
+      "region_px": [
+        38,
+        14,
+        200,
+        209
+      ],
+      "socket_px": [
+        66.0,
+        36.99
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 270,
+      "family": "Spear",
+      "category": "frameworks",
+      "exclude_rects": [
+        [
+          0,
+          198,
+          121,
+          58
+        ]
+      ]
+    },
+    "assets/entropic_forge/icons/frameworks/oathroot_longshaft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/oathroot_longshaft.png",
+      "region_px": [
+        23,
+        14,
+        215,
+        210
+      ],
+      "socket_px": [
+        61.7,
+        39.2
+      ],
+      "rotation_degrees": 130,
+      "display_length_px": 270,
+      "family": "Spear",
+      "category": "frameworks",
+      "exclude_rects": [
+        [
+          0,
+          198,
+          121,
+          58
+        ]
+      ]
+    },
+    "assets/entropic_forge/icons/strikers/iron_leaf_spearhead.png": {
+      "file": "assets/entropic_forge/icons/strikers/iron_leaf_spearhead.png",
+      "region_px": [
+        89,
+        25,
+        82,
+        217
+      ],
+      "socket_px": [
+        130.0,
+        228.98
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/wyrmtooth_pikehead.png": {
+      "file": "assets/entropic_forge/icons/strikers/wyrmtooth_pikehead.png",
+      "region_px": [
+        85,
+        17,
+        90,
+        225
+      ],
+      "socket_px": [
+        130.0,
+        228.5
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/sunbronze_winged_head.png": {
+      "file": "assets/entropic_forge/icons/strikers/sunbronze_winged_head.png",
+      "region_px": [
+        78,
+        20,
+        105,
+        222
+      ],
+      "socket_px": [
+        130.5,
+        228.68
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/stormsteel_fork.png": {
+      "file": "assets/entropic_forge/icons/strikers/stormsteel_fork.png",
+      "region_px": [
+        92,
+        16,
+        85,
+        226
+      ],
+      "socket_px": [
+        134.5,
+        228.44
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/froststeel_lance_tip.png": {
+      "file": "assets/entropic_forge/icons/strikers/froststeel_lance_tip.png",
+      "region_px": [
+        103,
+        26,
+        71,
+        216
+      ],
+      "socket_px": [
+        138.5,
+        229.04
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/hollow_veil_silver_point.png": {
+      "file": "assets/entropic_forge/icons/strikers/hollow_veil_silver_point.png",
+      "region_px": [
+        104,
+        26,
+        76,
+        216
+      ],
+      "socket_px": [
+        142.0,
+        229.04
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 120,
+      "family": "Spear",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/herbalists_bogroot_staff.png": {
+      "file": "assets/entropic_forge/icons/frameworks/herbalists_bogroot_staff.png",
+      "region_px": [
+        30,
+        21,
+        212,
+        193
+      ],
+      "socket_px": [
+        83.0,
+        36.44
+      ],
+      "rotation_degrees": 120,
+      "display_length_px": 250,
+      "family": "Staff",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/gloamwood_channel_staff.png": {
+      "file": "assets/entropic_forge/icons/frameworks/gloamwood_channel_staff.png",
+      "region_px": [
+        27,
+        14,
+        198,
+        188
+      ],
+      "socket_px": [
+        110.16,
+        29.04
+      ],
+      "rotation_degrees": 115,
+      "display_length_px": 250,
+      "family": "Staff",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/veil_silver_casting_shaft.png": {
+      "file": "assets/entropic_forge/icons/frameworks/veil_silver_casting_shaft.png",
+      "region_px": [
+        20,
+        17,
+        219,
+        222
+      ],
+      "socket_px": [
+        206.15,
+        43.64
+      ],
+      "rotation_degrees": 52,
+      "display_length_px": 250,
+      "family": "Staff",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/astral_spiral_staff.png": {
+      "file": "assets/entropic_forge/icons/frameworks/astral_spiral_staff.png",
+      "region_px": [
+        32,
+        23,
+        210,
+        216
+      ],
+      "socket_px": [
+        200.0,
+        48.92
+      ],
+      "rotation_degrees": 52,
+      "display_length_px": 250,
+      "family": "Staff",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/carved_root_crown.png": {
+      "file": "assets/entropic_forge/icons/strikers/carved_root_crown.png",
+      "region_px": [
+        76,
+        22,
+        110,
+        214
+      ],
+      "socket_px": [
+        131.0,
+        218.88
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/marsh_bone_focus.png": {
+      "file": "assets/entropic_forge/icons/strikers/marsh_bone_focus.png",
+      "region_px": [
+        84,
+        37,
+        102,
+        198
+      ],
+      "socket_px": [
+        135.0,
+        219.16
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/storm_fork_crown.png": {
+      "file": "assets/entropic_forge/icons/strikers/storm_fork_crown.png",
+      "region_px": [
+        80,
+        33,
+        106,
+        197
+      ],
+      "socket_px": [
+        133.0,
+        214.24
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/moon_lens_cradle.png": {
+      "file": "assets/entropic_forge/icons/strikers/moon_lens_cradle.png",
+      "region_px": [
+        75,
+        49,
+        111,
+        181
+      ],
+      "socket_px": [
+        130.5,
+        215.52
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/hexstone_ritual_cage.png": {
+      "file": "assets/entropic_forge/icons/strikers/hexstone_ritual_cage.png",
+      "region_px": [
+        77,
+        50,
+        108,
+        169
+      ],
+      "socket_px": [
+        131.0,
+        205.48
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/prismatic_silver_crown.png": {
+      "file": "assets/entropic_forge/icons/strikers/prismatic_silver_crown.png",
+      "region_px": [
+        71,
+        33,
+        113,
+        206
+      ],
+      "socket_px": [
+        127.5,
+        222.52
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 95,
+      "family": "Staff",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/apprentices_yew_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/apprentices_yew_handle.png",
+      "region_px": [
+        44,
+        33,
+        190,
+        204
+      ],
+      "socket_px": [
+        205.5,
+        49.32
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 175,
+      "family": "Wand",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/crystal_focus_wand_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/crystal_focus_wand_grip.png",
+      "region_px": [
+        47,
+        21,
+        188,
+        210
+      ],
+      "socket_px": [
+        204.92,
+        46.2
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 175,
+      "family": "Wand",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/dawnweaver_conductor.png": {
+      "file": "assets/entropic_forge/icons/frameworks/dawnweaver_conductor.png",
+      "region_px": [
+        22,
+        22,
+        214,
+        219
+      ],
+      "socket_px": [
+        193.2,
+        54.85
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 175,
+      "family": "Wand",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/copper_casting_tip.png": {
+      "file": "assets/entropic_forge/icons/strikers/copper_casting_tip.png",
+      "region_px": [
+        80,
+        18,
+        96,
+        218
+      ],
+      "socket_px": [
+        128.0,
+        218.56
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/adder_fang_focus.png": {
+      "file": "assets/entropic_forge/icons/strikers/adder_fang_focus.png",
+      "region_px": [
+        79,
+        16,
+        100,
+        221
+      ],
+      "socket_px": [
+        129.0,
+        219.32
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/frostglass_prism.png": {
+      "file": "assets/entropic_forge/icons/strikers/frostglass_prism.png",
+      "region_px": [
+        87,
+        14,
+        86,
+        203
+      ],
+      "socket_px": [
+        130.0,
+        200.76
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/sunbronze_aperture.png": {
+      "file": "assets/entropic_forge/icons/strikers/sunbronze_aperture.png",
+      "region_px": [
+        70,
+        14,
+        116,
+        187
+      ],
+      "socket_px": [
+        128.0,
+        186.04
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/webglass_needle_focus.png": {
+      "file": "assets/entropic_forge/icons/strikers/webglass_needle_focus.png",
+      "region_px": [
+        82,
+        14,
+        91,
+        205
+      ],
+      "socket_px": [
+        127.5,
+        202.6
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/star_slate_lens.png": {
+      "file": "assets/entropic_forge/icons/strikers/star_slate_lens.png",
+      "region_px": [
+        65,
+        19,
+        122,
+        222
+      ],
+      "socket_px": [
+        126.0,
+        223.24
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 80,
+      "family": "Wand",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/frameworks/drovers_wrapped_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/drovers_wrapped_handle.png",
+      "region_px": [
+        30,
+        23,
+        205,
+        210
+      ],
+      "socket_px": [
+        200.15,
+        48.2
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 125,
+      "family": "Whip",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/stormtide_swivel_handle.png": {
+      "file": "assets/entropic_forge/icons/frameworks/stormtide_swivel_handle.png",
+      "region_px": [
+        21,
+        21,
+        219,
+        215
+      ],
+      "socket_px": [
+        207.15,
+        46.8
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 125,
+      "family": "Whip",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/frameworks/veilweave_lash_grip.png": {
+      "file": "assets/entropic_forge/icons/frameworks/veilweave_lash_grip.png",
+      "region_px": [
+        23,
+        20,
+        212,
+        211
+      ],
+      "socket_px": [
+        205.32,
+        45.32
+      ],
+      "rotation_degrees": 53,
+      "display_length_px": 125,
+      "family": "Whip",
+      "category": "frameworks"
+    },
+    "assets/entropic_forge/icons/strikers/braided_oak_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/braided_oak_lash.png",
+      "region_px": [
+        80,
+        14,
+        110,
+        199
+      ],
+      "socket_px": [
+        129.5,
+        193.1
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/barbed_drake_sinew_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/barbed_drake_sinew_lash.png",
+      "region_px": [
+        73,
+        14,
+        115,
+        200
+      ],
+      "socket_px": [
+        124.75,
+        194.0
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/belliron_chain_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/belliron_chain_lash.png",
+      "region_px": [
+        80,
+        14,
+        99,
+        192
+      ],
+      "socket_px": [
+        124.55,
+        186.8
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/websilk_razor_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/websilk_razor_lash.png",
+      "region_px": [
+        72,
+        14,
+        96,
+        183
+      ],
+      "socket_px": [
+        115.2,
+        178.7
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/drakeglass_segmented_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/drakeglass_segmented_lash.png",
+      "region_px": [
+        66,
+        14,
+        125,
+        214
+      ],
+      "socket_px": [
+        122.25,
+        206.6
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    },
+    "assets/entropic_forge/icons/strikers/veil_silver_ribbon_lash.png": {
+      "file": "assets/entropic_forge/icons/strikers/veil_silver_ribbon_lash.png",
+      "region_px": [
+        72,
+        14,
+        108,
+        213
+      ],
+      "socket_px": [
+        120.6,
+        205.7
+      ],
+      "rotation_degrees": 90,
+      "display_length_px": 235,
+      "family": "Whip",
+      "category": "strikers"
+    }
+  }
+}

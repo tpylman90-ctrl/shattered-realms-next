@@ -126,6 +126,8 @@ jobs:
         # Socket assertions run after the snap-test artwork is restored above.
         run: |
           Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script res://tests/sword_socket_smoke.gd
+      - name: All weapon family attachments
+        run: Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script tests/weapon_socket_smoke.gd
       - name: Set Android version
         shell: bash
         run: |

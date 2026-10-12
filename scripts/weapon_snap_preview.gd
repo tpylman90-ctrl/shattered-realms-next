@@ -1,5 +1,6 @@
 extends Control
 ## One coordinate system for both parts; only the completed assembly is fitted.
+var front_part: String = "frame"
 var frame: Dictionary = {}
 var blade: Dictionary = {}
 var overlap_px: float = 5.0
@@ -27,15 +28,32 @@ func _prepare_part(record: Dictionary) -> Dictionary:
 	var socket: Array = record.get("socket_px", [])
 	if source == null or region.size() != 4 or socket.size() != 2:
 		return {}
+	# Paired bow limbs are authored side by side; mount them above and below the riser.
+	if record.has("limb_regions"):
+		var limbs: Array = record["limb_regions"]
+		var upper: Image = source.get_region(Rect2i(limbs[0][0], limbs[0][1], limbs[0][2], limbs[0][3]))
+		var lower: Image = source.get_region(Rect2i(limbs[1][0], limbs[1][1], limbs[1][2], limbs[1][3]))
+		lower.rotate_90(CLOCKWISE)
+		lower.rotate_90(CLOCKWISE)
+		var join: int = int(record["limb_join_y"])
+		var assembled := Image.create(maxi(upper.get_width(), lower.get_width()), join + lower.get_height(), false, Image.FORMAT_RGBA8)
+		assembled.blend_rect(upper, Rect2i(Vector2i.ZERO, upper.get_size()), Vector2i.ZERO)
+		assembled.blend_rect(lower, Rect2i(Vector2i.ZERO, lower.get_size()), Vector2i(0, join))
+		source = assembled
+	for excluded in record.get("exclude_rects", []):
+		source.fill_rect(Rect2i(excluded[0], excluded[1], excluded[2], excluded[3]), Color.TRANSPARENT)
 	var rect := Rect2i(int(region[0]), int(region[1]), int(region[2]), int(region[3]))
 	var cropped: Image = source.get_region(rect)
 	var local_socket := Vector2(float(socket[0]) - rect.position.x, float(socket[1]) - rect.position.y)
+	if record.get("flip_h", false):
+		cropped.flip_x()
+		local_socket.x = rect.size.x - local_socket.x
 	var angle := deg_to_rad(float(record.get("rotation_degrees", 0.0)))
 	var rotation_transform := Transform2D(angle, Vector2.ZERO)
 	var bounds := Rect2(rotation_transform * Vector2.ZERO, Vector2.ZERO)
 	for corner in [Vector2(rect.size.x, 0), Vector2(rect.size), Vector2(0, rect.size.y)]:
 		bounds = bounds.expand(rotation_transform * corner)
-	var part_scale: float = float(record.get("display_length_px", 200.0)) / bounds.size.x
+	var part_scale: float = float(record.get("display_length_px", 200.0)) / (bounds.size.y if record.get("scale_axis", "x") == "y" else bounds.size.x)
 	return {"texture": ImageTexture.create_from_image(cropped), "size": bounds.size * part_scale,
 		"socket": (rotation_transform * local_socket - bounds.position) * part_scale,
 		"origin": -bounds.position * part_scale, "angle": angle, "part_scale": part_scale,
@@ -60,8 +78,12 @@ func _draw() -> void:
 	if placed.is_empty():
 		return
 	# The hilt collar conceals the tiny insertion seam, never the whole blade.
-	_draw_part(blade, placed["blade"], float(placed["scale"]))
-	_draw_part(frame, placed["frame"], float(placed["scale"]))
+	if front_part == "blade":
+		_draw_part(frame, placed["frame"], float(placed["scale"]))
+		_draw_part(blade, placed["blade"], float(placed["scale"]))
+	else:
+		_draw_part(blade, placed["blade"], float(placed["scale"]))
+		_draw_part(frame, placed["frame"], float(placed["scale"]))
 	draw_set_transform(Vector2.ZERO)
 
 func _draw_part(part: Dictionary, rect: Rect2, fit: float) -> void:

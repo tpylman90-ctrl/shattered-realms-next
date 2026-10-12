@@ -6,6 +6,7 @@ const CATALOG := "res://data/entropic_forge/forge_test_catalog.json"
 const ART := "res://assets/forge/forge_room.png"
 const SWORD_POINTS := "res://data/entropic_forge/sword_attachment_points.json"
 var sword_points: Dictionary = {}
+var weapon_points: Dictionary = {}
 const GOLD := Color("#e9c889")
 const INK := Color("#081923")
 const BLUE := Color("#16304a")
@@ -44,6 +45,7 @@ func _ready() -> void:
 		return
 	catalog = parsed
 	sword_points = JSON.parse_string(FileAccess.get_file_as_string(SWORD_POINTS))
+	weapon_points = JSON.parse_string(FileAccess.get_file_as_string("res://data/entropic_forge/weapon_attachment_points.json"))
 	for entry in catalog.get("frameworks", []):
 		var name := str(entry.get("family", ""))
 		if not families.has(name):
@@ -436,8 +438,8 @@ func _show_result() -> void:
 		composite_preview.remove_child(child)
 		child.queue_free()
 	var finished_texture := _icon(result) if not result.is_empty() else null
-	if families[int(choice[0])] == "Sword" and not sword_points.is_empty() and _show_sword_snap(a,b):
-		result_note.text = "SWORD SNAP TEST — socket join with slight overlap; core effects pending"
+	if _show_weapon_snap(a,b):
+		result_note.text = "ASSEMBLED PARTS — core effects pending"
 	elif finished_texture != null:
 		result_art.texture = finished_texture
 		result_note.text = "NAMED RECIPE ARTWORK — catalog concept"
@@ -483,24 +485,37 @@ func _add_composite_component(item: Dictionary, origin: Vector2, dimensions: Vec
 	composite_preview.add_child(layer)
 
 
-func _show_sword_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
-	var frame_record := _sword_record(frame_part, "frameworks")
-	var blade_record := _sword_record(blade_part, "strikers")
+func _show_weapon_snap(frame_part: Dictionary, blade_part: Dictionary) -> bool:
+	var family: String = str(frame_part.get("family", ""))
+	if family != str(blade_part.get("family", "")):
+		return false
+	var frame_record := _weapon_record(frame_part, "frameworks")
+	var blade_record := _weapon_record(blade_part, "strikers")
 	if frame_record.is_empty() or blade_record.is_empty():
 		return false
+	var settings: Dictionary = sword_points if family == "Sword" else weapon_points.get("families", {}).get(family, {})
 	var preview := preload("res://scripts/weapon_snap_preview.gd").new()
-	if not preview.configure(frame_record, blade_record, float(sword_points.get("overlap_px", 5.0))):
+	if not preview.configure(frame_record, blade_record, float(settings.get("overlap_px", 5.0))):
 		preview.free()
 		return false
-	preview.name = "SocketAlignedSword"
-	preview.padding_px = float(sword_points.get("canvas_padding_px", 18.0))
+	preview.front_part = str(settings.get("front_part", "frame"))
+	preview.name = "SocketAlignedWeapon"
+	preview.padding_px = float(settings.get("canvas_padding_px", 18.0))
 	preview.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	composite_preview.add_child(preview)
 	return true
 
+func _weapon_record(item: Dictionary, group: String) -> Dictionary:
+	if item.get("family", "") == "Sword":
+		return _sword_record(item, group)
+	var path: String = str(item.get("icon", "")).trim_prefix("res://")
+	var record: Dictionary = weapon_points.get("assets", {}).get(path, {}).duplicate(true)
+	if record.get("family", "") != item.get("family", "") or record.get("category", "") != group:
+		return {}
+	return record
+
 func _sword_record(item: Dictionary, group: String) -> Dictionary:
 	var record: Dictionary = sword_points.get(group, {}).get(item.get("name", ""), {}).duplicate(true)
-	# Never silently substitute an unrelated prototype for a selected component.
 	if record.get("file", "") != str(item.get("icon", "")).trim_prefix("res://"):
 		return {}
 	return record

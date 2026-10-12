@@ -247,93 +247,93 @@
       "display_length_px": 245
     },
     "Ravenwood Thorn Sabre": {
-      "file": "assets/entropic_forge/icons/strikers/plainsteel_straight_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/ravenwood_thorn_sabre.png",
       "region_px": [
-        71,
-        16,
-        114,
-        224
+        24,
+        37,
+        464,
+        437
       ],
       "socket_px": [
-        135,
-        230
+        76.09,
+        259.14
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     },
     "Ashen Magma Edge": {
-      "file": "assets/entropic_forge/icons/strikers/serrated_fang_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/ashen_magma_edge.png",
       "region_px": [
-        72,
-        16,
-        111,
-        224
+        24,
+        145,
+        464,
+        222
       ],
       "socket_px": [
-        145,
-        231
+        87.31,
+        259.48
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     },
     "Icehelm Crystal Longblade": {
-      "file": "assets/entropic_forge/icons/strikers/tidebronze_saber_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/icehelm_crystal_longblade.png",
       "region_px": [
-        75,
-        16,
-        107,
-        224
+        24,
+        54,
+        464,
+        404
       ],
       "socket_px": [
-        150,
-        229
+        82.57,
+        252.37
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     },
     "Ironhold Breaker Falchion": {
-      "file": "assets/entropic_forge/icons/strikers/webglass_needle_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/ironhold_breaker_falchion.png",
       "region_px": [
-        70,
-        16,
-        116,
-        224
+        24,
+        29,
+        464,
+        453
       ],
       "socket_px": [
-        135,
-        232
+        109.43,
+        240.5
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     },
     "Stormcrown Lightning Rapier": {
-      "file": "assets/entropic_forge/icons/strikers/scaleiron_falchion_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/stormcrown_lightning_rapier.png",
       "region_px": [
-        72,
-        16,
-        112,
-        224
+        24,
+        191,
+        464,
+        129
       ],
       "socket_px": [
-        123,
-        229
+        60.82,
+        257.85
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     },
     "Veiled Sea Boarding Cutlass": {
-      "file": "assets/entropic_forge/icons/strikers/veil_silver_channel_blade.png",
+      "file": "assets/entropic_forge/icons/strikers/veiled_sea_boarding_cutlass.png",
       "region_px": [
-        79,
-        16,
-        97,
-        224
+        24,
+        169,
+        464,
+        174
       ],
       "socket_px": [
-        145,
-        228
+        86.83,
+        291.19
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": 0,
       "display_length_px": 245
     }
   }

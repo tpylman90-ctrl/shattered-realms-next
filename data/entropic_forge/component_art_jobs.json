@@ -1,7 +1,7 @@
 {
-  "scope": "Inventory tab images, not replacements for Sword snap-test cutouts.",
-  "completed": 8,
-  "pending": 182,
+  "scope": "Distinct component images shared by inventory tabs and socket assemblies.",
+  "completed": 14,
+  "pending": 176,
   "items": [
     {
       "name": "Ravenwood Thornhook",
@@ -908,54 +908,66 @@
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/ravenwood_thorn_sabre.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ravenwood Thorn Sabre\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Ravenwood Thorn Sabre\", not a generic renamed item. Ravenwood craftsmanship: ironbark, blackened steel, aged brass rivets, deep forest-green leather, carefully carved thorn or leaf detail. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "b010d4e55bf709915b016b011c15c16fe36e825aa14945c4a5a15ac1dcf94261",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Ashen Magma Edge",
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/ashen_magma_edge.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ashen Magma Edge\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Ashen Magma Edge\", not a generic renamed item. Ashen volcanic craftsmanship: black basalt iron, obsidian edges, heat-tarnished copper fittings, dark red leather; natural materials only, no glowing lava. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "bef57397864cf7dc00852684ee2181f57184b27c2af52e8d740e70f6d24d9aec",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Icehelm Crystal Longblade",
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/icehelm_crystal_longblade.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Icehelm Crystal Longblade\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Icehelm Crystal Longblade\", not a generic renamed item. Frostpeaks craftsmanship: cold brushed steel, pale mineral facets, ivory or white leather accents; no icy aura. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "3f14d1e11072c165d08604bdbf6e3c74131baf1c84cbdc7ccb5de2227df8ddbb",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Ironhold Breaker Falchion",
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/ironhold_breaker_falchion.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Ironhold Breaker Falchion\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Ironhold Breaker Falchion\", not a generic renamed item. Iron Plains craftsmanship: tempered dark steel, burnished brass bands, brown leather and practical forged construction, detailed tool marks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "ab56eaaee7c65a8bfa68af583bb3a2d019ad11080345e68d30196b480ce76522",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Stormcrown Lightning Rapier",
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/stormcrown_lightning_rapier.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Stormcrown Lightning Rapier\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Stormcrown Lightning Rapier\", not a generic renamed item. Stormcrown craftsmanship: gunmetal steel, precisely machined copper coils, ceramic insulators and engraved storm geometry; no electric glow or sparks. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "337f78d5f351f30b469b08f20d1012a194b46bc181e9c9e454b7e9c00ccc710c",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Veiled Sea Boarding Cutlass",
       "category": "strikers",
       "family": "Sword",
       "target": "assets/entropic_forge/icons/strikers/veiled_sea_boarding_cutlass.png",
-      "status": "pending_usage_limit",
+      "status": "generated_inventory_icon",
       "prompt": "Use case: stylized-concept. Create ONE premium hand-painted fantasy RPG inventory component icon for Shattered Realms: \"Veiled Sea Boarding Cutlass\", Sword striker. The actual object must be detached sword blade only with short mounting tang at the left, pointed tip right, absolutely no hilt/handle/guard/pommel. Design a distinctive functional silhouette that specifically expresses \"Veiled Sea Boarding Cutlass\", not a generic renamed item. Coastal craftsmanship: salt-worn tidebronze, dark oak, teal leather lashings, subtle rope and nautical engraving, no water effects. Detailed sculptural 3D-looking 2D illustration, crisp beveled edges, convincing metal/wood/leather textures and carefully controlled highlights; elegant classic JRPG inventory style, not cartoon, blocky, photoreal scene or flat vector. Neutral studio light from upper left, material color and shadow painted on object. Horizontal side view where mechanically sensible, attachment fitting clearly readable; whole object centered with 10% clear margin, square composition. Genuinely transparent PNG background. No text, label, numbers, frame, pedestal, cast floor shadow, person, hand, extra loose decorations, glow, elemental VFX, complete assembled weapon or duplicate alternate views. Readable when reduced to a small equipment tab.",
-      "provider": "built-in image_gen"
+      "provider": "built-in image_gen",
+      "source_sha256": "3181c325e40cb7f239f5ab001a2339d128be477fc0a0aa9f4973a2ff12db307a",
+      "composition": "Horizontal blade only, root left, tip right, isolated alpha, rectangular tang. Used for both inventory and assembled weapon."
     },
     {
       "name": "Ashen Furnace Zweihander",

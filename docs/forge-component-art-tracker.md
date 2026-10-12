@@ -1,12 +1,12 @@
 # Entropic Forge — component artwork production tracker
 
-The catalog has 150 frameworks and 180 strikers across 15 weapon families. Original set: 50 frameworks + 90 strikers. The 190 expanded records now have refined family-specific balance proposals. **8 frameworks have distinct inventory icons; 92 framework icons and 90 striker icons remain pending.** Image generation reached its account usage limit during this pass. Inventory images are separate from the Sword assembly test sprites.
+The catalog has 150 frameworks and 180 strikers across 15 weapon families. Of 190 expansion components, **14 have distinct art (8 frameworks and 6 strikers); 176 remain pending (92 frameworks and 84 strikers).** Inventory and assembled previews now use the same source images, with attachment data for all 15 families.
 
 **Art acceptance criteria:** independently cropped transparent RGBA PNG; distinct geometry, not recolor; neutral unlit metal/material pass; consistent forward orientation per family; visually readable at 128–256 pixels; a defined assembly join point on each component; core material/emissive treatment will be applied *later*, not painted as a permanent incompatible glow. Use real per-item images instead of atlas crops with embedded text. Existing 140 original component images should also have their join points and orientation checked.
 
 | Family | New frameworks | New strikers | Stage |
 |---|---:|---:|---|
-| Sword | 0 | 6 | Six replacement framework inventory icons complete; striker icons pending |
+| Sword | 0 | 0 | All six expanded hilts and six expanded blades have distinct art and calibrated sockets |
 | Greatsword | 5 | 6 | Two replacement framework inventory icons complete; remainder pending |
 | Dagger | 7 | 6 | Concept pass / sprite pending |
 | Spear | 6 | 6 | Concept pass / sprite pending |
@@ -25,26 +25,26 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Origi
 ## Sword
 
 ### Frameworks
-- [x] Ravenwood Thornhook — distinct inventory icon; snap asset unchanged
-- [x] Ashen Emberguard — distinct inventory icon; snap asset unchanged
-- [x] Icehelm Splitguard — distinct inventory icon; snap asset unchanged
-- [x] Harbor Basket Hilt — distinct inventory icon; snap asset unchanged
-- [x] Mirebone Fanggrip — distinct inventory icon; snap asset unchanged
-- [x] Stormcrown Coil Hilt — distinct inventory icon; snap asset unchanged
+- [x] Ravenwood Thornhook — distinct inventory and assembly image
+- [x] Ashen Emberguard — distinct inventory and assembly image
+- [x] Icehelm Splitguard — distinct inventory and assembly image
+- [x] Harbor Basket Hilt — distinct inventory and assembly image
+- [x] Mirebone Fanggrip — distinct inventory and assembly image
+- [x] Stormcrown Coil Hilt — distinct inventory and assembly image
 
 ### Strikers
-- [ ] Ravenwood Thorn Sabre
-- [ ] Ashen Magma Edge
-- [ ] Icehelm Crystal Longblade
-- [ ] Ironhold Breaker Falchion
-- [ ] Stormcrown Lightning Rapier
-- [ ] Veiled Sea Boarding Cutlass
+- [x] Ravenwood Thorn Sabre
+- [x] Ashen Magma Edge
+- [x] Icehelm Crystal Longblade
+- [x] Ironhold Breaker Falchion
+- [x] Stormcrown Lightning Rapier
+- [x] Veiled Sea Boarding Cutlass
 
 ## Greatsword
 
 ### Frameworks
-- [x] Ironhold Bastion Grip — distinct inventory icon; snap asset unchanged
-- [x] Volcanic Furnace Tang — distinct inventory icon; snap asset unchanged
+- [x] Ironhold Bastion Grip — distinct inventory and assembly image
+- [x] Volcanic Furnace Tang — distinct inventory and assembly image
 - [ ] Icebreaker Double Grip
 - [ ] Harrowstead Reaver Handle
 - [ ] Sunken Anchor Hilt

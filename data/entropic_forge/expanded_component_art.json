@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scope": "190 replacement inventory icons; no snap-asset replacement",
+  "scope": "190 expansion component images, shared inventory and assembly source.",
   "items": [
     {
       "name": "Ravenwood Thornhook",
@@ -906,55 +906,55 @@
       "name": "Ravenwood Thorn Sabre",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_straight_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ravenwood_thorn_sabre.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ashen Magma Edge",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/serrated_fang_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ashen_magma_edge.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Icehelm Crystal Longblade",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_saber_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/icehelm_crystal_longblade.png",
       "role": "Sweeping face",
       "trait": "One extra enemy within 1 m takes 15% base physical attack; -5% primary physical attack; no recursive procs.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ironhold Breaker Falchion",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/webglass_needle_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/ironhold_breaker_falchion.png",
       "role": "Breaching face",
       "trait": "+20% direct physical damage against barriers; -3 accuracy points. No bonus against ordinary armor.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Stormcrown Lightning Rapier",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/scaleiron_falchion_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/stormcrown_lightning_rapier.png",
       "role": "Armor seam",
       "trait": "Ignore 8% of target physical armor for the direct hit; -3 accuracy points.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Veiled Sea Boarding Cutlass",
       "family": "Sword",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/veil_silver_channel_blade.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/veiled_sea_boarding_cutlass.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "art_status": "placeholder_existing_family_component"
+      "art_status": "distinct_inventory_component"
     },
     {
       "name": "Ashen Furnace Zweihander",

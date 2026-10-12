@@ -1,5 +1,7 @@
 # Expanded component refinement — 2026-10-11
 
+Update 2026-10-12: six additional Sword blade images installed (14 total, 176 pending). All 15 families now use catalog-art socket assembly. The historical details below describe the initial pass; see `weapon-family-assembly.md` for the current renderer.
+
 ## Completed
 
 - Refined all 100 added frameworks and 90 added strikers using original family speed/attack scales and defined numerical trade-offs.
