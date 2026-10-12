@@ -1,13 +1,13 @@
 # Entropic Forge — component artwork production tracker
 
-The catalog has 150 frameworks and 180 strikers across 15 weapon families. Original set: 50 frameworks + 90 strikers. The **190 expanded records** have temporary shared art, and require **100 new framework sprites + 90 new striker sprites** before the modular finished-weapon assembly system is implemented.
+The catalog has 150 frameworks and 180 strikers across 15 weapon families. Original set: 50 frameworks + 90 strikers. The 190 expanded records now have refined family-specific balance proposals. **8 frameworks have distinct inventory icons; 92 framework icons and 90 striker icons remain pending.** Image generation reached its account usage limit during this pass. Inventory images are separate from the Sword assembly test sprites.
 
 **Art acceptance criteria:** independently cropped transparent RGBA PNG; distinct geometry, not recolor; neutral unlit metal/material pass; consistent forward orientation per family; visually readable at 128–256 pixels; a defined assembly join point on each component; core material/emissive treatment will be applied *later*, not painted as a permanent incompatible glow. Use real per-item images instead of atlas crops with embedded text. Existing 140 original component images should also have their join points and orientation checked.
 
 | Family | New frameworks | New strikers | Stage |
 |---|---:|---:|---|
-| Sword | 6 | 6 | Concept pass / sprite pending |
-| Greatsword | 7 | 6 | Concept pass / sprite pending |
+| Sword | 0 | 6 | Six replacement framework inventory icons complete; striker icons pending |
+| Greatsword | 5 | 6 | Two replacement framework inventory icons complete; remainder pending |
 | Dagger | 7 | 6 | Concept pass / sprite pending |
 | Spear | 6 | 6 | Concept pass / sprite pending |
 | Axe | 7 | 6 | Concept pass / sprite pending |
@@ -25,12 +25,12 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Origi
 ## Sword
 
 ### Frameworks
-- [ ] Ravenwood Thornhook
-- [ ] Ashen Emberguard
-- [ ] Icehelm Splitguard
-- [ ] Harbor Basket Hilt
-- [ ] Mirebone Fanggrip
-- [ ] Stormcrown Coil Hilt
+- [x] Ravenwood Thornhook — distinct inventory icon; snap asset unchanged
+- [x] Ashen Emberguard — distinct inventory icon; snap asset unchanged
+- [x] Icehelm Splitguard — distinct inventory icon; snap asset unchanged
+- [x] Harbor Basket Hilt — distinct inventory icon; snap asset unchanged
+- [x] Mirebone Fanggrip — distinct inventory icon; snap asset unchanged
+- [x] Stormcrown Coil Hilt — distinct inventory icon; snap asset unchanged
 
 ### Strikers
 - [ ] Ravenwood Thorn Sabre
@@ -43,8 +43,8 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Origi
 ## Greatsword
 
 ### Frameworks
-- [ ] Ironhold Bastion Grip
-- [ ] Volcanic Furnace Tang
+- [x] Ironhold Bastion Grip — distinct inventory icon; snap asset unchanged
+- [x] Volcanic Furnace Tang — distinct inventory icon; snap asset unchanged
 - [ ] Icebreaker Double Grip
 - [ ] Harrowstead Reaver Handle
 - [ ] Sunken Anchor Hilt
@@ -305,3 +305,8 @@ The catalog has 150 frameworks and 180 strikers across 15 weapon families. Origi
 ## Next engineering milestone — only after art signoff
 
 Family-specific alignment guides and sockets; framework + striker sprite alignment into one coherent weapon; core-controlled material overlays; export/caching of assembled results as usable inventory icons. Do not consider the isolated or labeled concept art as finished modular assets.
+
+
+## Reproducible production queue
+
+`data/entropic_forge/component_art_jobs.json` records all 190 prompts, exact output paths and completion states. These are inventory images only, not verified character equipment overlays or approved assembly cutouts. The user-approved original inventory images and existing Sword snap ZIP are preserved.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Validate committed forge artwork and the 512-entry item/path contract."""
-import json
+"""Validate the 702-entry catalog, completed replacement art and remaining placeholders."""
+import hashlib, json, struct
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
@@ -14,15 +14,28 @@ for category, count in expected.items():
         icon = entry.get("icon")
         assert icon and icon.startswith("res://assets/entropic_forge/icons/"), entry
         paths.append(root / icon.removeprefix("res://"))
-assert len(paths) == 702 and len(set(paths)) == 512, "Expected 702 catalog entries using 512 original assets until expansion art is finished"
+replacements = [e for category in ("frameworks", "strikers") for e in catalog[category] if e.get("art_status") == "distinct_inventory_component"]
+pending = [e for category in ("frameworks", "strikers") for e in catalog[category] if e.get("art_status") == "placeholder_existing_family_component"]
+assert len(replacements) + len(pending) == 190, "Every expansion entry must report its art state"
+assert len(paths) == 702 and len(set(paths)) == 512 + len(replacements), "Only explicitly pending entries may reuse original art"
+hashes = set()
+for entry in replacements:
+    path = root / entry["icon"].removeprefix("res://")
+    payload = path.read_bytes()
+    assert payload[:8] == b'\x89PNG\r\n\x1a\n', path
+    assert struct.unpack('>II',payload[16:24]) == (512,512), path
+    assert payload[25] in (4,6), f"Replacement must retain alpha: {path}"
+    digest = hashlib.sha256(payload).hexdigest()
+    assert digest not in hashes, f"Duplicate replacement image: {path}"
+    hashes.add(digest)
 
 room = root / "assets/forge/forge_room.png"
 present = sum(path.is_file() for path in paths)
 if present == 0 and not room.exists():
-    print("Forge catalog verified: 702 indexed items. Artwork overlay not yet committed; preview will use fallback.")
+    print("Forge catalog verified: 702 indexed items. Original artwork overlay is absent; preview will use fallback.")
 else:
     missing = [str(p.relative_to(root)) for p in set(paths) if not p.is_file()]
     if not room.exists():
         missing.append("assets/forge/forge_room.png")
     assert not missing, f"Partial artwork upload: {len(missing)} files missing, first: {missing[:8]}"
-    print("Forge artwork complete: 512 original icons, 190 expanded prototypes reuse family art, plus room.")
+    print(f"Forge artwork verified: 512 original icons, {len(replacements)} distinct replacements, {len(pending)} placeholders pending, plus room.")
