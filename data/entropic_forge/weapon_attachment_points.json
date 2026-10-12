@@ -48,7 +48,7 @@
       "front_part": "blade"
     },
     "Scythe": {
-      "overlap_px": 5,
+      "overlap_px": 2,
       "canvas_padding_px": 18,
       "front_part": "blade"
     },
@@ -1635,10 +1635,11 @@
         200.49,
         36.1
       ],
-      "rotation_degrees": 55,
-      "display_length_px": 260,
+      "rotation_degrees": -35,
+      "display_length_px": 290,
       "family": "Scythe",
-      "category": "frameworks"
+      "category": "frameworks",
+      "scale_axis": "y"
     },
     "assets/entropic_forge/icons/frameworks/gravewillow_crescent_haft.png": {
       "file": "assets/entropic_forge/icons/frameworks/gravewillow_crescent_haft.png",
@@ -1652,10 +1653,19 @@
         190.0,
         38.2
       ],
-      "rotation_degrees": 55,
-      "display_length_px": 260,
+      "rotation_degrees": -35,
+      "display_length_px": 290,
       "family": "Scythe",
-      "category": "frameworks"
+      "category": "frameworks",
+      "scale_axis": "y",
+      "exclude_rects": [
+        [
+          140,
+          225,
+          35,
+          25
+        ]
+      ]
     },
     "assets/entropic_forge/icons/frameworks/last_lantern_balance_shaft.png": {
       "file": "assets/entropic_forge/icons/frameworks/last_lantern_balance_shaft.png",
@@ -1669,10 +1679,11 @@
         188.8,
         36.2
       ],
-      "rotation_degrees": 55,
-      "display_length_px": 260,
+      "rotation_degrees": -35,
+      "display_length_px": 290,
       "family": "Scythe",
-      "category": "frameworks"
+      "category": "frameworks",
+      "scale_axis": "y"
     },
     "assets/entropic_forge/icons/strikers/harvest_iron_crescent.png": {
       "file": "assets/entropic_forge/icons/strikers/harvest_iron_crescent.png",
@@ -1683,10 +1694,10 @@
         225
       ],
       "socket_px": [
-        165.39,
-        215.0
+        156,
+        231
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
       "category": "strikers"
@@ -1700,13 +1711,33 @@
         210
       ],
       "socket_px": [
-        167.87,
-        216.8
+        173,
+        231
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
-      "category": "strikers"
+      "category": "strikers",
+      "exclude_rects": [
+        [
+          0,
+          110,
+          105,
+          146
+        ],
+        [
+          170,
+          0,
+          86,
+          75
+        ],
+        [
+          155,
+          0,
+          101,
+          60
+        ]
+      ]
     },
     "assets/entropic_forge/icons/strikers/webglass_reaping_edge.png": {
       "file": "assets/entropic_forge/icons/strikers/webglass_reaping_edge.png",
@@ -1717,13 +1748,33 @@
         204
       ],
       "socket_px": [
-        165.01,
-        217.52
+        174,
+        230
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
-      "category": "strikers"
+      "category": "strikers",
+      "exclude_rects": [
+        [
+          0,
+          110,
+          105,
+          146
+        ],
+        [
+          170,
+          0,
+          86,
+          75
+        ],
+        [
+          155,
+          0,
+          101,
+          60
+        ]
+      ]
     },
     "assets/entropic_forge/icons/strikers/belliron_soul_crescent.png": {
       "file": "assets/entropic_forge/icons/strikers/belliron_soul_crescent.png",
@@ -1734,13 +1785,33 @@
         210
       ],
       "socket_px": [
-        168.92,
-        216.8
+        179,
+        231
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
-      "category": "strikers"
+      "category": "strikers",
+      "exclude_rects": [
+        [
+          0,
+          110,
+          105,
+          146
+        ],
+        [
+          170,
+          0,
+          86,
+          75
+        ],
+        [
+          155,
+          0,
+          101,
+          60
+        ]
+      ]
     },
     "assets/entropic_forge/icons/strikers/froststeel_sickle_arc.png": {
       "file": "assets/entropic_forge/icons/strikers/froststeel_sickle_arc.png",
@@ -1751,13 +1822,33 @@
         192
       ],
       "socket_px": [
-        164.58,
-        218.96
+        172,
+        230
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
-      "category": "strikers"
+      "category": "strikers",
+      "exclude_rects": [
+        [
+          0,
+          110,
+          105,
+          146
+        ],
+        [
+          165,
+          0,
+          91,
+          85
+        ],
+        [
+          155,
+          0,
+          101,
+          60
+        ]
+      ]
     },
     "assets/entropic_forge/icons/strikers/null_obsidian_reaping_arc.png": {
       "file": "assets/entropic_forge/icons/strikers/null_obsidian_reaping_arc.png",
@@ -1768,13 +1859,21 @@
         217
       ],
       "socket_px": [
-        163.25,
-        215.96
+        165,
+        231
       ],
-      "rotation_degrees": 90,
+      "rotation_degrees": -90,
       "display_length_px": 180,
       "family": "Scythe",
-      "category": "strikers"
+      "category": "strikers",
+      "exclude_rects": [
+        [
+          0,
+          110,
+          105,
+          146
+        ]
+      ]
     },
     "assets/entropic_forge/icons/frameworks/rangers_ash_haft.png": {
       "file": "assets/entropic_forge/icons/frameworks/rangers_ash_haft.png",
