@@ -54,6 +54,15 @@ func _prepare_part(record: Dictionary) -> Dictionary:
 	for corner in [Vector2(rect.size.x, 0), Vector2(rect.size), Vector2(0, rect.size.y)]:
 		bounds = bounds.expand(rotation_transform * corner)
 	var part_scale: float = float(record.get("display_length_px", 200.0)) / (bounds.size.y if record.get("scale_axis", "x") == "y" else bounds.size.x)
+	# Fit the visible artwork, not the transparent padding in square inventory icons.
+	# Keep the authored scale and socket so trimming cannot move the join.
+	var used := cropped.get_used_rect()
+	if used.has_area():
+		cropped = cropped.get_region(used)
+		local_socket -= Vector2(used.position)
+		bounds = Rect2(rotation_transform * Vector2.ZERO, Vector2.ZERO)
+		for corner in [Vector2(used.size.x, 0), Vector2(used.size), Vector2(0, used.size.y)]:
+			bounds = bounds.expand(rotation_transform * corner)
 	return {"texture": ImageTexture.create_from_image(cropped), "size": bounds.size * part_scale,
 		"socket": (rotation_transform * local_socket - bounds.position) * part_scale,
 		"origin": -bounds.position * part_scale, "angle": angle, "part_scale": part_scale,

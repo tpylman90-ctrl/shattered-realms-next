@@ -39,6 +39,11 @@ func _run() -> void:
 		# Exercise the live result builder, not only the layout helper.
 		forge.choice = [forge.families.find(family),0,0,0,0]
 		forge._show_result()
+		await process_frame
+		await process_frame
+		var surface: Control = forge.composite_preview.get_parent().get_parent()
+		if absf(forge.composite_preview.size.x - surface.size.x) > 1.0:
+			errors.append("Preview does not fill result surface: " + family)
 		if not forge.composite_preview.has_node("SocketAlignedWeapon"):
 			errors.append("Live result did not mount parts: " + family)
 		forge._craft_again()

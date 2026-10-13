@@ -204,11 +204,13 @@ func _build() -> void:
 	reveal.add_child(showcase)
 	var display_surface := _panel(Color(0.025,0.055,0.09,0.92),GOLD)
 	showcase.add_child(display_surface)
-	var display_center := CenterContainer.new()
+	var display_center := MarginContainer.new()
 	display_center.custom_minimum_size.y = 246
 	display_surface.add_child(display_center)
 	var art_stack := Control.new()
-	art_stack.custom_minimum_size = Vector2(415,244)
+	art_stack.custom_minimum_size = Vector2(0,244)
+	art_stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	art_stack.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	art_stack.clip_contents = true
 	display_center.add_child(art_stack)
 	result_art = TextureRect.new()

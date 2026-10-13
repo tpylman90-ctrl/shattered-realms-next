@@ -25,6 +25,8 @@ func _run() -> void:
 			var selected: Image = forge._icon(item).get_image()
 			var r: Array = record["region_px"]
 			var expected: Image = selected.get_region(Rect2i(r[0], r[1], r[2], r[3]))
+			# Ignore transparent inventory margins; every visible source pixel must remain exact.
+			expected = expected.get_region(expected.get_used_rect())
 			if prepared["texture"].get_image().get_data() != expected.get_data():
 				errors.append("Assembly changed selected pixels: " + str(item["name"]))
 	forge.queue_free()
