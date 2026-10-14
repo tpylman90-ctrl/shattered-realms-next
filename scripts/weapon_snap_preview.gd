@@ -45,10 +45,18 @@ func _prepare_mounted_pieces(record: Dictionary) -> Dictionary:
 
 func _prepare_part(record: Dictionary) -> Dictionary:
 	var path: String = "res://" + str(record.get("file", ""))
-	if not ResourceLoader.exists(path):
+	if not FileAccess.file_exists(path):
 		return {}
 	var texture: Texture2D = load(path) as Texture2D
-	var source: Image = texture.get_image()
+	var source: Image
+	if texture != null:
+		source = texture.get_image()
+	else:
+		source = Image.new()
+		var load_error := source.load(ProjectSettings.globalize_path(path))
+		if load_error != OK:
+			push_error("Unable to load weapon component: " + path)
+			return {}
 	var region: Array = record.get("region_px", [])
 	var socket: Array = record.get("socket_px", [])
 	if source == null or region.size() != 4 or socket.size() != 2:
