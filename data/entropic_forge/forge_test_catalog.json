@@ -165,7 +165,7 @@
       "durability": 55,
       "interval": "2.211 s",
       "handling": "+25% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/woodcutters_haft_mounted.png"
     },
     {
       "name": "Corsair’s Hook Haft",
@@ -176,7 +176,7 @@
       "durability": 70,
       "interval": "1.909 s",
       "handling": "+10% action speed; -2 accuracy; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/corsairs_hook_haft_mounted.png"
     },
     {
       "name": "Cinderbrace Split Haft",
@@ -187,7 +187,7 @@
       "durability": 85,
       "interval": "2.1 s",
       "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/cinderbrace_split_haft_mounted.png"
     },
     {
       "name": "Quarryman’s Haft",
@@ -3527,7 +3527,7 @@
       "physical": "24 slash",
       "durability": 20,
       "trait": "+3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/foresters_axe_bit.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/foresters_axe_bit_mounted.png"
     },
     {
       "name": "Raider’s Hook Bit",
@@ -3538,7 +3538,7 @@
       "physical": "32 slash",
       "durability": 24,
       "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
-      "icon": "res://assets/entropic_forge/icons/strikers/raiders_hook_bit.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/raiders_hook_bit_mounted.png"
     },
     {
       "name": "Drakeglass Bearded Edge",
@@ -3549,7 +3549,7 @@
       "physical": "41 slash",
       "durability": 30,
       "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_bearded_edge.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/drakeglass_bearded_edge_mounted.png"
     },
     {
       "name": "Bog-Iron Hewing Head",
@@ -3560,7 +3560,7 @@
       "physical": "39 slash",
       "durability": 18,
       "trait": "Ignore 10% of physical armor for this hit.",
-      "icon": "res://assets/entropic_forge/icons/strikers/bog_iron_hewing_head.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/bog_iron_hewing_head_mounted.png"
     },
     {
       "name": "Basalt Double Bit",
@@ -3571,7 +3571,7 @@
       "physical": "54 slash",
       "durability": 38,
       "trait": "15% chance to remove 6 ATB points; once per target action.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_double_bit.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_double_bit_mounted.png"
     },
     {
       "name": "Star-Slate Crescent Bit",
@@ -3582,7 +3582,7 @@
       "physical": "68 slash",
       "durability": 28,
       "trait": "+6 critical chance points; -8% physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent_bit.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_crescent_bit_mounted.png"
     },
     {
       "name": "Quarry Iron Block",

@@ -1,0 +1,52 @@
+{
+  "tool": "built-in image_gen",
+  "pass": "Axe quality pass — 2026-10-14",
+  "shared_constraints": "One detached component, genuine transparent background, front three-quarter side view, studio light upper-left, no text/labels/borders/extra parts. Head sprites include an empty socket; hafts include a centered top tenon. Preserve the distinct material identity and grounded realistic fantasy inventory-art treatment.",
+  "assets": [
+    {
+      "name": "Woodcutter’s Haft",
+      "file": "assets/entropic_forge/icons/frameworks/woodcutters_haft_mounted.png",
+      "prompt": "Warm weathered ash-wood one-handed axe haft, visible wood grain, stitched dark leather cross-wrap, discreet iron top ferrule, centered insertion tenon and iron-capped pommel. Vertical isolated shaft, no axe head."
+    },
+    {
+      "name": "Corsair’s Hook Haft",
+      "file": "assets/entropic_forge/icons/frameworks/corsairs_hook_haft_mounted.png",
+      "prompt": "Salt-darkened oak haft with a centered top tenon and steel ferrule, navy braided grip, warm bronze fittings and a practical boarding-hook pommel. Vertical isolated shaft, no axe head."
+    },
+    {
+      "name": "Cinderbrace Split Haft",
+      "file": "assets/entropic_forge/icons/frameworks/cinderbrace_split_haft_mounted.png",
+      "prompt": "Black cinderwood axe haft with paired riveted iron reinforcement rails, restrained solid orange enamel inlay, dark leather grip, centered metal tenon at top and heavy iron pommel. No glow, no axe head."
+    },
+    {
+      "name": "Forester’s Axe Bit",
+      "file": "assets/entropic_forge/icons/strikers/foresters_axe_bit_mounted.png",
+      "prompt": "Practical one-sided woodsman axe head with broad wedge blade, weathered dark iron, restrained polished edge and riveted empty socket collar at bottom center."
+    },
+    {
+      "name": "Raider’s Hook Bit",
+      "file": "assets/entropic_forge/icons/strikers/raiders_hook_bit_mounted.png",
+      "prompt": "One-sided dark forged-iron raider axe head with hooked rear spur, bright worn cutting edge, compact riveted empty socket collar at bottom center."
+    },
+    {
+      "name": "Drakeglass Bearded Edge",
+      "file": "assets/entropic_forge/icons/strikers/drakeglass_bearded_edge_mounted.png",
+      "prompt": "Bearded axe head with layered teal dragon-glass scale facets, dark steel spine, restrained bronze fittings and an empty lower socket collar; no external glow."
+    },
+    {
+      "name": "Bog-Iron Hewing Head",
+      "file": "assets/entropic_forge/icons/strikers/bog_iron_hewing_head_mounted.png",
+      "prompt": "Heavy squared one-sided axe head in pitted dark bog iron with subtle olive patina, hammered face, practical bright edge and empty lower socket collar."
+    },
+    {
+      "name": "Basalt Double Bit",
+      "file": "assets/entropic_forge/icons/strikers/basalt_double_bit_mounted.png",
+      "prompt": "Symmetric double-bit axe head of fractured black basalt plates and dark riveted iron, restrained ember-red seams embedded in the material, visible empty center socket collar."
+    },
+    {
+      "name": "Star-Slate Crescent Bit",
+      "file": "assets/entropic_forge/icons/strikers/star_slate_crescent_bit_mounted.png",
+      "prompt": "Deep crescent axe head of midnight violet star-slate with engraved constellation lines, tiny silver stars, dark steel structure, bronze collar and empty socket; no glow or particles."
+    }
+  ]
+}
