@@ -315,11 +315,18 @@ var component_icon_cache: Dictionary = {}
 
 func _icon(item: Dictionary) -> Texture2D:
 	var path := str(item.get("icon",""))
-	if path == "" or not ResourceLoader.exists(path):
+	if path == "" or not FileAccess.file_exists(path):
 		return null
 	if component_icon_cache.has(path):
 		return component_icon_cache[path]
-	var texture: Texture2D = load(path)
+	var texture: Texture2D = load(path) as Texture2D
+	if texture == null:
+		var source_image := Image.new()
+		var load_error := source_image.load(ProjectSettings.globalize_path(path))
+		if load_error != OK:
+			push_error("Unable to load forge icon: " + path)
+			return null
+		texture = ImageTexture.create_from_image(source_image)
 	var record: Dictionary = weapon_points.get("assets", {}).get(path.trim_prefix("res://"), {})
 	if not record.is_empty():
 		var source := texture.get_image()
