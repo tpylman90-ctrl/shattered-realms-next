@@ -600,7 +600,7 @@
       "name": "Ironhold Siege Stock",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
       "art_status": "placeholder_existing_family_component"
@@ -609,7 +609,7 @@
       "name": "Ashen Volcanic Cradle",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock_mounted.png",
       "role": "Vented core seat",
       "trait": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
       "art_status": "placeholder_existing_family_component"
@@ -618,7 +618,7 @@
       "name": "Icehelm Silent Stock",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock_mounted.png",
       "role": "Indexed grip",
       "trait": "+7 accuracy points; -8% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -627,7 +627,7 @@
       "name": "Ravenwood Quickdraw Stock",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "role": "Light counterbalance",
       "trait": "+8% action speed; -2 accuracy points; -10% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -636,7 +636,7 @@
       "name": "Stormcrown Coil Stock",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock_mounted.png",
       "role": "Insulated conduit",
       "trait": "+12% elemental attack; -2 accuracy points; -10% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -645,7 +645,7 @@
       "name": "Tidewatch Harpoon Frame",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock_mounted.png",
       "role": "Insulated conduit",
       "trait": "+12% elemental attack; -2 accuracy points; -10% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -654,7 +654,7 @@
       "name": "Harrowstead Heavy Stock",
       "family": "Crossbow",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "role": "Vented core seat",
       "trait": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
       "art_status": "placeholder_existing_family_component"
@@ -789,7 +789,7 @@
       "name": "Ironhold Siege Cradle",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame_mounted.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
       "art_status": "placeholder_existing_family_component"
@@ -798,7 +798,7 @@
       "name": "Icehelm Frostlock Frame",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle_mounted.png",
       "role": "Braced housing",
       "trait": "+20% durability; -5% action speed.",
       "art_status": "placeholder_existing_family_component"
@@ -807,7 +807,7 @@
       "name": "Blackthorn Hunter Mount",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame_mounted.png",
       "role": "Indexed grip",
       "trait": "+7 accuracy points; -8% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -816,7 +816,7 @@
       "name": "Veiled Sea Shipgun Stock",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame_mounted.png",
       "role": "Light counterbalance",
       "trait": "+8% action speed; -2 accuracy points; -10% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -825,7 +825,7 @@
       "name": "Ember Coast Heatvent Frame",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame_mounted.png",
       "role": "Vented core seat",
       "trait": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
       "art_status": "placeholder_existing_family_component"
@@ -834,7 +834,7 @@
       "name": "Stormcrown Capacitor Frame",
       "family": "Cannon",
       "category": "frameworks",
-      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle_mounted.png",
       "role": "Insulated conduit",
       "trait": "+12% elemental attack; -2 accuracy points; -10% durability.",
       "art_status": "placeholder_existing_family_component"
@@ -1446,7 +1446,7 @@
       "name": "Ashen Furnace Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod_mounted.png",
       "role": "Fine point",
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
       "art_status": "placeholder_existing_family_component"
@@ -1455,7 +1455,7 @@
       "name": "Frostpeak Needle Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod_mounted.png",
       "role": "Armor seam",
       "trait": "Ignore 8% of target physical armor for the direct hit; -3 accuracy points.",
       "art_status": "placeholder_existing_family_component"
@@ -1464,7 +1464,7 @@
       "name": "Drakeshard Twinfang Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod_mounted.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
       "art_status": "placeholder_existing_family_component"
@@ -1473,7 +1473,7 @@
       "name": "Ravenwood Thornsnap Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod_mounted.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
       "art_status": "placeholder_existing_family_component"
@@ -1482,7 +1482,7 @@
       "name": "Stormcrown Coilshot Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod_mounted.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
       "art_status": "placeholder_existing_family_component"
@@ -1491,7 +1491,7 @@
       "name": "Veiled Sea Boarding Prod",
       "family": "Crossbow",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod_mounted.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
       "art_status": "placeholder_existing_family_component"
@@ -1608,7 +1608,7 @@
       "name": "Ashen Flamejet Bore",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel_mounted.png",
       "role": "Fine point",
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
       "art_status": "placeholder_existing_family_component"
@@ -1617,7 +1617,7 @@
       "name": "Frostpeak Ice Lance Tube",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel_mounted.png",
       "role": "Armor seam",
       "trait": "Ignore 8% of target physical armor for the direct hit; -3 accuracy points.",
       "art_status": "placeholder_existing_family_component"
@@ -1626,7 +1626,7 @@
       "name": "Drakeshard Dragonbreath Barrel",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore_mounted.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
       "art_status": "placeholder_existing_family_component"
@@ -1635,7 +1635,7 @@
       "name": "Ravenwood Thornshot Drum",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel_mounted.png",
       "role": "Raking edge",
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
       "art_status": "placeholder_existing_family_component"
@@ -1644,7 +1644,7 @@
       "name": "Stormcrown Arc Cannon",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel_mounted.png",
       "role": "Core channel",
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
       "art_status": "placeholder_existing_family_component"
@@ -1653,7 +1653,7 @@
       "name": "Veiled Sea Broadside Tube",
       "family": "Cannon",
       "category": "strikers",
-      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel_mounted.png",
       "role": "Sweeping face",
       "trait": "One extra enemy within 1 m takes 15% base physical attack; -5% primary physical attack; no recursive procs.",
       "art_status": "placeholder_existing_family_component"

@@ -13,10 +13,35 @@ func _ready() -> void:
 
 func configure(frame_record: Dictionary, blade_record: Dictionary, overlap: float = 5.0) -> bool:
 	frame = _prepare_part(frame_record)
-	blade = _prepare_part(blade_record)
+	blade = _prepare_mounted_pieces(blade_record) if blade_record.has("mount_pieces") else _prepare_part(blade_record)
 	overlap_px = overlap
 	queue_redraw()
 	return not frame.is_empty() and not blade.is_empty()
+
+func _prepare_mounted_pieces(record: Dictionary) -> Dictionary:
+	# Bow arms attach independently to the two riser studs. Never overlap two
+	# complete limb roots at the centre or cut them short to hide a bad join.
+	var ports: Array = frame.get("ports", [])
+	var records: Array = record.get("mount_pieces", [])
+	if ports.size() != records.size() or ports.is_empty():
+		return {}
+	var children: Array = []
+	var bounds := Rect2()
+	for index in range(records.size()):
+		var child_record: Dictionary = records[index].duplicate(true)
+		child_record["file"] = record["file"]
+		var part := _prepare_part(child_record)
+		if part.is_empty():
+			return {}
+		var target: Vector2 = Vector2(ports[index]) - Vector2(frame["socket"])
+		var position: Vector2 = target - Vector2(part["socket"])
+		var rect := Rect2(position, Vector2(part["size"]))
+		bounds = rect if index == 0 else bounds.merge(rect)
+		children.append({"part": part, "position": position, "target": target})
+	for child in children:
+		child["position"] -= bounds.position
+	return {"children": children, "size": bounds.size, "socket": -bounds.position,
+		"source_file": "res://" + str(record["file"])}
 
 func _prepare_part(record: Dictionary) -> Dictionary:
 	var path: String = "res://" + str(record.get("file", ""))
@@ -28,18 +53,6 @@ func _prepare_part(record: Dictionary) -> Dictionary:
 	var socket: Array = record.get("socket_px", [])
 	if source == null or region.size() != 4 or socket.size() != 2:
 		return {}
-	# Paired bow limbs are authored side by side; mount them above and below the riser.
-	if record.has("limb_regions"):
-		var limbs: Array = record["limb_regions"]
-		var upper: Image = source.get_region(Rect2i(limbs[0][0], limbs[0][1], limbs[0][2], limbs[0][3]))
-		var lower: Image = source.get_region(Rect2i(limbs[1][0], limbs[1][1], limbs[1][2], limbs[1][3]))
-		lower.rotate_90(CLOCKWISE)
-		lower.rotate_90(CLOCKWISE)
-		var join: int = int(record["limb_join_y"])
-		var assembled := Image.create(maxi(upper.get_width(), lower.get_width()), join + lower.get_height(), false, Image.FORMAT_RGBA8)
-		assembled.blend_rect(upper, Rect2i(Vector2i.ZERO, upper.get_size()), Vector2i.ZERO)
-		assembled.blend_rect(lower, Rect2i(Vector2i.ZERO, lower.get_size()), Vector2i(0, join))
-		source = assembled
 	for excluded in record.get("exclude_rects", []):
 		source.fill_rect(Rect2i(excluded[0], excluded[1], excluded[2], excluded[3]), Color.TRANSPARENT)
 	var rect := Rect2i(int(region[0]), int(region[1]), int(region[2]), int(region[3]))
@@ -63,10 +76,16 @@ func _prepare_part(record: Dictionary) -> Dictionary:
 		bounds = Rect2(rotation_transform * Vector2.ZERO, Vector2.ZERO)
 		for corner in [Vector2(used.size.x, 0), Vector2(used.size), Vector2(0, used.size.y)]:
 			bounds = bounds.expand(rotation_transform * corner)
+	var ports: Array = []
+	for point in record.get("ports_px", []):
+		var delta := Vector2(float(point[0]) - float(socket[0]), float(point[1]) - float(socket[1]))
+		if record.get("flip_h", false):
+			delta.x = -delta.x
+		ports.append((rotation_transform * (local_socket + delta) - bounds.position) * part_scale)
 	return {"texture": ImageTexture.create_from_image(cropped), "size": bounds.size * part_scale,
 		"socket": (rotation_transform * local_socket - bounds.position) * part_scale,
 		"origin": -bounds.position * part_scale, "angle": angle, "part_scale": part_scale,
-		"source_file": path}
+		"source_file": path, "ports": ports}
 
 func layout_for_canvas(canvas: Vector2) -> Dictionary:
 	if frame.is_empty() or blade.is_empty():
@@ -96,6 +115,10 @@ func _draw() -> void:
 	draw_set_transform(Vector2.ZERO)
 
 func _draw_part(part: Dictionary, rect: Rect2, fit: float) -> void:
+	if part.has("children"):
+		for child in part["children"]:
+			_draw_part(child["part"], Rect2(rect.position + Vector2(child["position"]) * fit, Vector2(child["part"]["size"]) * fit), fit)
+		return
 	draw_set_transform(rect.position + Vector2(part["origin"]) * fit,
 		float(part["angle"]), Vector2.ONE * float(part["part_scale"]) * fit)
 	draw_texture(part["texture"] as Texture2D, Vector2.ZERO)

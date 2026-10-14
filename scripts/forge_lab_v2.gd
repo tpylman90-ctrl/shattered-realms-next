@@ -311,9 +311,28 @@ func _set_step(index: int) -> void:
 	action.text = "START CRAFT" if step == 4 else "NEXT STAGE ›"
 	action.disabled = choice[step] < 0
 
+var component_icon_cache: Dictionary = {}
+
 func _icon(item: Dictionary) -> Texture2D:
 	var path := str(item.get("icon",""))
-	return load(path) if path != "" and ResourceLoader.exists(path) else null
+	if path == "" or not ResourceLoader.exists(path):
+		return null
+	if component_icon_cache.has(path):
+		return component_icon_cache[path]
+	var texture: Texture2D = load(path)
+	var record: Dictionary = weapon_points.get("assets", {}).get(path.trim_prefix("res://"), {})
+	if not record.is_empty():
+		var source := texture.get_image()
+		for excluded in record.get("exclude_rects", []):
+			source.fill_rect(Rect2i(excluded[0], excluded[1], excluded[2], excluded[3]), Color.TRANSPARENT)
+		var region: Array = record["region_px"]
+		source = source.get_region(Rect2i(region[0], region[1], region[2], region[3]))
+		var used := source.get_used_rect()
+		if used.has_area():
+			source = source.get_region(used)
+		texture = ImageTexture.create_from_image(source)
+	component_icon_cache[path] = texture
+	return texture
 
 func _rebuild_inventory() -> void:
 	for old in cards.get_children():

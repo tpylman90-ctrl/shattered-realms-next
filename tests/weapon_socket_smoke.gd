@@ -25,6 +25,20 @@ func _run() -> void:
 				if not preview.configure(fr, br, overlap):
 					errors.append("Missing socket: " + str(f["name"]) + " / " + str(b["name"]))
 				else:
+					if family == "Bow":
+						var children: Array = preview.blade.get("children", [])
+						var ports: Array = preview.frame.get("ports", [])
+						if children.size() != 2 or ports.size() != 2:
+							errors.append("Bow needs two independent limb mounts")
+						else:
+							for index in range(2):
+								var child: Dictionary = children[index]
+								var root_position: Vector2 = Vector2(child.position) + Vector2(child.part.socket) - Vector2(preview.blade.socket)
+								var stud_position: Vector2 = Vector2(ports[index]) - Vector2(preview.frame.socket)
+								if root_position.distance_to(stud_position) > 0.01:
+									errors.append("Bow limb missed riser stud: " + str(f.name) + " / " + str(b.name))
+							if Vector2(ports[0]).distance_to(Vector2(ports[1])) < 30.0:
+								errors.append("Bow limb mounts collapsed onto one point")
 					for canvas in [Vector2(300,170),Vector2(415,244),Vector2(720,300)]:
 						var layout: Dictionary = preview.layout_for_canvas(canvas)
 						var delta: Vector2 = layout["hilt_socket"] - layout["blade_socket"]

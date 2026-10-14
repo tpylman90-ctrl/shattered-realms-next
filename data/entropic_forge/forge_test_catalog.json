@@ -385,7 +385,7 @@
       "durability": 55,
       "interval": "3.222 s",
       "handling": "+8 accuracy; +10% durability; -10% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png"
     },
     {
       "name": "Marine Ratchet Stock",
@@ -396,7 +396,7 @@
       "durability": 70,
       "interval": "3.053 s",
       "handling": "+25% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock_mounted.png"
     },
     {
       "name": "Cogspire Repeating Stock",
@@ -407,7 +407,7 @@
       "durability": 85,
       "interval": "2.636 s",
       "handling": "+10% action speed; -2 accuracy; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock_mounted.png"
     },
     {
       "name": "Drover’s Wrapped Handle",
@@ -484,7 +484,7 @@
       "durability": 55,
       "interval": "4.0 s",
       "handling": "+8 accuracy; +10% durability; -10% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame_mounted.png"
     },
     {
       "name": "Rivetlock Recoil Cradle",
@@ -495,7 +495,7 @@
       "durability": 70,
       "interval": "3.789 s",
       "handling": "+25% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle_mounted.png"
     },
     {
       "name": "Brasswick Vented Cannon Frame",
@@ -506,7 +506,7 @@
       "durability": 85,
       "interval": "3.6 s",
       "handling": "+22% elemental attack; -4 accuracy; -20% durability; no hidden-life hint.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame_mounted.png"
     },
     {
       "name": "Sundial Artillery Frame",
@@ -517,7 +517,7 @@
       "durability": 100,
       "interval": "3.6 s",
       "handling": "+15% elemental attack; -15% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png"
+      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame_mounted.png"
     },
     {
       "name": "Pitfighter’s Wrist Brace",
@@ -2343,7 +2343,7 @@
       "durability": 62,
       "interval": "3.053 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ironhold Siege Stock — Braced housing",
       "mechanics": {
@@ -2370,7 +2370,7 @@
       "durability": 72,
       "interval": "3.021 s",
       "handling": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ashen Volcanic Cradle — Vented core seat",
       "mechanics": {
@@ -2397,7 +2397,7 @@
       "durability": 72,
       "interval": "2.900 s",
       "handling": "+7 accuracy points; -8% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Icehelm Silent Stock — Indexed grip",
       "mechanics": {
@@ -2424,7 +2424,7 @@
       "durability": 86,
       "interval": "2.685 s",
       "handling": "+8% action speed; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ravenwood Quickdraw Stock — Light counterbalance",
       "mechanics": {
@@ -2451,7 +2451,7 @@
       "durability": 86,
       "interval": "2.900 s",
       "handling": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/marine_ratchet_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Stormcrown Coil Stock — Insulated conduit",
       "mechanics": {
@@ -2478,7 +2478,7 @@
       "durability": 98,
       "interval": "2.900 s",
       "handling": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/cogspire_repeating_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Tidewatch Harpoon Frame — Insulated conduit",
       "mechanics": {
@@ -2505,7 +2505,7 @@
       "durability": 72,
       "interval": "3.021 s",
       "handling": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/militia_oak_stock_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Harrowstead Heavy Stock — Vented core seat",
       "mechanics": {
@@ -2910,7 +2910,7 @@
       "durability": 62,
       "interval": "3.789 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ironhold Siege Cradle — Braced housing",
       "mechanics": {
@@ -2937,7 +2937,7 @@
       "durability": 72,
       "interval": "3.789 s",
       "handling": "+20% durability; -5% action speed.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Icehelm Frostlock Frame — Braced housing",
       "mechanics": {
@@ -2964,7 +2964,7 @@
       "durability": 72,
       "interval": "3.600 s",
       "handling": "+7 accuracy points; -8% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/brasswick_vented_cannon_frame_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Blackthorn Hunter Mount — Indexed grip",
       "mechanics": {
@@ -2991,7 +2991,7 @@
       "durability": 86,
       "interval": "3.333 s",
       "handling": "+8% action speed; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/sundial_artillery_frame_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Veiled Sea Shipgun Stock — Light counterbalance",
       "mechanics": {
@@ -3018,7 +3018,7 @@
       "durability": 86,
       "interval": "3.750 s",
       "handling": "+18% elemental attack; -4% action speed; -15% durability. Does not stabilize a cracked weapon.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/scrappers_shoulder_frame_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ember Coast Heatvent Frame — Vented core seat",
       "mechanics": {
@@ -3045,7 +3045,7 @@
       "durability": 98,
       "interval": "3.600 s",
       "handling": "+12% elemental attack; -2 accuracy points; -10% durability.",
-      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle.png",
+      "icon": "res://assets/entropic_forge/icons/frameworks/rivetlock_recoil_cradle_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Stormcrown Capacitor Frame — Insulated conduit",
       "mechanics": {
@@ -3329,7 +3329,7 @@
       "physical": "34 slash",
       "durability": 20,
       "trait": "+3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/broad_militia_blade.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/broad_militia_blade_mounted.png"
     },
     {
       "name": "Notched Siege Blade",
@@ -3340,7 +3340,7 @@
       "physical": "46 slash",
       "durability": 24,
       "trait": "+25% direct damage against barriers only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/notched_siege_blade.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/notched_siege_blade_mounted.png"
     },
     {
       "name": "Drakebone Cleaver",
@@ -3351,7 +3351,7 @@
       "physical": "60 slash",
       "durability": 30,
       "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drakebone_cleaver.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/drakebone_cleaver_mounted.png"
     },
     {
       "name": "Basalt Execution Blade",
@@ -3362,7 +3362,7 @@
       "physical": "56 slash",
       "durability": 18,
       "trait": "15% chance to remove 6 ATB points; once per target action.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_execution_blade.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_execution_blade_mounted.png"
     },
     {
       "name": "Froststeel Flamberge",
@@ -3373,7 +3373,7 @@
       "physical": "78 slash",
       "durability": 38,
       "trait": "20% chance to bleed for 12% base physical per action, 2 actions; one stack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_flamberge.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_flamberge_mounted.png"
     },
     {
       "name": "Null-Edge Colossus Blade",
@@ -3384,7 +3384,7 @@
       "physical": "99 slash",
       "durability": 28,
       "trait": "Physical attack -12%; elemental attack +20%.",
-      "icon": "res://assets/entropic_forge/icons/strikers/null_edge_colossus_blade.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/null_edge_colossus_blade_mounted.png"
     },
     {
       "name": "Watchman’s Point",
@@ -3923,7 +3923,7 @@
       "physical": "31 pierce",
       "durability": 20,
       "trait": "+3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod_mounted.png"
     },
     {
       "name": "Drake-Sinew Compound Prod",
@@ -3934,7 +3934,7 @@
       "physical": "42 pierce",
       "durability": 24,
       "trait": "+6 critical chance points; -8% physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod_mounted.png"
     },
     {
       "name": "Marine Heavy Prod",
@@ -3945,7 +3945,7 @@
       "physical": "54 pierce",
       "durability": 30,
       "trait": "+2 m range; -5 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod_mounted.png"
     },
     {
       "name": "Springbrass Repeater Prod",
@@ -3956,7 +3956,7 @@
       "physical": "51 pierce",
       "durability": 18,
       "trait": "+8% physical attack; -0.2 m reach.",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod_mounted.png"
     },
     {
       "name": "Froststeel Arbalest Prod",
@@ -3967,7 +3967,7 @@
       "physical": "71 pierce",
       "durability": 38,
       "trait": "Ignore 10% of physical armor for this hit.",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod_mounted.png"
     },
     {
       "name": "Star-Slate Resonance Prod",
@@ -3978,7 +3978,7 @@
       "physical": "90 pierce",
       "durability": 28,
       "trait": "+12% elemental attack; -6% physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod_mounted.png"
     },
     {
       "name": "Braided Oak Lash",
@@ -4121,7 +4121,7 @@
       "physical": "38 pierce",
       "durability": 20,
       "trait": "+3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel_mounted.png"
     },
     {
       "name": "Scatterbore Barrel",
@@ -4132,7 +4132,7 @@
       "physical": "51 pierce",
       "durability": 24,
       "trait": "One extra enemy within 1 m of target takes 18% base physical damage; no recursive proc.",
-      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel_mounted.png"
     },
     {
       "name": "Tidebronze Longbore",
@@ -4143,7 +4143,7 @@
       "physical": "67 pierce",
       "durability": 30,
       "trait": "+2 m range; -5 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore_mounted.png"
     },
     {
       "name": "Springbrass Spiral Barrel",
@@ -4154,7 +4154,7 @@
       "physical": "63 pierce",
       "durability": 18,
       "trait": "+6 critical chance points; -8% physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel_mounted.png"
     },
     {
       "name": "Basalt Siege Barrel",
@@ -4165,7 +4165,7 @@
       "physical": "87 pierce",
       "durability": 38,
       "trait": "15% chance to remove 6 ATB points; once per target action.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel_mounted.png"
     },
     {
       "name": "Prismatic Breach Barrel",
@@ -4176,7 +4176,7 @@
       "physical": "110 pierce",
       "durability": 28,
       "trait": "Physical attack -12%; elemental attack +20%.",
-      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png"
+      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel_mounted.png"
     },
     {
       "name": "Plainsteel Knuckle Plate",
@@ -5700,7 +5700,7 @@
       "physical": "41 pierce",
       "durability": 24,
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/plainsteel_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ashen Furnace Prod — Fine point",
       "mechanics": {
@@ -5723,7 +5723,7 @@
       "physical": "55 pierce",
       "durability": 29,
       "trait": "Ignore 8% of target physical armor for the direct hit; -3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/drake_sinew_compound_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Frostpeak Needle Prod — Armor seam",
       "mechanics": {
@@ -5747,7 +5747,7 @@
       "physical": "52 pierce",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/marine_heavy_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Drakeshard Twinfang Prod — Raking edge",
       "mechanics": {
@@ -5773,7 +5773,7 @@
       "physical": "71 pierce",
       "durability": 37,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_repeater_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ravenwood Thornsnap Prod — Raking edge",
       "mechanics": {
@@ -5799,7 +5799,7 @@
       "physical": "73 pierce",
       "durability": 37,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/froststeel_arbalest_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Stormcrown Coilshot Prod — Core channel",
       "mechanics": {
@@ -5822,7 +5822,7 @@
       "physical": "88 pierce",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/star_slate_resonance_prod_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Veiled Sea Boarding Prod — Raking edge",
       "mechanics": {
@@ -6147,7 +6147,7 @@
       "physical": "50 pierce",
       "durability": 24,
       "trait": "+5 critical chance points; -8% physical attack. Direct hits only.",
-      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/riveted_iron_barrel_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ashen Flamejet Bore — Fine point",
       "mechanics": {
@@ -6170,7 +6170,7 @@
       "physical": "68 pierce",
       "durability": 29,
       "trait": "Ignore 8% of target physical armor for the direct hit; -3 accuracy points.",
-      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/scatterbore_barrel_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Frostpeak Ice Lance Tube — Armor seam",
       "mechanics": {
@@ -6194,7 +6194,7 @@
       "physical": "64 pierce",
       "durability": 29,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/tidebronze_longbore_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Drakeshard Dragonbreath Barrel — Raking edge",
       "mechanics": {
@@ -6220,7 +6220,7 @@
       "physical": "87 pierce",
       "durability": 37,
       "trait": "18% chance to bleed for 12% base physical attack per target action, 2 actions; one stack; -4% direct physical attack.",
-      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/springbrass_spiral_barrel_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Ravenwood Thornshot Drum — Raking edge",
       "mechanics": {
@@ -6246,7 +6246,7 @@
       "physical": "90 pierce",
       "durability": 37,
       "trait": "+15% elemental attack; -8% physical attack. Preserves the installed core element.",
-      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/basalt_siege_barrel_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Stormcrown Arc Cannon — Core channel",
       "mechanics": {
@@ -6269,7 +6269,7 @@
       "physical": "108 pierce",
       "durability": 29,
       "trait": "One extra enemy within 1 m takes 15% base physical attack; -5% primary physical attack; no recursive procs.",
-      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel.png",
+      "icon": "res://assets/entropic_forge/icons/strikers/prismatic_breach_barrel_mounted.png",
       "art_status": "placeholder_existing_family_component",
       "silhouette": "Veiled Sea Broadside Tube — Sweeping face",
       "mechanics": {

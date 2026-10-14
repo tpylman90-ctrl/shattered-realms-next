@@ -1,0 +1,105 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "scrappers_shoulder_frame",
+      "prompt": "Precise-object-edit for modular fantasy inventory sprite. Use attached image as mounting geometry and perspective reference. Create scrappers shoulder frame: replace brass vents with a rugged patched dark oak receiver, iron straps, scrap rivets and battered wooden shoulder stock; retain the right receiving sleeve. KEEP STRICT SIDE VIEW, left rear and right front, exactly horizontal bore, front sleeve at same height and comparable size as reference. Entire separate FRAME only, no barrel, no wheels, no legs. High detail dark fantasy painted realism, true transparent background, no glow, no smoke, no cast shadow, no text. All artwork inside canvas with margin."
+    },
+    {
+      "name": "rivetlock_recoil_cradle",
+      "prompt": "Precise-object-edit for modular fantasy inventory sprite. Use attached image as mounting geometry and perspective reference. Create rivetlock recoil cradle: replace brass vents with an intricate dark iron receiver and exposed coiled brass recoil springs above and below the horizontal chamber; stout leather grip and compact rear stock; retain the right receiving sleeve. KEEP STRICT SIDE VIEW, left rear and right front, exactly horizontal bore, front sleeve at same height and comparable size as reference. Entire separate FRAME only, no barrel, no wheels, no legs. High detail dark fantasy painted realism, true transparent background, no glow, no smoke, no cast shadow, no text. All artwork inside canvas with margin."
+    },
+    {
+      "name": "sundial_artillery_frame",
+      "prompt": "Precise-object-edit. Redesign attached modular hand cannon frame as SUNDIAL ARTILLERY FRAME. Preserve exactly the side-view silhouette, horizontal bore axis, grip placement and rightmost metal receiving sleeve. Replace its materials and fittings with antique sun-bronze, engraved solar plates, small flat clockwork dial set into side of breech, dark indigo leather grip, gold-edged armor bands. Ancient desert artifact, refined craftsmanship. FRAME ONLY, no barrel, no legs, no wheels. Same proportions and sharp transparent cutout. No magic glow or aura, no text, no shadow, no background."
+    },
+    {
+      "name": "riveted_iron_barrel",
+      "prompt": "Precise-object-edit. Attached is the mounting/perspective reference for a modular fantasy hand cannon barrel. Create RIVETED IRON BARREL: replace turquoise/gold nautical materials with battered dark forged iron plates, simple rows of rivets, steel reinforcement hoops. Keep the exact side-on horizontal axis, LEFT narrow insertion shank and RIGHT muzzle, and matching shank diameter. Straight sturdy barrel silhouette, smaller plain muzzle, no ornate carvings. Component only, no frame, stock, grip, legs. Detailed painted realistic dark fantasy game sprite, all edges visible. Actual transparent background, no glow, no floor shadow, no labels."
+    },
+    {
+      "name": "scatterbore_barrel",
+      "prompt": "Precise-object-edit of attached modular cannon BARREL reference. Create SCATTERBORE BARREL, thick battered dark iron and copper rings, shorter blunderbuss-like barrel with a very broad flared muzzle at RIGHT. Keep LEFT narrow cylindrical insertion shank in same orientation and diameter, axis exactly horizontal. Wide mouth has a single large bore, not multiple barrels. Detailed dark fantasy painted realism, SIDE VIEW, no changes of perspective. No stock, grip, frame, legs, loose parts, labels, glow or shadow. Actual transparent background; complete component within canvas."
+    },
+    {
+      "name": "springbrass_spiral_barrel",
+      "prompt": "Precise-object-edit attached modular hand cannon barrel. Create SPRINGBRASS SPIRAL BARREL: fully replace nautical carvings with mechanical brass helical reinforcement coils wrapping dark gunmetal tube, tiny rivets, precision slotted muzzle at RIGHT. Keep exact horizontal SIDE VIEW and narrow LEFT insertion shank diameter, overall length and axis. Clearly an engineered fantasy barrel, no nautical motifs. No stock, grip, frame or extra loose parts. Detailed metal with painterly RPG realism, true transparent background, crisp edges, no aura, no glow, no cast shadow, no text."
+    },
+    {
+      "name": "basalt_siege_barrel",
+      "prompt": "Precise-object-edit attached modular cannon barrel reference. Make BASALT SIEGE BARREL: massive angular black volcanic basalt tube with dark forged iron reinforcement bands, subtle thin orange mineral cracks confined to surface, square-edged heavy muzzle at RIGHT. Preserve horizontal bore axis and LEFT narrow cylindrical metal insertion shank at same size and position. Strong basalt sculpted silhouette rather than smooth bronze. No nautical carvings. Strict side view, full component visible, no frame, grip, legs, detached pieces, effects or ground shadow. Detailed realistic painted dark fantasy inventory sprite, true transparent background, no text."
+    },
+    {
+      "name": "prismatic_breach_barrel",
+      "prompt": "Precise-object-edit attached cannon barrel reference. Create PRISMATIC BREACH BARREL, a faceted violet and blue crystal cylindrical conduit enclosed by elegant aged silver and brass cage ribs, polygonal crystal muzzle at RIGHT, intricate jewel-like material details. Preserve horizontal SIDE VIEW bore axis and narrow cylindrical metal LEFT insertion shank size and location. No nautical motifs. The crystal energy stays entirely within the object; absolutely no external glow, aura, floating shards or particles. Isolated complete barrel only, no stock, grip, frame, legs, labels or cast shadow. Detailed realistic dark fantasy painted inventory sprite, genuine transparent background."
+    },
+    {
+      "name": "marine_ratchet_stock",
+      "prompt": "Precise-object-edit of attached crossbow stock reference. Make MARINE RATCHET STOCK: salt-worn dark teak wood, bronze ratchet winch and mechanical gearing beside the middle of the bolt rail, navy leather wraps, brass maritime fittings. Preserve horizontal TOP-DOWN orthographic view, shoulder butt LEFT, straight rail RIGHT and exact front transverse mounting block position at far right. Component STOCK ONLY, absolutely no bow arms, no string, no bolt, no barrel. Crafted fantasy RPG painted realistic sprite, sharp edges, real transparent background, no text, glow, shadow or loose parts."
+    },
+    {
+      "name": "cogspire_repeating_stock",
+      "prompt": "Precise-object-edit attached crossbow stock reference. Create COGSPIRE REPEATING STOCK: intricate dark brass and iron mechanical receiver, enclosed compact gear cassette and repeating bolt magazine centered over rear half of rail, dense engraved plates, dark red leather-wrapped butt, exposed little gear teeth. Preserve EXACT horizontal top-down orthographic projection and long rail ending in front mounting block at RIGHT; butt at LEFT. Stock/rail ONLY without bow arms, string, bolt, barrel or standalone extra pieces. High detail realistic painted dark fantasy steampunk component sprite, true transparent, no glow, no ground shadow, no labels."
+    },
+    {
+      "name": "drake_sinew_compound_prod",
+      "prompt": "Precise-object-edit of attached isolated vertical crossbow prod reference. Create DRAKE-SINEW COMPOUND PROD: layered carved ivory drakebone arms, dark bronze reinforcements, taut red sinew bindings and small mechanical cams at tips, strong red sinew string. Preserve vertical top-to-bottom span, both tips to LEFT of central bracket, centre saddle at same location, top-down orthographic view. Distinct dragonbone silhouette with modest spurs on outer edges, no loose bones. Component prod and string ONLY, no stock or rail. Detailed dark fantasy painted realism, transparent cutout background, no glow, no aura, no shadows or labels."
+    },
+    {
+      "name": "marine_heavy_prod",
+      "prompt": "Precise-object-edit attached vertical crossbow prod. Create MARINE HEAVY PROD with broad layered dark spring steel limbs, thick weathered bronze edge plates and rivets, dark navy cord bindings, stout taut hemp bowstring, naval reinforcement. Maintain full vertical span, TOP-DOWN view, symmetrical tips to LEFT and central square saddle at same x,y location. Make heavier and sturdier than reference but same mounting geometry. No stock, rail, grip, bolt, separate parts or nautical text. Detailed realistic dark fantasy painted inventory sprite, isolated true transparent background, no shadow, no effects or aura."
+    },
+    {
+      "name": "springbrass_repeater_prod",
+      "prompt": "Precise-object-edit attached vertical crossbow prod reference. Create SPRINGBRASS REPEATER PROD: slim articulated brass spring limbs with layered gunmetal leaf springs and small gear cams at tips, precisely machined rivets, taut dark cable string. Preserve same full VERTICAL orientation, TOP-DOWN view, tips to LEFT, central square mounting saddle at same location. More mechanical than reference, detailed brass construction. PROD ONLY, no stock, rail, grip or extra items. True transparent background, sharp isolated detailed dark fantasy painted realistic sprite, no glow, shadow or text."
+    },
+    {
+      "name": "froststeel_arbalest_prod",
+      "prompt": "Precise-object-edit attached vertical crossbow prod reference. Make FROSTSTEEL ARBALEST PROD: broad faceted icy blue steel arms with silver reinforcement ribs, subtle engraved snowflake geometry, white leather bindings, fine silver bowstring. Keep full VERTICAL span, tips at LEFT of central square mounting saddle, exact same top-down view and centre mount position. Strong arbalest construction, crisp metallic blue highlights confined inside metal, no external aura or ice shards. Isolated prod and string ONLY, no stock, rail, extra pieces, text or ground shadow. Detailed painted dark fantasy realism, true transparent background, entire silhouette visible with margin."
+    },
+    {
+      "name": "star_slate_resonance_prod",
+      "prompt": "Precise-object-edit attached vertical crossbow prod reference. Create STAR-SLATE RESONANCE PROD: faceted midnight violet slate and dark crystalline arms, elegant tarnished silver reinforcement ribs, tiny gold star inlays, subtle blue-purple facets confined to the material, fine silver cable string. Keep full vertical span, both tips to LEFT, central square mounting saddle at exact same location, top-down orthographic view. No surrounding glow or aura, no floating particles or loose shards. Single complete prod and string only, no stock, rail, grip or text. Highly detailed painted realistic fantasy inventory cutout on genuine transparent background, no ground shadow, all edges visible."
+    },
+    {
+      "name": "tidebronze_longbore",
+      "prompt": "Square 1:1 transparent inventory sprite. One modular fantasy hand cannon BARREL ONLY named Tidebronze Longbore. Rich oxidized turquoise bronze with polished brass bands and fine nautical engravings, detailed painted realistic metal matching dark fantasy RPG icons. Strict orthographic SIDE VIEW, bore axis EXACTLY horizontal y=50%. Rear narrow cylindrical insertion shank at far LEFT x=8%, heavy barrel body from x=20% to82%, modest flared muzzle at RIGHT x=92%. Rear shank diameter 12% of canvas, body diameter 20%, muzzle diameter26%. No grip, no stock, no breech frame, no legs or wheels. Do not angle barrel toward viewer. Rear shank and muzzle share exactly same horizontal centerline. Entire isolated component visible, actual transparent background, no cast shadow, no aura, no labels, no other objects. Detailed 3D-looking shading confined to object, sharp cutout contour."
+    },
+    {
+      "name": "militia_oak_stock",
+      "prompt": "Square transparent dark fantasy game inventory sprite, ornate highly detailed painted realistic 3D shading. SINGLE COMPONENT: Militia oak CROSSBOW STOCK / central rail only, no bow arms, no string. Strict orthographic TOP DOWN view, horizontal, wooden shoulder butt LEFT, straight slender iron bolt rail extends RIGHT. Dark oak, worn leather wraps, iron fittings, simple medieval military construction. At far right front end a rectangular transverse metal mounting block, thin top-down plane, two visible screws, centre on the horizontal rail axis. No modern firearm elements. Sprite entire visible isolated transparent, all edges crisp, no aura, no ground shadow, no perspective foreshortening, no text. Stock roughly80%canvaswidth and20%canvasheight. This central stock will receive a SEPARATE upright transverse bow prod across its front end."
+    },
+    {
+      "name": "plainsteel_prod",
+      "prompt": "Transparent square 1:1 fantasy RPG inventory component sprite: Plainsteel CROSSBOW PROD ONLY, a single transverse bow assembly with taut string and central square mounting saddle. Strict orthographic TOP-DOWN view. Draw the bow arms arranged VERTICALLY on canvas from near TOP to near BOTTOM, central iron bracket at x=60%,y=50%. Both arms curve back LEFT symmetrically toward tips at x=35%,y=8% and x=35%,y=92%. Thin taut vertical bowstring joins these two tips at x=35%. Straight steel limbs, worn dark polished metal, leather bindings, detailed realistic painted 3D-looking shading. This piece mounts across the FRONT RIGHT end of a separate horizontal crossbow stock; do NOT include any stock, rail, grip, bolt, handle, body or base. Only this prod, its centre saddle and bowstring. Crisp isolated true transparent background, no shadow, no glow, no text."
+    },
+    {
+      "name": "brasswick_vented_cannon_frame",
+      "prompt": "Square transparent fantasy hand cannon frame; orthographic side view, stock left, horizontal bore, broad receiving sleeve at right; antique brass vents, dark iron, leather pistol grip; no barrel, legs, wheels, text, glow or shadow."
+    },
+    {
+      "name": "broad_militia_blade",
+      "prompt": "Precise-object-edit. Recreate ONLY the main greatsword blade from reference; discard all surrounding sheet scraps. Preserve broad heavy plain steel cleaver shape, diagonal pointed tip, dark weathered blade face and polished cutting edge. Give its bottom clean tapered shoulders ending in a SHORT NARROW centred metal tang, only 5% of blade length, for insertion into a separate guard. No grip, guard, handle or other parts. Vertical TIP UP and TANG DOWN, face-on orthographic, complete blade centered on square transparent canvas. Higher resolution detailed painted realistic dark fantasy weapon component, crisp edges, no external glow, no shadows, no labels."
+    },
+    {
+      "name": "notched_siege_blade",
+      "prompt": "Precise-object-edit. Reference is an old greatsword BLADE component on transparent canvas, with unwanted scraps from neighboring sprites. Recreate ONLY the main blade as a high detail isolated dark fantasy component. Preserve its broad heavy steel cleaver shape, diagonal pointed upper tip, big round siege notches on left spine, worn polished cutting edge. Crucial change: bottom must taper through symmetrical shoulders into a SHORT NARROW straight metal mounting TANG centered on the blade's longitudinal axis, extending downward. This tang inserts into a separate sword guard. No hilt, no handle, no guard, no other fragments. Blade vertical TIP UP, TANG DOWN, perfectly face-on, whole component visible and centered. Detailed realistic painted metal, sharp alpha silhouette, genuinely transparent background, no glow, no shadow, no text. Square1:1 canvas."
+    },
+    {
+      "name": "drakebone_cleaver",
+      "prompt": "Precise-object-edit. Recreate ONLY the large central drakebone greatsword blade from reference, remove neighboring scraps. Preserve ivory fossil bone, swept cleaver curve, jagged hooked spine, natural pitted texture and reddish vein markings. Bottom root must taper gracefully to a short narrow straight metal-reinforced tang centred on longitudinal axis, about5% blade length, designed to fit a separate sword guard. No grip, guard or handle. Vertical TIP UP and TANG DOWN, orthographic face-on view, complete component centered on square true transparent background. High detail realistic dark fantasy painted sprite, clean edges, no outside effects, shadows, text or fragments."
+    },
+    {
+      "name": "basalt_execution_blade",
+      "prompt": "Precise-object-edit. Recreate ONLY central basalt greatsword blade from reference, discard all other image scraps. Preserve massive black basalt cleaver, angular pointed tip and orange magma fissures confined within stone. Redesign bottom with tapered shoulders leading into a short narrow iron mounting tang centred on longitudinal axis, about5% blade length. Tang for a separate guard; do not draw guard, grip or hilt. Blade vertical TIP UP, TANG DOWN, face-on orthographic, entire sprite visible and centered. Detailed realistic painted dark fantasy component, true transparent square background, crisp edges. No external glow, particles, floor shadow or text."
+    },
+    {
+      "name": "froststeel_flamberge",
+      "prompt": "Precise-object-edit. Recreate ONLY the main froststeel greatsword blade from reference; remove all surrounding scraps and aura. Preserve long slender flamberge with wavy ice-blue steel cutting edges and etched frost-like details. At the bottom taper into a SHORT NARROW straight silver metal tang, centred on blade axis and only5% of blade length, to insert in a separate sword guard. No hilt, grip or guard. Vertical TIP UP and TANG DOWN, face-on orthographic, entirely visible and centred. High resolution detailed realistic painted dark fantasy component sprite, crisp isolated silhouette and true transparent square background, no external light or shadow, no text."
+    },
+    {
+      "name": "null_edge_colossus_blade",
+      "prompt": "Precise-object-edit. Recreate only the main void greatsword blade in reference, remove all other scraps and loose fragments. Preserve large jagged obsidian-black cleaver silhouette, sharp diagonal tip, violet mineral veins and the dark circular void inset near lower blade. Confine violet light to surface. Add tapered bottom shoulders and SHORT NARROW dark metal mounting tang on longitudinal axis,5% of blade length, for a separate sword guard. No handle, hilt or guard. Vertical TIP UP TANG DOWN, face-on orthographic, full component centred and visible. Detailed realistic painted fantasy sprite on true transparent square canvas, crisp contour, no external aura, shadows, particles or text."
+    }
+  ]
+}
