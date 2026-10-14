@@ -1,0 +1,200 @@
+[
+  {
+    "name": "woodcutters_haft_component",
+    "file": "assets/entropic_forge/icons/frameworks/woodcutters_haft_component.png",
+    "category": "frameworks",
+    "socket_px": [
+      495,
+      262
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 300,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-4b6c8150-5b78-40ec-9a45-c32116540c03.png",
+    "flip_h": false,
+    "sha256": "7c5a3a7dc8b79f9aacfda6176b6007a23aaacea9897b3e2f3b03f9f1c742078e"
+  },
+  {
+    "name": "corsairs_hook_haft_component",
+    "file": "assets/entropic_forge/icons/frameworks/corsairs_hook_haft_component.png",
+    "category": "frameworks",
+    "socket_px": [
+      496,
+      257
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 300,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-6821baf5-53ae-4b9f-9693-c0eb17b79499.png",
+    "flip_h": false,
+    "sha256": "69eba1b41edd16e01f291ae4697bc2337c0a6766ab6ffb8df7fdc334abd27eff"
+  },
+  {
+    "name": "cinderbrace_split_haft_component",
+    "file": "assets/entropic_forge/icons/frameworks/cinderbrace_split_haft_component.png",
+    "category": "frameworks",
+    "socket_px": [
+      493,
+      262
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 300,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-02a08c7f-1601-4a39-ac43-648cb884b620.png",
+    "flip_h": false,
+    "sha256": "e359fd732a141f48e11f557ac7cbbdc71bc0a533e8d5e726c33e0b3ea5d05234"
+  },
+  {
+    "name": "foresters_axe_bit_component",
+    "file": "assets/entropic_forge/icons/strikers/foresters_axe_bit_component.png",
+    "category": "strikers",
+    "socket_px": [
+      78,
+      255
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-6eac41a1-0d50-45e7-aaa6-7392192d1564.png",
+    "flip_h": true,
+    "sha256": "5e344b0c8c4480dfc2fe38f6f74d575cfa40f43c507723dd9d00a68186e8319a"
+  },
+  {
+    "name": "raiders_hook_bit_component",
+    "file": "assets/entropic_forge/icons/strikers/raiders_hook_bit_component.png",
+    "category": "strikers",
+    "socket_px": [
+      110,
+      329
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-fb11d96d-2b9f-4a30-96b7-4901172c832e.png",
+    "flip_h": true,
+    "sha256": "da93865919c5794a77553205344c5c934991331e39005b6172596012d2d90078"
+  },
+  {
+    "name": "drakeglass_bearded_edge_component",
+    "file": "assets/entropic_forge/icons/strikers/drakeglass_bearded_edge_component.png",
+    "category": "strikers",
+    "socket_px": [
+      158,
+      278
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-f7413bc4-b86d-4774-a5bf-90654320235d.png",
+    "flip_h": true,
+    "sha256": "a1a9bf1a169f6aee83467a6cfe4d9d929bf6730581b6c15d9747b3769e0764c5"
+  },
+  {
+    "name": "bog_iron_hewing_head_component",
+    "file": "assets/entropic_forge/icons/strikers/bog_iron_hewing_head_component.png",
+    "category": "strikers",
+    "socket_px": [
+      39,
+      251
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-e1e3e1ea-ab36-4741-a1a8-7d31741fb228.png",
+    "flip_h": false,
+    "sha256": "f212255b446dac2042d6b444033e40c1047e2e1caf68cf25ec36ef83c4b0c1c6"
+  },
+  {
+    "name": "basalt_double_bit_component",
+    "file": "assets/entropic_forge/icons/strikers/basalt_double_bit_component.png",
+    "category": "strikers",
+    "socket_px": [
+      256,
+      259
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-d4e572ff-c1eb-45d3-b8ad-152f28efb80e.png",
+    "flip_h": false,
+    "sha256": "7de691bd096ce93e4cf63d5faa11357621458aafe34f662729827fe314e24173"
+  },
+  {
+    "name": "star_slate_crescent_bit_component",
+    "file": "assets/entropic_forge/icons/strikers/star_slate_crescent_bit_component.png",
+    "category": "strikers",
+    "socket_px": [
+      40,
+      253
+    ],
+    "rotation_degrees": 0,
+    "display_length_px": 190,
+    "family": "Axe",
+    "scale_axis": "x",
+    "region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "source": "exec-0d847a73-4251-4433-9e80-5a1644ac3a1e.png",
+    "flip_h": false,
+    "sha256": "407bd2fc20d5d1d0523fa2d945e6aac44a1b018f154e6c544d087757e7cc4c3a"
+  }
+]

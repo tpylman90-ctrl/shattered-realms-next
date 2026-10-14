@@ -1,0 +1,43 @@
+{
+  "tool": "built-in image_gen",
+  "pass": "Axe component rebuild — 2026-10-14",
+  "shared_constraints": "One isolated component per transparent square canvas, dark-fantasy painted realism with convincing 3D form, consistent upper-left light, no assembled weapon, no text or external effects.",
+  "assets": [
+    {
+      "name": "woodcutters_haft_component",
+      "prompt": "One warm ash-wood horizontal axe haft only; hand-worn leather cross-wrap, iron butt cap, narrow exposed insertion tenon at right, orthographic side view, genuine transparent background."
+    },
+    {
+      "name": "corsairs_hook_haft_component",
+      "prompt": "One salt-darkened oak horizontal haft only; navy braided leather, bronze rivets, small hook pommel left, exposed insertion tenon right, orthographic side view, genuine transparent background."
+    },
+    {
+      "name": "cinderbrace_split_haft_component",
+      "prompt": "One horizontal black cinderwood haft only; paired riveted iron reinforcement rails, muted ember-red inlay, leather grip, exposed right tenon, no external glow, transparent background."
+    },
+    {
+      "name": "foresters_axe_bit_component",
+      "prompt": "One broad weathered iron forester axe head only; polished cutting edge, open through-eye, head facing right, side view, transparent background."
+    },
+    {
+      "name": "raiders_hook_bit_component",
+      "prompt": "One dark forged-iron hooked axe head only; broad worn edge and open haft eye, head facing right, side view, transparent background."
+    },
+    {
+      "name": "drakeglass_bearded_edge_component",
+      "prompt": "One bearded axe head only; teal dragon-glass facets, dark steel spine, bronze rivets, calibrated open haft eye, head facing right, transparent background."
+    },
+    {
+      "name": "bog_iron_hewing_head_component",
+      "prompt": "One broad squared bog-iron axe head only; olive patina, hammered cheek, bright edge, left-facing receiving sleeve with open socket, transparent background."
+    },
+    {
+      "name": "basalt_double_bit_component",
+      "prompt": "One symmetric double-bit axe head only; fractured black basalt plates, iron core, restrained ember seams, central open eye, transparent background."
+    },
+    {
+      "name": "star_slate_crescent_bit_component",
+      "prompt": "One midnight-violet crescent axe head only; constellation engravings, silver stars and bronze rivets, left-facing receiving sleeve with open socket, transparent background."
+    }
+  ]
+}
