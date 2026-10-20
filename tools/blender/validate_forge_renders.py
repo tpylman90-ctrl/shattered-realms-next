@@ -24,8 +24,9 @@ def main() -> None:
             coverage = float(visible.mean())
             assert 0.01 < coverage < 0.75, f"Suspicious alpha coverage {coverage:.3f}: {path}"
             ys, xs = np.nonzero(visible)
-            assert xs.size and ys.min() > 0 and xs.min() > 0
-            assert ys.max() < image.height - 1 and xs.max() < image.width - 1
+            pad = 8
+            assert xs.size and ys.min() >= pad and xs.min() >= pad
+            assert ys.max() < image.height - pad and xs.max() < image.width - pad
             print(f"PASS {name}: {image.width}x{image.height} RGBA, alpha coverage {coverage:.1%}")
     print(f"Validated {len(manifest['renders'])} Blender renders; NumPy {np.__version__}")
 

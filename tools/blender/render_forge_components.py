@@ -237,9 +237,9 @@ def main() -> None:
     for obj in bpy.data.objects:
         obj.hide_render = obj.type in {"CAMERA", "LIGHT"}
 
-    render_group(scene, camera, haft, output / "woodcutters_haft_blender_test.png", (0, 0, 0), 5.25)
-    render_group(scene, camera, head, output / "foresters_axe_bit_blender_test.png", (-0.8, 0, 2.26), 1.95)
-    render_group(scene, camera, haft + head, output / "axe_assembled_blender_test.png", (-0.15, 0, 0.16), 5.85)
+    render_group(scene, camera, haft, output / "woodcutters_haft_blender_test.png", (0, 0, 0), 6.25)
+    render_group(scene, camera, head, output / "foresters_axe_bit_blender_test.png", (-0.8, 0, 2.26), 2.35)
+    render_group(scene, camera, haft + head, output / "axe_assembled_blender_test.png", (-0.15, 0, 0.16), 6.35)
 
     scene.render.filepath = str(output / "axe_assembled_blender_test.png")
     bpy.ops.object.select_all(action="DESELECT")
