@@ -113,9 +113,10 @@ def create_haft(wood: bpy.types.Material, dark_wood: bpy.types.Material, brass: 
 
 def create_axe_head(steel: bpy.types.Material, edge_mat: bpy.types.Material, brass: bpy.types.Material) -> list[bpy.types.Object]:
     # The head wraps around the tenon; its open ring leaves the selected haft visible.
-    profile = [(-1.48, 2.70), (-1.35, 2.42), (-1.12, 2.12), (-0.90, 1.83),
-               (-0.52, 1.80), (-0.32, 1.94), (-0.30, 2.39), (-0.48, 2.54),
-               (-0.83, 2.62), (-1.22, 2.66)]
+    profile = [(-1.48, 2.68), (-1.43, 2.43), (-1.30, 2.17), (-1.08, 1.91),
+               (-0.77, 1.79), (-0.43, 1.80), (-0.21, 1.93), (-0.12, 2.13),
+               (-0.18, 2.38), (-0.43, 2.48), (-0.78, 2.52), (-1.10, 2.59),
+               (-1.31, 2.74)]
     thickness = 0.19
     vertices = [(x, y, z) for y in (-thickness, thickness) for x, z in profile]
     count = len(profile)
@@ -125,7 +126,8 @@ def create_axe_head(steel: bpy.types.Material, edge_mat: bpy.types.Material, bra
     bevel(blade, 0.055, 4)
 
     # A bright bevel ribbon follows the cutting edge and makes the silhouette legible at icon scale.
-    edge_points = [(-1.48, -0.214, 2.70), (-1.35, -0.214, 2.42), (-1.12, -0.214, 2.12), (-0.90, -0.214, 1.83)]
+    edge_points = [(-1.48, -0.214, 2.68), (-1.43, -0.214, 2.43), (-1.30, -0.214, 2.17),
+                   (-1.08, -0.214, 1.91), (-0.77, -0.214, 1.79)]
     curve = bpy.data.curves.new("Sharpened edge", "CURVE")
     curve.dimensions = "3D"
     curve.bevel_depth = 0.028
@@ -146,7 +148,17 @@ def create_axe_head(steel: bpy.types.Material, edge_mat: bpy.types.Material, bra
     eye.name = "Open haft eye | forged socket rim"
     eye.scale = (1.0, 0.76, 1.0)
     eye.data.materials.append(brass)
-    return [blade, edge, eye]
+    # Small forged pins secure the eye and catch highlights around the socket.
+    pins = []
+    for side in (-1, 1):
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=16, ring_count=8, radius=0.045,
+                                             location=(0.18 * side, -0.228, 2.12))
+        pin = bpy.context.object
+        pin.name = f"Forged socket pin {side:+d}"
+        pin.scale = (1.0, 0.42, 1.0)
+        pin.data.materials.append(brass)
+        pins.append(pin)
+    return [blade, edge, eye, *pins]
 
 
 def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
@@ -164,7 +176,11 @@ def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
     scene.render.film_transparent = True
     scene.render.image_settings.color_depth = "8"
     scene.view_settings.view_transform = "AgX"
-    scene.world.color = (0.16, 0.16, 0.16)
+    scene.world.color = (0.25, 0.31, 0.40)
+    scene.world.use_nodes = True
+    background = scene.world.node_tree.nodes.get("Background")
+    background.inputs["Color"].default_value = (0.25, 0.31, 0.40, 1.0)
+    background.inputs["Strength"].default_value = 0.45
 
     bpy.ops.object.camera_add(location=(0.0, -10.0, 3.1))
     camera = bpy.context.object
@@ -175,9 +191,9 @@ def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
     scene.camera = camera
 
     for name, location, power, size, color in [
-        ("Warm key", (-4.5, -5.0, 6.5), 950, 4.0, (1.0, 0.78, 0.54)),
-        ("Cool fill", (4.0, -3.0, 2.0), 620, 3.5, (0.48, 0.68, 1.0)),
-        ("Rim light", (0.5, 3.0, 5.0), 1200, 3.0, (1.0, 0.47, 0.18)),
+        ("Warm key", (-4.5, -5.0, 6.5), 1300, 4.0, (1.0, 0.78, 0.54)),
+        ("Cool fill", (4.0, -3.0, 2.0), 850, 3.5, (0.48, 0.68, 1.0)),
+        ("Rim light", (0.5, 3.0, 5.0), 1550, 3.0, (1.0, 0.47, 0.18)),
     ]:
         bpy.ops.object.light_add(type="AREA", location=location)
         lamp = bpy.context.object
@@ -190,9 +206,13 @@ def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
     return scene, camera
 
 
-def render_group(scene: bpy.types.Scene, objects: list[bpy.types.Object], path: Path) -> None:
+def render_group(scene: bpy.types.Scene, camera: bpy.types.Object, objects: list[bpy.types.Object], path: Path,
+                 target: tuple[float, float, float], ortho_scale: float) -> None:
     for obj in bpy.data.objects:
         obj.hide_render = obj not in objects and obj.type not in {"CAMERA", "LIGHT"}
+    camera.location = Vector(target) + Vector((0.0, -10.0, 3.1))
+    aim(camera, target)
+    camera.data.ortho_scale = ortho_scale
     scene.render.filepath = str(path)
     bpy.ops.render.render(write_still=True)
 
@@ -209,7 +229,7 @@ def main() -> None:
     dark_wood = material("Dark end grain", (0.075, 0.027, 0.013, 1), 0.08, 0.38)
     leather = material("Ox-blood leather wrap", (0.19, 0.025, 0.018, 1), 0.0, 0.46)
     brass = material("Aged forge brass", (0.50, 0.25, 0.065, 1), 0.72, 0.24)
-    steel = material("Tempered steel", (0.17, 0.23, 0.28, 1), 0.86, 0.22)
+    steel = material("Tempered steel", (0.31, 0.39, 0.47, 1), 0.58, 0.26)
     edge_mat = material("Polished cutting edge", (0.72, 0.82, 0.88, 1), 0.92, 0.14)
 
     haft = create_haft(wood, dark_wood, brass, leather)
@@ -217,9 +237,9 @@ def main() -> None:
     for obj in bpy.data.objects:
         obj.hide_render = obj.type in {"CAMERA", "LIGHT"}
 
-    render_group(scene, haft, output / "woodcutters_haft_blender_test.png")
-    render_group(scene, head, output / "foresters_axe_bit_blender_test.png")
-    render_group(scene, haft + head, output / "axe_assembled_blender_test.png")
+    render_group(scene, camera, haft, output / "woodcutters_haft_blender_test.png", (0, 0, 0), 5.25)
+    render_group(scene, camera, head, output / "foresters_axe_bit_blender_test.png", (-0.8, 0, 2.26), 1.95)
+    render_group(scene, camera, haft + head, output / "axe_assembled_blender_test.png", (-0.15, 0, 0.16), 5.85)
 
     scene.render.filepath = str(output / "axe_assembled_blender_test.png")
     bpy.ops.object.select_all(action="DESELECT")
