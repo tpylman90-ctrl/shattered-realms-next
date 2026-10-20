@@ -1,0 +1,40 @@
+name: Render Entropic Forge Blender Study
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/blender/**'
+      - '.github/workflows/blender-forge-assets.yml'
+  pull_request:
+    paths:
+      - 'tools/blender/**'
+      - '.github/workflows/blender-forge-assets.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  render-axe-study:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Blender and NumPy validation tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y blender python3-numpy python3-pil
+      - name: Verify Blender and bundled NumPy
+        run: blender --background --python-expr "import bpy, numpy; print('Blender', bpy.app.version_string, '| NumPy', numpy.__version__)"
+      - name: Render dimensional component sprites and assembled preview
+        run: blender --background --python tools/blender/render_forge_components.py -- --output build/blender-forge
+      - name: Validate transparent PNGs with NumPy
+        run: python3 tools/blender/validate_forge_renders.py build/blender-forge
+      - name: Upload render review pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: EntropicForge-Blender-Axe-Study
+          path: build/blender-forge/
+          if-no-files-found: error
+          retention-days: 14
