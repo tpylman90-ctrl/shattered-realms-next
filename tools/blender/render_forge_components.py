@@ -53,8 +53,6 @@ def bevel(obj: bpy.types.Object, width: float = 0.035, segments: int = 3) -> Non
     mod = obj.modifiers.new("Crisp crafted edges", "BEVEL")
     mod.width = width
     mod.segments = segments
-    normal = obj.modifiers.new("Weighted face normals", "WEIGHTED_NORMAL")
-    normal.keep_sharp = True
 
 
 def cylinder_between(name: str, a: tuple[float, float, float], b: tuple[float, float, float], radius: float,
@@ -155,7 +153,9 @@ def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
     scene.cycles.samples = 32
-    scene.cycles.use_denoising = True
+    # Ubuntu's repository Blender build may omit OpenImageDenoiser (OIDN).
+    # Keep the headless CPU pipeline portable across runners.
+    scene.cycles.use_denoising = False
     scene.render.resolution_x = 1024
     scene.render.resolution_y = 1024
     scene.render.resolution_percentage = 100
