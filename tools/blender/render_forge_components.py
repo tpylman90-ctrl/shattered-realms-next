@@ -282,6 +282,8 @@ def setup_camera_and_lights():
     scene.view_settings.look = "Medium High Contrast"
     scene.view_settings.exposure = 0
     scene.view_settings.gamma = 1
+    if scene.world is None:
+        scene.world = bpy.data.worlds.new("Forge | transparent render world")
     scene.world.color = (0.025, 0.025, 0.025)
 
 
