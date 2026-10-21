@@ -55,11 +55,11 @@ def material(name, color, metallic=0.0, roughness=0.45, emission=0.0):
         links = mat.node_tree.links
         texcoord = nodes.new("ShaderNodeTexCoord")
         noise = nodes.new("ShaderNodeTexNoise")
-        noise.inputs["Scale"].default_value = 42.0 if metallic > 0.5 else 13.0
+        noise.inputs["Scale"].default_value = 34.0 if metallic > 0.5 else 8.0
         noise.inputs["Detail"].default_value = 3.0
         bump = nodes.new("ShaderNodeBump")
-        bump.inputs["Strength"].default_value = 0.11 if metallic > 0.5 else 0.17
-        bump.inputs["Distance"].default_value = 0.018 if metallic > 0.5 else 0.035
+        bump.inputs["Strength"].default_value = 0.24 if metallic > 0.5 else 0.27
+        bump.inputs["Distance"].default_value = 0.028 if metallic > 0.5 else 0.045
         links.new(texcoord.outputs["Generated"], noise.inputs["Vector"])
         links.new(noise.outputs["Fac"], bump.inputs["Height"])
         links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
@@ -213,6 +213,14 @@ def make_handle(name, variant):
         xx = float(np.interp((yy + 1.72) / 2.74, t, x))
         rr = float(np.interp((yy + 1.72) / 2.74, t, radius))
         torus(name + " | wrap stitch", (xx, yy, 0.01), rr * 1.08, 0.012, detail if index % 2 == 0 else accent)
+    wrap_t = np.linspace(0.0, 1.0, 96)
+    wrap_y = -0.68 + 0.88 * wrap_t
+    wrap_center_x = np.interp((wrap_y + 1.72) / 2.74, t, x)
+    wrap_radius = np.interp((wrap_y + 1.72) / 2.74, t, radius) * 1.11
+    wrap_angle = wrap_t * math.pi * 14.0
+    wrap_points = np.column_stack((wrap_center_x + wrap_radius * np.cos(wrap_angle), wrap_y,
+                                   0.01 + wrap_radius * np.sin(wrap_angle)))
+    curve_mesh(name + " | braided grip cord", wrap_points, np.full_like(wrap_t, 0.014), detail, 6)
     # Carved grip medallion and side rivets are individual relief details.
     sphere(name + " | grip medallion", (float(np.interp(0.0, y, x)), -0.18, 0.145), (0.13, 0.17, 0.045), accent, ico=True)
     sphere(name + " | inset mark", (float(np.interp(0.0, y, x)), -0.18, 0.185), (0.07, 0.10, 0.025), detail, ico=True)
@@ -254,15 +262,25 @@ def make_blade(name, style, variant):
     width = variant.get("width", 1.0)
     head = extruded_profile(name + " | head", pts, steel, depth=0.25, bevel=0.045, cache_key="head:" + variant["base"])
     head.scale.x = width
+    # An inset face plate and tapered spine give the blade a forged, sculpted profile.
+    panel_pts = [(x * 0.84, y * 0.82 + 0.05) for x, y in pts]
+    panel = extruded_profile(name + " | inset face plate", panel_pts, relief, depth=0.055, bevel=0.022)
+    panel.scale.x = width
+    panel.location.z = 0.16
+    ridge_points = [(0, -0.30), (-0.16, -0.04), (-0.12, 0.36), (0, 0.67), (0.12, 0.36), (0.16, -0.04)]
+    ridge = extruded_profile(name + " | central ridge", ridge_points, edge, depth=0.045, bevel=0.018)
+    ridge.location.z = 0.205
     # Central socket ring remains open so the handle and core can be selected independently.
-    torus(name + " | empty socket lip", (0, -0.42, 0.16), 0.29, 0.075, accent)
-    torus(name + " | socket inner rim", (0, -0.42, 0.18), 0.205, 0.024, relief)
-    bevel_cube(name + " | socket bridge", (0, -0.54, 0.10), (0.38, 0.16, 0.17), steel, 0.045)
-    # Raised spine, hammered face lines, and fasteners provide relief at icon scale.
-    curve_mesh(name + " | raised spine", [(0, -0.20, 0.15), (0, 0.10, 0.16), (0, 0.47, 0.15), (0, 0.72, 0.12)], [0.055, 0.07, 0.045, 0.008], relief, 7)
+    torus(name + " | socket mouth", (0, -0.43, 0.14), 0.30, 0.075, accent)
+    torus(name + " | socket lower lip", (0, -0.91, 0.12), 0.26, 0.065, accent)
+    torus(name + " | socket inner rim", (0, -0.43, 0.17), 0.215, 0.024, relief)
+    # Two rails make a hollow sleeve; the opening stays clear for the chosen haft/core.
     for side in (-1, 1):
-        sphere(name + " | socket rivet", (side * 0.33, -0.15, 0.19), (0.055, 0.055, 0.035), accent, ico=True)
-        sphere(name + " | face rivet", (side * 0.55 * width, 0.34, 0.15), (0.04, 0.04, 0.025), relief, ico=True)
+        curve_mesh(name + " | socket sleeve rail", [(side * .25, -.44, .10), (side * .27, -.62, .10), (side * .25, -.91, .10)], [.07, .065, .06], accent, 8)
+    # Raised spine, hammered face lines, and fasteners provide relief at icon scale.
+    for side in (-1, 1):
+        sphere(name + " | socket rivet", (side * 0.33, -0.15, 0.22), (0.055, 0.055, 0.035), accent, ico=True)
+        sphere(name + " | face rivet", (side * 0.55 * width, 0.34, 0.22), (0.04, 0.04, 0.025), relief, ico=True)
     # Sharpened edges are thin independent bevel strips on the outer silhouette.
     for side in (-1, 1):
         if style == "Crescent":
