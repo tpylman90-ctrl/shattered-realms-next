@@ -469,7 +469,7 @@ def setup_camera_and_lights():
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
     scene.cycles.samples = 32
-    scene.cycles.use_denoising = True
+    scene.cycles.use_denoising = False
     scene.render.resolution_x = SIZE
     scene.render.resolution_y = SIZE
     scene.render.resolution_percentage = 100
