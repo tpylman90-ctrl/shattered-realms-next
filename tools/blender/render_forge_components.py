@@ -284,12 +284,18 @@ def make_blade(name, style, variant):
         sphere(name + " | socket rivet", (side * 0.33, -0.15, 0.22), (0.055, 0.055, 0.035), accent, ico=True)
         sphere(name + " | face rivet", (side * 0.55 * width, 0.34, 0.22), (0.04, 0.04, 0.025), relief, ico=True)
     # Sharpened edges are thin independent bevel strips on the outer silhouette.
-    for side in (-1, 1):
-        if style == "Crescent":
-            line = [(side * 0.88 * width, 0.56, 0.17), (side * 1.17 * width, 0.83, 0.17), (side * 1.50 * width, 0.42, 0.17)]
-        else:
-            line = [(side * 0.50 * width, 0.68, 0.17), (side * 1.30 * width, 0.62, 0.17), (side * 1.48 * width, 0.22, 0.17)]
-        curve_mesh(name + " | edge glint " + str(side), line, [0.026] * 3, edge, 6)
+    if style == "Battle":
+        curve_mesh(name + " | honed bearded edge", [(-.36, .62, .17), (-.82, .78, .17), (-1.24, .72, .17), (-1.49, .42, .17)], [.022, .028, .028, .008], edge, 6)
+        curve_mesh(name + " | poll edge", [(.31, .47, .17), (.50, .45, .17), (.58, .27, .17)], [.018, .016, .006], edge, 6)
+    else:
+        for side in (-1, 1):
+            if style == "Crescent":
+                line = [(side * 0.88 * width, 0.56, 0.17), (side * 1.17 * width, 0.83, 0.17), (side * 1.50 * width, 0.42, 0.17)]
+            elif style == "Hook":
+                line = [(side * .82 * width, .18, .17), (side * 1.10 * width, .52, .17), (side * 1.38 * width, .76, .17)]
+            else:  # double bit
+                line = [(side * 0.50 * width, 0.60, 0.17), (side * 1.20 * width, 0.71, 0.17), (side * 1.50 * width, 0.37, 0.17)]
+            curve_mesh(name + " | edge glint " + str(side), line, [0.026] * 3, edge, 6)
     if style == "Hook":
         sphere(name + " | crown rivet", (0, 0.53, 0.19), (0.075, 0.075, 0.035), accent)
     # Region motifs are shallow non-emissive relief; elemental glow belongs to the core overlay.
