@@ -55,12 +55,20 @@ def material(name, color, metallic=0.0, roughness=0.45, emission=0.0):
         links = mat.node_tree.links
         texcoord = nodes.new("ShaderNodeTexCoord")
         noise = nodes.new("ShaderNodeTexNoise")
-        noise.inputs["Scale"].default_value = 34.0 if metallic > 0.5 else 8.0
-        noise.inputs["Detail"].default_value = 3.0
+        noise.inputs["Scale"].default_value = 34.0 if metallic > 0.5 else 6.0
+        noise.inputs["Detail"].default_value = 4.0
+        noise.inputs["Roughness"].default_value = 0.72
         bump = nodes.new("ShaderNodeBump")
-        bump.inputs["Strength"].default_value = 0.24 if metallic > 0.5 else 0.27
-        bump.inputs["Distance"].default_value = 0.028 if metallic > 0.5 else 0.045
+        bump.inputs["Strength"].default_value = 0.20 if metallic > 0.5 else 0.24
+        bump.inputs["Distance"].default_value = 0.026 if metallic > 0.5 else 0.04
+        ramp = nodes.new("ShaderNodeValToRGB")
+        ramp.color_ramp.elements[0].position = 0.25
+        ramp.color_ramp.elements[0].color = (*(c * 0.52 for c in color), 1.0)
+        ramp.color_ramp.elements[1].position = 0.76
+        ramp.color_ramp.elements[1].color = (*(min(1.0, c * 1.18 + 0.015) for c in color), 1.0)
         links.new(texcoord.outputs["Generated"], noise.inputs["Vector"])
+        links.new(noise.outputs["Fac"], ramp.inputs["Fac"])
+        links.new(ramp.outputs["Color"], bsdf.inputs["Base Color"])
         links.new(noise.outputs["Fac"], bump.inputs["Height"])
         links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
     MATERIAL_CACHE[name] = mat
@@ -177,8 +185,9 @@ def torus(name, loc, major, minor, mat, axis="Z"):
 
 def shaft_cuff(name, x, y, radius, mat, detail):
     """A raised, sculpted ferrule wrapped around a Y-axis haft."""
-    torus(name + " | outer bead", (x, y, 0), radius * 1.035, 0.035, mat, axis="Y")
-    torus(name + " | inner bead", (x, y, 0), radius * 0.91, 0.018, detail, axis="Y")
+    torus(name + " | outer bead", (x, y, 0), radius * 1.035, 0.052, mat, axis="Y")
+    torus(name + " | inner bead", (x, y, 0), radius * 0.91, 0.024, detail, axis="Y")
+    torus(name + " | cuff edge", (x, y - 0.065, 0), radius * 0.99, 0.018, detail, axis="Y")
     for side in (-1, 1):
         sphere(name + " | rivet", (x + side * radius * 0.55, y, radius * 0.78),
                (0.042, 0.042, 0.034), detail, ico=True)
@@ -231,7 +240,7 @@ def make_handle(name, variant):
     wrap_angle = wrap_t * math.pi * 14.0
     wrap_points = np.column_stack((wrap_center_x + wrap_radius * np.cos(wrap_angle), wrap_y,
                                    0.01 + wrap_radius * np.sin(wrap_angle)))
-    curve_mesh(name + " | braided grip cord", wrap_points, np.full_like(wrap_t, 0.014), detail, 6)
+    curve_mesh(name + " | braided grip cord", wrap_points, np.full_like(wrap_t, 0.024), detail, 8)
     # Carved grip medallion and side rivets are individual relief details.
     sphere(name + " | grip medallion", (float(np.interp(0.0, y, x)), -0.18, 0.145), (0.13, 0.17, 0.045), accent, ico=True)
     sphere(name + " | inset mark", (float(np.interp(0.0, y, x)), -0.18, 0.185), (0.07, 0.10, 0.025), detail, ico=True)
@@ -290,6 +299,7 @@ def extruded_profile(name, points, mat, depth=0.22, bevel=0.035, cache_key=None)
 
 def make_blade(name, style, variant):
     """Build a head variant from one of four shared silhouette families."""
+    before = set(bpy.context.scene.objects[:])
     slug = variant["slug"]
     steel = material(f"Head | {slug} | forged body", variant["steel"], metallic=0.82, roughness=0.26)
     edge = material(f"Head | {slug} | honed edge", variant["edge"], metallic=0.91, roughness=0.19)
@@ -387,6 +397,14 @@ def make_blade(name, style, variant):
         curve_mesh(name + " | anchor mark", [(0, .55, .19), (0, .30, .19), (-.12, .19, .19), (0, .11, .19), (.12, .19, .19)], [.025, .022, .02, .018, .014], relief, 6)
     elif motif == "storm":
         curve_mesh(name + " | storm etch", [(-.28, .36, .19), (-.08, .17, .19), (-.20, .01, .19), (.12, -.12, .19)], [.025, .02, .014, .006], relief, 6)
+    # Raise the head's blade-to-socket proportion without scaling the mount parts
+    # independently. One parent keeps every engraving, edge, and sleeve detail aligned.
+    new_objects = set(bpy.context.scene.objects[:]) - before
+    root = bpy.data.objects.new(name + " | sculpted head group", None)
+    bpy.context.collection.objects.link(root)
+    for obj in new_objects:
+        obj.parent = root
+    root.scale.y = 1.35
 
 
 def make_core(name, element):
