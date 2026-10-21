@@ -28,7 +28,7 @@ jobs:
       - name: Verify Blender and bundled NumPy
         run: blender --background --python-expr "import bpy, numpy; print('Blender', bpy.app.version_string, '| NumPy', numpy.__version__)"
       - name: Render standalone handles, blades, cores, and effect overlays
-        run: blender --background --python tools/blender/render_forge_components.py -- --output build/blender-forge
+        run: blender --background --python-exit-code 1 --python tools/blender/render_forge_components.py -- --output build/blender-forge
       - name: Validate transparent PNGs with NumPy
         run: python3 tools/blender/validate_forge_renders.py build/blender-forge
       - name: Upload render review pack

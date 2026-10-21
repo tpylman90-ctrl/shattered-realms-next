@@ -30,7 +30,7 @@ def args():
 def clear_scene():
     bpy.ops.object.select_all(action="SELECT")
     bpy.ops.object.delete(use_global=False)
-    for datablocks in (bpy.data.materials, bpy.data.meshes, bpy.data.curves):
+    for datablocks in (bpy.data.meshes, bpy.data.curves):
         for item in list(datablocks):
             if item.users == 0:
                 datablocks.remove(item)
@@ -289,7 +289,6 @@ def setup_camera_and_lights():
 
 def render_assets(out_dir):
     out_dir.mkdir(parents=True, exist_ok=True)
-    bpy.ops.wm.read_factory_settings(use_empty=True)
     clear_scene()
     setup_camera_and_lights()
     components = []
