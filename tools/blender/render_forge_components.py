@@ -563,8 +563,11 @@ def render_assets(out_dir):
         offset_x, offset_y = (column - 2) * 3.5, (2.5 - row) * 3.5
         for obj in new_objects:
             obj.name = f"{kind.upper()} | {label} | {obj.name}"
-            obj.location.x += offset_x
-            obj.location.y += offset_y
+        for obj in new_objects:
+            # Move a grouped head once through its root, not once per child mesh.
+            if obj.parent not in new_objects:
+                obj.location.x += offset_x
+                obj.location.y += offset_y
     bpy.context.scene.camera.data.ortho_scale = 22.5
     blend_path = out_dir / "axe_archetype_library.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
