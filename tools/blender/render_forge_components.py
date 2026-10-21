@@ -272,7 +272,7 @@ def make_blade(name, style, variant):
             for side in (-1, 1):
                 sphere(name + " | scale stud", (side * (0.43 + row * .13) * width, yy, .155), (.045, .055, .025), relief, ico=True)
     elif motif == "anchor":
-        curve_mesh(name + " | anchor mark", [(0, .55, .19), (0, .30, .19), (-.12, .19, .19), (0, .11, .19), (.12, .19, .19)], [.025, .022, .02, .018], relief, 6)
+        curve_mesh(name + " | anchor mark", [(0, .55, .19), (0, .30, .19), (-.12, .19, .19), (0, .11, .19), (.12, .19, .19)], [.025, .022, .02, .018, .014], relief, 6)
     elif motif == "storm":
         curve_mesh(name + " | storm etch", [(-.28, .36, .19), (-.08, .17, .19), (-.20, .01, .19), (.12, -.12, .19)], [.025, .02, .014, .006], relief, 6)
 
