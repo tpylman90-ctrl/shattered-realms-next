@@ -20,7 +20,10 @@ def main() -> None:
     assert len(names) == len(set(names)), "Component render names must be unique"
     assert manifest["renders"] == names
     counts = Counter(item["kind"] for item in components)
-    assert counts == {"handle": 3, "blade": 6, "core": 3, "effect": 3}, f"Unexpected component mix: {counts}"
+    assert counts == {"handle": 10, "blade": 12, "core": 3, "effect": 3}, f"Unexpected component mix: {counts}"
+    for kind in ("handle", "blade"):
+        archetypes = {item["base_archetype"] for item in components if item["kind"] == kind}
+        assert len(archetypes) == 4, f"Expected four reusable {kind} archetypes, got {sorted(archetypes)}"
     images = []
     for item in components:
         assert item["modular_only"] is True
@@ -45,6 +48,8 @@ def main() -> None:
             print(f"PASS {path.name}: {item['kind']} {image.width}x{image.height} RGBA, alpha {coverage:.1%}")
     blend = root / manifest["scene"]
     assert blend.is_file() and blend.stat().st_size > 1024, "Editable Blender component scene missing or empty"
+    assert manifest["base_archetypes"]["handles"] == ["furnace_haft", "iron_braced", "organic_hook", "split_oak"]
+    assert manifest["base_archetypes"]["blades"] == ["bearded", "crescent", "double", "hooked"]
     # A grid of isolated thumbnails is review-friendly while preserving part boundaries.
     cell_w, cell_h, columns = 172, 200, 5
     rows = (len(images) + columns - 1) // columns
