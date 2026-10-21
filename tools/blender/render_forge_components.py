@@ -164,12 +164,24 @@ def curve_mesh(name, points, radii, mat, sides=10, cache_key=None):
     return mesh_object(name, verts, faces, mat, bevel=0.012, cache_key=cache_key)
 
 
-def torus(name, loc, major, minor, mat):
+def torus(name, loc, major, minor, mat, axis="Z"):
     bpy.ops.mesh.primitive_torus_add(major_radius=major, minor_radius=minor, major_segments=36, minor_segments=10, location=loc)
     obj = bpy.context.object
     obj.name = name
     obj.data.materials.append(mat)
+    if axis == "Y":
+        # Haft shafts run along Y, so their ferrules must wrap that axis.
+        obj.rotation_euler.x = math.pi / 2
     return obj
+
+
+def shaft_cuff(name, x, y, radius, mat, detail):
+    """A raised, sculpted ferrule wrapped around a Y-axis haft."""
+    torus(name + " | outer bead", (x, y, 0), radius * 1.035, 0.035, mat, axis="Y")
+    torus(name + " | inner bead", (x, y, 0), radius * 0.91, 0.018, detail, axis="Y")
+    for side in (-1, 1):
+        sphere(name + " | rivet", (x + side * radius * 0.55, y, radius * 0.78),
+               (0.042, 0.042, 0.034), detail, ico=True)
 
 
 def make_handle(name, variant):
@@ -196,14 +208,13 @@ def make_handle(name, variant):
         radius = 0.12 + 0.025 * np.cos(t * math.pi * 2.0) ** 2
     curve_mesh(name + " | haft", np.column_stack((x, y, np.zeros_like(y))), radius, wood, 12, cache_key="haft:" + style)
     # Heavy socket and butt ferrules give every haft a readable connection point.
-    for idx, t_band in enumerate((0.06, 0.12, 0.78, 0.84, 0.90)):
+    for idx, t_band in enumerate((0.055, 0.105, 0.80, 0.855, 0.91)):
         yy = -1.72 + 2.74 * t_band
         xx = float(np.interp(t_band, t, x))
         rr = float(np.interp(t_band, t, radius))
-        torus(name + " | ferrule " + str(idx + 1), (xx, yy, 0), rr * 0.99, 0.027, accent)
-        if idx in (1, 3):
-            for side in (-1, 1):
-                sphere(name + " | ferrule rivet", (xx + side * rr * 0.72, yy, 0.12), (0.035, 0.035, 0.025), detail, ico=True)
+        shaft_cuff(name + " | ferrule " + str(idx + 1), xx, yy, rr, accent, detail)
+        if idx in (0, 4):
+            torus(name + " | terminal rim", (xx, yy, 0), rr * 1.14, 0.018, detail, axis="Y")
     # Wrapped center grip with diagonal ribs and a carved secondary inlay.
     grip_y = np.linspace(-0.72, 0.28, 22)
     grip_x = np.interp((grip_y + 1.72) / 2.74, t, x)
@@ -212,7 +223,7 @@ def make_handle(name, variant):
     for index, yy in enumerate(np.linspace(-0.66, 0.22, 9)):
         xx = float(np.interp((yy + 1.72) / 2.74, t, x))
         rr = float(np.interp((yy + 1.72) / 2.74, t, radius))
-        torus(name + " | wrap stitch", (xx, yy, 0.01), rr * 1.08, 0.012, detail if index % 2 == 0 else accent)
+        torus(name + " | wrap stitch", (xx, yy, 0.01), rr * 1.08, 0.012, detail if index % 2 == 0 else accent, axis="Y")
     wrap_t = np.linspace(0.0, 1.0, 96)
     wrap_y = -0.68 + 0.88 * wrap_t
     wrap_center_x = np.interp((wrap_y + 1.72) / 2.74, t, x)
@@ -225,7 +236,40 @@ def make_handle(name, variant):
     sphere(name + " | grip medallion", (float(np.interp(0.0, y, x)), -0.18, 0.145), (0.13, 0.17, 0.045), accent, ico=True)
     sphere(name + " | inset mark", (float(np.interp(0.0, y, x)), -0.18, 0.185), (0.07, 0.10, 0.025), detail, ico=True)
     sphere(name + " | pommel", (float(x[0]), -1.76, 0), (0.19, 0.17, 0.15), accent, ico=style == "organic_hook")
-    torus(name + " | socket collar", (float(x[-1]), 1.02, 0), float(radius[-1]) * 1.07, 0.035, accent)
+    if style in {"split_oak", "iron_braced"}:
+        for side in (-1, 1):
+            channel_points = []
+            for yy in np.linspace(-0.54, 0.12, 8):
+                tt = (yy + 1.72) / 2.74
+                cx = float(np.interp(tt, t, x)) + side * float(np.interp(tt, t, radius)) * 0.72
+                channel_points.append((cx, float(yy), 0.105))
+            curve_mesh(name + " | grip channel", channel_points,
+                       np.linspace(0.018, 0.009, len(channel_points)), detail, 6)
+    if style == "split_oak":
+        for side in (-1, 1):
+            curve_mesh(name + " | split grain crest",
+                       [(0, 0.38, 0.09), (side * 0.07, 0.56, 0.10),
+                        (side * 0.11, 0.74, 0.095), (side * 0.08, 0.91, 0.07)],
+                       [0.035, 0.025, 0.017, 0.005], wood_light, 7)
+    elif style == "iron_braced":
+        for yy in (-1.05, 0.48):
+            for side in (-1, 1):
+                curve_mesh(name + " | diagonal brace",
+                           [(side * .10, yy - .12, .10), (0, yy, .16), (-side * .10, yy + .12, .10)],
+                           [.028, .035, .02], accent, 7)
+    elif style == "furnace_haft":
+        for yy in (-1.32, -1.12, 0.56, 0.76):
+            xx = float(np.interp((yy + 1.72) / 2.74, t, x))
+            rr = float(np.interp((yy + 1.72) / 2.74, t, radius))
+            bevel_cube(name + " | vent plate", (xx, yy, rr * .72), (rr * 1.12, .075, .045), accent, .025)
+    else:
+        for side in (-1, 1):
+            for yy in (-1.30, -0.98, 0.48, 0.78):
+                xx = float(np.interp((yy + 1.72) / 2.74, t, x))
+                rr = float(np.interp((yy + 1.72) / 2.74, t, radius))
+                sphere(name + " | organic ridge", (xx + side * rr * .70, yy, rr * .28),
+                       (.055, .13, .07), detail, ico=True)
+    torus(name + " | socket collar", (float(x[-1]), 1.02, 0), float(radius[-1]) * 1.07, 0.035, accent, axis="Y")
     if style == "organic_hook":
         curve_mesh(name + " | hooked butt", [(float(x[0]), -1.72, 0), (float(x[0]) + 0.18, -1.91, 0), (float(x[0]) + 0.34, -1.84, 0), (float(x[0]) + 0.28, -1.65, 0)], [0.11, 0.085, 0.055, 0.012], detail, 9)
     elif variant.get("inlay"):
@@ -296,6 +340,38 @@ def make_blade(name, style, variant):
             else:  # double bit
                 line = [(side * 0.50 * width, 0.60, 0.17), (side * 1.20 * width, 0.71, 0.17), (side * 1.50 * width, 0.37, 0.17)]
             curve_mesh(name + " | edge glint " + str(side), line, [0.026] * 3, edge, 6)
+    if style == "Battle":
+        for side in (-1, 1):
+            curve_mesh(name + " | bearded leaf filigree",
+                       [(side * .30, .00, .215), (side * .50, .16, .215),
+                        (side * .74, .28, .215), (side * 1.02, .35, .205)],
+                       [.030, .022, .014, .004], relief, 7)
+            curve_mesh(name + " | leaf vein",
+                       [(side * .53, .17, .225), (side * .48, .31, .225),
+                        (side * .44, .39, .22)], [.018, .010, .003], accent, 6)
+    elif style == "Crescent":
+        for side in (-1, 1):
+            curve_mesh(name + " | crescent rib",
+                       [(side * .28, .16, .215), (side * .56, .34, .22),
+                        (side * .83, .54, .215), (side * 1.12, .66, .205)],
+                       [.032, .027, .019, .005], relief, 7)
+            sphere(name + " | crescent jewel seat", (side * .61, .30, .225),
+                   (.085, .11, .035), accent, ico=True)
+    elif style == "Double":
+        for side in (-1, 1):
+            curve_mesh(name + " | twin blade spine",
+                       [(side * .22, .44, .215), (side * .48, .51, .22),
+                        (side * .84, .58, .215), (side * 1.18, .56, .205)],
+                       [.034, .026, .018, .005], relief, 7)
+        extruded_profile(name + " | central crest",
+                         [(-.20, .16), (0, .40), (.20, .16), (0, -.08)],
+                         accent, depth=.035, bevel=.012).location.z = .23
+    else:
+        for side in (-1, 1):
+            curve_mesh(name + " | hooked spine ridge",
+                       [(side * .25, .08, .215), (side * .48, .22, .22),
+                        (side * .71, .42, .215), (side * 1.00, .57, .205)],
+                       [.035, .026, .016, .005], relief, 7)
     if style == "Hook":
         sphere(name + " | crown rivet", (0, 0.53, 0.19), (0.075, 0.075, 0.035), accent)
     # Region motifs are shallow non-emissive relief; elemental glow belongs to the core overlay.
