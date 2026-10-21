@@ -1,14 +1,13 @@
-#!/usr/bin/env python3
-"""Render a Blender-made axe component proof sheet for Entropic Forge.
+#!/usr/bin/env blender --background --python
+"""Render modular Entropic Forge axe parts; never composes a complete weapon.
 
-The generated PNGs are review assets. They do not replace catalog art or change
-gameplay data until their sockets and in-game appearance have been approved.
+The meshes are intentionally independent: three hafts, six heads, three cores,
+and three effect-only overlays. NumPy creates the curved/tapered haft profiles.
 """
-from __future__ import annotations
-
 import argparse
 import json
 import math
+import os
 import sys
 from pathlib import Path
 
@@ -17,250 +16,357 @@ import numpy as np
 from mathutils import Vector
 
 
-def cli_args() -> argparse.Namespace:
-    argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
+SIZE = 512
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", default="build/blender-forge")
+    argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
     return parser.parse_args(argv)
 
 
-def material(name: str, color: tuple[float, float, float, float], metallic: float, roughness: float) -> bpy.types.Material:
+def clear_scene():
+    bpy.ops.object.select_all(action="SELECT")
+    bpy.ops.object.delete(use_global=False)
+    for datablocks in (bpy.data.materials, bpy.data.meshes, bpy.data.curves):
+        for item in list(datablocks):
+            if item.users == 0:
+                datablocks.remove(item)
+
+
+def material(name, color, metallic=0.0, roughness=0.45, emission=0.0):
     mat = bpy.data.materials.new(name)
-    mat.diffuse_color = color
+    mat.diffuse_color = (*color, 1.0)
     mat.use_nodes = True
-    principled = mat.node_tree.nodes.get("Principled BSDF")
-    principled.inputs["Base Color"].default_value = color
-    principled.inputs["Metallic"].default_value = metallic
-    principled.inputs["Roughness"].default_value = roughness
+    bsdf = mat.node_tree.nodes.get("Principled BSDF")
+    bsdf.inputs["Base Color"].default_value = (*color, 1.0)
+    bsdf.inputs["Metallic"].default_value = metallic
+    bsdf.inputs["Roughness"].default_value = roughness
+    if emission:
+        bsdf.inputs["Emission Color"].default_value = (*color, 1.0)
+        bsdf.inputs["Emission Strength"].default_value = emission
     return mat
 
 
-def aim(obj: bpy.types.Object, point: tuple[float, float, float]) -> None:
-    obj.rotation_euler = (Vector(point) - obj.location).to_track_quat("-Z", "Y").to_euler()
+WOOD = material("Material | Ashwood", (0.28, 0.105, 0.035), roughness=0.32)
+WOOD_LIGHT = material("Material | Pale ash grain", (0.60, 0.30, 0.09), roughness=0.42)
+IRON = material("Material | Forged iron", (0.105, 0.15, 0.19), metallic=0.82, roughness=0.28)
+STEEL = material("Material | Honed steel", (0.48, 0.61, 0.65), metallic=0.9, roughness=0.2)
+GOLD = material("Material | Brass fittings", (0.72, 0.39, 0.09), metallic=0.78, roughness=0.25)
+LEATHER = material("Material | Wrapped leather", (0.11, 0.035, 0.025), roughness=0.58)
+CORE_MATS = {
+    "Cinder": material("Core | Cinder pearl", (1.0, 0.20, 0.025), metallic=0.18, roughness=0.22, emission=1.8),
+    "Rime": material("Core | Rime shard", (0.15, 0.67, 1.0), metallic=0.25, roughness=0.16, emission=1.5),
+    "Storm": material("Core | Stormglass", (0.52, 0.22, 1.0), metallic=0.2, roughness=0.2, emission=1.8),
+}
+EFFECT_MATS = {
+    "Cinder": material("Effect | Ember glow", (1.0, 0.13, 0.015), emission=4.0),
+    "Rime": material("Effect | Frost glow", (0.15, 0.68, 1.0), emission=3.5),
+    "Storm": material("Effect | Arc glow", (0.63, 0.28, 1.0), emission=4.0),
+}
 
 
-def create_mesh(name: str, vertices: list[tuple[float, float, float]], faces: list[tuple[int, ...]], mat: bpy.types.Material) -> bpy.types.Object:
-    mesh = bpy.data.meshes.new(name + "Mesh")
+def mesh_object(name, vertices, faces, mat, bevel=0.0):
+    mesh = bpy.data.meshes.new(name + " Mesh")
     mesh.from_pydata(vertices, [], faces)
     mesh.materials.append(mat)
     mesh.update()
     obj = bpy.data.objects.new(name, mesh)
     bpy.context.collection.objects.link(obj)
+    if bevel:
+        mod = obj.modifiers.new("Soft forged edges", "BEVEL")
+        mod.width = bevel
+        mod.segments = 3
+        obj.modifiers.new("Weighted face normals", "WEIGHTED_NORMAL")
     return obj
 
 
-def bevel(obj: bpy.types.Object, width: float = 0.035, segments: int = 3) -> None:
-    mod = obj.modifiers.new("Crisp crafted edges", "BEVEL")
-    mod.width = width
-    mod.segments = segments
-
-
-def cylinder_between(name: str, a: tuple[float, float, float], b: tuple[float, float, float], radius: float,
-                     mat: bpy.types.Material, vertices: int = 16) -> bpy.types.Object:
-    start, end = Vector(a), Vector(b)
-    direction = end - start
-    bpy.ops.mesh.primitive_cylinder_add(vertices=vertices, radius=radius, depth=direction.length,
-                                        location=(start + end) * 0.5)
+def bevel_cube(name, location, scale, mat, bevel=0.035):
+    bpy.ops.mesh.primitive_cube_add(size=1.0, location=location)
     obj = bpy.context.object
     obj.name = name
-    obj.rotation_euler = direction.to_track_quat("Z", "Y").to_euler()
+    obj.dimensions = scale
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
     obj.data.materials.append(mat)
-    bevel(obj, min(radius * 0.2, 0.025), 2)
+    mod = obj.modifiers.new("Rounded edges", "BEVEL")
+    mod.width = bevel
+    mod.segments = 3
+    obj.modifiers.new("Weighted normals", "WEIGHTED_NORMAL")
     return obj
 
 
-def create_haft(wood: bpy.types.Material, dark_wood: bpy.types.Material, brass: bpy.types.Material,
-                leather: bpy.types.Material) -> list[bpy.types.Object]:
-    # NumPy generates a gently curved, tapered octagonal haft with a reinforced tenon.
-    z = np.linspace(-2.34, 2.28, 46, dtype=np.float64)
-    angles = np.linspace(0.0, 2.0 * math.pi, 9, endpoint=False)
-    radius = 0.105 + 0.035 * np.exp(-((z + 0.25) / 1.4) ** 2)
-    radius += 0.018 * (z < -1.75)
-    center_x = 0.055 * np.sin(z * 1.15)
-    vertices: list[tuple[float, float, float]] = []
-    for zi, ri, xi in zip(z, radius, center_x):
-        for angle in angles:
-            vertices.append((float(xi + ri * math.cos(angle)), float(ri * math.sin(angle)), float(zi)))
-    faces: list[tuple[int, ...]] = []
-    for row in range(len(z) - 1):
-        for col in range(len(angles)):
-            nxt = (col + 1) % len(angles)
-            faces.append((row * len(angles) + col, row * len(angles) + nxt,
-                          (row + 1) * len(angles) + nxt, (row + 1) * len(angles) + col))
-    faces.append(tuple(range(len(angles) - 1, -1, -1)))
-    faces.append(tuple((len(z) - 1) * len(angles) + i for i in range(len(angles))))
-    haft = create_mesh("Woodcutter haft | curved ashwood", vertices, faces, wood)
-    bevel(haft, 0.018, 2)
-
-    objects = [haft]
-    # Separate wrap collars and metal fittings add readable dimensional details.
-    for index, (height, mat) in enumerate([
-        (-1.72, brass), (-1.48, leather), (-1.35, leather),
-        (-1.22, leather), (1.92, brass), (2.08, dark_wood),
-    ]):
-        bpy.ops.mesh.primitive_torus_add(major_radius=0.112 if height < 1.5 else 0.145,
-                                         minor_radius=0.026, major_segments=24, minor_segments=8,
-                                         location=(0.055 * math.sin(height * 1.15), 0, height))
-        ring = bpy.context.object
-        ring.name = f"Haft fitting {index + 1:02d}"
-        ring.data.materials.append(mat)
-        objects.append(ring)
-    cylinder_between("Head tenon", (0.055 * math.sin(2.15 * 1.15), 0, 1.98),
-                     (0.055 * math.sin(2.15 * 1.15), 0, 2.39), 0.095, dark_wood, 12)
-    objects.append(bpy.context.object)
-    return objects
+def sphere(name, location, scale, mat, ico=False):
+    if ico:
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=1, location=location)
+    else:
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=24, ring_count=12, radius=1, location=location)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = scale
+    obj.data.materials.append(mat)
+    for p in obj.data.polygons:
+        p.use_smooth = not ico
+    return obj
 
 
-def create_axe_head(steel: bpy.types.Material, edge_mat: bpy.types.Material, brass: bpy.types.Material) -> list[bpy.types.Object]:
-    # The head wraps around the tenon; its open ring leaves the selected haft visible.
-    profile = [(-1.48, 2.68), (-1.43, 2.43), (-1.30, 2.17), (-1.08, 1.91),
-               (-0.77, 1.79), (-0.43, 1.80), (-0.21, 1.93), (-0.12, 2.13),
-               (-0.18, 2.38), (-0.43, 2.48), (-0.78, 2.52), (-1.10, 2.59),
-               (-1.31, 2.74)]
-    thickness = 0.19
-    vertices = [(x, y, z) for y in (-thickness, thickness) for x, z in profile]
-    count = len(profile)
-    faces = [tuple(range(count)), tuple(range(count, count * 2))]
-    faces += [(i, (i + 1) % count, (i + 1) % count + count, i + count) for i in range(count)]
-    blade = create_mesh("Forester axe bit | forged wedge", vertices, faces, steel)
-    bevel(blade, 0.055, 4)
+def curve_mesh(name, points, radii, mat, sides=10):
+    """Build a tube along a centerline using NumPy-generated rings."""
+    pts = np.asarray(points, dtype=float)
+    rad = np.asarray(radii, dtype=float)
+    verts, faces = [], []
+    for i, point in enumerate(pts):
+        tangent = pts[min(i + 1, len(pts) - 1)] - pts[max(i - 1, 0)]
+        tangent = tangent / (np.linalg.norm(tangent) + 1e-9)
+        side = np.array([1.0, 0.0, 0.0])
+        if abs(np.dot(tangent, side)) > 0.88:
+            side = np.array([0.0, 0.0, 1.0])
+        side -= tangent * np.dot(side, tangent)
+        side /= np.linalg.norm(side) + 1e-9
+        normal = np.cross(tangent, side)
+        for j in range(sides):
+            angle = (2 * math.pi * j) / sides
+            v = point + rad[i] * (math.cos(angle) * side + math.sin(angle) * normal)
+            verts.append(tuple(v))
+    for i in range(len(pts) - 1):
+        for j in range(sides):
+            a = i * sides + j
+            b = i * sides + (j + 1) % sides
+            faces.append((a, b, b + sides, a + sides))
+    faces.extend([tuple(range(sides - 1, -1, -1)), tuple((len(pts) - 1) * sides + j for j in range(sides))])
+    return mesh_object(name, verts, faces, mat, bevel=0.012)
 
-    # A bright bevel ribbon follows the cutting edge and makes the silhouette legible at icon scale.
-    edge_points = [(-1.48, -0.214, 2.68), (-1.43, -0.214, 2.43), (-1.30, -0.214, 2.17),
-                   (-1.08, -0.214, 1.91), (-0.77, -0.214, 1.79)]
-    curve = bpy.data.curves.new("Sharpened edge", "CURVE")
-    curve.dimensions = "3D"
-    curve.bevel_depth = 0.028
-    curve.bevel_resolution = 3
-    spline = curve.splines.new("POLY")
-    spline.points.add(len(edge_points) - 1)
-    for point, coord in zip(spline.points, edge_points):
-        point.co = (*coord, 1.0)
-    edge = bpy.data.objects.new("Continuous polished cutting bevel", curve)
-    bpy.context.collection.objects.link(edge)
-    edge.data.materials.append(edge_mat)
 
-    # The toroidal socket is a real open ring, not a painted oval.
-    bpy.ops.mesh.primitive_torus_add(major_radius=0.205, minor_radius=0.075,
-                                     major_segments=40, minor_segments=12,
-                                     location=(0.0, 0, 2.12))
-    eye = bpy.context.object
-    eye.name = "Open haft eye | forged socket rim"
-    eye.scale = (1.0, 0.76, 1.0)
-    eye.data.materials.append(brass)
-    # Small forged pins secure the eye and catch highlights around the socket.
-    pins = []
+def torus(name, loc, major, minor, mat):
+    bpy.ops.mesh.primitive_torus_add(major_radius=major, minor_radius=minor, major_segments=36, minor_segments=10, location=loc)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(mat)
+    return obj
+
+
+def make_handle(name, style):
+    t = np.linspace(0.0, 1.0, 34)
+    y = -1.72 + 2.74 * t
+    if style == "Ashwood":
+        x = 0.08 * np.sin(t * math.pi * 1.3) - 0.02 * t
+        radius = 0.115 + 0.025 * np.sin(t * math.pi) + 0.035 * t
+        wood, accent = WOOD, WOOD_LIGHT
+    elif style == "Ironbound":
+        x = 0.025 * np.sin(t * math.pi * 2.0)
+        radius = 0.14 - 0.018 * t + 0.02 * np.sin(t * math.pi)
+        wood, accent = IRON, STEEL
+    else:  # Thornwood
+        x = 0.08 * np.sin(t * math.pi * 2.0) + 0.04 * np.sin(t * math.pi * 5.0)
+        radius = 0.12 + 0.028 * np.cos(t * math.pi * 2.0) ** 2
+        wood, accent = material("Material | Dark thornwood", (0.16, 0.075, 0.035), roughness=0.4), GOLD
+    curve_mesh(name + " | haft", np.column_stack((x, y, np.zeros_like(y))), radius, wood, 12)
+    for idx, t_band in enumerate((0.08, 0.13, 0.80, 0.86)):
+        yy = -1.72 + 2.74 * t_band
+        xx = float(np.interp(t_band, t, x))
+        torus(name + " | ferrule " + str(idx + 1), (xx, yy, 0), 0.128 if style != "Ironbound" else 0.145, 0.025, accent)
+    # A restrained leather grip and contrasting wrap ribs.
+    grip_y = np.linspace(-0.62, 0.24, 20)
+    grip_x = np.interp((grip_y + 1.72) / 2.74, t, x)
+    grip_r = np.interp((grip_y + 1.72) / 2.74, t, radius) * 1.08
+    curve_mesh(name + " | leather grip", np.column_stack((grip_x, grip_y, np.full_like(grip_y, 0.005))), grip_r, LEATHER, 10)
+    for yy in np.linspace(-0.55, 0.17, 7):
+        xx = float(np.interp((yy + 1.72) / 2.74, t, x))
+        torus(name + " | wrap", (xx, yy, 0.005), float(np.interp((yy + 1.72) / 2.74, t, radius)) * 1.07, 0.012, accent)
+    sphere(name + " | pommel", (float(x[0]), -1.76, 0), (0.19, 0.17, 0.15), accent, ico=style == "Thornwood")
+    sphere(name + " | socket collar", (float(x[-1]), 0.99, 0), (0.20, 0.12, 0.16), accent)
+
+
+def extruded_profile(name, points, mat, depth=0.22, bevel=0.035):
+    verts = [(x, y, z) for z in (-depth / 2, depth / 2) for x, y in points]
+    n = len(points)
+    faces = [tuple(range(n - 1, -1, -1)), tuple(range(n, 2 * n))]
+    for i in range(n):
+        j = (i + 1) % n
+        faces.append((i, j, j + n, i + n))
+    return mesh_object(name, verts, faces, mat, bevel)
+
+
+def make_blade(name, style):
+    steel = STEEL if style in ("Crescent", "Broadhead", "Double") else IRON
+    if style == "Battle":
+        pts = [(-0.12, -0.58), (-0.50, -0.32), (-1.30, -0.20), (-1.55, 0.12), (-1.20, 0.72), (-0.48, 0.80), (-0.12, 0.56), (0.12, 0.56), (0.48, 0.80), (1.20, 0.72), (1.55, 0.12), (1.30, -0.20), (0.50, -0.32), (0.12, -0.58)]
+    elif style == "Crescent":
+        pts = [(-0.18, -0.63), (-0.63, -0.48), (-1.32, -0.08), (-1.58, 0.42), (-1.20, 0.98), (-0.91, 0.62), (-0.91, 0.22), (-0.56, -0.06), (-0.16, -0.12), (0.16, -0.12), (0.56, -0.06), (0.91, 0.22), (0.91, 0.62), (1.20, 0.98), (1.58, 0.42), (1.32, -0.08), (0.63, -0.48), (0.18, -0.63)]
+    elif style == "Cleaver":
+        pts = [(-0.16, -0.62), (-0.58, -0.38), (-1.22, -0.15), (-1.40, 0.12), (-1.37, 0.86), (-0.18, 0.72), (-0.12, 0.56), (0.12, 0.56), (0.18, 0.72), (1.37, 0.86), (1.40, 0.12), (1.22, -0.15), (0.58, -0.38), (0.16, -0.62)]
+    elif style == "Hook":
+        pts = [(-0.16, -0.62), (-0.55, -0.35), (-1.05, -0.10), (-1.35, 0.18), (-1.55, 0.78), (-1.06, 0.52), (-0.86, 0.19), (-0.40, -0.04), (-0.14, -0.11), (0.14, -0.11), (0.48, -0.03), (0.80, 0.14), (1.08, 0.47), (1.20, 0.91), (1.52, 0.83), (1.42, 0.25), (1.13, -0.12), (0.55, -0.42), (0.16, -0.62)]
+    elif style == "Double":
+        pts = [(-0.18, -0.60), (-0.66, -0.42), (-1.30, -0.08), (-1.58, 0.35), (-1.28, 0.84), (-0.52, 0.62), (-0.20, 0.47), (0.20, 0.47), (0.52, 0.62), (1.28, 0.84), (1.58, 0.35), (1.30, -0.08), (0.66, -0.42), (0.18, -0.60)]
+    else:  # Broadhead
+        pts = [(-0.16, -0.60), (-0.62, -0.37), (-1.42, -0.05), (-1.62, 0.30), (-1.48, 0.88), (-0.78, 0.78), (-0.42, 0.62), (-0.16, 0.50), (0.16, 0.50), (0.42, 0.62), (0.78, 0.78), (1.48, 0.88), (1.62, 0.30), (1.42, -0.05), (0.62, -0.37), (0.16, -0.60)]
+    extruded_profile(name + " | head", pts, steel)
+    # Central socket ring remains open so the handle and core can be selected independently.
+    torus(name + " | empty socket lip", (0, -0.42, 0.13), 0.28, 0.075, GOLD if style in ("Battle", "Hook") else IRON)
+    bevel_cube(name + " | socket bridge", (0, -0.54, 0.10), (0.36, 0.16, 0.17), steel, 0.045)
+    # Sharpened edges are thin independent bevel strips on the outer silhouette.
     for side in (-1, 1):
-        bpy.ops.mesh.primitive_uv_sphere_add(segments=16, ring_count=8, radius=0.045,
-                                             location=(0.18 * side, -0.228, 2.12))
-        pin = bpy.context.object
-        pin.name = f"Forged socket pin {side:+d}"
-        pin.scale = (1.0, 0.42, 1.0)
-        pin.data.materials.append(brass)
-        pins.append(pin)
-    return [blade, edge, eye, *pins]
+        if style == "Crescent":
+            line = [(side * 0.88, 0.56, 0.145), (side * 1.17, 0.83, 0.145), (side * 1.50, 0.42, 0.145)]
+        elif style == "Cleaver":
+            line = [(side * 0.18, 0.70, 0.145), (side * 1.32, 0.80, 0.145), (side * 1.37, 0.14, 0.145)]
+        else:
+            line = [(side * 0.50, 0.68, 0.145), (side * 1.30, 0.62, 0.145), (side * 1.48, 0.22, 0.145)]
+        curve_mesh(name + " | edge glint " + str(side), line, [0.018] * 3, STEEL, 6)
+    if style == "Hook":
+        sphere(name + " | crown rivet", (0, 0.53, 0.17), (0.075, 0.075, 0.035), GOLD)
 
 
-def prepare_scene() -> tuple[bpy.types.Scene, bpy.types.Object]:
+def make_core(name, element):
+    mat = CORE_MATS[element]
+    # A small, faceted crystal is the core asset; the surrounding effect is rendered separately.
+    sphere(name + " | crystal", (0, 0, 0), (0.34, 0.43, 0.20), mat, ico=True)
+    torus(name + " | brass cage", (0, 0, -0.04), 0.43, 0.055, GOLD)
+    for x in (-0.36, 0.36):
+        bevel_cube(name + " | clamp", (x, 0, 0), (0.12, 0.54, 0.12), GOLD, 0.04)
+
+
+def make_effect(name, element):
+    mat = EFFECT_MATS[element]
+    if element == "Cinder":
+        for i, (x, y, r) in enumerate([(-0.34, -0.20, .075), (.28, -.08, .06), (-.18, .33, .05), (.38, .39, .045), (0, -.42, .045)]):
+            sphere(name + " | ember " + str(i), (x, y, 0), (r, r * 1.35, r), mat, ico=True)
+        for s in (-1, 1):
+            curve_mesh(name + " | flame wisp " + str(s), [(s * .16, -.38, 0), (s * .30, -.10, 0), (s * .22, .12, 0), (s * .42, .40, 0)], [.055, .035, .045, .008], mat, 7)
+    elif element == "Rime":
+        for angle in np.linspace(0, 2 * math.pi, 6, endpoint=False):
+            dx, dy = math.cos(angle), math.sin(angle)
+            curve_mesh(name + " | frost ray", [(0, 0, 0), (dx * .27, dy * .27, 0), (dx * .47, dy * .47, 0)], [.035, .022, .008], mat, 6)
+            bx, by = -dy, dx
+            curve_mesh(name + " | frost fork", [(dx * .25, dy * .25, 0), (dx * .34 + bx * .12, dy * .34 + by * .12, 0)], [.022, .006], mat, 6)
+    else:
+        for points in ([(-.48, -.30, 0), (-.20, -.06, 0), (-.32, .16, 0), (0, .42, 0)], [(.48, .30, 0), (.20, .06, 0), (.32, -.16, 0), (0, -.42, 0)]):
+            curve_mesh(name + " | lightning arc", points, [.05, .025, .04, .008], mat, 7)
+        for x, y in [(-.34, .35), (.36, -.34), (.38, .32)]:
+            sphere(name + " | spark", (x, y, 0), (.045, .045, .04), mat, ico=True)
+
+
+def setup_camera_and_lights():
+    bpy.ops.object.camera_add(location=(0, 0, 9))
+    cam = bpy.context.object
+    cam.name = "Render Camera | orthographic component view"
+    cam.data.type = "ORTHO"
+    cam.data.ortho_scale = 4.6
+    bpy.context.scene.camera = cam
+    for name, loc, power, size in [
+        ("Key | warm softbox", (-3.4, 4.0, 5.0), 700, 4.0),
+        ("Fill | cool softbox", (3.8, 0.4, 3.5), 500, 3.0),
+        ("Rim | top strip", (0.0, -3.0, 3.5), 600, 2.5),
+    ]:
+        bpy.ops.object.light_add(type="AREA", location=loc)
+        light = bpy.context.object
+        light.name = name
+        light.data.energy = power
+        light.data.shape = "DISK"
+        light.data.size = size
+        light.rotation_euler = (Vector((0, 0, 0)) - light.location).to_track_quat("-Z", "Y").to_euler()
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
-    scene.cycles.samples = 32
-    # Ubuntu's repository Blender build may omit OpenImageDenoiser (OIDN).
-    # Keep the headless CPU pipeline portable across runners.
+    scene.cycles.samples = 24
     scene.cycles.use_denoising = False
-    scene.render.resolution_x = 1024
-    scene.render.resolution_y = 1024
+    scene.render.resolution_x = SIZE
+    scene.render.resolution_y = SIZE
     scene.render.resolution_percentage = 100
+    scene.render.film_transparent = True
     scene.render.image_settings.file_format = "PNG"
     scene.render.image_settings.color_mode = "RGBA"
-    scene.render.film_transparent = True
     scene.render.image_settings.color_depth = "8"
-    scene.view_settings.view_transform = "AgX"
-    scene.world.color = (0.25, 0.31, 0.40)
-    scene.world.use_nodes = True
-    background = scene.world.node_tree.nodes.get("Background")
-    background.inputs["Color"].default_value = (0.25, 0.31, 0.40, 1.0)
-    background.inputs["Strength"].default_value = 0.45
-
-    bpy.ops.object.camera_add(location=(0.0, -10.0, 3.1))
-    camera = bpy.context.object
-    camera.name = "Forge icon orthographic camera"
-    aim(camera, (0.0, 0.0, 0.0))
-    camera.data.type = "ORTHO"
-    camera.data.ortho_scale = 5.85
-    scene.camera = camera
-
-    for name, location, power, size, color in [
-        ("Warm key", (-4.5, -5.0, 6.5), 1300, 4.0, (1.0, 0.78, 0.54)),
-        ("Cool fill", (4.0, -3.0, 2.0), 850, 3.5, (0.48, 0.68, 1.0)),
-        ("Rim light", (0.5, 3.0, 5.0), 1550, 3.0, (1.0, 0.47, 0.18)),
-    ]:
-        bpy.ops.object.light_add(type="AREA", location=location)
-        lamp = bpy.context.object
-        lamp.name = name
-        lamp.data.energy = power
-        lamp.data.shape = "DISK"
-        lamp.data.size = size
-        lamp.data.color = color
-        aim(lamp, (0, 0, 0.4))
-    return scene, camera
+    scene.view_settings.view_transform = "Standard"
+    scene.view_settings.look = "Medium High Contrast"
+    scene.view_settings.exposure = 0
+    scene.view_settings.gamma = 1
+    scene.world.color = (0.025, 0.025, 0.025)
 
 
-def render_group(scene: bpy.types.Scene, camera: bpy.types.Object, objects: list[bpy.types.Object], path: Path,
-                 target: tuple[float, float, float], ortho_scale: float) -> None:
-    for obj in bpy.data.objects:
-        obj.hide_render = obj not in objects and obj.type not in {"CAMERA", "LIGHT"}
-    camera.location = Vector(target) + Vector((0.0, -10.0, 3.1))
-    aim(camera, target)
-    camera.data.ortho_scale = ortho_scale
-    scene.render.filepath = str(path)
-    bpy.ops.render.render(write_still=True)
-
-
-def main() -> None:
-    args = cli_args()
-    output = Path(args.output).resolve()
-    output.mkdir(parents=True, exist_ok=True)
-    bpy.ops.object.select_all(action="SELECT")
-    bpy.ops.object.delete(use_global=False)
-
-    scene, camera = prepare_scene()
-    wood = material("Ashwood | satin grain", (0.25, 0.095, 0.032, 1), 0.05, 0.32)
-    dark_wood = material("Dark end grain", (0.075, 0.027, 0.013, 1), 0.08, 0.38)
-    leather = material("Ox-blood leather wrap", (0.19, 0.025, 0.018, 1), 0.0, 0.46)
-    brass = material("Aged forge brass", (0.50, 0.25, 0.065, 1), 0.72, 0.24)
-    steel = material("Tempered steel", (0.31, 0.39, 0.47, 1), 0.58, 0.26)
-    edge_mat = material("Polished cutting edge", (0.72, 0.82, 0.88, 1), 0.92, 0.14)
-
-    haft = create_haft(wood, dark_wood, brass, leather)
-    head = create_axe_head(steel, edge_mat, brass)
-    for obj in bpy.data.objects:
-        obj.hide_render = obj.type in {"CAMERA", "LIGHT"}
-
-    render_group(scene, camera, haft, output / "woodcutters_haft_blender_test.png", (0, 0, 0), 6.25)
-    render_group(scene, camera, head, output / "foresters_axe_bit_blender_test.png", (-0.8, 0, 2.26), 2.35)
-    render_group(scene, camera, haft + head, output / "axe_assembled_blender_test.png", (-0.15, 0, 0.16), 6.35)
-
-    scene.render.filepath = str(output / "axe_assembled_blender_test.png")
-    bpy.ops.object.select_all(action="DESELECT")
-    bpy.ops.wm.save_as_mainfile(filepath=str(output / "entropic_forge_axe_study.blend"))
-    metadata = {
-        "generator": "render_forge_components.py",
-        "blender": bpy.app.version_string,
-        "numpy": np.__version__,
+def render_assets(out_dir):
+    out_dir.mkdir(parents=True, exist_ok=True)
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+    clear_scene()
+    setup_camera_and_lights()
+    components = []
+    specs = [
+        ("handle", "ashwood", "Ashwood", lambda: make_handle("Handle | Ashwood", "Ashwood"), (256, 92)),
+        ("handle", "ironbound", "Ironbound", lambda: make_handle("Handle | Ironbound", "Ironbound"), (256, 462)),
+        ("handle", "thornwood", "Thornwood", lambda: make_handle("Handle | Thornwood", "Thornwood"), (256, 90)),
+        ("blade", "battle", "Battle", lambda: make_blade("Blade | Battle", "Battle"), (256, 145)),
+        ("blade", "crescent", "Crescent", lambda: make_blade("Blade | Crescent", "Crescent"), (256, 137)),
+        ("blade", "cleaver", "Cleaver", lambda: make_blade("Blade | Cleaver", "Cleaver"), (256, 138)),
+        ("blade", "hook", "Hook", lambda: make_blade("Blade | Hook", "Hook"), (256, 145)),
+        ("blade", "double", "Double", lambda: make_blade("Blade | Double", "Double"), (256, 146)),
+        ("blade", "broadhead", "Broadhead", lambda: make_blade("Blade | Broadhead", "Broadhead"), (256, 146)),
+        ("core", "cinder_pearl", "Cinder Pearl", lambda: make_core("Core | Cinder Pearl", "Cinder"), (256, 256)),
+        ("core", "rime_shard", "Rime Shard", lambda: make_core("Core | Rime Shard", "Rime"), (256, 256)),
+        ("core", "stormglass", "Stormglass", lambda: make_core("Core | Stormglass", "Storm"), (256, 256)),
+        ("effect", "cinder_glow", "Cinder glow", lambda: make_effect("Effect | Cinder Glow", "Cinder"), (256, 256)),
+        ("effect", "rime_burst", "Rime burst", lambda: make_effect("Effect | Rime Burst", "Rime"), (256, 256)),
+        ("effect", "storm_arcs", "Storm arcs", lambda: make_effect("Effect | Storm Arcs", "Storm"), (256, 256)),
+    ]
+    for kind, slug, label, build, anchor in specs:
+        # Isolate each part in the saved master scene and in its own transparent render.
+        for obj in list(bpy.context.scene.objects):
+            if obj.type in {"MESH", "CURVE"}:
+                bpy.data.objects.remove(obj, do_unlink=True)
+        build()
+        asset_objects = [obj for obj in bpy.context.scene.objects if obj.type in {"MESH", "CURVE"}]
+        for obj in bpy.context.scene.objects:
+            obj.hide_render = obj.type in {"MESH", "CURVE"} and obj not in asset_objects
+        name = f"axe_{kind}_{slug}.png"
+        bpy.context.scene.render.filepath = str(out_dir / name)
+        bpy.ops.render.render(write_still=True)
+        components.append({
+            "file": name,
+            "kind": kind,
+            "name": label,
+            "size": [SIZE, SIZE],
+            "anchor_px": {"x": anchor[0], "y_from_top": anchor[1]},
+            "display_rotation_degrees": {"handle": 97, "blade": 90, "core": 0, "effect": 0}[kind],
+            "catalog_replacement": False,
+            "modular_only": True,
+        })
+        # Remove this part before creating the next; camera and lights stay editable.
+        for obj in asset_objects:
+            bpy.data.objects.remove(obj, do_unlink=True)
+    # Separate review scene includes all component objects in collections, but no assembled axe.
+    # Rebuild all parts in a staging layout so artists can inspect/edit the source blend.
+    for index, (kind, slug, label, build, anchor) in enumerate(specs):
+        before = set(bpy.context.scene.objects[:])
+        build()
+        new_objects = set(bpy.context.scene.objects[:]) - before
+        column, row = index % 5, index // 5
+        offset_x, offset_y = (column - 2) * 3.5, (1 - row) * 3.5
+        for obj in new_objects:
+            obj.name = f"{kind.upper()} | {label} | {obj.name}"
+            obj.location.x += offset_x
+            obj.location.y += offset_y
+    bpy.context.scene.camera.data.ortho_scale = 17.5
+    blend_path = out_dir / "axe_modular_components.blend"
+    bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
+    manifest = {
         "family": "Axe",
         "review_only": True,
-        "component_names": ["Woodcutter haft", "Forester axe bit"],
-        "renders": [
-            "woodcutters_haft_blender_test.png",
-            "foresters_axe_bit_blender_test.png",
-            "axe_assembled_blender_test.png",
+        "assembled_weapon_rendered": False,
+        "component_model": "selected handle and blade define shape; core adds separate glow/effects",
+        "dimensions_px": [SIZE, SIZE],
+        "components": components,
+        "renders": [c["file"] for c in components],
+        "scene": blend_path.name,
+        "notes": [
+            "Each PNG contains one component category item only; no handle-plus-blade composition is rendered.",
+            "Core inserts and their effect overlays are separate assets.",
+            "Socket anchors are preview metadata and must be calibrated against catalog sprites before integration.",
+            "Source scene is an editable library of standalone components, not a composed weapon.",
         ],
-        "mount_note": "Prototype socket and tenon require visual review before catalog attachment metadata is authored.",
     }
-    (output / "render_manifest.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(metadata, indent=2))
+    (out_dir / "render_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(f"Rendered {len(components)} standalone components to {out_dir}")
 
 
 if __name__ == "__main__":
-    main()
+    render_assets(Path(args().output).resolve())
