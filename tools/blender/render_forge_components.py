@@ -215,6 +215,7 @@ def make_handle(name, variant):
     else:  # organic_hook
         x = 0.10 * np.sin(t * math.pi * 1.7) + 0.018 * np.sin(t * math.pi * 5.0)
         radius = 0.12 + 0.025 * np.cos(t * math.pi * 2.0) ** 2
+    radius *= 1.12
     curve_mesh(name + " | haft", np.column_stack((x, y, np.zeros_like(y))), radius, wood, 12, cache_key="haft:" + style)
     # Heavy socket and butt ferrules give every haft a readable connection point.
     for idx, t_band in enumerate((0.055, 0.105, 0.80, 0.855, 0.91)):
@@ -244,6 +245,14 @@ def make_handle(name, variant):
     # Carved grip medallion and side rivets are individual relief details.
     sphere(name + " | grip medallion", (float(np.interp(0.0, y, x)), -0.18, 0.145), (0.13, 0.17, 0.045), accent, ico=True)
     sphere(name + " | inset mark", (float(np.interp(0.0, y, x)), -0.18, 0.185), (0.07, 0.10, 0.025), detail, ico=True)
+    medallion_x = float(np.interp(0.0, y, x))
+    crest = extruded_profile(name + " | raised grip crest",
+                             [(-.105, -.13), (0, -.20), (.105, -.13),
+                              (.105, .02), (0, .13), (-.105, .02)],
+                             accent, depth=.045, bevel=.018)
+    crest.location = (medallion_x, -.18, .19)
+    sphere(name + " | crest stud", (medallion_x, -.18, .23),
+           (.043, .055, .025), detail, ico=True)
     sphere(name + " | pommel", (float(x[0]), -1.76, 0), (0.19, 0.17, 0.15), accent, ico=style == "organic_hook")
     if style in {"split_oak", "iron_braced"}:
         for side in (-1, 1):
@@ -323,6 +332,10 @@ def make_blade(name, style, variant):
     panel = extruded_profile(name + " | inset face plate", panel_pts, plate, depth=0.055, bevel=0.022)
     panel.scale.x = width
     panel.location.z = 0.16
+    # A fine raised metal border catches the key light around the whole forged profile.
+    trim = [(x * width, y, .215) for x, y in pts]
+    trim.append(trim[0])
+    curve_mesh(name + " | perimeter binding", trim, [.018] * len(trim), accent, 7)
     ridge_points = [(0, -0.30), (-0.16, -0.04), (-0.12, 0.36), (0, 0.67), (0.12, 0.36), (0.16, -0.04)]
     ridge = extruded_profile(name + " | central ridge", ridge_points, plate, depth=0.045, bevel=0.018)
     ridge.location.z = 0.205
