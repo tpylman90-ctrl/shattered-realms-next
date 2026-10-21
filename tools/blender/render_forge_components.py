@@ -18,6 +18,7 @@ from mathutils import Vector
 
 SIZE = 512
 MATERIAL_CACHE = {}
+MESH_CACHE = {}
 
 
 def args():
@@ -84,13 +85,22 @@ EFFECT_MATS = {
 }
 
 
-def mesh_object(name, vertices, faces, mat, bevel=0.0):
-    mesh = bpy.data.meshes.new(name + " Mesh")
-    mesh.from_pydata(vertices, [], faces)
-    mesh.materials.append(mat)
-    mesh.update()
+def mesh_object(name, vertices, faces, mat, bevel=0.0, cache_key=None):
+    shared = cache_key is not None and cache_key in MESH_CACHE
+    if shared:
+        mesh = MESH_CACHE[cache_key]
+    else:
+        mesh = bpy.data.meshes.new(name + " Mesh")
+        mesh.from_pydata(vertices, [], faces)
+        mesh.materials.append(mat)
+        mesh.update()
+        if cache_key:
+            MESH_CACHE[cache_key] = mesh
     obj = bpy.data.objects.new(name, mesh)
     bpy.context.collection.objects.link(obj)
+    if shared and obj.material_slots:
+        obj.material_slots[0].link = "OBJECT"
+        obj.material_slots[0].material = mat
     if bevel:
         mod = obj.modifiers.new("Soft forged edges", "BEVEL")
         mod.width = bevel
@@ -127,7 +137,7 @@ def sphere(name, location, scale, mat, ico=False):
     return obj
 
 
-def curve_mesh(name, points, radii, mat, sides=10):
+def curve_mesh(name, points, radii, mat, sides=10, cache_key=None):
     """Build a tube along a centerline using NumPy-generated rings."""
     pts = np.asarray(points, dtype=float)
     rad = np.asarray(radii, dtype=float)
@@ -151,7 +161,7 @@ def curve_mesh(name, points, radii, mat, sides=10):
             b = i * sides + (j + 1) % sides
             faces.append((a, b, b + sides, a + sides))
     faces.extend([tuple(range(sides - 1, -1, -1)), tuple((len(pts) - 1) * sides + j for j in range(sides))])
-    return mesh_object(name, verts, faces, mat, bevel=0.012)
+    return mesh_object(name, verts, faces, mat, bevel=0.012, cache_key=cache_key)
 
 
 def torus(name, loc, major, minor, mat):
@@ -184,7 +194,7 @@ def make_handle(name, variant):
     else:  # organic_hook
         x = 0.10 * np.sin(t * math.pi * 1.7) + 0.018 * np.sin(t * math.pi * 5.0)
         radius = 0.12 + 0.025 * np.cos(t * math.pi * 2.0) ** 2
-    curve_mesh(name + " | haft", np.column_stack((x, y, np.zeros_like(y))), radius, wood, 12)
+    curve_mesh(name + " | haft", np.column_stack((x, y, np.zeros_like(y))), radius, wood, 12, cache_key="haft:" + style)
     # Heavy socket and butt ferrules give every haft a readable connection point.
     for idx, t_band in enumerate((0.06, 0.12, 0.78, 0.84, 0.90)):
         yy = -1.72 + 2.74 * t_band
@@ -216,14 +226,14 @@ def make_handle(name, variant):
             curve_mesh(name + " | etched inlay", [(side * 0.06, -0.54, 0.11), (side * 0.07, -0.10, 0.12), (side * 0.04, 0.38, 0.11)], [0.012, 0.015, 0.006], detail, 6)
 
 
-def extruded_profile(name, points, mat, depth=0.22, bevel=0.035):
+def extruded_profile(name, points, mat, depth=0.22, bevel=0.035, cache_key=None):
     verts = [(x, y, z) for z in (-depth / 2, depth / 2) for x, y in points]
     n = len(points)
     faces = [tuple(range(n - 1, -1, -1)), tuple(range(n, 2 * n))]
     for i in range(n):
         j = (i + 1) % n
         faces.append((i, j, j + n, i + n))
-    return mesh_object(name, verts, faces, mat, bevel)
+    return mesh_object(name, verts, faces, mat, bevel, cache_key=cache_key)
 
 
 def make_blade(name, style, variant):
@@ -242,8 +252,8 @@ def make_blade(name, style, variant):
     else:  # shared bearded head base
         pts = [(-0.12, -0.58), (-0.50, -0.32), (-1.30, -0.20), (-1.55, 0.12), (-1.20, 0.72), (-0.48, 0.80), (-0.12, 0.56), (0.12, 0.56), (0.48, 0.80), (1.20, 0.72), (1.55, 0.12), (1.30, -0.20), (0.50, -0.32), (0.12, -0.58)]
     width = variant.get("width", 1.0)
-    pts = [(x * width, y) for x, y in pts]
-    extruded_profile(name + " | head", pts, steel, depth=0.25, bevel=0.045)
+    head = extruded_profile(name + " | head", pts, steel, depth=0.25, bevel=0.045, cache_key="head:" + variant["base"])
+    head.scale.x = width
     # Central socket ring remains open so the handle and core can be selected independently.
     torus(name + " | empty socket lip", (0, -0.42, 0.16), 0.29, 0.075, accent)
     torus(name + " | socket inner rim", (0, -0.42, 0.18), 0.205, 0.024, relief)
@@ -446,6 +456,8 @@ def render_assets(out_dir):
             "handles": sorted({v["base"] for v in HANDLE_CATALOG}),
             "blades": sorted({v["base"] for v in BLADE_CATALOG}),
         },
+        "shared_mesh_base_count": len(MESH_CACHE),
+        "shared_mesh_bases": sorted(MESH_CACHE.keys()),
         "dimensions_px": [SIZE, SIZE],
         "components": components,
         "renders": [c["file"] for c in components],

@@ -50,6 +50,8 @@ def main() -> None:
     assert blend.is_file() and blend.stat().st_size > 1024, "Editable Blender component scene missing or empty"
     assert manifest["base_archetypes"]["handles"] == ["furnace_haft", "iron_braced", "organic_hook", "split_oak"]
     assert manifest["base_archetypes"]["blades"] == ["bearded", "crescent", "double", "hooked"]
+    assert manifest["shared_mesh_base_count"] == 8
+    assert len(manifest["shared_mesh_bases"]) == 8
     # A grid of isolated thumbnails is review-friendly while preserving part boundaries.
     cell_w, cell_h, columns = 172, 200, 5
     rows = (len(images) + columns - 1) // columns
