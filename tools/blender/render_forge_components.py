@@ -318,11 +318,11 @@ def make_blade(name, style, variant):
     ridge.location.z = 0.205
     # Central socket ring remains open so the handle and core can be selected independently.
     torus(name + " | socket mouth", (0, -0.43, 0.14), 0.30, 0.052, accent)
-    torus(name + " | socket lower lip", (0, -0.91, 0.12), 0.26, 0.045, accent)
+    torus(name + " | socket lower lip", (0, -0.66, 0.12), 0.24, 0.032, accent)
     torus(name + " | socket inner rim", (0, -0.43, 0.17), 0.215, 0.018, plate)
     # Two rails make a hollow sleeve; the opening stays clear for the chosen haft/core.
     for side in (-1, 1):
-        curve_mesh(name + " | socket sleeve rail", [(side * .25, -.44, .10), (side * .27, -.62, .10), (side * .25, -.91, .10)], [.07, .065, .06], accent, 8)
+        curve_mesh(name + " | socket sleeve rail", [(side * .25, -.44, .10), (side * .27, -.54, .10), (side * .25, -.66, .10)], [.07, .065, .06], accent, 8)
     # Raised spine, hammered face lines, and fasteners provide relief at icon scale.
     for side in (-1, 1):
         sphere(name + " | socket rivet", (side * 0.33, -0.15, 0.22), (0.055, 0.055, 0.035), accent, ico=True)
@@ -448,16 +448,16 @@ BLADE_CATALOG = [
 
 
 def setup_camera_and_lights():
-    bpy.ops.object.camera_add(location=(0, 0, 9))
+    bpy.ops.object.camera_add(location=(1.25, -0.85, 9.0))
     cam = bpy.context.object
     cam.name = "Render Camera | orthographic component view"
     cam.data.type = "ORTHO"
     cam.data.ortho_scale = 4.6
     bpy.context.scene.camera = cam
     for name, loc, power, size in [
-        ("Key | warm softbox", (-3.4, 4.0, 5.0), 700, 4.0),
-        ("Fill | cool softbox", (3.8, 0.4, 3.5), 500, 3.0),
-        ("Rim | top strip", (0.0, -3.0, 3.5), 600, 2.5),
+        ("Key | warm softbox", (-3.4, 4.0, 5.0), 250, 4.0),
+        ("Fill | cool softbox", (3.8, 0.4, 3.5), 140, 3.0),
+        ("Rim | top strip", (0.0, -3.0, 3.5), 190, 2.5),
     ]:
         bpy.ops.object.light_add(type="AREA", location=loc)
         light = bpy.context.object
@@ -468,8 +468,8 @@ def setup_camera_and_lights():
         light.rotation_euler = (Vector((0, 0, 0)) - light.location).to_track_quat("-Z", "Y").to_euler()
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
-    scene.cycles.samples = 24
-    scene.cycles.use_denoising = False
+    scene.cycles.samples = 32
+    scene.cycles.use_denoising = True
     scene.render.resolution_x = SIZE
     scene.render.resolution_y = SIZE
     scene.render.resolution_percentage = 100
@@ -477,9 +477,9 @@ def setup_camera_and_lights():
     scene.render.image_settings.file_format = "PNG"
     scene.render.image_settings.color_mode = "RGBA"
     scene.render.image_settings.color_depth = "8"
-    scene.view_settings.view_transform = "Standard"
-    scene.view_settings.look = "Medium High Contrast"
-    scene.view_settings.exposure = 0
+    scene.view_settings.view_transform = "AgX"
+    scene.view_settings.look = "AgX - Medium High Contrast"
+    scene.view_settings.exposure = -0.35
     scene.view_settings.gamma = 1
     if scene.world is None:
         scene.world = bpy.data.worlds.new("Forge | transparent render world")
@@ -517,7 +517,7 @@ def render_assets(out_dir):
         for obj in bpy.context.scene.objects:
             obj.hide_render = obj.type in {"MESH", "CURVE"} and obj not in asset_objects
         name = f"axe_{kind}_{slug}.png"
-        bpy.context.scene.camera.data.ortho_scale = {"handle": 4.2, "blade": 3.8, "core": 4.6, "effect": 4.6}[kind]
+        bpy.context.scene.camera.data.ortho_scale = {"handle": 3.9, "blade": 3.6, "core": 4.6, "effect": 4.6}[kind]
         bpy.context.scene.render.filepath = str(out_dir / name)
         bpy.ops.render.render(write_still=True)
         components.append({
