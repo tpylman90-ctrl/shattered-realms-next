@@ -257,23 +257,25 @@ def make_blade(name, style, variant):
         pts = [(-0.16, -0.62), (-0.55, -0.35), (-1.05, -0.10), (-1.35, 0.18), (-1.55, 0.78), (-1.06, 0.52), (-0.86, 0.19), (-0.40, -0.04), (-0.14, -0.11), (0.14, -0.11), (0.48, -0.03), (0.80, 0.14), (1.08, 0.47), (1.20, 0.91), (1.52, 0.83), (1.42, 0.25), (1.13, -0.12), (0.55, -0.42), (0.16, -0.62)]
     elif style == "Double":
         pts = [(-0.18, -0.60), (-0.66, -0.42), (-1.30, -0.08), (-1.58, 0.35), (-1.28, 0.84), (-0.52, 0.62), (-0.20, 0.47), (0.20, 0.47), (0.52, 0.62), (1.28, 0.84), (1.58, 0.35), (1.30, -0.08), (0.66, -0.42), (0.18, -0.60)]
-    else:  # shared bearded head base
-        pts = [(-0.12, -0.58), (-0.50, -0.32), (-1.30, -0.20), (-1.55, 0.12), (-1.20, 0.72), (-0.48, 0.80), (-0.12, 0.56), (0.12, 0.56), (0.48, 0.80), (1.20, 0.72), (1.55, 0.12), (1.30, -0.20), (0.50, -0.32), (0.12, -0.58)]
+    else:  # shared single-bit bearded head base
+        pts = [(0.13, -0.62), (-0.24, -0.43), (-0.78, -0.31), (-1.35, -0.12), (-1.58, 0.12), (-1.50, 0.42), (-1.22, 0.78), (-0.74, 0.82), (-0.25, 0.58), (0.12, 0.42), (0.42, 0.60), (0.62, 0.40), (0.43, 0.08), (0.48, -0.31), (0.15, -0.62)]
     width = variant.get("width", 1.0)
     head = extruded_profile(name + " | head", pts, steel, depth=0.25, bevel=0.045, cache_key="head:" + variant["base"])
     head.scale.x = width
     # An inset face plate and tapered spine give the blade a forged, sculpted profile.
     panel_pts = [(x * 0.84, y * 0.82 + 0.05) for x, y in pts]
-    panel = extruded_profile(name + " | inset face plate", panel_pts, relief, depth=0.055, bevel=0.022)
+    plate_color = tuple(min(0.66, channel * 1.18 + 0.025) for channel in variant["steel"])
+    plate = material(f"Head | {slug} | inset plate", plate_color, metallic=0.88, roughness=0.25)
+    panel = extruded_profile(name + " | inset face plate", panel_pts, plate, depth=0.055, bevel=0.022)
     panel.scale.x = width
     panel.location.z = 0.16
     ridge_points = [(0, -0.30), (-0.16, -0.04), (-0.12, 0.36), (0, 0.67), (0.12, 0.36), (0.16, -0.04)]
-    ridge = extruded_profile(name + " | central ridge", ridge_points, edge, depth=0.045, bevel=0.018)
+    ridge = extruded_profile(name + " | central ridge", ridge_points, plate, depth=0.045, bevel=0.018)
     ridge.location.z = 0.205
     # Central socket ring remains open so the handle and core can be selected independently.
-    torus(name + " | socket mouth", (0, -0.43, 0.14), 0.30, 0.075, accent)
-    torus(name + " | socket lower lip", (0, -0.91, 0.12), 0.26, 0.065, accent)
-    torus(name + " | socket inner rim", (0, -0.43, 0.17), 0.215, 0.024, relief)
+    torus(name + " | socket mouth", (0, -0.43, 0.14), 0.30, 0.052, accent)
+    torus(name + " | socket lower lip", (0, -0.91, 0.12), 0.26, 0.045, accent)
+    torus(name + " | socket inner rim", (0, -0.43, 0.17), 0.215, 0.018, plate)
     # Two rails make a hollow sleeve; the opening stays clear for the chosen haft/core.
     for side in (-1, 1):
         curve_mesh(name + " | socket sleeve rail", [(side * .25, -.44, .10), (side * .27, -.62, .10), (side * .25, -.91, .10)], [.07, .065, .06], accent, 8)
@@ -411,11 +413,11 @@ def render_assets(out_dir):
     for variant in HANDLE_CATALOG:
         specs.append(("handle", variant["slug"], variant["name"],
                       lambda v=variant: make_handle("Haft | " + v["name"], v),
-                      (256, 143), variant["base"], variant["motif"]))
+                      (256, 111), variant["base"], variant["motif"]))
     for variant in BLADE_CATALOG:
         specs.append(("blade", variant["slug"], variant["name"],
                       lambda v=variant: make_blade("Head | " + v["name"], v["profile"], v),
-                      (256, 303), variant["base"], variant["motif"]))
+                      (256, 314), variant["base"], variant["motif"]))
     for slug, label, element in (
         ("cinder_pearl", "Cinder Pearl", "Cinder"),
         ("rime_shard", "Rime Shard", "Rime"),
@@ -433,6 +435,7 @@ def render_assets(out_dir):
         for obj in bpy.context.scene.objects:
             obj.hide_render = obj.type in {"MESH", "CURVE"} and obj not in asset_objects
         name = f"axe_{kind}_{slug}.png"
+        bpy.context.scene.camera.data.ortho_scale = {"handle": 3.6, "blade": 3.8, "core": 4.6, "effect": 4.6}[kind]
         bpy.context.scene.render.filepath = str(out_dir / name)
         bpy.ops.render.render(write_still=True)
         components.append({
