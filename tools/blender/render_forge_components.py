@@ -448,7 +448,7 @@ BLADE_CATALOG = [
 
 
 def setup_camera_and_lights():
-    bpy.ops.object.camera_add(location=(1.25, -0.85, 9.0))
+    bpy.ops.object.camera_add(location=(0.6, -0.4, 9.0))
     cam = bpy.context.object
     cam.name = "Render Camera | orthographic component view"
     cam.data.type = "ORTHO"
@@ -517,7 +517,7 @@ def render_assets(out_dir):
         for obj in bpy.context.scene.objects:
             obj.hide_render = obj.type in {"MESH", "CURVE"} and obj not in asset_objects
         name = f"axe_{kind}_{slug}.png"
-        bpy.context.scene.camera.data.ortho_scale = {"handle": 3.9, "blade": 3.6, "core": 4.6, "effect": 4.6}[kind]
+        bpy.context.scene.camera.data.ortho_scale = {"handle": 3.9, "blade": 4.0, "core": 4.6, "effect": 4.6}[kind]
         bpy.context.scene.render.filepath = str(out_dir / name)
         bpy.ops.render.render(write_still=True)
         components.append({
