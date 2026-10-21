@@ -250,7 +250,7 @@ def make_handle(name, variant):
             curve_mesh(name + " | split grain crest",
                        [(0, 0.38, 0.09), (side * 0.07, 0.56, 0.10),
                         (side * 0.11, 0.74, 0.095), (side * 0.08, 0.91, 0.07)],
-                       [0.035, 0.025, 0.017, 0.005], wood_light, 7)
+                       [0.035, 0.025, 0.017, 0.005], WOOD_LIGHT, 7)
     elif style == "iron_braced":
         for yy in (-1.05, 0.48):
             for side in (-1, 1):
