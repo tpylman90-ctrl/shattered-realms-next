@@ -39,8 +39,11 @@ def main() -> None:
             assert 0.001 < coverage < 0.75, f"Suspicious alpha coverage {coverage:.3f}: {path}"
             ys, xs = np.nonzero(visible)
             pad = 4
-            assert xs.size and ys.min() >= pad and xs.min() >= pad
-            assert ys.max() < image.height - pad and xs.max() < image.width - pad
+            assert xs.size and ys.min() >= pad and xs.min() >= pad, f"Sprite touches top/left margin: {path}"
+            assert ys.max() < image.height - pad and xs.max() < image.width - pad, (
+                f"Sprite touches bottom/right margin: {path} bounds="
+                f"x[{xs.min()},{xs.max()}] y[{ys.min()},{ys.max()}]"
+            )
             anchor = item["anchor_px"]
             assert 0 <= anchor["x"] < image.width
             assert 0 <= anchor["y_from_top"] < image.height

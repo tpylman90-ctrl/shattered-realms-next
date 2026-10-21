@@ -413,7 +413,7 @@ def render_assets(out_dir):
     for variant in HANDLE_CATALOG:
         specs.append(("handle", variant["slug"], variant["name"],
                       lambda v=variant: make_handle("Haft | " + v["name"], v),
-                      (256, 111), variant["base"], variant["motif"]))
+                      (256, 132), variant["base"], variant["motif"]))
     for variant in BLADE_CATALOG:
         specs.append(("blade", variant["slug"], variant["name"],
                       lambda v=variant: make_blade("Head | " + v["name"], v["profile"], v),
@@ -435,7 +435,7 @@ def render_assets(out_dir):
         for obj in bpy.context.scene.objects:
             obj.hide_render = obj.type in {"MESH", "CURVE"} and obj not in asset_objects
         name = f"axe_{kind}_{slug}.png"
-        bpy.context.scene.camera.data.ortho_scale = {"handle": 3.6, "blade": 3.8, "core": 4.6, "effect": 4.6}[kind]
+        bpy.context.scene.camera.data.ortho_scale = {"handle": 4.2, "blade": 3.8, "core": 4.6, "effect": 4.6}[kind]
         bpy.context.scene.render.filepath = str(out_dir / name)
         bpy.ops.render.render(write_still=True)
         components.append({
