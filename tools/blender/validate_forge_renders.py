@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw
 
 
 def main() -> None:
@@ -21,6 +21,7 @@ def main() -> None:
     assert manifest["renders"] == names
     counts = Counter(item["kind"] for item in components)
     assert counts == {"handle": 3, "blade": 6, "core": 3, "effect": 3}, f"Unexpected component mix: {counts}"
+    images = []
     for item in components:
         assert item["modular_only"] is True
         assert item["catalog_replacement"] is False
@@ -40,9 +41,23 @@ def main() -> None:
             anchor = item["anchor_px"]
             assert 0 <= anchor["x"] < image.width
             assert 0 <= anchor["y_from_top"] < image.height
+            images.append((item, image.copy()))
             print(f"PASS {path.name}: {item['kind']} {image.width}x{image.height} RGBA, alpha {coverage:.1%}")
     blend = root / manifest["scene"]
     assert blend.is_file() and blend.stat().st_size > 1024, "Editable Blender component scene missing or empty"
+    # A grid of isolated thumbnails is review-friendly while preserving part boundaries.
+    cell_w, cell_h, columns = 172, 200, 5
+    rows = (len(images) + columns - 1) // columns
+    sheet = Image.new("RGB", (columns * cell_w, rows * cell_h), (33, 37, 43))
+    draw = ImageDraw.Draw(sheet)
+    for index, (item, rgba) in enumerate(images):
+        thumb = rgba.copy()
+        thumb.thumbnail((148, 150), Image.Resampling.LANCZOS)
+        x0, y0 = (index % columns) * cell_w, (index // columns) * cell_h
+        x, y = x0 + (cell_w - thumb.width) // 2, y0 + 4
+        sheet.paste(thumb, (x, y), thumb)
+        draw.text((x0 + 6, y0 + 166), f"{item['kind']}: {item['name']}", fill=(236, 238, 241))
+    sheet.save(root / "axe_component_contact_sheet.png")
     print(f"Validated {len(components)} standalone parts; NumPy {np.__version__}")
 
 

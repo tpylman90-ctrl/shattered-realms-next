@@ -11,7 +11,7 @@ blender --background --python tools/blender/render_forge_components.py -- --outp
 python3 tools/blender/validate_forge_renders.py build/blender-forge
 ```
 
-GitHub Actions runs the same steps on changes under `tools/blender/` and uploads `EntropicForge-Blender-Axe-Components`. The artifact contains fifteen 512×512 transparent RGBA PNGs, the editable component-library `.blend`, and `render_manifest.json`.
+GitHub Actions runs the same steps on changes under `tools/blender/` and uploads `EntropicForge-Blender-Axe-Components`. The artifact contains fifteen 512×512 transparent RGBA component PNGs, a labeled contact sheet of the isolated parts, the editable component-library `.blend`, and `render_manifest.json`.
 
 ## Review gate
 
