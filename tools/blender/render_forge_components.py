@@ -306,6 +306,27 @@ def extruded_profile(name, points, mat, depth=0.22, bevel=0.035, cache_key=None)
     return mesh_object(name, verts, faces, mat, bevel, cache_key=cache_key)
 
 
+def leaf_relief(name, start, end, width, mat, z=0.225):
+    """Make a beveled lanceolate plate from two endpoints and a transverse width."""
+    a = np.asarray(start, dtype=float)
+    b = np.asarray(end, dtype=float)
+    direction = b - a
+    direction /= np.linalg.norm(direction) + 1e-9
+    normal = np.array([-direction[1], direction[0]])
+    mid = (a + b) * 0.5
+    points = [
+        tuple(a),
+        tuple(a + (b - a) * 0.24 + normal * width * 0.50),
+        tuple(mid + normal * width),
+        tuple(b),
+        tuple(mid - normal * width),
+        tuple(a + (b - a) * 0.24 - normal * width * 0.50),
+    ]
+    obj = extruded_profile(name, points, mat, depth=0.035, bevel=0.012)
+    obj.location.z = z
+    return obj
+
+
 def make_blade(name, style, variant):
     """Build a head variant from one of four shared silhouette families."""
     before = set(bpy.context.scene.objects[:])
@@ -327,8 +348,9 @@ def make_blade(name, style, variant):
     head.scale.x = width
     # An inset face plate and tapered spine give the blade a forged, sculpted profile.
     panel_pts = [(x * 0.84, y * 0.82 + 0.05) for x, y in pts]
-    plate_color = tuple(min(0.66, channel * 1.18 + 0.025) for channel in variant["steel"])
-    plate = material(f"Head | {slug} | inset plate", plate_color, metallic=0.88, roughness=0.25)
+    plate_color = tuple(max(0.018, channel * 0.42) for channel in variant["steel"])
+    plate = material(f"Head | {slug} | recessed face", plate_color, metallic=0.72, roughness=0.31)
+    ridge_mat = material(f"Head | {slug} | raised ridge", variant["edge"], metallic=0.92, roughness=0.2)
     panel = extruded_profile(name + " | inset face plate", panel_pts, plate, depth=0.055, bevel=0.022)
     panel.scale.x = width
     panel.location.z = 0.16
@@ -337,7 +359,7 @@ def make_blade(name, style, variant):
     trim.append(trim[0])
     curve_mesh(name + " | perimeter binding", trim, [.018] * len(trim), accent, 7)
     ridge_points = [(0, -0.30), (-0.16, -0.04), (-0.12, 0.36), (0, 0.67), (0.12, 0.36), (0.16, -0.04)]
-    ridge = extruded_profile(name + " | central ridge", ridge_points, plate, depth=0.045, bevel=0.018)
+    ridge = extruded_profile(name + " | central ridge", ridge_points, ridge_mat, depth=0.065, bevel=0.025)
     ridge.location.z = 0.205
     # Central socket ring remains open so the handle and core can be selected independently.
     torus(name + " | socket mouth", (0, -0.43, 0.14), 0.30, 0.052, accent)
@@ -400,16 +422,39 @@ def make_blade(name, style, variant):
     # Region motifs are shallow non-emissive relief; elemental glow belongs to the core overlay.
     motif = variant.get("motif", "rivet")
     if motif == "leaf":
+        # A raised branching sprig with separate beveled leaves reads at inventory scale.
         for side in (-1, 1):
-            curve_mesh(name + " | leaf etch", [(side * .22, -.10, .19), (side * .35, .05, .19), (side * .22, .20, .19)], [.022, .012, .004], relief, 6)
+            stem = [(side * .05, -.08, .238), (side * .02, .10, .238),
+                    (side * .06, .27, .238), (side * .12, .43, .232)]
+            curve_mesh(name + " | raised leaf stem", stem, [.018, .015, .011, .004], accent, 7)
+            for row, yy in enumerate((-.01, .16, .31)):
+                start = (side * (.025 + row * .025), yy, .238)
+                end = (side * (.45 + row * .035), yy + .12, .232)
+                leaf_relief(name + " | leaf plate", start[:2], end[:2], .075, relief, .225)
+                curve_mesh(name + " | leaf vein",
+                           [(start[0], start[1], .252), ((start[0] + end[0]) * .5, (start[1] + end[1]) * .5, .252), (end[0], end[1], .242)],
+                           [.010, .008, .002], accent, 6)
     elif motif == "scale":
-        for row, yy in enumerate((0.05, 0.22, 0.39)):
+        # Overlapping shield scales replace isolated dots with modeled plates.
+        for row, yy in enumerate((-.02, .16, .34)):
             for side in (-1, 1):
-                sphere(name + " | scale stud", (side * (0.43 + row * .13) * width, yy, .155), (.045, .055, .025), relief, ico=True)
+                cx = side * (0.42 + row * .12) * width
+                cy = yy + (0.035 if row % 2 else 0)
+                scale_pts = [(cx - .075, cy + .055), (cx, cy + .12),
+                             (cx + .075, cy + .055), (cx + .055, cy - .035),
+                             (cx, cy - .09), (cx - .055, cy - .035)]
+                plate_scale = extruded_profile(name + " | raised scale plate", scale_pts, relief, depth=.045, bevel=.018)
+                plate_scale.location.z = .218
+                sphere(name + " | scale rivet", (cx, cy + .015, .255), (.026, .026, .018), accent, ico=True)
     elif motif == "anchor":
-        curve_mesh(name + " | anchor mark", [(0, .55, .19), (0, .30, .19), (-.12, .19, .19), (0, .11, .19), (.12, .19, .19)], [.025, .022, .02, .018, .014], relief, 6)
+        curve_mesh(name + " | anchor shank", [(0, .48, .245), (0, .14, .245), (0, .05, .245)], [.035, .031, .022], accent, 8)
+        curve_mesh(name + " | anchor crossbar", [(-.22, .27, .245), (0, .27, .245), (.22, .27, .245)], [.028, .032, .028], relief, 8)
+        curve_mesh(name + " | anchor arms", [(-.31, .02, .245), (-.22, -.08, .245), (0, .01, .245), (.22, -.08, .245), (.31, .02, .245)], [.018, .028, .031, .028, .018], accent, 8)
     elif motif == "storm":
-        curve_mesh(name + " | storm etch", [(-.28, .36, .19), (-.08, .17, .19), (-.20, .01, .19), (.12, -.12, .19)], [.025, .02, .014, .006], relief, 6)
+        curve_mesh(name + " | raised storm sigil",
+                   [(-.27, .38, .245), (-.06, .17, .245), (-.19, .015, .245),
+                    (.13, -.13, .245), (.03, -.27, .245)],
+                   [.042, .034, .028, .022, .006], relief, 8)
     # Raise the head's blade-to-socket proportion without scaling the mount parts
     # independently. One parent keeps every engraving, edge, and sleeve detail aligned.
     new_objects = set(bpy.context.scene.objects[:]) - before
