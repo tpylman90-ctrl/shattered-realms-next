@@ -423,7 +423,7 @@ def make_blade(name, style, variant):
                    [(0.43, .38, .17), (.62, .46, .17), (.70, .39, .17), (.65, .23, .17)],
                    [.014, .018, .014, .006], edge, 7)
     if style == "Battle":
-        for side in (-1, 1):
+        for side in (-1,):
             curve_mesh(name + " | bearded leaf filigree",
                        [(side * .30, .00, .215), (side * .50, .16, .215),
                         (side * .74, .28, .215), (side * 1.02, .35, .205)],
@@ -460,7 +460,8 @@ def make_blade(name, style, variant):
     motif = variant.get("motif", "rivet")
     if motif == "leaf":
         # A raised branching sprig with separate beveled leaves reads at inventory scale.
-        for side in (-1, 1):
+        motif_sides = (-1,) if style == "Battle" else (-1, 1)
+        for side in motif_sides:
             stem = [(side * .05, -.08, .238), (side * .02, .10, .238),
                     (side * .06, .27, .238), (side * .12, .43, .232)]
             curve_mesh(name + " | raised leaf stem", stem, [.018, .015, .011, .004], accent, 7)
