@@ -1,0 +1,181 @@
+name,family,framework,striker,core,base_strike_limit,masterwork_limit_skill3,physical_standard,elemental_standard,physical_mistvale,elemental_mistvale,physical_sands,elemental_sands,sands_durability,interval_seconds,accuracy_pct,reach_m,component_appraisal_gold,standard_fee_gold,sands_fee_gold,sands_sell_gold,cracked_plus1_elemental,cracked_plus1_burst,cracked_plus1_radius_m,recipe_page
+Briar Oath,sword,Watchman’s Leather Grip,Plainsteel Straight Blade,Thornseed Core,2,5,26,16,28,17,29,18,75,1.8,99,1.5,210,35,63,74,24,113,2.8,page_ravenwood
+Cinder Vow,sword,Duelist’s Tideguard,Serrated Fang Blade,Cinder Pearl Core,4,7,39,17,43,19,45,20,85,1.718,92,1.5,390,57,108,137,27,155,2.8,page_ashen_wastes
+White Mercy,sword,Sentinel’s Ironbark Hilt,Tidebronze Saber Blade,Rime Shard Core,5,8,58,19,64,20,67,21,144,2.047,94,1.3,660,89,175,231,29,211,2.8,page_frostpeaks
+Scale Promise,sword,Sunbound Filigree Hilt,Webglass Needle Blade,Drake Ember Core,6,9,50,23,55,25,57,26,100,1.692,94,1.5,990,129,258,347,35,199,2.8,page_drakeshard_range
+Sunlit Verdict,sword,Watchman’s Leather Grip,Scaleiron Falchion Blade,Sunwell Spark Core,4,7,67,17,73,19,76,20,93,2.052,99,1.5,545,75,146,191,27,231,2.8,page_golden_expanse
+Adder’s Courtesy,sword,Duelist’s Tideguard,Veil-Silver Channel Blade,Adder Bile Core,6,9,90,22,98,24,102,25,88,1.8,92,1.5,990,129,258,347,34,306,2.8,page_blighted_marsh
+Gravewarden,sword,Sentinel’s Ironbark Hilt,Plainsteel Straight Blade,Grave Ember Core,4,7,29,17,32,19,33,20,131,1.895,97,1.5,525,73,141,184,27,127,2.8,page_cursed_mire
+Widow’s Answer,sword,Sunbound Filigree Hilt,Serrated Fang Blade,Gloam Mote Core,5,8,42,21,46,23,48,24,105,1.89,94,1.5,870,114,228,305,33,172,2.8,page_shadowfen_forest
+Marchkeeper,sword,Watchman’s Leather Grip,Tidebronze Saber Blade,Marching Spark Core,3,6,52,16,57,18,59,19,85,1.944,99,1.3,345,51,96,121,25,187,2.8,page_iron_plains
+Salt Testament,sword,Duelist’s Tideguard,Webglass Needle Blade,Salt Pearl Core,5,8,47,19,52,20,53,21,79,1.538,92,1.5,510,71,138,179,29,179,2.8,page_veiled_sea
+Ashwake Saber,sword,Sentinel’s Ironbark Hilt,Scaleiron Falchion Blade,Coalglass Ember Core,6,9,76,20,83,22,86,23,154,2.16,94,1.5,860,113,225,301,30,261,2.8,page_ember_coast
+Stormlit Promise,sword,Sunbound Filigree Hilt,Veil-Silver Channel Blade,Stormglass Spark Core,7,10,95,27,105,30,109,31,109,1.98,94,1.5,1470,186,378,515,42,336,2.8,page_stormcrown_keep
+Winter’s Debt,greatsword,Militia Longgrip,Broad Militia Blade,Rime Shard Core,2,5,44,23,48,26,50,27,83,3.333,99,2.0,210,35,63,74,36,184,2.8,page_frostpeaks
+Wyrm’s Reproach,greatsword,Drakespine Wargrip,Notched Siege Blade,Drake Ember Core,4,7,67,26,73,29,76,30,94,3.316,86,2.4,390,57,108,137,40,254,2.8,page_drakeshard_range
+Dawn Divider,greatsword,Black Anvil Twohander,Drakebone Cleaver,Sunwell Spark Core,5,8,93,34,102,37,106,39,92,3.24,85,2.0,660,89,175,231,52,346,2.8,page_golden_expanse
+Bog King’s Fall,greatsword,Militia Longgrip,Basalt Execution Blade,Adder Bile Core,4,7,81,26,89,29,93,30,80,3.133,97,2.0,375,55,104,131,40,294,2.8,page_blighted_marsh
+Cursebreaker’s Burden,greatsword,Drakespine Wargrip,Froststeel Flamberge,Grave Ember Core,5,8,120,28,132,31,137,32,108,3.6,86,2.4,680,92,180,238,43,406,2.8,page_cursed_mire
+Canopy Reaver,greatsword,Black Anvil Twohander,Null-Edge Colossus Blade,Gloam Mote Core,7,10,152,46,168,51,174,53,90,3.3,85,2.0,1170,150,303,410,71,545,2.8,page_shadowfen_forest
+Last Battle Line,greatsword,Militia Longgrip,Broad Militia Blade,Marching Spark Core,2,5,44,23,48,26,50,27,83,3.333,99,2.0,210,35,63,74,36,184,2.8,page_iron_plains
+Breakwater Blade,greatsword,Drakespine Wargrip,Notched Siege Blade,Salt Pearl Core,4,7,67,26,73,29,76,30,94,3.316,86,2.4,390,57,108,137,40,254,2.8,page_veiled_sea
+Nestkeeper’s Fury,greatsword,Black Anvil Twohander,Drakebone Cleaver,Coalglass Ember Core,5,8,93,34,102,37,106,39,92,3.24,85,2.0,660,89,175,231,52,346,2.8,page_ember_coast
+Summit Judgment,greatsword,Militia Longgrip,Basalt Execution Blade,Stormglass Spark Core,4,7,81,26,89,29,93,30,80,3.133,97,2.0,375,55,104,131,40,294,2.8,page_stormcrown_keep
+Moonfall Monument,greatsword,Drakespine Wargrip,Froststeel Flamberge,Moonlit Flake Core,5,8,120,28,132,31,137,32,108,3.6,86,2.4,680,92,180,238,43,406,2.8,page_moonfall_highlands
+Foundry Requiem,greatsword,Black Anvil Twohander,Null-Edge Colossus Blade,Clockwork Spark Core,7,10,152,46,168,51,174,53,90,3.3,85,2.0,1170,150,303,410,71,545,2.8,page_copperfen_basin
+Salt Whisper,dagger,Poacher’s Thumbgrip,Watchman’s Point,Salt Pearl Core,2,5,16,9,17,10,18,11,75,1.05,99,0.9,210,35,63,74,14,68,2.8,page_veiled_sea
+Ember Needle,dagger,Websilk Loop Grip,Hollow Adder Fang,Coalglass Ember Core,4,7,22,13,24,14,25,14,85,1.003,95,0.9,390,57,108,137,19,94,2.8,page_ember_coast
+Thunder’s Wink,dagger,Mirage Balanced Tang,Glasswind Stiletto,Stormglass Spark Core,5,8,31,13,34,14,36,15,98,1.134,97,0.9,660,89,175,231,20,121,2.8,page_stormcrown_keep
+Moonless Kiss,dagger,Poacher’s Thumbgrip,Barbed Webglass Point,Moonlit Flake Core,4,7,29,10,32,12,33,12,73,0.987,99,0.9,375,55,104,131,16,108,2.8,page_moonfall_highlands
+Clockwork Stiletto,dagger,Websilk Loop Grip,Belliron Ritual Blade,Clockwork Spark Core,5,8,45,11,49,12,51,13,97,1.089,95,0.9,680,92,180,238,17,153,2.8,page_copperfen_basin
+Glasswind Secret,dagger,Mirage Balanced Tang,Star-Slate Crescent,Whisperglass Core,7,10,59,16,65,18,68,19,96,1.155,97,0.9,1170,150,303,410,25,207,2.8,page_glasswind_steppe
+Bellringer’s Debt,dagger,Poacher’s Thumbgrip,Watchman’s Point,Bell-Wraith Ember Core,2,5,16,9,17,10,18,11,75,1.05,99,0.9,210,35,63,74,14,68,2.8,page_deadwind_hollow
+Mist Thief,dagger,Websilk Loop Grip,Hollow Adder Fang,Mist Dew Core,4,7,22,13,24,14,25,14,85,1.003,95,0.9,390,57,108,137,19,94,2.8,page_mistvale
+Hunger’s Point,dagger,Mirage Balanced Tang,Glasswind Stiletto,Rift Cinder Core,5,8,31,13,34,14,36,15,98,1.134,97,0.9,660,89,175,231,20,121,2.8,page_devouring_deep
+Root Assassin,dagger,Poacher’s Thumbgrip,Barbed Webglass Point,Worldroot Seed Core,7,10,35,47,39,52,40,54,73,0.987,99,0.9,1315,168,339,460,81,280,3.3,page_ravenwood
+Furnace Splinter,dagger,Websilk Loop Grip,Belliron Ritual Blade,First Furnace Ember Core,8,10,51,47,56,52,58,54,97,1.089,95,0.9,1620,204,415,567,81,333,3.3,page_ashen_wastes
+Winter Widow,dagger,Mirage Balanced Tang,Star-Slate Crescent,Stillwinter Heart Core,10,10,59,61,65,67,68,70,96,1.155,97,0.9,2110,263,538,739,104,408,3.3,page_frostpeaks
+Moonwarden’s Reach,spear,Ranger’s Ash Haft,Iron Leaf Spearhead,Moonlit Flake Core,2,5,31,16,34,18,35,19,75,2.316,95,3.4,210,35,63,74,25,129,2.8,page_moonfall_highlands
+Pressure Lance,spear,Rimepine Lance Shaft,Wyrmtooth Pikehead,Clockwork Spark Core,4,7,46,18,51,20,53,21,118,2.432,95,3.0,390,57,108,137,28,177,2.8,page_copperfen_basin
+Horizon Harpoon,spear,Stormkeeper Spear Haft,Sunbronze Winged Head,Whisperglass Core,5,8,60,22,66,25,68,26,98,2.376,95,3.0,660,89,175,231,34,225,2.8,page_glasswind_steppe
+Funeral Standard,spear,Oathroot Longshaft,Stormsteel Fork,Bell-Wraith Ember Core,6,9,62,23,68,25,71,26,130,2.297,99,3.0,990,129,258,347,36,233,2.8,page_deadwind_hollow
+Veilpiercer,spear,Ranger’s Ash Haft,Froststeel Lance Tip,Mist Dew Core,4,7,80,18,88,20,91,21,93,2.64,92,3.4,545,75,146,191,28,269,2.8,page_mistvale
+Rift Skewer,spear,Rimepine Lance Shaft,Hollow Veil-Silver Point,Rift Cinder Core,6,9,101,25,111,27,116,28,123,2.548,95,3.0,990,129,258,347,38,345,2.8,page_devouring_deep
+Rootbound Watch,spear,Stormkeeper Spear Haft,Iron Leaf Spearhead,Worldroot Seed Core,7,10,42,95,46,105,48,109,89,2.2,98,3.0,1465,186,376,513,163,466,3.3,page_ravenwood
+First Flame Pike,spear,Oathroot Longshaft,Wyrmtooth Pikehead,First Furnace Ember Core,8,10,56,83,62,91,64,95,136,2.566,99,3.0,1810,227,463,634,142,472,3.3,page_ashen_wastes
+Stillwinter Thorn,spear,Ranger’s Ash Haft,Sunbronze Winged Head,Stillwinter Heart Core,6,9,63,78,70,85,72,89,85,2.501,92,3.4,1285,164,331,450,133,479,3.3,page_frostpeaks
+Pale Sentinel,spear,Rimepine Lance Shaft,Stormsteel Fork,Unbound Funeral Star Core,8,10,66,93,72,102,75,106,110,2.177,95,3.0,1450,184,373,507,159,539,3.3,page_deadwind_hollow
+Governor’s Reach,spear,Stormkeeper Spear Haft,Froststeel Lance Tip,Prime Kettari Governor Core,9,10,96,95,106,105,110,109,105,2.508,95,3.0,1800,226,460,630,163,651,3.3,page_copperfen_basin
+Dawnwatch Lance,spear,Oathroot Longshaft,Hollow Veil-Silver Point,Dawn Before Kings Core,10,10,108,99,119,109,123,113,141,2.688,99,3.0,2410,299,613,844,170,704,3.3,page_golden_expanse
+Lantern Hew,axe,Woodcutter’s Haft,Forester’s Axe Bit,Bell-Wraith Ember Core,2,5,31,16,34,17,35,18,94,2.211,92,1.4,210,35,63,74,24,127,2.8,page_deadwind_hollow
+Mistfall Hatchet,axe,Corsair’s Hook Haft,Raider’s Hook Bit,Mist Dew Core,4,7,46,17,51,19,53,20,85,2.004,87,1.4,390,57,108,137,27,175,2.8,page_mistvale
+Hunger Hewn,axe,Cinderbrace Split Haft,Drakeglass Bearded Edge,Rift Cinder Core,5,8,63,23,70,25,72,26,92,2.268,85,1.4,660,89,175,231,35,235,2.8,page_devouring_deep
+Worldroot Splitter,axe,Woodcutter’s Haft,Bog-Iron Hewing Head,Worldroot Seed Core,7,10,68,79,75,87,78,90,91,2.078,89,1.4,1315,168,339,460,135,500,3.3,page_ravenwood
+First Furnace Bite,axe,Corsair’s Hook Haft,Basalt Double Bit,First Furnace Ember Core,8,10,95,79,104,87,108,90,97,2.176,87,1.4,1620,204,415,567,135,589,3.3,page_ashen_wastes
+Stillwinter Hook,axe,Cinderbrace Split Haft,Star-Slate Crescent Bit,Stillwinter Heart Core,10,10,109,96,120,106,125,110,90,2.31,85,1.4,2110,263,538,739,165,699,3.3,page_frostpeaks
+Funeral Crescent,axe,Woodcutter’s Haft,Forester’s Axe Bit,Unbound Funeral Star Core,5,8,37,69,41,76,42,79,94,2.211,92,1.4,1150,148,298,403,119,362,3.3,page_deadwind_hollow
+Clockwork Woodsman,axe,Corsair’s Hook Haft,Raider’s Hook Bit,Prime Kettari Governor Core,7,10,56,79,62,87,64,90,85,2.004,87,1.4,1330,170,343,465,135,458,3.3,page_copperfen_basin
+Dawncleaver,axe,Cinderbrace Split Haft,Drakeglass Bearded Edge,Dawn Before Kings Core,8,10,72,96,79,106,82,110,92,2.268,85,1.4,1600,202,410,560,165,571,3.3,page_golden_expanse
+Briar Butcher,axe,Woodcutter’s Haft,Bog-Iron Hewing Head,Thornseed Core,4,7,57,17,62,19,65,20,91,2.078,89,1.4,375,55,104,131,27,203,2.8,page_ravenwood
+Ashkeeper’s Hook,axe,Corsair’s Hook Haft,Basalt Double Bit,Cinder Pearl Core,5,8,83,19,92,20,95,21,97,2.176,87,1.4,680,92,180,238,29,279,2.8,page_ashen_wastes
+White Pass Reaver,axe,Cinderbrace Split Haft,Star-Slate Crescent Bit,Rime Shard Core,7,10,109,26,120,28,125,29,90,2.31,85,1.4,1170,150,303,410,40,371,2.8,page_frostpeaks
+Gatebreaker,hammer,Quarryman’s Haft,Quarry Iron Block,Huntsman’s Echo Core,3,6,51,43,56,47,58,49,83,3.556,96,1.7,360,53,100,126,69,277,3.0,page_ravenwood
+Ember Bell,hammer,Siegebreaker Shock Haft,Siege Ram Head,Magma Heart Core,5,8,77,49,85,53,88,55,118,3.536,85,1.7,540,75,145,189,78,372,3.0,page_ashen_wastes
+Rime Knell,hammer,Thunderbrow Pattern Haft,Resonant Belliron Head,Whiteout Eye Core,6,9,107,59,117,65,122,68,98,3.456,85,1.7,810,107,213,284,95,492,3.0,page_frostpeaks
+Drakefall,hammer,Quarryman’s Haft,Basalt Furnace Head,Scale Resonance Core,5,8,83,58,91,64,95,67,80,3.343,93,1.7,525,73,141,184,93,418,3.0,page_drakeshard_range
+Dawn Ram,hammer,Siegebreaker Shock Haft,Scaleiron Shatter Head,Mirage Eye Core,6,9,140,52,154,57,159,59,135,3.84,85,1.7,830,110,218,291,83,566,3.0,page_golden_expanse
+Mirebound Mallet,hammer,Thunderbrow Pattern Haft,Singing-Quartz Impact Head,Mire Lantern Core,8,10,176,71,194,78,201,81,96,3.52,85,1.7,1320,168,340,462,114,732,3.0,page_blighted_marsh
+Curse Anchor,hammer,Quarryman’s Haft,Quarry Iron Block,Hexbound Tear Core,3,6,51,43,56,47,58,49,83,3.556,96,1.7,360,53,100,126,69,277,3.0,page_cursed_mire
+Webbreaker,hammer,Siegebreaker Shock Haft,Siege Ram Head,Widow’s Knot Core,5,8,77,49,85,53,88,55,118,3.536,85,1.7,540,75,145,189,78,372,3.0,page_shadowfen_forest
+Siege Psalm,hammer,Thunderbrow Pattern Haft,Resonant Belliron Head,Warhorn Echo Core,6,9,107,59,117,65,122,68,98,3.456,85,1.7,810,107,213,284,95,492,3.0,page_iron_plains
+Tidehammer,hammer,Quarryman’s Haft,Basalt Furnace Head,Undertow Knot Core,5,8,83,58,91,64,95,67,80,3.343,93,1.7,525,73,141,184,93,418,3.0,page_veiled_sea
+Cinderquake,hammer,Siegebreaker Shock Haft,Scaleiron Shatter Head,Cinderwake Pearl Core,6,9,140,52,154,57,159,59,135,3.84,85,1.7,830,110,218,291,83,566,3.0,page_ember_coast
+Storm Anvil,hammer,Thunderbrow Pattern Haft,Singing-Quartz Impact Head,Thundercoil Core,8,10,176,71,194,78,201,81,96,3.52,85,1.7,1320,168,340,462,114,732,3.0,page_stormcrown_keep
+Winter Crown,mace,Gateward Handle,Gatewatch Iron Ball,Whiteout Eye Core,3,6,30,29,33,32,34,33,75,2.05,99,1.3,360,53,100,126,46,174,3.0,page_frostpeaks
+Broodkeeper,mace,Reedbound Cudgel Haft,Thorn-Cage Head,Scale Resonance Core,5,8,46,32,51,36,53,37,118,2.266,92,1.3,540,75,145,189,52,233,3.0,page_drakeshard_range
+Sunlit Rebuke,mace,Lanternkeeper Flanged Grip,Sunbronze Flanged Head,Mirage Eye Core,6,9,64,40,70,44,73,45,98,2.214,92,1.3,810,107,213,284,63,307,3.0,page_golden_expanse
+Reedwarden,mace,Gateward Handle,Hexstone Knob,Mire Lantern Core,5,8,57,32,63,36,65,37,73,1.927,97,1.3,525,73,141,184,52,265,3.0,page_blighted_marsh
+Grave Lantern,mace,Reedbound Cudgel Haft,Froststeel Crown,Hexbound Tear Core,6,9,85,34,94,38,98,39,135,2.46,92,1.3,830,110,218,291,55,355,3.0,page_cursed_mire
+Gloam Cudgel,mace,Lanternkeeper Flanged Grip,Veil-Silver Lantern Cage,Widow’s Knot Core,8,10,107,47,118,52,122,54,96,2.255,92,1.3,1320,168,340,462,76,457,3.0,page_shadowfen_forest
+Marching Bell,mace,Gateward Handle,Gatewatch Iron Ball,Warhorn Echo Core,3,6,30,29,33,32,34,33,75,2.05,99,1.3,360,53,100,126,46,174,3.0,page_iron_plains
+Saltwarden,mace,Reedbound Cudgel Haft,Thorn-Cage Head,Undertow Knot Core,5,8,46,32,51,36,53,37,118,2.266,92,1.3,540,75,145,189,52,233,3.0,page_veiled_sea
+Hearthguard,mace,Lanternkeeper Flanged Grip,Sunbronze Flanged Head,Cinderwake Pearl Core,6,9,64,40,70,44,73,45,98,2.214,92,1.3,810,107,213,284,63,307,3.0,page_ember_coast
+Thunder Chapel,mace,Gateward Handle,Hexstone Knob,Thundercoil Core,5,8,57,32,63,36,65,37,73,1.927,97,1.3,525,73,141,184,52,265,3.0,page_stormcrown_keep
+Moonward,mace,Reedbound Cudgel Haft,Froststeel Crown,Fallen Star Core,6,9,85,34,94,38,98,39,135,2.46,92,1.3,830,110,218,291,55,355,3.0,page_moonfall_highlands
+Pressure Saint,mace,Lanternkeeper Flanged Grip,Veil-Silver Lantern Cage,Pressure Pearl Core,8,10,107,47,118,52,122,54,96,2.255,92,1.3,1320,168,340,462,76,457,3.0,page_copperfen_basin
+Tidal Testament,staff,Herbalist’s Bogroot Staff,Carved Root Crown,Undertow Knot Core,3,6,16,49,18,54,19,56,94,2.632,96,2.2,360,53,100,126,78,193,3.0,page_veiled_sea
+Cinder Shepherd,staff,Gloamwood Channel Staff,Marsh-Bone Focus,Cinderwake Pearl Core,5,8,23,76,25,84,26,87,80,2.625,93,2.2,540,75,145,189,121,293,3.0,page_ember_coast
+Stormbranch,staff,Veil-Silver Casting Shaft,Storm Fork Crown,Thundercoil Core,6,9,34,66,37,72,39,75,104,2.455,91,2.2,810,107,213,284,105,295,3.0,page_stormcrown_keep
+Moon Observatory,staff,Astral Spiral Staff,Moon Lens Cradle,Fallen Star Core,7,10,32,76,35,84,37,87,94,2.35,89,2.2,1140,147,295,399,122,321,3.0,page_moonfall_highlands
+Clockmaker’s Crook,staff,Herbalist’s Bogroot Staff,Hexstone Ritual Cage,Pressure Pearl Core,5,8,45,55,49,61,51,63,116,3.0,93,2.2,695,93,184,243,88,295,3.0,page_copperfen_basin
+Windglass Pilgrim,staff,Gloamwood Channel Staff,Prismatic Silver Crown,Sand-Singer Core,7,10,63,72,69,79,72,82,83,2.75,93,2.2,1140,147,295,399,115,399,3.0,page_glasswind_steppe
+Last Procession,staff,Veil-Silver Casting Shaft,Carved Root Crown,Lantern Soul Core,5,8,19,55,20,61,21,63,95,2.273,94,2.2,675,91,179,236,88,218,3.0,page_deadwind_hollow
+Mistvale Memory,staff,Astral Spiral Staff,Marsh-Bone Focus,Veilbound Star Core,6,9,25,86,27,94,28,98,99,2.625,89,2.2,1020,132,265,357,137,327,3.0,page_mistvale
+Rift Interpreter,staff,Herbalist’s Bogroot Staff,Storm Fork Crown,Hunger Fragment Core,4,7,30,58,33,64,34,66,106,2.843,93,2.2,495,69,134,173,93,260,3.0,page_devouring_deep
+Worldroot Cantor,staff,Gloamwood Channel Staff,Moon Lens Cradle,Worldroot Seed Core,8,10,32,154,35,169,37,176,75,2.35,93,2.2,1450,184,373,507,264,633,3.3,page_ravenwood
+First Furnace Oracle,staff,Veil-Silver Casting Shaft,Hexstone Ritual Cage,First Furnace Ember Core,9,10,51,134,56,147,58,153,111,2.591,91,2.2,1800,226,460,630,230,628,3.3,page_ashen_wastes
+Stillwinter Scribe,staff,Astral Spiral Staff,Prismatic Silver Crown,Stillwinter Heart Core,10,10,63,163,69,180,72,187,102,2.75,89,2.2,2410,299,613,844,280,770,3.3,page_frostpeaks
+Moon Needle,wand,Apprentice’s Yew Handle,Copper Casting Tip,Fallen Star Core,3,6,8,33,9,36,9,38,75,1.5,99,6.0,360,53,100,126,53,122,3.0,page_moonfall_highlands
+Pressure Pointer,wand,Crystal-Focus Wand Grip,Adder-Fang Focus,Pressure Pearl Core,5,8,12,51,13,57,14,59,80,1.575,96,6.0,540,75,145,189,82,188,3.0,page_copperfen_basin
+Horizon Quill,wand,Dawnweaver Conductor,Frostglass Prism,Sand-Singer Core,6,9,17,44,19,49,19,51,104,1.473,94,6.0,810,107,213,284,71,182,3.0,page_glasswind_steppe
+Pale Bell,wand,Apprentice’s Yew Handle,Sunbronze Aperture,Lantern Soul Core,5,8,16,37,17,41,18,43,73,1.41,99,6.0,525,73,141,184,60,156,3.0,page_deadwind_hollow
+Veil Signature,wand,Crystal-Focus Wand Grip,Webglass Needle Focus,Veilbound Star Core,6,9,25,46,27,50,28,52,92,1.71,96,6.0,830,110,218,291,73,208,3.0,page_mistvale
+Null Stylus,wand,Dawnweaver Conductor,Star-Slate Lens,Hunger Fragment Core,8,10,33,42,37,46,38,48,102,1.5,94,6.0,1320,168,340,462,68,224,3.0,page_devouring_deep
+Grove Script,wand,Apprentice’s Yew Handle,Copper Casting Tip,Worldroot Seed Core,5,8,9,80,10,88,11,91,75,1.5,99,6.0,1150,148,298,403,137,303,3.3,page_ravenwood
+Furnace Whisper,wand,Crystal-Focus Wand Grip,Adder-Fang Focus,First Furnace Ember Core,7,10,14,125,15,137,16,143,80,1.575,96,6.0,1330,170,343,465,214,472,3.3,page_ashen_wastes
+Winter Cipher,wand,Dawnweaver Conductor,Frostglass Prism,Stillwinter Heart Core,8,10,18,101,20,112,21,116,104,1.473,94,6.0,1600,202,410,560,174,407,3.3,page_frostpeaks
+Funeral Reed,wand,Apprentice’s Yew Handle,Sunbronze Aperture,Unbound Funeral Star Core,7,10,18,91,19,100,20,103,73,1.41,99,6.0,1315,168,339,460,155,368,3.3,page_deadwind_hollow
+Prime Conductor,wand,Crystal-Focus Wand Grip,Webglass Needle Focus,Prime Kettari Governor Core,8,10,26,104,29,115,30,119,92,1.71,96,6.0,1620,204,415,567,179,443,3.3,page_copperfen_basin
+First Dawn Quill,wand,Dawnweaver Conductor,Star-Slate Lens,Dawn Before Kings Core,10,10,33,91,37,100,38,103,102,1.5,94,6.0,2110,263,538,739,155,421,3.3,page_golden_expanse
+Last Lantern Bow,bow,Scout’s Ironbark Riser,Plain Yew Limbs,Lantern Soul Core,3,6,30,32,33,35,34,36,75,2.2,99,14.0,360,53,100,126,50,182,3.0,page_deadwind_hollow
+Veilstrung,bow,Recurve Sinew Riser,Recurved Drakebone Limbs,Veilbound Star Core,5,8,46,36,51,39,53,41,118,2.432,92,14.0,540,75,145,189,57,242,3.0,page_mistvale
+Hunger at Distance,bow,Moon-Yew Longbow Riser,Moon-Yew Long Limbs,Hunger Fragment Core,6,9,64,38,70,42,73,43,115,2.501,84,16.4,810,107,213,284,61,302,3.0,page_devouring_deep
+Worldroot Vigil,bow,Glasswind Split Riser,Websilk Composite Limbs,Worldroot Seed Core,9,10,58,87,64,95,66,99,106,1.88,90,14.0,1930,242,493,676,149,492,3.3,page_ravenwood
+Furnace Recurve,bow,Scout’s Ironbark Riser,Froststeel Spring Limbs,First Furnace Ember Core,7,10,89,87,98,95,102,99,93,2.508,97,14.0,1485,188,381,520,149,598,3.3,page_ashen_wastes
+Stillwinter Longbow,bow,Recurve Sinew Riser,Singing-Quartz Split Limbs,Stillwinter Heart Core,9,10,105,97,116,107,120,111,123,2.548,92,14.0,1930,242,493,676,166,688,3.3,page_frostpeaks
+Funeral Archer,bow,Moon-Yew Longbow Riser,Plain Yew Limbs,Unbound Funeral Star Core,7,10,39,87,42,95,44,99,105,2.316,92,14.4,1465,186,376,513,149,426,3.3,page_deadwind_hollow
+Clockwork Canopy,bow,Glasswind Split Riser,Recurved Drakebone Limbs,Prime Kettari Governor Core,8,10,53,87,58,95,60,99,112,2.1,90,14.0,1810,227,463,634,149,473,3.3,page_copperfen_basin
+Dawn Horizon,bow,Scout’s Ironbark Riser,Moon-Yew Long Limbs,Dawn Before Kings Core,6,9,64,81,70,89,73,93,85,2.376,92,16.0,1285,164,331,450,139,494,3.3,page_golden_expanse
+Briar Whisper,bow,Recurve Sinew Riser,Websilk Composite Limbs,Huntsman’s Echo Core,6,9,54,38,60,42,62,43,110,2.177,92,14.0,660,89,175,231,61,273,3.0,page_ravenwood
+Ashwind,bow,Moon-Yew Longbow Riser,Froststeel Spring Limbs,Magma Heart Core,7,10,89,40,98,44,102,46,123,2.64,89,14.4,1010,131,263,354,65,384,3.0,page_ashen_wastes
+White Hunter,bow,Glasswind Split Riser,Singing-Quartz Split Limbs,Whiteout Eye Core,8,10,105,45,116,50,120,52,115,2.2,90,14.0,1620,204,415,567,72,446,3.0,page_frostpeaks
+Watchman’s Promise,crossbow,Militia Oak Stock,Plainsteel Prod,Heart of the Old Grove Core,4,7,45,63,50,69,51,72,83,3.222,99,12.0,610,83,163,214,104,342,3.2,page_ravenwood
+Cinder Bolt,crossbow,Marine Ratchet Stock,Drake-Sinew Compound Prod,Ashen Crown Core,6,9,63,71,70,78,72,81,118,3.206,95,12.0,790,105,208,277,117,427,3.2,page_ashen_wastes
+Icebound Warrant,crossbow,Cogspire Repeating Stock,Marine Heavy Prod,Glacial Heart Core,7,10,95,76,104,83,108,86,104,2.847,88,14.0,1060,137,275,371,125,541,3.2,page_frostpeaks
+Wyrm Marshal,crossbow,Militia Oak Stock,Springbrass Repeater Prod,Brood Oath Core,6,9,90,71,99,78,103,81,80,3.029,99,11.8,775,103,204,271,117,513,3.2,page_drakeshard_range
+Dawn Mechanism,crossbow,Marine Ratchet Stock,Froststeel Arbalest Prod,Buried Dawn Core,7,10,124,76,137,83,142,86,135,3.48,95,12.0,1080,140,280,378,125,636,3.2,page_golden_expanse
+Adder’s Writ,crossbow,Cogspire Repeating Stock,Star-Slate Resonance Prod,Rotmother Spore Core,9,10,148,85,163,93,169,97,102,2.9,93,12.0,1570,198,403,550,140,740,3.2,page_blighted_marsh
+Grave Arbiter,crossbow,Militia Oak Stock,Plainsteel Prod,Anchorless Soul Core,4,7,45,63,50,69,51,72,83,3.222,99,12.0,610,83,163,214,104,342,3.2,page_cursed_mire
+Webline,crossbow,Marine Ratchet Stock,Drake-Sinew Compound Prod,Hollow Canopy Core,6,9,63,71,70,78,72,81,118,3.206,95,12.0,790,105,208,277,117,427,3.2,page_shadowfen_forest
+Siege Witness,crossbow,Cogspire Repeating Stock,Marine Heavy Prod,Siegeheart Core,7,10,95,76,104,83,108,86,104,2.847,88,14.0,1060,137,275,371,125,541,3.2,page_iron_plains
+Marine’s Return,crossbow,Militia Oak Stock,Springbrass Repeater Prod,Tempest Bottle Core,6,9,90,71,99,78,103,81,80,3.029,99,11.8,775,103,204,271,117,513,3.2,page_veiled_sea
+Rookery Guard,crossbow,Marine Ratchet Stock,Froststeel Arbalest Prod,Dragon Pact Ember Core,7,10,124,76,137,83,142,86,135,3.48,95,12.0,1080,140,280,378,125,636,3.2,page_ember_coast
+Storm Ratchet,crossbow,Cogspire Repeating Stock,Star-Slate Resonance Prod,Skyward Seal Core,9,10,148,85,163,93,169,97,102,2.9,93,12.0,1570,198,403,550,140,740,3.2,page_stormcrown_keep
+Winter Lash,whip,Drover’s Wrapped Handle,Braided Oak Lash,Glacial Heart Core,4,7,25,49,27,54,28,56,75,1.95,98,3.8,610,83,163,214,81,233,3.2,page_frostpeaks
+Broodbinder,whip,Stormtide Swivel Handle,Barbed Drake-Sinew Lash,Brood Oath Core,6,9,36,55,40,61,41,63,94,2.156,87,4.2,790,105,208,277,91,290,3.2,page_drakeshard_range
+Suncoil,whip,Veilweave Lash Grip,Belliron Chain Lash,Buried Dawn Core,7,10,51,68,56,74,58,77,98,2.106,90,3.8,1060,137,275,371,112,377,3.2,page_golden_expanse
+Fen Shepherd,whip,Drover’s Wrapped Handle,Websilk Razor Lash,Rotmother Spore Core,6,9,41,55,45,61,47,63,73,1.833,95,3.8,775,103,204,271,91,305,3.2,page_blighted_marsh
+Gravechain,whip,Stormtide Swivel Handle,Drakeglass Segmented Lash,Anchorless Soul Core,7,10,67,59,73,65,76,67,108,2.34,87,4.2,1080,140,280,378,97,399,3.2,page_cursed_mire
+Widow’s Thread,whip,Veilweave Lash Grip,Veil-Silver Ribbon Lash,Hollow Canopy Core,9,10,79,76,87,83,90,87,96,2.145,90,3.8,1570,198,403,550,126,492,3.2,page_shadowfen_forest
+Iron Reins,whip,Drover’s Wrapped Handle,Braided Oak Lash,Siegeheart Core,4,7,25,49,27,54,28,56,75,1.95,98,3.8,610,83,163,214,81,233,3.2,page_iron_plains
+Undertow Lash,whip,Stormtide Swivel Handle,Barbed Drake-Sinew Lash,Tempest Bottle Core,6,9,36,55,40,61,41,63,94,2.156,87,4.2,790,105,208,277,91,290,3.2,page_veiled_sea
+Cinder Ribbon,whip,Veilweave Lash Grip,Belliron Chain Lash,Dragon Pact Ember Core,7,10,51,68,56,74,58,77,98,2.106,90,3.8,1060,137,275,371,112,377,3.2,page_ember_coast
+Skyline Lash,whip,Drover’s Wrapped Handle,Websilk Razor Lash,Skyward Seal Core,6,9,41,55,45,61,47,63,73,1.833,95,3.8,775,103,204,271,91,305,3.2,page_stormcrown_keep
+Mooncord,whip,Stormtide Swivel Handle,Drakeglass Segmented Lash,Observatory Heart Core,7,10,67,59,73,65,76,67,108,2.34,87,4.2,1080,140,280,378,97,399,3.2,page_moonfall_highlands
+Pressure Serpent,whip,Veilweave Lash Grip,Veil-Silver Ribbon Lash,Overload Governor Core,9,10,79,76,87,83,90,87,96,2.145,90,3.8,1570,198,403,550,126,492,3.2,page_copperfen_basin
+Tide Reaper,scythe,Reaper’s Farm Shaft,Harvest Iron Crescent,Tempest Bottle Core,4,7,41,65,45,72,46,74,75,2.947,87,3.0,610,83,163,214,108,336,3.2,page_veiled_sea
+Ash Harvest,scythe,Gravewillow Crescent Haft,Gravehook Crescent,Dragon Pact Ember Core,6,9,62,85,69,93,71,97,80,2.94,87,2.6,790,105,208,277,140,467,3.2,page_ember_coast
+Storm Crescent,scythe,Last-Lantern Balance Shaft,Webglass Reaping Edge,Skyward Seal Core,7,10,86,78,94,86,98,90,144,3.183,87,2.6,1060,137,275,371,130,522,3.2,page_stormcrown_keep
+Moon’s Toll,scythe,Reaper’s Farm Shaft,Belliron Soul Crescent,Observatory Heart Core,6,9,76,74,83,81,86,84,73,2.77,84,3.0,775,103,204,271,122,474,3.2,page_moonfall_highlands
+Clockwork Harvest,scythe,Gravewillow Crescent Haft,Froststeel Sickle Arc,Overload Governor Core,7,10,112,90,123,99,128,103,92,3.192,87,2.6,1080,140,280,378,149,643,3.2,page_copperfen_basin
+Glasswind Requiem,scythe,Last-Lantern Balance Shaft,Null Obsidian Reaping Arc,Horizon Prism Core,9,10,125,94,137,103,143,108,141,3.242,87,2.6,1570,198,403,550,156,696,3.2,page_glasswind_steppe
+Pale Procession Scythe,scythe,Reaper’s Farm Shaft,Harvest Iron Crescent,Pale Procession Core,4,7,41,65,45,72,46,74,75,2.947,87,3.0,610,83,163,214,108,336,3.2,page_deadwind_hollow
+Mist Mourner,scythe,Gravewillow Crescent Haft,Gravehook Crescent,Relic Memory Core,6,9,62,85,69,93,71,97,80,2.94,87,2.6,790,105,208,277,140,467,3.2,page_mistvale
+Hunger’s Harvest,scythe,Last-Lantern Balance Shaft,Webglass Reaping Edge,Quiet Singularity Core,7,10,86,78,94,86,98,90,144,3.183,87,2.6,1060,137,275,371,130,522,3.2,page_devouring_deep
+Worldroot Reclaimer,scythe,Reaper’s Farm Shaft,Belliron Soul Crescent,Worldroot Seed Core,7,10,81,110,89,121,92,126,73,2.77,84,3.0,1315,168,339,460,189,649,3.3,page_ravenwood
+First Furnace Reaper,scythe,Gravewillow Crescent Haft,Froststeel Sickle Arc,First Furnace Ember Core,8,10,112,127,123,139,128,145,92,3.192,87,2.6,1620,204,415,567,217,812,3.3,page_ashen_wastes
+Stillwinter Requiem,scythe,Last-Lantern Balance Shaft,Null Obsidian Reaping Arc,Stillwinter Heart Core,10,10,125,132,137,146,143,151,141,3.242,87,2.6,2110,263,538,739,227,874,3.3,page_frostpeaks
+Moonshot,cannon,Scrapper’s Shoulder Frame,Riveted Iron Barrel,Observatory Heart Core,4,7,55,74,61,82,63,85,83,4.0,95,10.0,610,83,163,214,123,411,3.2,page_moonfall_highlands
+Pressure Sermon,cannon,Rivetlock Recoil Cradle,Scatterbore Barrel,Overload Governor Core,6,9,84,84,92,92,96,96,118,3.978,84,10.0,790,105,208,277,139,534,3.2,page_copperfen_basin
+Horizon Breaker,cannon,Brasswick Vented Cannon Frame,Tidebronze Longbore,Horizon Prism Core,7,10,117,109,129,120,134,125,92,3.888,75,12.0,1060,137,275,371,181,721,3.2,page_glasswind_steppe
+Funeral Broadside,cannon,Sundial Artillery Frame,Springbrass Spiral Barrel,Pale Procession Core,8,10,101,103,112,113,116,118,100,3.384,84,10.0,1390,177,358,486,171,651,3.2,page_deadwind_hollow
+Veil Breach,cannon,Scrapper’s Shoulder Frame,Basalt Siege Barrel,Relic Memory Core,6,9,143,84,157,92,163,96,102,4.56,92,10.0,945,123,246,331,139,722,3.2,page_mistvale
+Null Battery,cannon,Rivetlock Recoil Cradle,Prismatic Breach Barrel,Quiet Singularity Core,8,10,169,108,186,118,194,123,123,4.168,84,10.0,1390,177,358,486,178,881,3.2,page_devouring_deep
+Worldroot Salvo,cannon,Brasswick Vented Cannon Frame,Riveted Iron Barrel,Worldroot Seed Core,7,10,67,154,73,169,76,176,84,3.6,83,10.0,1465,186,376,513,264,749,3.3,page_ravenwood
+First Furnace Mortar,cannon,Sundial Artillery Frame,Scatterbore Barrel,First Furnace Ember Core,8,10,89,145,98,159,102,166,105,3.78,84,10.0,1810,227,463,634,248,796,3.3,page_ashen_wastes
+Stillwinter Battery,cannon,Scrapper’s Shoulder Frame,Tidebronze Longbore,Stillwinter Heart Core,6,9,110,118,121,130,126,135,94,4.32,87,12.0,1285,164,331,450,203,776,3.3,page_frostpeaks
+Lantern Thunder,cannon,Rivetlock Recoil Cradle,Springbrass Spiral Barrel,Unbound Funeral Star Core,8,10,101,126,112,139,116,144,110,3.562,84,10.0,1450,184,373,507,216,774,3.3,page_deadwind_hollow
+Prime Shardcaster,cannon,Brasswick Vented Cannon Frame,Basalt Siege Barrel,Prime Kettari Governor Core,9,10,152,154,167,169,174,176,98,4.104,80,10.0,1800,226,460,630,264,1041,3.3,page_copperfen_basin
+First Dawn Artillery,cannon,Sundial Artillery Frame,Prismatic Breach Barrel,Dawn Before Kings Core,10,10,169,174,186,191,194,199,109,3.96,84,10.0,2410,299,613,844,298,1168,3.3,page_golden_expanse
+Lantern Fist,gauntlet,Pitfighter’s Wrist Brace,Plainsteel Knuckle Plate,Pale Procession Core,4,7,20,30,22,33,23,34,68,1.091,97,0.8,610,83,163,214,50,161,3.2,page_deadwind_hollow
+Mist Palm,gauntlet,Scale-Laced Knuckle Frame,Wyrmfang Knuckle Row,Relic Memory Core,6,9,30,34,33,38,34,39,118,1.326,96,0.8,790,105,208,277,57,203,3.2,page_mistvale
+Hunger Knuckle,gauntlet,Springbrass Piston Brace,Belliron Palm Plate,Quiet Singularity Core,7,10,42,42,46,46,48,48,98,1.296,96,0.8,1060,137,275,371,69,267,3.2,page_devouring_deep
+Worldroot Grasp,gauntlet,Pitfighter’s Wrist Brace,Springbrass Ram Knuckle,Worldroot Seed Core,7,10,42,51,46,56,48,59,66,1.026,94,0.6,1315,168,339,460,88,316,3.3,page_ravenwood
+Furnace Piston,gauntlet,Scale-Laced Knuckle Frame,Froststeel Talon Plate,First Furnace Ember Core,8,10,50,51,55,56,57,59,135,1.44,96,0.8,1620,204,415,567,88,344,3.3,page_ashen_wastes
+Winter Claw,gauntlet,Springbrass Piston Brace,Veil-Silver Channel Knuckle,Stillwinter Heart Core,10,10,64,66,71,73,73,75,96,1.32,96,0.8,2110,263,538,739,113,442,3.3,page_frostpeaks
+Funeral Hand,gauntlet,Pitfighter’s Wrist Brace,Plainsteel Knuckle Plate,Unbound Funeral Star Core,5,8,22,45,24,50,25,52,68,1.091,97,0.8,1150,148,298,403,77,227,3.3,page_deadwind_hollow
+Prime Impact,gauntlet,Scale-Laced Knuckle Frame,Wyrmfang Knuckle Row,Prime Kettari Governor Core,7,10,32,51,35,56,36,59,118,1.326,96,0.8,1330,170,343,465,88,281,3.3,page_copperfen_basin
+Dawnbringer’s Grip,gauntlet,Springbrass Piston Brace,Belliron Palm Plate,Dawn Before Kings Core,8,10,42,59,46,65,48,67,98,1.296,96,0.8,1600,202,410,560,101,343,3.3,page_golden_expanse
+Briar Knuckle,gauntlet,Pitfighter’s Wrist Brace,Springbrass Ram Knuckle,Heart of the Old Grove Core,6,9,39,34,43,38,45,39,66,1.026,94,0.6,775,103,204,271,57,233,3.2,page_ravenwood
+Ashboxer,gauntlet,Scale-Laced Knuckle Frame,Froststeel Talon Plate,Ashen Crown Core,7,10,50,36,55,40,57,42,135,1.44,96,0.8,1080,140,280,378,60,275,3.2,page_ashen_wastes
+Whiteclaw,gauntlet,Springbrass Piston Brace,Veil-Silver Channel Knuckle,Glacial Heart Core,9,10,64,47,71,52,73,54,96,1.32,96,0.8,1570,198,403,550,78,353,3.2,page_frostpeaks

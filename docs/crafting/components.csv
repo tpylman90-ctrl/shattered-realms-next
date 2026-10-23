@@ -1,0 +1,201 @@
+id,name,kind,weapon_family,tier,rarity,territory_id,appraisal_gold,buy_gold,sell_gold,weight_kg,hidden_strike_contribution,physical_attack,elemental_attack,element,base_durability,durability_bonus,action_interval_seconds,volatility,handling_trait,combat_trait,combat_effect,recipe_page_id
+frame_watchman_s_leather_grip,Watchman’s Leather Grip,framework,sword,1,common,iron_plains,45,45,11,0.35,1,,,,55,,1.8,,sure_grip,,,page_iron_plains
+frame_duelist_s_tideguard,Duelist’s Tideguard,framework,sword,3,rare,veiled_sea,180,180,45,0.47,2,,,,70,,1.636,,quick_recovery,,,page_veiled_sea
+frame_sentinel_s_ironbark_hilt,Sentinel’s Ironbark Hilt,framework,sword,4,relic,ravenwood,360,,90,0.59,3,,,,85,,1.895,,enduring,,,page_ravenwood
+frame_sunbound_filigree_hilt,Sunbound Filigree Hilt,framework,sword,5,exalted,golden_expanse,660,,165,0.71,3,,,,100,,1.8,,channelled,,,page_golden_expanse
+striker_plainsteel_straight_blade,Plainsteel Straight Blade,striker,sword,1,common,iron_plains,55,55,14,0.25,1,20,,,,20,,,,balanced_edge,,page_iron_plains
+striker_serrated_fang_blade,Serrated Fang Blade,striker,sword,2,uncommon,drakeshard_range,100,100,25,0.35,2,27,,,,24,,,,serrated,,page_drakeshard_range
+striker_tidebronze_saber_blade,Tidebronze Saber Blade,striker,sword,3,rare,veiled_sea,190,190,48,0.45,2,35,,,,30,,,,close_quarters,,page_veiled_sea
+striker_webglass_needle_blade,Webglass Needle Blade,striker,sword,3,rare,shadowfen_forest,220,220,55,0.55,3,33,,,,18,,,,precision,,page_shadowfen_forest
+striker_scaleiron_falchion_blade,Scaleiron Falchion Blade,striker,sword,4,relic,drakeshard_range,390,,98,0.65,3,46,,,,38,,,,armor_teeth,,page_drakeshard_range
+striker_veil_silver_channel_blade,Veil-Silver Channel Blade,striker,sword,5,exalted,mistvale,700,,175,0.75,4,58,,,,28,,,,conductive,,page_mistvale
+frame_militia_longgrip,Militia Longgrip,framework,greatsword,1,common,iron_plains,45,45,11,0.52,1,,,,55,,3.333,,braced,,,page_iron_plains
+frame_drakespine_wargrip,Drakespine Wargrip,framework,greatsword,3,rare,drakeshard_range,180,180,45,0.7,2,,,,70,,3.158,,extended,,,page_drakeshard_range
+frame_black_anvil_twohander,Black Anvil Twohander,framework,greatsword,4,relic,ashen_wastes,360,,90,0.89,3,,,,85,,3.0,,volatile_conduit,,,page_ashen_wastes
+striker_broad_militia_blade,Broad Militia Blade,striker,greatsword,1,common,iron_plains,55,55,14,0.5,1,34,,,,20,,,,balanced_edge,,page_iron_plains
+striker_notched_siege_blade,Notched Siege Blade,striker,greatsword,2,uncommon,iron_plains,100,100,25,0.7,2,46,,,,24,,,,wardbreaker,,page_iron_plains
+striker_drakebone_cleaver,Drakebone Cleaver,striker,greatsword,3,rare,drakeshard_range,190,190,48,0.9,2,60,,,,30,,,,cleaving,,page_drakeshard_range
+striker_basalt_execution_blade,Basalt Execution Blade,striker,greatsword,3,rare,ashen_wastes,220,220,55,1.1,3,56,,,,18,,,,concussive,,page_ashen_wastes
+striker_froststeel_flamberge,Froststeel Flamberge,striker,greatsword,4,relic,frostpeaks,390,,98,1.3,3,78,,,,38,,,,serrated,,page_frostpeaks
+striker_null_edge_colossus_blade,Null-Edge Colossus Blade,striker,greatsword,5,exalted,devouring_deep,700,,175,1.5,4,99,,,,28,,,,hollow_channel,,page_devouring_deep
+frame_poacher_s_thumbgrip,Poacher’s Thumbgrip,framework,dagger,1,common,ravenwood,45,45,11,0.35,1,,,,55,,1.05,,sure_grip,,,page_ravenwood
+frame_websilk_loop_grip,Websilk Loop Grip,framework,dagger,3,rare,shadowfen_forest,180,180,45,0.47,2,,,,70,,0.955,,quick_recovery,,,page_shadowfen_forest
+frame_mirage_balanced_tang,Mirage Balanced Tang,framework,dagger,4,relic,golden_expanse,360,,90,0.59,3,,,,85,,1.05,,channelled,,,page_golden_expanse
+striker_watchman_s_point,Watchman’s Point,striker,dagger,1,common,iron_plains,55,55,14,0.25,1,12,,,,20,,,,balanced_edge,,page_iron_plains
+striker_hollow_adder_fang,Hollow Adder Fang,striker,dagger,2,uncommon,blighted_marsh,100,100,25,0.35,2,17,,,,24,,,,hollow_channel,,page_blighted_marsh
+striker_glasswind_stiletto,Glasswind Stiletto,striker,dagger,3,rare,glasswind_steppe,190,190,48,0.45,2,22,,,,30,,,,precision,,page_glasswind_steppe
+striker_barbed_webglass_point,Barbed Webglass Point,striker,dagger,3,rare,shadowfen_forest,220,220,55,0.55,3,20,,,,18,,,,serrated,,page_shadowfen_forest
+striker_belliron_ritual_blade,Belliron Ritual Blade,striker,dagger,4,relic,deadwind_hollow,390,,98,0.65,3,29,,,,38,,,,soul_notch,,page_deadwind_hollow
+striker_star_slate_crescent,Star-Slate Crescent,striker,dagger,5,exalted,moonfall_highlands,700,,175,0.75,4,36,,,,28,,,,conductive,,page_moonfall_highlands
+frame_ranger_s_ash_haft,Ranger’s Ash Haft,framework,spear,1,common,ravenwood,45,45,11,0.52,1,,,,55,,2.316,,extended,,,page_ravenwood
+frame_rimepine_lance_shaft,Rimepine Lance Shaft,framework,spear,3,rare,frostpeaks,180,180,45,0.7,2,,,,70,,2.316,,enduring,,,page_frostpeaks
+frame_stormkeeper_spear_haft,Stormkeeper Spear Haft,framework,spear,4,relic,stormcrown_keep,360,,90,0.89,3,,,,85,,2.2,,channelled,,,page_stormcrown_keep
+frame_oathroot_longshaft,Oathroot Longshaft,framework,spear,5,exalted,ravenwood,660,,165,1.06,3,,,,100,,2.444,,braced,,,page_ravenwood
+striker_iron_leaf_spearhead,Iron Leaf Spearhead,striker,spear,1,common,iron_plains,55,55,14,0.5,1,24,,,,20,,,,balanced_edge,,page_iron_plains
+striker_wyrmtooth_pikehead,Wyrmtooth Pikehead,striker,spear,2,uncommon,drakeshard_range,100,100,25,0.7,2,32,,,,24,,,,armor_teeth,,page_drakeshard_range
+striker_sunbronze_winged_head,Sunbronze Winged Head,striker,spear,3,rare,golden_expanse,190,190,48,0.9,2,42,,,,30,,,,precision,,page_golden_expanse
+striker_stormsteel_fork,Stormsteel Fork,striker,spear,3,rare,stormcrown_keep,220,220,55,1.1,3,40,,,,18,,,,conductive,,page_stormcrown_keep
+striker_froststeel_lance_tip,Froststeel Lance Tip,striker,spear,4,relic,frostpeaks,390,,98,1.3,3,55,,,,38,,,,wardbreaker,,page_frostpeaks
+striker_hollow_veil_silver_point,Hollow Veil-Silver Point,striker,spear,5,exalted,mistvale,700,,175,1.5,4,70,,,,28,,,,hollow_channel,,page_mistvale
+frame_woodcutter_s_haft,Woodcutter’s Haft,framework,axe,1,common,ravenwood,45,45,11,0.35,1,,,,55,,2.211,,enduring,,,page_ravenwood
+frame_corsair_s_hook_haft,Corsair’s Hook Haft,framework,axe,3,rare,ember_coast,180,180,45,0.47,2,,,,70,,1.909,,quick_recovery,,,page_ember_coast
+frame_cinderbrace_split_haft,Cinderbrace Split Haft,framework,axe,4,relic,ashen_wastes,360,,90,0.59,3,,,,85,,2.1,,volatile_conduit,,,page_ashen_wastes
+striker_forester_s_axe_bit,Forester’s Axe Bit,striker,axe,1,common,iron_plains,55,55,14,0.25,1,24,,,,20,,,,balanced_edge,,page_iron_plains
+striker_raider_s_hook_bit,Raider’s Hook Bit,striker,axe,2,uncommon,veiled_sea,100,100,25,0.35,2,32,,,,24,,,,cleaving,,page_veiled_sea
+striker_drakeglass_bearded_edge,Drakeglass Bearded Edge,striker,axe,3,rare,ember_coast,190,190,48,0.45,2,41,,,,30,,,,serrated,,page_ember_coast
+striker_bog_iron_hewing_head,Bog-Iron Hewing Head,striker,axe,3,rare,blighted_marsh,220,220,55,0.55,3,39,,,,18,,,,armor_teeth,,page_blighted_marsh
+striker_basalt_double_bit,Basalt Double Bit,striker,axe,4,relic,ashen_wastes,390,,98,0.65,3,54,,,,38,,,,concussive,,page_ashen_wastes
+striker_star_slate_crescent_bit,Star-Slate Crescent Bit,striker,axe,5,exalted,moonfall_highlands,700,,175,0.75,4,68,,,,28,,,,precision,,page_moonfall_highlands
+frame_quarryman_s_haft,Quarryman’s Haft,framework,hammer,1,common,iron_plains,45,45,11,0.52,1,,,,55,,3.556,,braced,,,page_iron_plains
+frame_siegebreaker_shock_haft,Siegebreaker Shock Haft,framework,hammer,3,rare,drakeshard_range,180,180,45,0.7,2,,,,70,,3.368,,enduring,,,page_drakeshard_range
+frame_thunderbrow_pattern_haft,Thunderbrow Pattern Haft,framework,hammer,4,relic,stormcrown_keep,360,,90,0.89,3,,,,85,,3.2,,channelled,,,page_stormcrown_keep
+striker_quarry_iron_block,Quarry Iron Block,striker,hammer,1,common,iron_plains,55,55,14,0.5,1,37,,,,20,,,,balanced_edge,,page_iron_plains
+striker_siege_ram_head,Siege Ram Head,striker,hammer,2,uncommon,iron_plains,100,100,25,0.7,2,50,,,,24,,,,wardbreaker,,page_iron_plains
+striker_resonant_belliron_head,Resonant Belliron Head,striker,hammer,3,rare,deadwind_hollow,190,190,48,0.9,2,65,,,,30,,,,concussive,,page_deadwind_hollow
+striker_basalt_furnace_head,Basalt Furnace Head,striker,hammer,3,rare,ashen_wastes,220,220,55,1.1,3,61,,,,18,,,,hollow_channel,,page_ashen_wastes
+striker_scaleiron_shatter_head,Scaleiron Shatter Head,striker,hammer,4,relic,drakeshard_range,390,,98,1.3,3,85,,,,38,,,,armor_teeth,,page_drakeshard_range
+striker_singing_quartz_impact_head,Singing-Quartz Impact Head,striker,hammer,5,exalted,glasswind_steppe,700,,175,1.5,4,107,,,,28,,,,conductive,,page_glasswind_steppe
+frame_gateward_handle,Gateward Handle,framework,mace,1,common,iron_plains,45,45,11,0.35,1,,,,55,,2.05,,sure_grip,,,page_iron_plains
+frame_reedbound_cudgel_haft,Reedbound Cudgel Haft,framework,mace,3,rare,blighted_marsh,180,180,45,0.47,2,,,,70,,2.158,,enduring,,,page_blighted_marsh
+frame_lanternkeeper_flanged_grip,Lanternkeeper Flanged Grip,framework,mace,4,relic,deadwind_hollow,360,,90,0.59,3,,,,85,,2.05,,channelled,,,page_deadwind_hollow
+striker_gatewatch_iron_ball,Gatewatch Iron Ball,striker,mace,1,common,iron_plains,55,55,14,0.25,1,22,,,,20,,,,balanced_edge,,page_iron_plains
+striker_thorn_cage_head,Thorn-Cage Head,striker,mace,2,uncommon,ravenwood,100,100,25,0.35,2,30,,,,24,,,,serrated,,page_ravenwood
+striker_sunbronze_flanged_head,Sunbronze Flanged Head,striker,mace,3,rare,golden_expanse,190,190,48,0.45,2,39,,,,30,,,,armor_teeth,,page_golden_expanse
+striker_hexstone_knob,Hexstone Knob,striker,mace,3,rare,cursed_mire,220,220,55,0.55,3,37,,,,18,,,,soul_notch,,page_cursed_mire
+striker_froststeel_crown,Froststeel Crown,striker,mace,4,relic,frostpeaks,390,,98,0.65,3,52,,,,38,,,,concussive,,page_frostpeaks
+striker_veil_silver_lantern_cage,Veil-Silver Lantern Cage,striker,mace,5,exalted,mistvale,700,,175,0.75,4,65,,,,28,,,,conductive,,page_mistvale
+frame_herbalist_s_bogroot_staff,Herbalist’s Bogroot Staff,framework,staff,1,common,blighted_marsh,45,45,11,0.52,1,,,,55,,2.632,,enduring,,,page_blighted_marsh
+frame_gloamwood_channel_staff,Gloamwood Channel Staff,framework,staff,3,rare,shadowfen_forest,180,180,45,0.7,2,,,,70,,2.5,,channelled,,,page_shadowfen_forest
+frame_veil_silver_casting_shaft,Veil-Silver Casting Shaft,framework,staff,4,relic,mistvale,360,,90,0.89,3,,,,85,,2.273,,quick_recovery,,,page_mistvale
+frame_astral_spiral_staff,Astral Spiral Staff,framework,staff,5,exalted,moonfall_highlands,660,,165,1.06,3,,,,100,,2.5,,volatile_conduit,,,page_moonfall_highlands
+striker_carved_root_crown,Carved Root Crown,striker,staff,1,common,ravenwood,55,55,14,0.5,1,12,,,,20,,,,balanced_edge,,page_ravenwood
+striker_marsh_bone_focus,Marsh-Bone Focus,striker,staff,2,uncommon,blighted_marsh,100,100,25,0.7,2,17,,,,24,,,,hollow_channel,,page_blighted_marsh
+striker_storm_fork_crown,Storm Fork Crown,striker,staff,3,rare,stormcrown_keep,190,190,48,0.9,2,22,,,,30,,,,conductive,,page_stormcrown_keep
+striker_moon_lens_cradle,Moon Lens Cradle,striker,staff,3,rare,moonfall_highlands,220,220,55,1.1,3,20,,,,18,,,,precision,,page_moonfall_highlands
+striker_hexstone_ritual_cage,Hexstone Ritual Cage,striker,staff,4,relic,cursed_mire,390,,98,1.3,3,29,,,,38,,,,soul_notch,,page_cursed_mire
+striker_prismatic_silver_crown,Prismatic Silver Crown,striker,staff,5,exalted,mistvale,700,,175,1.5,4,36,,,,28,,,,wardbreaker,,page_mistvale
+frame_apprentice_s_yew_handle,Apprentice’s Yew Handle,framework,wand,1,common,moonfall_highlands,45,45,11,0.35,1,,,,55,,1.5,,sure_grip,,,page_moonfall_highlands
+frame_crystal_focus_wand_grip,Crystal-Focus Wand Grip,framework,wand,3,rare,glasswind_steppe,180,180,45,0.47,2,,,,70,,1.5,,channelled,,,page_glasswind_steppe
+frame_dawnweaver_conductor,Dawnweaver Conductor,framework,wand,4,relic,golden_expanse,360,,90,0.59,3,,,,85,,1.364,,quick_recovery,,,page_golden_expanse
+striker_copper_casting_tip,Copper Casting Tip,striker,wand,1,common,copperfen_basin,55,55,14,0.25,1,6,,,,20,,,,balanced_edge,,page_copperfen_basin
+striker_adder_fang_focus,Adder-Fang Focus,striker,wand,2,uncommon,blighted_marsh,100,100,25,0.35,2,9,,,,24,,,,hollow_channel,,page_blighted_marsh
+striker_frostglass_prism,Frostglass Prism,striker,wand,3,rare,frostpeaks,190,190,48,0.45,2,11,,,,30,,,,conductive,,page_frostpeaks
+striker_sunbronze_aperture,Sunbronze Aperture,striker,wand,3,rare,golden_expanse,220,220,55,0.55,3,11,,,,18,,,,precision,,page_golden_expanse
+striker_webglass_needle_focus,Webglass Needle Focus,striker,wand,4,relic,shadowfen_forest,390,,98,0.65,3,15,,,,38,,,,serrated,,page_shadowfen_forest
+striker_star_slate_lens,Star-Slate Lens,striker,wand,5,exalted,moonfall_highlands,700,,175,0.75,4,19,,,,28,,,,wardbreaker,,page_moonfall_highlands
+frame_scout_s_ironbark_riser,Scout’s Ironbark Riser,framework,bow,1,common,ravenwood,45,45,11,0.52,1,,,,55,,2.2,,sure_grip,,,page_ravenwood
+frame_recurve_sinew_riser,Recurve Sinew Riser,framework,bow,3,rare,drakeshard_range,180,180,45,0.7,2,,,,70,,2.316,,enduring,,,page_drakeshard_range
+frame_moon_yew_longbow_riser,Moon-Yew Longbow Riser,framework,bow,4,relic,moonfall_highlands,360,,90,0.89,3,,,,85,,2.316,,extended,,,page_moonfall_highlands
+frame_glasswind_split_riser,Glasswind Split Riser,framework,bow,5,exalted,glasswind_steppe,660,,165,1.06,3,,,,100,,2.0,,quick_recovery,,,page_glasswind_steppe
+striker_plain_yew_limbs,Plain Yew Limbs,striker,bow,1,common,ravenwood,55,55,14,0.5,1,22,,,,20,,,,balanced_edge,,page_ravenwood
+striker_recurved_drakebone_limbs,Recurved Drakebone Limbs,striker,bow,2,uncommon,drakeshard_range,100,100,25,0.7,2,30,,,,24,,,,armor_teeth,,page_drakeshard_range
+striker_moon_yew_long_limbs,Moon-Yew Long Limbs,striker,bow,3,rare,moonfall_highlands,190,190,48,0.9,2,39,,,,30,,,,farshot,,page_moonfall_highlands
+striker_websilk_composite_limbs,Websilk Composite Limbs,striker,bow,3,rare,shadowfen_forest,220,220,55,1.1,3,36,,,,18,,,,precision,,page_shadowfen_forest
+striker_froststeel_spring_limbs,Froststeel Spring Limbs,striker,bow,4,relic,frostpeaks,390,,98,1.3,3,51,,,,38,,,,concussive,,page_frostpeaks
+striker_singing_quartz_split_limbs,Singing-Quartz Split Limbs,striker,bow,5,exalted,glasswind_steppe,700,,175,1.5,4,64,,,,28,,,,conductive,,page_glasswind_steppe
+frame_militia_oak_stock,Militia Oak Stock,framework,crossbow,1,common,iron_plains,45,45,11,0.52,1,,,,55,,3.222,,braced,,,page_iron_plains
+frame_marine_ratchet_stock,Marine Ratchet Stock,framework,crossbow,3,rare,veiled_sea,180,180,45,0.7,2,,,,70,,3.053,,enduring,,,page_veiled_sea
+frame_cogspire_repeating_stock,Cogspire Repeating Stock,framework,crossbow,4,relic,copperfen_basin,360,,90,0.89,3,,,,85,,2.636,,quick_recovery,,,page_copperfen_basin
+striker_plainsteel_prod,Plainsteel Prod,striker,crossbow,1,common,iron_plains,55,55,14,0.5,1,31,,,,20,,,,balanced_edge,,page_iron_plains
+striker_drake_sinew_compound_prod,Drake-Sinew Compound Prod,striker,crossbow,2,uncommon,drakeshard_range,100,100,25,0.7,2,42,,,,24,,,,precision,,page_drakeshard_range
+striker_marine_heavy_prod,Marine Heavy Prod,striker,crossbow,3,rare,veiled_sea,190,190,48,0.9,2,54,,,,30,,,,farshot,,page_veiled_sea
+striker_springbrass_repeater_prod,Springbrass Repeater Prod,striker,crossbow,3,rare,copperfen_basin,220,220,55,1.1,3,51,,,,18,,,,close_quarters,,page_copperfen_basin
+striker_froststeel_arbalest_prod,Froststeel Arbalest Prod,striker,crossbow,4,relic,frostpeaks,390,,98,1.3,3,71,,,,38,,,,armor_teeth,,page_frostpeaks
+striker_star_slate_resonance_prod,Star-Slate Resonance Prod,striker,crossbow,5,exalted,moonfall_highlands,700,,175,1.5,4,90,,,,28,,,,conductive,,page_moonfall_highlands
+frame_drover_s_wrapped_handle,Drover’s Wrapped Handle,framework,whip,1,common,veiled_sea,45,45,11,0.35,1,,,,55,,1.95,,sure_grip,,,page_veiled_sea
+frame_stormtide_swivel_handle,Stormtide Swivel Handle,framework,whip,3,rare,stormcrown_keep,180,180,45,0.47,2,,,,70,,2.053,,extended,,,page_stormcrown_keep
+frame_veilweave_lash_grip,Veilweave Lash Grip,framework,whip,4,relic,mistvale,360,,90,0.59,3,,,,85,,1.95,,channelled,,,page_mistvale
+striker_braided_oak_lash,Braided Oak Lash,striker,whip,1,common,veiled_sea,55,55,14,0.25,1,17,,,,20,,,,balanced_edge,,page_veiled_sea
+striker_barbed_drake_sinew_lash,Barbed Drake-Sinew Lash,striker,whip,2,uncommon,drakeshard_range,100,100,25,0.35,2,22,,,,24,,,,serrated,,page_drakeshard_range
+striker_belliron_chain_lash,Belliron Chain Lash,striker,whip,3,rare,deadwind_hollow,190,190,48,0.45,2,29,,,,30,,,,concussive,,page_deadwind_hollow
+striker_websilk_razor_lash,Websilk Razor Lash,striker,whip,3,rare,shadowfen_forest,220,220,55,0.55,3,27,,,,18,,,,precision,,page_shadowfen_forest
+striker_drakeglass_segmented_lash,Drakeglass Segmented Lash,striker,whip,4,relic,ember_coast,390,,98,0.65,3,38,,,,38,,,,cleaving,,page_ember_coast
+striker_veil_silver_ribbon_lash,Veil-Silver Ribbon Lash,striker,whip,5,exalted,mistvale,700,,175,0.75,4,48,,,,28,,,,conductive,,page_mistvale
+frame_reaper_s_farm_shaft,Reaper’s Farm Shaft,framework,scythe,1,common,iron_plains,45,45,11,0.52,1,,,,55,,2.947,,extended,,,page_iron_plains
+frame_gravewillow_crescent_haft,Gravewillow Crescent Haft,framework,scythe,3,rare,cursed_mire,180,180,45,0.7,2,,,,70,,2.8,,channelled,,,page_cursed_mire
+frame_last_lantern_balance_shaft,Last-Lantern Balance Shaft,framework,scythe,4,relic,deadwind_hollow,360,,90,0.89,3,,,,85,,2.947,,enduring,,,page_deadwind_hollow
+striker_harvest_iron_crescent,Harvest Iron Crescent,striker,scythe,1,common,iron_plains,55,55,14,0.5,1,28,,,,20,,,,balanced_edge,,page_iron_plains
+striker_gravehook_crescent,Gravehook Crescent,striker,scythe,2,uncommon,cursed_mire,100,100,25,0.7,2,38,,,,24,,,,armor_teeth,,page_cursed_mire
+striker_webglass_reaping_edge,Webglass Reaping Edge,striker,scythe,3,rare,shadowfen_forest,190,190,48,0.9,2,49,,,,30,,,,serrated,,page_shadowfen_forest
+striker_belliron_soul_crescent,Belliron Soul Crescent,striker,scythe,3,rare,deadwind_hollow,220,220,55,1.1,3,46,,,,18,,,,soul_notch,,page_deadwind_hollow
+striker_froststeel_sickle_arc,Froststeel Sickle Arc,striker,scythe,4,relic,frostpeaks,390,,98,1.3,3,64,,,,38,,,,cleaving,,page_frostpeaks
+striker_null_obsidian_reaping_arc,Null Obsidian Reaping Arc,striker,scythe,5,exalted,devouring_deep,700,,175,1.5,4,81,,,,28,,,,hollow_channel,,page_devouring_deep
+frame_scrapper_s_shoulder_frame,Scrapper’s Shoulder Frame,framework,cannon,1,common,copperfen_basin,45,45,11,0.52,1,,,,55,,4.0,,braced,,,page_copperfen_basin
+frame_rivetlock_recoil_cradle,Rivetlock Recoil Cradle,framework,cannon,3,rare,copperfen_basin,180,180,45,0.7,2,,,,70,,3.789,,enduring,,,page_copperfen_basin
+frame_brasswick_vented_cannon_frame,Brasswick Vented Cannon Frame,framework,cannon,4,relic,copperfen_basin,360,,90,0.89,3,,,,85,,3.6,,volatile_conduit,,,page_copperfen_basin
+frame_sundial_artillery_frame,Sundial Artillery Frame,framework,cannon,5,exalted,golden_expanse,660,,165,1.06,3,,,,100,,3.6,,channelled,,,page_golden_expanse
+striker_riveted_iron_barrel,Riveted Iron Barrel,striker,cannon,1,common,copperfen_basin,55,55,14,0.5,1,38,,,,20,,,,balanced_edge,,page_copperfen_basin
+striker_scatterbore_barrel,Scatterbore Barrel,striker,cannon,2,uncommon,copperfen_basin,100,100,25,0.7,2,51,,,,24,,,,cleaving,,page_copperfen_basin
+striker_tidebronze_longbore,Tidebronze Longbore,striker,cannon,3,rare,veiled_sea,190,190,48,0.9,2,67,,,,30,,,,farshot,,page_veiled_sea
+striker_springbrass_spiral_barrel,Springbrass Spiral Barrel,striker,cannon,3,rare,copperfen_basin,220,220,55,1.1,3,63,,,,18,,,,precision,,page_copperfen_basin
+striker_basalt_siege_barrel,Basalt Siege Barrel,striker,cannon,4,relic,ashen_wastes,390,,98,1.3,3,87,,,,38,,,,concussive,,page_ashen_wastes
+striker_prismatic_breach_barrel,Prismatic Breach Barrel,striker,cannon,5,exalted,mistvale,700,,175,1.5,4,110,,,,28,,,,hollow_channel,,page_mistvale
+frame_pitfighter_s_wrist_brace,Pitfighter’s Wrist Brace,framework,gauntlet,1,common,iron_plains,45,45,11,0.35,1,,,,55,,1.091,,quick_recovery,,,page_iron_plains
+frame_scale_laced_knuckle_frame,Scale-Laced Knuckle Frame,framework,gauntlet,3,rare,drakeshard_range,180,180,45,0.47,2,,,,70,,1.263,,enduring,,,page_drakeshard_range
+frame_springbrass_piston_brace,Springbrass Piston Brace,framework,gauntlet,4,relic,copperfen_basin,360,,90,0.59,3,,,,85,,1.2,,channelled,,,page_copperfen_basin
+striker_plainsteel_knuckle_plate,Plainsteel Knuckle Plate,striker,gauntlet,1,common,iron_plains,55,55,14,0.25,1,14,,,,20,,,,balanced_edge,,page_iron_plains
+striker_wyrmfang_knuckle_row,Wyrmfang Knuckle Row,striker,gauntlet,2,uncommon,drakeshard_range,100,100,25,0.35,2,18,,,,24,,,,serrated,,page_drakeshard_range
+striker_belliron_palm_plate,Belliron Palm Plate,striker,gauntlet,3,rare,deadwind_hollow,190,190,48,0.45,2,24,,,,30,,,,concussive,,page_deadwind_hollow
+striker_springbrass_ram_knuckle,Springbrass Ram Knuckle,striker,gauntlet,3,rare,copperfen_basin,220,220,55,0.55,3,22,,,,18,,,,close_quarters,,page_copperfen_basin
+striker_froststeel_talon_plate,Froststeel Talon Plate,striker,gauntlet,4,relic,frostpeaks,390,,98,0.65,3,31,,,,38,,,,precision,,page_frostpeaks
+striker_veil_silver_channel_knuckle,Veil-Silver Channel Knuckle,striker,gauntlet,5,exalted,mistvale,700,,175,0.75,4,39,,,,28,,,,conductive,,page_mistvale
+core_thornseed,Thornseed Core,core,,2,uncommon,ravenwood,110,110,28,0.08,0,,12,verdant,,,,1,,,thorn_bind,page_ravenwood
+core_huntsman_s_echo,Huntsman’s Echo Core,core,,3,rare,ravenwood,260,,65,0.12,1,,21,spirit,,,,2,,,hunters_mark,page_ravenwood
+core_heart_of_the_old_grove,Heart of the Old Grove Core,core,,4,relic,ravenwood,510,,128,0.18,2,,32,verdant,,,,3,,,grove_guard,page_ravenwood
+core_cinder_pearl,Cinder Pearl Core,core,,2,uncommon,ashen_wastes,110,110,28,0.08,0,,12,fire,,,,1,,,ignite,page_ashen_wastes
+core_magma_heart,Magma Heart Core,core,,3,rare,ashen_wastes,260,,65,0.12,1,,21,magma,,,,2,,,magma_pool,page_ashen_wastes
+core_ashen_crown,Ashen Crown Core,core,,4,relic,ashen_wastes,510,,128,0.18,2,,32,ash,,,,3,,,ash_blind,page_ashen_wastes
+core_rime_shard,Rime Shard Core,core,,2,uncommon,frostpeaks,110,110,28,0.08,0,,12,frost,,,,1,,,chill,page_frostpeaks
+core_whiteout_eye,Whiteout Eye Core,core,,3,rare,frostpeaks,260,,65,0.12,1,,21,frost,,,,2,,,whiteout,page_frostpeaks
+core_glacial_heart,Glacial Heart Core,core,,4,relic,frostpeaks,510,,128,0.18,2,,32,frost,,,,3,,,frost_guard,page_frostpeaks
+core_drake_ember,Drake Ember Core,core,,2,uncommon,drakeshard_range,110,110,28,0.08,0,,12,fire,,,,1,,,drake_scorch,page_drakeshard_range
+core_scale_resonance,Scale Resonance Core,core,,3,rare,drakeshard_range,260,,65,0.12,1,,21,earth,,,,2,,,scale_break,page_drakeshard_range
+core_brood_oath,Brood Oath Core,core,,4,relic,drakeshard_range,510,,128,0.18,2,,32,spirit,,,,3,,,brood_guard,page_drakeshard_range
+core_sunwell_spark,Sunwell Spark Core,core,,2,uncommon,golden_expanse,110,110,28,0.08,0,,12,solar,,,,1,,,solar_mark,page_golden_expanse
+core_mirage_eye,Mirage Eye Core,core,,3,rare,golden_expanse,260,,65,0.12,1,,21,mirage,,,,2,,,mirage_feint,page_golden_expanse
+core_buried_dawn,Buried Dawn Core,core,,4,relic,golden_expanse,510,,128,0.18,2,,32,solar,,,,3,,,solar_purge,page_golden_expanse
+core_adder_bile,Adder Bile Core,core,,2,uncommon,blighted_marsh,110,110,28,0.08,0,,12,venom,,,,1,,,poison,page_blighted_marsh
+core_mire_lantern,Mire Lantern Core,core,,3,rare,blighted_marsh,260,,65,0.12,1,,21,verdant,,,,2,,,cleanse_guard,page_blighted_marsh
+core_rotmother_spore,Rotmother Spore Core,core,,4,relic,blighted_marsh,510,,128,0.18,2,,32,rot,,,,3,,,rot_spread,page_blighted_marsh
+core_grave_ember,Grave Ember Core,core,,2,uncommon,cursed_mire,110,110,28,0.08,0,,12,spirit,,,,1,,,soul_scar,page_cursed_mire
+core_hexbound_tear,Hexbound Tear Core,core,,3,rare,cursed_mire,260,,65,0.12,1,,21,curse,,,,2,,,hex_weaken,page_cursed_mire
+core_anchorless_soul,Anchorless Soul Core,core,,4,relic,cursed_mire,510,,128,0.18,2,,32,spirit,,,,3,,,spirit_release,page_cursed_mire
+core_gloam_mote,Gloam Mote Core,core,,2,uncommon,shadowfen_forest,110,110,28,0.08,0,,12,shadow,,,,1,,,gloam_expose,page_shadowfen_forest
+core_widow_s_knot,Widow’s Knot Core,core,,3,rare,shadowfen_forest,260,,65,0.12,1,,21,shadow,,,,2,,,web_tether,page_shadowfen_forest
+core_hollow_canopy,Hollow Canopy Core,core,,4,relic,shadowfen_forest,510,,128,0.18,2,,32,rot,,,,3,,,canopy_decay,page_shadowfen_forest
+core_marching_spark,Marching Spark Core,core,,2,uncommon,iron_plains,110,110,28,0.08,0,,12,earth,,,,1,,,steadfast,page_iron_plains
+core_warhorn_echo,Warhorn Echo Core,core,,3,rare,iron_plains,260,,65,0.12,1,,21,spirit,,,,2,,,rally,page_iron_plains
+core_siegeheart,Siegeheart Core,core,,4,relic,iron_plains,510,,128,0.18,2,,32,earth,,,,3,,,siege_break,page_iron_plains
+core_salt_pearl,Salt Pearl Core,core,,2,uncommon,veiled_sea,110,110,28,0.08,0,,12,tide,,,,1,,,salt_erosion,page_veiled_sea
+core_undertow_knot,Undertow Knot Core,core,,3,rare,veiled_sea,260,,65,0.12,1,,21,tide,,,,2,,,undertow,page_veiled_sea
+core_tempest_bottle,Tempest Bottle Core,core,,4,relic,veiled_sea,510,,128,0.18,2,,32,storm,,,,3,,,squall,page_veiled_sea
+core_coalglass_ember,Coalglass Ember Core,core,,2,uncommon,ember_coast,110,110,28,0.08,0,,12,fire,,,,1,,,ember_trail,page_ember_coast
+core_cinderwake_pearl,Cinderwake Pearl Core,core,,3,rare,ember_coast,260,,65,0.12,1,,21,magma,,,,2,,,cinderwake,page_ember_coast
+core_dragon_pact_ember,Dragon Pact Ember Core,core,,4,relic,ember_coast,510,,128,0.18,2,,32,fire,,,,3,,,dragon_flare,page_ember_coast
+core_stormglass_spark,Stormglass Spark Core,core,,2,uncommon,stormcrown_keep,110,110,28,0.08,0,,12,storm,,,,1,,,shock,page_stormcrown_keep
+core_thundercoil,Thundercoil Core,core,,3,rare,stormcrown_keep,260,,65,0.12,1,,21,storm,,,,2,,,chain_arc,page_stormcrown_keep
+core_skyward_seal,Skyward Seal Core,core,,4,relic,stormcrown_keep,510,,128,0.18,2,,32,storm,,,,3,,,ward_charge,page_stormcrown_keep
+core_moonlit_flake,Moonlit Flake Core,core,,2,uncommon,moonfall_highlands,110,110,28,0.08,0,,12,lunar,,,,1,,,moon_expose,page_moonfall_highlands
+core_fallen_star,Fallen Star Core,core,,3,rare,moonfall_highlands,260,,65,0.12,1,,21,astral,,,,2,,,star_echo,page_moonfall_highlands
+core_observatory_heart,Observatory Heart Core,core,,4,relic,moonfall_highlands,510,,128,0.18,2,,32,astral,,,,3,,,gravity_well,page_moonfall_highlands
+core_clockwork_spark,Clockwork Spark Core,core,,2,uncommon,copperfen_basin,110,110,28,0.08,0,,12,kinetic,,,,1,,,recoil_charge,page_copperfen_basin
+core_pressure_pearl,Pressure Pearl Core,core,,3,rare,copperfen_basin,260,,65,0.12,1,,21,kinetic,,,,2,,,pressure_pulse,page_copperfen_basin
+core_overload_governor,Overload Governor Core,core,,4,relic,copperfen_basin,510,,128,0.18,2,,32,storm,,,,3,,,governed_overload,page_copperfen_basin
+core_whisperglass,Whisperglass Core,core,,2,uncommon,glasswind_steppe,110,110,28,0.08,0,,12,wind,,,,1,,,wind_cut,page_glasswind_steppe
+core_sand_singer,Sand-Singer Core,core,,3,rare,glasswind_steppe,260,,65,0.12,1,,21,wind,,,,2,,,sand_shear,page_glasswind_steppe
+core_horizon_prism,Horizon Prism Core,core,,4,relic,glasswind_steppe,510,,128,0.18,2,,32,mirage,,,,3,,,horizon_pierce,page_glasswind_steppe
+core_bell_wraith_ember,Bell-Wraith Ember Core,core,,2,uncommon,deadwind_hollow,110,110,28,0.08,0,,12,spirit,,,,1,,,bell_silence,page_deadwind_hollow
+core_lantern_soul,Lantern Soul Core,core,,3,rare,deadwind_hollow,260,,65,0.12,1,,21,spirit,,,,2,,,lantern_ward,page_deadwind_hollow
+core_pale_procession,Pale Procession Core,core,,4,relic,deadwind_hollow,510,,128,0.18,2,,32,curse,,,,3,,,procession,page_deadwind_hollow
+core_mist_dew,Mist Dew Core,core,,2,uncommon,mistvale,110,110,28,0.08,0,,12,mist,,,,1,,,mist_veil,page_mistvale
+core_veilbound_star,Veilbound Star Core,core,,3,rare,mistvale,260,,65,0.12,1,,21,astral,,,,2,,,veil_echo,page_mistvale
+core_relic_memory,Relic Memory Core,core,,4,relic,mistvale,510,,128,0.18,2,,32,astral,,,,3,,,relic_release,page_mistvale
+core_rift_cinder,Rift Cinder Core,core,,2,uncommon,devouring_deep,110,110,28,0.08,0,,12,void,,,,1,,,rift_cut,page_devouring_deep
+core_hunger_fragment,Hunger Fragment Core,core,,3,rare,devouring_deep,260,,65,0.12,1,,21,void,,,,2,,,hunger,page_devouring_deep
+core_quiet_singularity,Quiet Singularity Core,core,,4,relic,devouring_deep,510,,128,0.18,2,,32,void,,,,3,,,singularity,page_devouring_deep
+core_worldroot_seed,Worldroot Seed Core,core,,5,exalted,ravenwood,1050,,263,0.24,3,,45,verdant,,,,4,,,worldroot,page_ravenwood
+core_first_furnace_ember,First Furnace Ember Core,core,,5,exalted,ashen_wastes,1050,,263,0.24,3,,45,magma,,,,4,,,first_furnace,page_ashen_wastes
+core_stillwinter_heart,Stillwinter Heart Core,core,,5,exalted,frostpeaks,1050,,263,0.24,3,,45,frost,,,,4,,,stillwinter,page_frostpeaks
+core_unbound_funeral_star,Unbound Funeral Star Core,core,,5,exalted,deadwind_hollow,1050,,263,0.24,3,,45,spirit,,,,4,,,funeral_star,page_deadwind_hollow
+core_prime_kettari_governor,Prime Kettari Governor Core,core,,5,exalted,copperfen_basin,1050,,263,0.24,3,,45,kinetic,,,,4,,,prime_governor,page_copperfen_basin
+core_dawn_before_kings,Dawn Before Kings Core,core,,5,exalted,golden_expanse,1050,,263,0.24,3,,45,solar,,,,4,,,first_dawn,page_golden_expanse
