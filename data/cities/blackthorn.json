@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "starting_room": "courtyard",
+  "rooms": {
+    "courtyard": {
+      "name": "Inside the gates",
+      "art": "res://assets/art/blackthorn_arrival.png",
+      "parent": "courtyard",
+      "description": "Warm windows face the courtyard. Beyond the palisade, the ancient woods press close.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "The Lantern Inn",
+          "target": "inn_common",
+          "at": [
+            0.25,
+            0.42
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Militia yard",
+          "target": "militia_yard",
+          "at": [
+            0.74,
+            0.42
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Smithy",
+          "target": "smithy",
+          "at": [
+            0.19,
+            0.68
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Infirmary",
+          "target": "infirmary",
+          "at": [
+            0.86,
+            0.63
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Eren · gate watch",
+          "target": "eren",
+          "at": [
+            0.54,
+            0.76
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "The old well",
+          "text": "Fresh rope, a sound bucket, and a cup left for the next thirsty traveller. Small things, carefully kept.",
+          "at": [
+            0.16,
+            0.57
+          ]
+        }
+      ]
+    },
+    "inn_common": {
+      "name": "The Lantern Inn · common room",
+      "art": "res://assets/art/blackthorn/inn_common.png",
+      "parent": "courtyard",
+      "description": "Hearthlight catches on patched cloaks and polished cups. Someone has kept supper warm.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Courtyard",
+          "target": "courtyard",
+          "at": [
+            0.57,
+            0.37
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Upstairs room",
+          "target": "guest_room",
+          "at": [
+            0.36,
+            0.3
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Mara · innkeeper",
+          "target": "mara",
+          "at": [
+            0.79,
+            0.53
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "By the hearth",
+          "text": "The fire smells of split pine. A row of damp boots dries beside it; nobody has been turned away from its warmth.",
+          "at": [
+            0.2,
+            0.5
+          ]
+        }
+      ]
+    },
+    "guest_room": {
+      "name": "The Lantern Inn · guest room",
+      "art": "res://assets/art/blackthorn/guest_room.png",
+      "parent": "inn_common",
+      "description": "A clean blanket, a quiet corner, and a door that can be barred from the inside.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Downstairs",
+          "target": "inn_common",
+          "at": [
+            0.46,
+            0.32
+          ]
+        },
+        {
+          "kind": "rest",
+          "label": "Rest a while",
+          "at": [
+            0.25,
+            0.48
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Travel chest",
+          "text": "The old chest is empty. Its hinges have been repaired more than once, but the clasp still holds.",
+          "at": [
+            0.24,
+            0.75
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Window",
+          "text": "The trees beyond the walls are almost black. Below, a watchman pauses to relight a guttering lantern.",
+          "at": [
+            0.83,
+            0.28
+          ]
+        }
+      ]
+    },
+    "militia_yard": {
+      "name": "Militia camp · training yard",
+      "art": "res://assets/art/blackthorn/militia_yard.png",
+      "parent": "courtyard",
+      "description": "Practice targets and worn shields fill a small yard. The watch keeps its tools ready.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Courtyard",
+          "target": "courtyard",
+          "at": [
+            0.53,
+            0.28
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Barracks & supplies",
+          "target": "barracks",
+          "at": [
+            0.85,
+            0.46
+          ]
+        },
+        {
+          "kind": "exit",
+          "label": "Captain’s tent",
+          "target": "captains_tent",
+          "at": [
+            0.14,
+            0.46
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Practice targets",
+          "text": "Fresh arrows stand beside older scars in the wood. Someone has been teaching the newest recruits to steady their breathing.",
+          "at": [
+            0.33,
+            0.31
+          ]
+        }
+      ]
+    },
+    "barracks": {
+      "name": "Militia camp · barracks",
+      "art": "res://assets/art/blackthorn/barracks.png",
+      "parent": "militia_yard",
+      "description": "Bedrolls share space with ration sacks and carefully counted supplies.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Training yard",
+          "target": "militia_yard",
+          "at": [
+            0.6,
+            0.29
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Nell · quartermaster",
+          "target": "nell",
+          "at": [
+            0.81,
+            0.52
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Bunk row",
+          "text": "A carved wooden bird hangs from a bedpost. Even here, someone has found time to make a gift.",
+          "at": [
+            0.23,
+            0.4
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Supply ledger",
+          "text": "The ledger records blankets, food and bandages. Several entries are marked as gifts from townsfolk.",
+          "at": [
+            0.8,
+            0.68
+          ]
+        }
+      ]
+    },
+    "captains_tent": {
+      "name": "Militia camp · captain’s tent",
+      "art": "res://assets/art/blackthorn/captains_tent.png",
+      "parent": "militia_yard",
+      "description": "A modest command post. The captain watches the roads from a map worn thin at its folds.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Training yard",
+          "target": "militia_yard",
+          "at": [
+            0.6,
+            0.3
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Captain Rowan",
+          "target": "rowan",
+          "at": [
+            0.32,
+            0.48
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Patrol map",
+          "text": "Pins mark the roads nearest Blackthorn. The farther forest trails have fewer marks, and more unanswered questions.",
+          "at": [
+            0.29,
+            0.61
+          ]
+        }
+      ]
+    },
+    "smithy": {
+      "name": "Bram’s repair smithy",
+      "art": "res://assets/art/blackthorn/smithy.png",
+      "parent": "courtyard",
+      "description": "Hammer marks, charcoal smoke and useful work. This is an ordinary village smithy.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Courtyard",
+          "target": "courtyard",
+          "at": [
+            0.62,
+            0.29
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Bram · smith",
+          "target": "bram",
+          "at": [
+            0.3,
+            0.48
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Workbench",
+          "text": "Nails, a mended hinge, a farm hook, and a shield awaiting new straps. Keeping a fort alive takes more than swords.",
+          "at": [
+            0.86,
+            0.62
+          ]
+        }
+      ]
+    },
+    "infirmary": {
+      "name": "Tamsin’s infirmary",
+      "art": "res://assets/art/blackthorn/infirmary.png",
+      "parent": "courtyard",
+      "description": "Clean linen and bitter herbs lend this small room a little peace.",
+      "hotspots": [
+        {
+          "kind": "exit",
+          "label": "Courtyard",
+          "target": "courtyard",
+          "at": [
+            0.57,
+            0.28
+          ]
+        },
+        {
+          "kind": "npc",
+          "label": "Tamsin · healer",
+          "target": "tamsin",
+          "at": [
+            0.81,
+            0.5
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Herbal shelves",
+          "text": "Bundles are sorted by leaf and root. A small bowl of lavender sits apart from the sharper-smelling remedies.",
+          "at": [
+            0.83,
+            0.25
+          ]
+        },
+        {
+          "kind": "inspect",
+          "label": "Empty cot",
+          "text": "Fresh linen covers the cot. Tamsin keeps one bed ready for whoever comes through the gate next.",
+          "at": [
+            0.26,
+            0.49
+          ]
+        }
+      ]
+    }
+  },
+  "npcs": {
+    "mara": {
+      "name": "Mara",
+      "role": "Keeper of the Lantern Inn",
+      "portrait": 0,
+      "nodes": {
+        "greeting": {
+          "text": "Come in out of the chill. You look as though Ravenwood has already asked more of you than it should. There is a room upstairs, and no hurry to leave the fire.",
+          "choices": [
+            {
+              "text": "A place to rest?",
+              "next": "room"
+            },
+            {
+              "text": "How does Blackthorn endure?",
+              "next": "hope"
+            },
+            {
+              "text": "Who should I speak to?",
+              "next": "people"
+            }
+          ]
+        },
+        "room": {
+          "text": "Up the little stair, first door. The blanket is patched, but clean. Take a moment to rest; the watch will mind the gate.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "hope": {
+          "text": "We mend what breaks. We share what is left. You cannot make the woods kinder by letting your own hearth go cold.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "people": {
+          "text": "Tamsin tends the injured near the courtyard. Bram keeps our tools working. Captain Rowan is in the militia camp, though you need not take your troubles to him tonight.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    },
+    "rowan": {
+      "name": "Captain Rowan",
+      "role": "Blackthorn militia captain",
+      "portrait": 1,
+      "nodes": {
+        "greeting": {
+          "text": "A new arrival? Then you have already done well to reach our gate. Find your footing here. I have enough frightened recruits without making a soldier of every traveller.",
+          "choices": [
+            {
+              "text": "Tell me about the camp",
+              "next": "camp"
+            },
+            {
+              "text": "What is happening in the forest?",
+              "next": "woods"
+            },
+            {
+              "text": "Will you come with me?",
+              "next": "stay"
+            }
+          ]
+        },
+        "camp": {
+          "text": "The barracks hold our bunks and stores. Nell keeps count of both. We train in the yard and plan our patrols here. When people need the captain, this is where they find me.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "woods": {
+          "text": "The beasts come closer than they once did. Patrols hear things they cannot see. For now, we hold the walls and keep people together.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "stay": {
+          "text": "My place is here. Someone must keep the watch supplied and make sure the next patrol has a place to return to.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    },
+    "tamsin": {
+      "name": "Tamsin",
+      "role": "Village healer",
+      "portrait": 2,
+      "nodes": {
+        "greeting": {
+          "text": "Sit if you need to. You do not have to be bleeding to deserve a little care.",
+          "choices": [
+            {
+              "text": "Can I lend a hand?",
+              "next": "request",
+              "unless": [
+                "bandages_requested",
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "About those bandages",
+              "next": "reminder",
+              "requires": [
+                "bandages_requested"
+              ],
+              "unless": [
+                "carrying_bandages",
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "Give Nell’s bandages",
+              "next": "thanks",
+              "action": "deliver_bandages",
+              "requires": [
+                "carrying_bandages"
+              ],
+              "unless": [
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "Are the supplies helping?",
+              "next": "after",
+              "requires": [
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "What do you see in the woods?",
+              "next": "woods"
+            }
+          ]
+        },
+        "request": {
+          "text": "Nell has a bundle of clean bandages in the barracks. I have not had a chance to collect them. Would you bring them here?",
+          "choices": [
+            {
+              "text": "I’ll bring them",
+              "next": "accepted",
+              "action": "accept_bandages"
+            },
+            {
+              "text": "Maybe later",
+              "next": "greeting"
+            }
+          ]
+        },
+        "accepted": {
+          "text": "Thank you. The barracks are off the militia yard. Tell Nell I sent you; she will know the bundle.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "reminder": {
+          "text": "Nell is at the supply counter in the barracks. No need to leave the fort for this errand.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "thanks": {
+          "text": "These are just what we needed. It may be a small kindness to you, but it means I can stay with the people who need me. Thank you.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "after": {
+          "text": "Very much. The clean dressings are ready, and I have one less worry tonight. You have already made yourself useful here.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "woods": {
+          "text": "Mostly what comes back from them: scratches, exhaustion, frightened people. I listen, and I tend what I can. Rumours do not make good medicine.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    },
+    "bram": {
+      "name": "Bram",
+      "role": "Village repair smith",
+      "portrait": 3,
+      "nodes": {
+        "greeting": {
+          "text": "Mind the charcoal. If it has a hinge, an edge, or a handle, I have probably mended one like it this week.",
+          "choices": [
+            {
+              "text": "What do you make?",
+              "next": "trade"
+            },
+            {
+              "text": "Can you work with an Entropic Core?",
+              "next": "forge"
+            },
+            {
+              "text": "How are the defences?",
+              "next": "walls"
+            }
+          ]
+        },
+        "trade": {
+          "text": "Nails first. Tools next. Shields when I can. A sharp sword is little comfort if the gate falls off its hinges.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "forge": {
+          "text": "Not with this hearth. That kind of work needs a proper Entropic Forge and someone who understands it. Here, I keep ordinary iron useful.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "walls": {
+          "text": "Wood takes tending. So do the people standing on it. We replace a beam, tighten a strap, sharpen a spear. Then we do it again tomorrow.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    },
+    "nell": {
+      "name": "Nell",
+      "role": "Militia quartermaster",
+      "portrait": 4,
+      "nodes": {
+        "greeting": {
+          "text": "If you came for a blanket, ask. If you came to borrow my ledger, the answer is no.",
+          "choices": [
+            {
+              "text": "Tamsin sent me for bandages",
+              "next": "bundle",
+              "action": "collect_bandages",
+              "requires": [
+                "bandages_requested"
+              ],
+              "unless": [
+                "carrying_bandages",
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "I have the bandages",
+              "next": "carrying",
+              "requires": [
+                "carrying_bandages"
+              ]
+            },
+            {
+              "text": "Tamsin received the bundle",
+              "next": "delivered",
+              "requires": [
+                "bandages_delivered"
+              ]
+            },
+            {
+              "text": "What does the camp need?",
+              "next": "stores"
+            },
+            {
+              "text": "Where is the captain?",
+              "next": "captain"
+            }
+          ]
+        },
+        "bundle": {
+          "text": "Here they are, wrapped to keep them clean. Take them straight to the infirmary off the main courtyard. And tell Tamsin she is allowed to ask for help.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "carrying": {
+          "text": "You have the bundle already. Tamsin is waiting in the infirmary; I would rather those bandages reached her than toured the fort.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "delivered": {
+          "text": "Good. One thing where it belongs. That is a fine start to any day.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "stores": {
+          "text": "Food, clean cloth, sound boots. Everyone imagines an army runs on courage. Courage still gets blisters.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "captain": {
+          "text": "In the command tent across the yard. He keeps his door open, though sometimes he forgets to keep his supper warm.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    },
+    "eren": {
+      "name": "Eren",
+      "role": "Gate watch",
+      "portrait": 5,
+      "nodes": {
+        "greeting": {
+          "text": "Welcome to Blackthorn. You can lower your shoulders now. We have the gate.",
+          "choices": [
+            {
+              "text": "Where is the inn?",
+              "next": "inn"
+            },
+            {
+              "text": "How safe is it here?",
+              "next": "safe"
+            },
+            {
+              "text": "What is beyond the gate?",
+              "next": "outside"
+            }
+          ]
+        },
+        "inn": {
+          "text": "The warm windows on the left. Mara will find you a place by the hearth, and a bed upstairs if you need one.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "safe": {
+          "text": "Safe enough that we still hang washing and argue about supper. The woods are dangerous, but this is home. We mean to keep it that way.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        },
+        "outside": {
+          "text": "Forest roads, old trails, and too many places a watch lantern cannot reach. Get your bearings inside the walls first.",
+          "choices": [
+            {
+              "text": "Ask something else",
+              "next": "greeting"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
